@@ -7,6 +7,7 @@ Date: 3/17/2025
 
 #== Imports ==#
 import os
+import heapq
 
 import matplotlib.pyplot as plt
 
@@ -22,7 +23,7 @@ class CongestionControl:
     '''
     def __init__(self):
         self.cwnd = 1
-        self.ssthresh = 64
+        self.ssthresh = 2
         self.acked = 0
 
         self.cwnd_log = []
@@ -208,16 +209,17 @@ class Queue():
         # init queues
         self.priority_queue = []
         self.event_queue = []
+        heapq.heapify(self.event_queue)  
         self.all_packets = []
 
         self.queue_len = 0
 
         # tracking/logging
-        self.time_log = []
-        self.queue_len_log = []
-        self.service_log = []
-        self.drop_log = []
-        self.block_log = []
+        self.time_log = [0]
+        self.queue_len_log = [0]
+        self.service_log = [0]
+        self.drop_log = [0]
+        self.block_log = [0]
 
     def insert_event(self, event: Event) -> None:
         '''
@@ -226,18 +228,7 @@ class Queue():
         Args:
             event (Event): event to be added
         '''
-        i = 0
-        j = len(self.event_queue)
-
-        while i < j:
-            mid = (i + j) // 2
-
-            if self.event_queue[mid].event_time < event.event_time:
-                i = mid + 1
-            else:
-                j = mid
-        
-        self.event_queue.insert(i, event)
+        heapq.heappush(self.event_queue, (event.event_time, event))
 
     def insert_packet(self, packet: Packet) -> None:
         '''
@@ -293,7 +284,7 @@ class Queue():
 
             # remove packet from priority and event queues
             self.priority_queue = [p for p in self.priority_queue if p.id != packet.id]
-            self.event_queue = [e for e in self.event_queue if e is not None and e.packet_id != packet.id]
+            self.event_queue = [(et, e) for (et, e) in self.event_queue if e.packet_id != packet.id]
 
             # no further events for this packet
             return None  
@@ -305,7 +296,7 @@ class Queue():
 
             # remove the serviced packet from the queue
             self.priority_queue = [p for p in self.priority_queue if p.id != packet.id]
-            self.event_queue = [e for e in self.event_queue if e.packet_id != packet.id]
+            self.event_queue = [(et, e) for (et, e) in self.event_queue if e.packet_id != packet.id]
 
             # if the queue is now empty, nothing to do
             if len(self.priority_queue) == 0:
@@ -325,7 +316,7 @@ class Queue():
             cc (CongestionControl, optional): An instance of a congestion control algorithm, if applicable. Defaults to None.
         '''
         # retrieve the first event from queue and update queue
-        event, self.event_queue = self.event_queue[0], self.event_queue[1:]
+        _, event = heapq.heappop(self.event_queue)
 
         # process event, determines what happens to packet
         new_event = self.handle_events(self.all_packets[event.packet_id], event.event_time, event.status)
@@ -337,24 +328,26 @@ class Queue():
             elif event.status == PacketStatus.DROP:
                 cc.on_loss(event.event_time)
 
-        self.log_stats(event.event_time if not new_event else new_event.event_time)  # log stats after handling the event
+        self.log_stats(event.event_time, event.status)  # log stats after handling the event
 
         if new_event is not None:
             # insert new event into queue 
             self.insert_event(new_event)
 
-    def log_stats(self, cur_time: float) -> None:
+    def log_stats(self, cur_time: float, status: PacketStatus) -> None:
         '''
         Logs the current statistics of the queue.
 
         Args:
             cur_time (float): The current time in the simulation.
+            status (PacketStatus): The type of event just handled.
         '''
-        self.time_log.append(cur_time)
-        self.queue_len_log.append(len(self.priority_queue))
-        self.service_log.append(self.n_service)
-        self.drop_log.append(self.n_drop)
-        self.block_log.append(self.n_block)
+        if status in [PacketStatus.SERVICED, PacketStatus.DROP]:
+            self.time_log.append(cur_time)
+            self.queue_len_log.append(len(self.priority_queue))
+            self.service_log.append(self.n_service)
+            self.drop_log.append(self.n_drop)
+            self.block_log.append(self.n_block)
 
 class Simulator():
     def __init__(self, lmbda: float, mu: float, theta: float, size: int | None, is_exp_drop: bool = False, use_tcp_reno: bool = False):
@@ -410,18 +403,18 @@ class Simulator():
                 self.queue.insert_packet(packet)
 
                 # log the current time and queue state
-                self.queue.log_stats(cur_time)
+                # self.queue.log_stats(cur_time)
 
                 # advance sim time and increment packet id
                 cur_time += rnd.exponential(1 / self.lmbda)
                 packet_id += 1
 
             # handle jobs in the queue
-            while self.queue.event_queue and cur_time >= self.queue.event_queue[0].event_time:
+            while self.queue.event_queue and cur_time >= self.queue.event_queue[0][0]:
                 self.queue.handle_jobs(self.cc)
 
         # compute and return blocking and dropping probabilities
-        return self.queue.n_block / n_packet, self.queue.n_drop / n_packet
+        return self.queue.n_block / n_packet, self.queue.n_drop / n_packet, (self.queue.service_log[-1], self.queue.drop_log[-1], self.queue.block_log[-1])
 
     def plot_results(self):
         '''
@@ -429,7 +422,7 @@ class Simulator():
         and cumulative counts of serviced, dropped, and blocked packets.
         This method generates two plots:
             1. Queue Length Over Time: Shows how the length of the queue changes over time.
-            2. Cumulative Packet Events Over Time: Displays the cumulative number of serviced, dropped, and blocked packets over time.
+            2. Cumulative Packet Events Over Time: Displays the cumulative number of serviced and dropped packets over time.
         '''
         times = self.queue.time_log
         zipped = sorted(zip(self.queue.time_log, self.queue.service_log, self.queue.drop_log, self.queue.block_log))
@@ -454,7 +447,7 @@ class Simulator():
         plt.figure(figsize=(10, 4))
         plt.plot(sorted_times, sorted_service, label="Serviced Packets")
         plt.plot(sorted_times, sorted_drop, label="Dropped Packets")
-        plt.plot(sorted_times, sorted_block, label="Blocked Packets")
+        plt.plot(sorted_times, sorted_block, label="Blocked Packets", color='red')
         plt.xlabel('Time')
         plt.ylabel('Cumulative Count')
         plt.title('Cumulative Packet Events Over Time')
@@ -498,9 +491,9 @@ class Simulator():
 def main():
     # set parameters
     mu = 10  # service rate (μ)
-    theta = 2 # deadline rate or fixed deadline time (θ)
-    lmbda = 3 # arrival rate (λ)
-    n_packet = 5 
+    theta = 1 # deadline rate or fixed deadline time (θ)
+    lmbda = 10 # arrival rate (λ)
+    n_packet = 20
 
     queue_size = 5 
     is_exp_drop = False
@@ -509,7 +502,8 @@ def main():
     sim = Simulator(lmbda=lmbda, mu=mu, theta=theta, size=queue_size, is_exp_drop=is_exp_drop, use_tcp_reno=True)
 
     # run sim
-    sim_pb, sim_pd = sim.run(n_packet=n_packet)
+    sim_pb, sim_pd, sim_counts = sim.run(n_packet=n_packet)
+    sim_service, sim_drop, sim_block = sim_counts
     sim.plot_results()
     
     # print results
@@ -524,6 +518,10 @@ def main():
     print("\nSimulation Statistics:")
     print(f"  - Blocked Rate: {sim_pb:.4f} ({sim_pb * 100:.2f}%)")
     print(f"  - Dropped Rate: {sim_pd:.4f} ({sim_pd * 100:.2f}%)")
+    print(f"  - Service Count: {sim_service}")
+    print(f"  - Drop Count: {sim_drop}")
+    print(f"  - Block Count: {sim_block}")
+    print(f"  - Total Packets Processed: {sim_service + sim_drop + sim_block}")
 
 if __name__ == "__main__":
     main()
