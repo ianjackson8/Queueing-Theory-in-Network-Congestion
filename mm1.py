@@ -7,6 +7,7 @@ Date: 3/17/2025
 
 #== Imports ==#
 import os
+import math
 import heapq
 
 import matplotlib.pyplot as plt
@@ -105,6 +106,49 @@ class TCPReno(CongestionControl):
         # log the current cwnd and time
         self.log_cwnd(time, "Multiplicative Decrease")
         print(f"[{time:.4f}] [TCP Reno], cwnd={self.cwnd}, ssthresh={self.ssthresh}, state=Multiplicative Decrease")
+
+class TCPCubic(CongestionControl):
+    def __init__(self):
+        super().__init__()
+        self.beta = 0.7             # multiplicative decrease factor
+        self.c = 0.4                # CUBIC scaling constant
+        self.w_max = self.cwnd      # last maximum cwnd before loss
+        self.epoch_start = None     # time when the current epoch started
+
+    def on_ack(self, time: float):
+        '''
+        handle ACKs in TCP CUBIC
+
+        Args:
+            time (float): the time at which the ACK was received
+        '''
+        if self.epoch_start is None:
+            self.epoch_start = time
+            self.w_max = self.cwnd
+
+        t = time - self.epoch_start
+        K = ((self.w_max * (1 - self.beta)) / self.c) ** (1/3)
+        cubic_cwnd = self.c * ((t - K) ** 3) + self.w_max
+
+        # Ensure cwnd increases smoothly
+        self.cwnd = max(1, round(cubic_cwnd))
+
+        self.log_cwnd(time, "Cubic Increase")
+        print(f"[{time:.4f}] [TCP CUBIC], cwnd={self.cwnd}, w_max={self.w_max}, state=Cubic Increase")
+
+    def on_loss(self, time: float):
+        '''
+        handle packet loss in TCP CUBIC
+
+        Args:
+            time (float): the time at which the packet loss was detected
+        '''
+        self.w_max = self.cwnd
+        self.cwnd = max(1, round(self.cwnd * self.beta))
+        self.epoch_start = None  # reset epoch on loss
+
+        self.log_cwnd(time, "Cubic Loss")
+        print(f"[{time:.4f}] [TCP CUBIC], cwnd={self.cwnd}, w_max={self.w_max}, state=Cubic Loss")
 
 #== MM1 Queue Classes ==#
 class PacketStatus(Enum):
@@ -356,7 +400,7 @@ class Queue():
             self.block_log.append(self.n_block)
 
 class Simulator():
-    def __init__(self, lmbda: float, mu: float, theta: float, size: int | None, is_exp_drop: bool = False, use_tcp_reno: bool = False):
+    def __init__(self, lmbda: float, mu: float, theta: float, size: int | None, is_exp_drop: bool = False, tcp_cc: str = None):
         '''
         init instance of simulator
 
@@ -366,7 +410,7 @@ class Simulator():
             theta (float): deadline rate or deadline time
             size (int | None): size of queue (None if infinite)
             is_exp_drop (bool, optional): does deadline time follow exp dist. Defaults to False.
-            uce_tcp_reno (bool, optional): use TCP Reno congestion control. Defaults to False.
+            tpc_cc (str, optional): congestion control algorithm to use. Defaults to None.
         '''
         self.lmbda = lmbda
         self.mu = mu
@@ -374,8 +418,12 @@ class Simulator():
         self.size = size
         self.is_exp_drop = is_exp_drop
 
-        self.use_tcp_reno = use_tcp_reno
-        self.cc = TCPReno() if use_tcp_reno else None
+        if tcp_cc == "reno":
+            self.cc = TCPReno()
+        elif tcp_cc == "cubic":
+            self.cc = TCPCubic()
+        else:
+            self.cc = None
 
         # create instance of queue
         self.queue = Queue(self.size)
@@ -396,7 +444,7 @@ class Simulator():
 
         # process packets until specified num of packet is reached
         while packet_id < n_packet:
-            cwnd = self.cc.get_cwnd() if self.use_tcp_reno else 1
+            cwnd = self.cc.get_cwnd() if self.cc is not None else 1
 
             for _ in range(cwnd):
                 if packet_id >= n_packet:
@@ -469,8 +517,6 @@ class Simulator():
             plt.plot(times, cwnds, color='black', alpha=0.6, label='TCP cwnd')
 
             # Fill background based on TCP state
-            print(states)
-            print(times)
             ax = plt.gca()
             for i in range(len(times) - 1):
                 state = states[i]
@@ -503,7 +549,7 @@ def main():
     is_exp_drop = False
     
     # init simulator
-    sim = Simulator(lmbda=lmbda, mu=mu, theta=theta, size=queue_size, is_exp_drop=is_exp_drop, use_tcp_reno=True)
+    sim = Simulator(lmbda=lmbda, mu=mu, theta=theta, size=queue_size, is_exp_drop=is_exp_drop, tcp_cc="cubic")
 
     # run sim
     sim_pb, sim_pd, sim_counts = sim.run(n_packet=n_packet)
