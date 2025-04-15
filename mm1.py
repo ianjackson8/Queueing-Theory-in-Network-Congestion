@@ -550,7 +550,13 @@ class Simulator():
                 end_time = times[i + 1]
 
                 ax.axvspan(start_time, end_time, alpha=0.2,
-                        color={'Slow Start': 'blue', 'Additive Increase': 'yellow', 'Multiplicative Decrease': 'red'}.get(state, 'gray'),
+                        color={
+                            'Slow Start': 'blue', 
+                            'Additive Increase': 'yellow', 
+                            'Multiplicative Decrease': 'red',
+                            'Cubic Increase': 'yellow',
+                            'Cubic Loss': 'red'
+                        }.get(state, 'gray'),
                         label=state if state not in ax.get_legend_handles_labels()[1] else "")
 
             plt.xlabel('Time')
@@ -574,7 +580,7 @@ def main():
     queue_size = 4 
     is_exp_drop = False
 
-    tcp_cc = 'reno'
+    tcp_cc = 'cubic'
     
     # init simulator
     sim = Simulator(lmbda=lmbda, mu=mu, theta=theta, size=queue_size, is_exp_drop=is_exp_drop, tcp_cc=tcp_cc)
