@@ -16,6 +16,8 @@ from enum import Enum
 from typing import Union
 from numpy import random as rnd
 
+rnd.seed(42)  
+
 #== Congestion Control Classes ==#
 class CongestionControl:
     '''
@@ -441,31 +443,55 @@ class Simulator():
         # init sim time and packet counter
         cur_time = 0
         packet_id = 0
+        inflight = set()
 
         # process packets until specified num of packet is reached
-        while packet_id < n_packet:
-            cwnd = self.cc.get_cwnd() if self.cc is not None else 1
+        while packet_id < n_packet or self.queue.event_queue:
+            cwnd = self.cc.get_cwnd() if self.cc else 1
 
-            for _ in range(cwnd):
-                if packet_id >= n_packet:
-                    break
-
+            # Push cwnd packets and advance time
+            while packet_id < n_packet and len(inflight) < cwnd:
                 # generate new packet and insert into queue
                 packet = Packet(packet_id, cur_time, self.mu, self.theta, self.is_exp_drop)
                 print(f"[{cur_time:.4f}] [{len(self.queue.priority_queue)}] Packet {packet_id} ARRIVAL")
 
                 self.queue.insert_packet(packet)
-
-                # log the current time and queue state
-                # self.queue.log_stats(cur_time)
+                inflight.add(packet_id)
 
                 # advance sim time and increment packet id
-                cur_time += rnd.exponential(1 / self.lmbda)
                 packet_id += 1
+                cur_time += rnd.exponential(1 / self.lmbda)
 
-            # handle jobs in the queue
-            while self.queue.event_queue and cur_time >= self.queue.event_queue[0][0]:
-                self.queue.handle_jobs(self.cc)
+            if self.queue.event_queue:
+                next_event_time, next_event = heapq.heappop(self.queue.event_queue)
+                packet = self.queue.all_packets[next_event.packet_id]
+
+                # Handle the packet event
+                new_event = self.queue.handle_events(packet, next_event_time, next_event.status)
+
+                # Congestion control logic
+                if self.cc:
+                    if next_event.status == PacketStatus.SERVICED:
+                        self.cc.on_ack(next_event_time)
+                    elif next_event.status in [PacketStatus.DROP, PacketStatus.BLOCK]:
+                        self.cc.on_loss(next_event_time)
+
+                # Remove from in-flight tracking
+                inflight.discard(next_event.packet_id)
+
+                # Add follow-up event if any
+                if new_event:
+                    self.queue.insert_event(new_event)
+
+                # Log queue stats
+                self.queue.log_stats(next_event_time, next_event.status)
+
+                # Advance time to next event
+                cur_time = max(cur_time, next_event_time)
+
+            # Advance time if more packets are to arrive (simulate interarrival spacing)
+            if self.cc is None and packet_id < n_packet:
+                cur_time += rnd.exponential(1 / self.lmbda)
 
         # compute and return blocking and dropping probabilities
         return self.queue.n_block / n_packet, self.queue.n_drop / n_packet, (self.queue.service_log[-1], self.queue.drop_log[-1], self.queue.block_log[-1])
@@ -541,15 +567,17 @@ class Simulator():
 def main():
     # set parameters
     mu = 10  # service rate (μ)
+    lmbda = 20 # arrival rate (λ)
     theta = 1 # deadline rate or fixed deadline time (θ)
-    lmbda = 12 # arrival rate (λ)
-    n_packet = 30
+    n_packet = 300
 
     queue_size = 4 
     is_exp_drop = False
+
+    tcp_cc = 'reno'
     
     # init simulator
-    sim = Simulator(lmbda=lmbda, mu=mu, theta=theta, size=queue_size, is_exp_drop=is_exp_drop, tcp_cc="cubic")
+    sim = Simulator(lmbda=lmbda, mu=mu, theta=theta, size=queue_size, is_exp_drop=is_exp_drop, tcp_cc=tcp_cc)
 
     # run sim
     sim_pb, sim_pd, sim_counts = sim.run(n_packet=n_packet)
@@ -564,6 +592,7 @@ def main():
     print(f"  - Deadline Rate (θ): {theta} (Exp: {is_exp_drop})")
     print(f"  - Queue Size: {'Infinite' if queue_size is None else queue_size}")
     print(f"  - Total Packets: {n_packet}")
+    print(f"  - Congestion Control: {tcp_cc if tcp_cc else 'None'}")
 
     print("\nSimulation Statistics:")
     print(f"  - Blocked Rate: {sim_pb:.4f} ({sim_pb * 100:.2f}%)")
