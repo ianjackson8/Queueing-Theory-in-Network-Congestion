@@ -23,7 +23,7 @@ class CongestionControl:
     '''
     def __init__(self):
         self.cwnd = 1
-        self.ssthresh = 2
+        self.ssthresh = 10
         self.acked = 0
 
         self.cwnd_log = []
@@ -88,6 +88,7 @@ class TCPReno(CongestionControl):
 
         # log the current cwnd and time
         self.log_cwnd(time, phase)
+        print(f"[{time:.4f}] [TCP Reno], cwnd={self.cwnd}, ssthresh={self.ssthresh}, state={phase}")
 
     def on_loss(self, time: float):
         '''
@@ -103,12 +104,14 @@ class TCPReno(CongestionControl):
 
         # log the current cwnd and time
         self.log_cwnd(time, "Multiplicative Decrease")
+        print(f"[{time:.4f}] [TCP Reno], cwnd={self.cwnd}, ssthresh={self.ssthresh}, state=Multiplicative Decrease")
 
 #== MM1 Queue Classes ==#
 class PacketStatus(Enum):
     ARRIVAL = 0
     DROP = 1
     SERVICED = 2
+    BLOCK = 3
 
 class Packet():
     '''
@@ -266,7 +269,7 @@ class Queue():
                 # if so, then packet blocked
                 self.n_block += 1  
                 print(f"[{event_time:.4f}] [{queue_len}] Packet {packet.id} BLOCKED")
-                return None  
+                return Event(packet.id, event_time, PacketStatus.BLOCK)
 
             # add packet to priority queue
             self.priority_queue.append(packet)
@@ -306,6 +309,9 @@ class Queue():
             next_packet = self.priority_queue[0]
             return Event(next_packet.id, event_time + next_packet.service_time, PacketStatus.SERVICED)
         
+        elif status == PacketStatus.BLOCK:
+            return None
+        
     def handle_jobs(self, cc: CongestionControl = None) -> None:
         '''
         Processes the next event in the event queue.
@@ -325,7 +331,7 @@ class Queue():
         if cc:
             if event.status == PacketStatus.SERVICED:
                 cc.on_ack(event.event_time)
-            elif event.status == PacketStatus.DROP:
+            elif event.status in [PacketStatus.DROP, PacketStatus.BLOCK]:
                 cc.on_loss(event.event_time)
 
         self.log_stats(event.event_time, event.status)  # log stats after handling the event
@@ -455,27 +461,25 @@ class Simulator():
         plt.legend()
         plt.savefig(os.path.join(results_folder, "cumulative_packet_events_over_time.png"))
 
+        # TODO: fix coloring of the plot
         if self.cc:
             zipped = sorted(zip(self.cc.time_log, self.cc.cwnd_log, self.cc.state_log))
             times, cwnds, states = zip(*zipped)
             plt.figure(figsize=(12, 4))
-            plt.plot(times, cwnds, color='black', alpha=0.4, label='TCP cwnd')
+            plt.plot(times, cwnds, color='black', alpha=0.6, label='TCP cwnd')
 
             # Fill background based on TCP state
-            last_time = times[0]
-            last_state = states[0]
+            print(states)
+            print(times)
             ax = plt.gca()
-            for t, s in zip(times[1:], states[1:]):
-                if s != last_state:
-                    ax.axvspan(last_time, t, alpha=0.2,
-                               color={'Slow Start': 'blue', 'Additive Increase': 'yellow', 'Multiplicative Decrease': 'red'}.get(last_state, 'gray'),
-                               label=last_state if last_state not in ax.get_legend_handles_labels()[1] else "")
-                    last_time = t
-                    last_state = s
-            # Mark final span
-            ax.axvspan(last_time, times[-1], alpha=0.2,
-                       color={'Slow Start': 'blue', 'Additive Increase': 'yellow', 'Multiplicative Decrease': 'red'}.get(last_state, 'gray'),
-                       label=last_state if last_state not in ax.get_legend_handles_labels()[1] else "")
+            for i in range(len(times) - 1):
+                state = states[i]
+                start_time = times[i]
+                end_time = times[i + 1]
+
+                ax.axvspan(start_time, end_time, alpha=0.2,
+                        color={'Slow Start': 'blue', 'Additive Increase': 'yellow', 'Multiplicative Decrease': 'red'}.get(state, 'gray'),
+                        label=state if state not in ax.get_legend_handles_labels()[1] else "")
 
             plt.xlabel('Time')
             plt.ylabel('Congestion Window Size')
@@ -492,10 +496,10 @@ def main():
     # set parameters
     mu = 10  # service rate (μ)
     theta = 1 # deadline rate or fixed deadline time (θ)
-    lmbda = 10 # arrival rate (λ)
-    n_packet = 20
+    lmbda = 12 # arrival rate (λ)
+    n_packet = 30
 
-    queue_size = 5 
+    queue_size = 4 
     is_exp_drop = False
     
     # init simulator
