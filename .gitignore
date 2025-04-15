@@ -3,3 +3,13 @@ venv/*
 __pycache__/
 
 .DS_Store
+
+# latex
+**/*.aux
+**/*.fdb_latexmk
+**/*.fls
+**/*.log
+**/*.synctex.gz
+
+# VSCode workspace
+*.code-workspace
