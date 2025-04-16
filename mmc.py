@@ -1,8 +1,8 @@
 '''
-M/M/1 Queue Simulation Implementation
+M/M/c Queue Simulation Implementation
 
 Author: Ian Jackson
-Date: 3/17/2025
+Date: 4/16/2025
 '''
 
 #== Imports ==#
@@ -180,6 +180,7 @@ class Packet():
         self.mu = mu
         self.theta = theta
         self.is_exp_drop = is_exp_drop
+        self.server_id = None
 
         # determine calculated vars
         self.service_time = self.__calc_service_time(self.mu)
@@ -225,7 +226,7 @@ class Event():
     '''
     class to represent an event of a packet
     '''
-    def __init__(self, packet_id: int, event_time: float, status: PacketStatus = PacketStatus.ARRIVAL):
+    def __init__(self, packet_id: int, event_time: float, status: PacketStatus = PacketStatus.ARRIVAL, server_id: int | None = None):
         '''
         init instance of an event
 
@@ -233,21 +234,24 @@ class Event():
             packet_id (int): packet id
             event_time (float): when event occurs
             status (PacketStatus, optional): packet status. Defaults to PacketStatus.ARRIVAL.
+            server_id (int | None, optional): server id if applicable. Defaults to None.
         '''
         self.packet_id = packet_id
         self.event_time = event_time
         self.status = status
+        self.server_id = server_id
 
 class Queue():
     '''
-    class to represent a queue (M/M/1)
+    class to represent a queue (M/M/c)
     '''
-    def __init__(self, size: int | None):
+    def __init__(self, size: int | None, num_servers: int = 1):
         '''
         init instance of queue
 
         Args:
             size (int | None): size of queue (None is infinite)
+            num_servers (int, optional): number of servers. Defaults to 1.
         '''
         self.size = size
 
@@ -263,6 +267,10 @@ class Queue():
         self.all_packets = []
 
         self.queue_len = 0
+
+        # init servers
+        self.num_servers = num_servers
+        self.servers = [False] * num_servers  # false means server is free, True means busy
 
         # tracking/logging
         self.time_log = [0]
@@ -319,19 +327,24 @@ class Queue():
                 print(f"[{event_time:.4f}] [{queue_len}] Packet {packet.id} BLOCKED")
                 return Event(packet.id, event_time, PacketStatus.BLOCK)
 
-            # add packet to priority queue
-            self.priority_queue.append(packet)
+            # check for an idle server
+            for i in range(self.num_servers):
+                if not self.servers[i]: # server found
+                    # set to busy
+                    self.servers[i] = True
 
-            # if queue was empty, process immediately; else, it waits for its limit time (expiration)
-            if self.queue_len == 0:
-                return Event(packet.id, packet.service_end_time, PacketStatus.SERVICED)
-            else:
-                return Event(packet.id, packet.limit_time, PacketStatus.DROP)
+                    # set the packet to the corrcet server
+                    packet.server_id = i
+                    return Event(packet.id, event_time + packet.service_time, PacketStatus.SERVICED, server_id=i)
+
+            # no server available, enqueue
+            self.priority_queue.append(packet)
+            return Event(packet.id, packet.limit_time, PacketStatus.DROP)
 
         elif status == PacketStatus.DROP:
             # packet expires before being serviced
             self.n_drop += 1  
-            print(f"[{event_time:.4f}] [{queue_len}] Packet {packet.id} DROPPED")
+            print(f"[{event_time:.4f}] [S{packet.server_id}] [{queue_len}] Packet {packet.id} DROPPED")
 
             # remove packet from priority and event queues
             self.priority_queue = [p for p in self.priority_queue if p.id != packet.id]
@@ -343,20 +356,27 @@ class Queue():
         elif status == PacketStatus.SERVICED:
             # packet successfully gets serviced and exits
             self.n_service += 1 
-            print(f"[{event_time:.4f}] [{queue_len}] Packet {packet.id} SERVICED")
+            print(f"[{event_time:.4f}] [S{packet.server_id}] [{queue_len}] Packet {packet.id} SERVICED")
             self.latency_log.append(event_time - packet.arrival_time)
+
+            # mark server idle
+            self.servers[packet.server_id] = False
 
             # remove the serviced packet from the queue
             self.priority_queue = [p for p in self.priority_queue if p.id != packet.id]
             self.event_queue = [(et, e) for (et, e) in self.event_queue if e.packet_id != packet.id]
 
-            # if the queue is now empty, nothing to do
-            if len(self.priority_queue) == 0:
-                return None
+            # check if theres another packet waiting
+            if len(self.priority_queue) > 0:
+                # grab packet and service it, tag the server
+                next_packet = self.priority_queue.pop(0)
+                next_packet.server_id = packet.server_id
+                self.servers[packet.server_id] = True
 
-            # otherwise, schedule service for the next packet in the queue
-            next_packet = self.priority_queue[0]
-            return Event(next_packet.id, event_time + next_packet.service_time, PacketStatus.SERVICED)
+                return Event(next_packet.id, event_time + next_packet.service_time, PacketStatus.SERVICED, server_id=packet.server_id)
+                
+            # if empty, nothing to do
+            return None
         
         elif status == PacketStatus.BLOCK:
             return None
@@ -405,7 +425,7 @@ class Queue():
             self.block_log.append(self.n_block)
 
 class Simulator():
-    def __init__(self, lmbda: float, mu: float, theta: float, size: int | None, is_exp_drop: bool = False, tcp_cc: str = None):
+    def __init__(self, lmbda: float, mu: float, theta: float, size: int | None, c: int, is_exp_drop: bool = False, tcp_cc: str = None):
         '''
         init instance of simulator
 
@@ -414,6 +434,7 @@ class Simulator():
             mu (float): service rate
             theta (float): deadline rate or deadline time
             size (int | None): size of queue (None if infinite)
+            c (int): number of servers
             is_exp_drop (bool, optional): does deadline time follow exp dist. Defaults to False.
             tpc_cc (str, optional): congestion control algorithm to use. Defaults to None.
         '''
@@ -421,6 +442,7 @@ class Simulator():
         self.mu = mu
         self.theta = theta
         self.size = size
+        self.c = c
         self.is_exp_drop = is_exp_drop
 
         if tcp_cc == "reno":
@@ -431,7 +453,7 @@ class Simulator():
             self.cc = None
 
         # create instance of queue
-        self.queue = Queue(self.size)
+        self.queue = Queue(size=self.size, num_servers=self.c)
 
     def run(self, n_packet: int) -> Union[float, float]:
         '''
@@ -587,10 +609,11 @@ class Simulator():
 #== Main Execution ==#
 def main():
     # set parameters
-    mu = 10  # service rate (μ)
+    mu = 1  # service rate (μ)
     lmbda = 20 # arrival rate (λ)
     theta = 1 # deadline rate or fixed deadline time (θ)
     n_packet = 300
+    c = 2  # number of servers 
 
     queue_size = 4 
     is_exp_drop = False
@@ -598,7 +621,7 @@ def main():
     tcp_cc = 'reno'
     
     # init simulator
-    sim = Simulator(lmbda=lmbda, mu=mu, theta=theta, size=queue_size, is_exp_drop=is_exp_drop, tcp_cc=tcp_cc)
+    sim = Simulator(lmbda=lmbda, mu=mu, theta=theta, size=queue_size, c=c, is_exp_drop=is_exp_drop, tcp_cc=tcp_cc)
 
     # run sim
     sim_stats = sim.run(n_packet=n_packet)
@@ -623,6 +646,7 @@ def main():
     print(f"  - Arrival Rate (λ): {lmbda}")
     print(f"  - Service Rate (μ): {mu}")
     print(f"  - Deadline Rate (θ): {theta} (Exp: {is_exp_drop})")
+    print(f"  - Number of Servers (c): {c}")
     print(f"  - Queue Size: {'Infinite' if queue_size is None else queue_size}")
     print(f"  - Total Packets: {n_packet}")
     print(f"  - Congestion Control: {tcp_cc if tcp_cc else 'None'}")
