@@ -79,7 +79,7 @@ class TCPReno(CongestionControl):
         '''
         # if cwnd is less than ssthresh, increase cwnd linearly
         if self.cwnd < self.ssthresh:
-            self.cwnd += 1
+            self.cwnd *= 2
             phase = "Slow Start"
 
         # after reaching ssthresh, increase cwnd by 1/cwnd for each ACK
@@ -359,6 +359,7 @@ class Queue():
             return Event(next_packet.id, event_time + next_packet.service_time, PacketStatus.SERVICED)
         
         elif status == PacketStatus.BLOCK:
+            # self.n_block += 1 
             return None
         
     def handle_jobs(self, cc: CongestionControl = None) -> None:

@@ -79,7 +79,7 @@ class TCPReno(CongestionControl):
         '''
         # if cwnd is less than ssthresh, increase cwnd linearly
         if self.cwnd < self.ssthresh:
-            self.cwnd += 1
+            self.cwnd *= 2
             phase = "Slow Start"
 
         # after reaching ssthresh, increase cwnd by 1/cwnd for each ACK
@@ -316,6 +316,7 @@ class Queue():
             Event | None: A new event if applicable, otherwise None.
         '''
         queue_len = len(self.priority_queue)
+        print(f"[{event_time:.4f}] Server Status: {' '.join(['B' if s else 'I' for s in self.servers])}")
 
         if status == PacketStatus.ARRIVAL:
             self.queue_len = len(self.priority_queue)
@@ -373,12 +374,14 @@ class Queue():
                 next_packet.server_id = packet.server_id
                 self.servers[packet.server_id] = True
 
+                self.event_queue = [(et, e) for (et, e) in self.event_queue if e.packet_id != next_packet.id]
                 return Event(next_packet.id, event_time + next_packet.service_time, PacketStatus.SERVICED, server_id=packet.server_id)
                 
             # if empty, nothing to do
             return None
         
         elif status == PacketStatus.BLOCK:
+            # self.n_block += 1 
             return None
         
     def handle_jobs(self, cc: CongestionControl = None) -> None:
@@ -609,7 +612,7 @@ class Simulator():
 #== Main Execution ==#
 def main():
     # set parameters
-    mu = 1  # service rate (μ)
+    mu = 10  # service rate (μ)
     lmbda = 20 # arrival rate (λ)
     theta = 1 # deadline rate or fixed deadline time (θ)
     n_packet = 300
@@ -641,7 +644,7 @@ def main():
         print("\033[33mWARN: Drop count more than 0\033[0m")
     
     # print results
-    print(f"\n=== Simulation Results for M/M/1 Queue ===")
+    print(f"\n=== Simulation Results for M/M/c Queue ===")
     print("Simulation Parameters:")
     print(f"  - Arrival Rate (λ): {lmbda}")
     print(f"  - Service Rate (μ): {mu}")

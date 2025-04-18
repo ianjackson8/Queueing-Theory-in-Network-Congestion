@@ -9,913 +9,314 @@
 [0.7851] [0] Packet 4 ARRIVAL
 [0.7444] [S1] [1] Packet 3 SERVICED
 [0.7444] [TCP Reno], cwnd=4, ssthresh=10, state=Slow Start
-[0.8467] [1] Packet 5 ARRIVAL
-[1.0218] [2] Packet 6 ARRIVAL
-[1.6635] [S1] [3] Packet 4 SERVICED
+[0.8467] [0] Packet 5 ARRIVAL
+[1.0218] [1] Packet 6 ARRIVAL
+[1.6635] [S1] [2] Packet 4 SERVICED
 [1.6635] [TCP Reno], cwnd=5, ssthresh=10, state=Slow Start
-[1.6635] [2] Packet 7 ARRIVAL
-[1.6736] [3] Packet 8 ARRIVAL
-[1.6843] [S1] [4] Packet 5 SERVICED
+[1.6635] [1] Packet 7 ARRIVAL
+[1.6736] [2] Packet 8 ARRIVAL
+[1.6843] [S1] [3] Packet 5 SERVICED
 [1.6843] [TCP Reno], cwnd=6, ssthresh=10, state=Slow Start
-[1.7108] [3] Packet 9 ARRIVAL
-[1.7280] [4] Packet 10 ARRIVAL
-[1.7280] [SNone] [4] Packet 10 BLOCKED
-[1.7280] [TCP Reno], cwnd=1, ssthresh=3, state=Multiplicative Decrease
+[1.7108] [2] Packet 9 ARRIVAL
+[1.7280] [3] Packet 10 ARRIVAL
 [1.7860] [S0] [4] Packet 1 SERVICED
-[1.7860] [TCP Reno], cwnd=2, ssthresh=3, state=Slow Start
-[2.0218] [S0] [4] Packet 6 DROPPED
+[1.7860] [TCP Reno], cwnd=7, ssthresh=10, state=Slow Start
+[1.7860] [3] Packet 11 ARRIVAL
+[1.8088] [4] Packet 12 ARRIVAL
+[1.8088] [4] Packet 12 BLOCKED
+[1.8088] [TCP Reno], cwnd=1, ssthresh=3, state=Multiplicative Decrease
+[1.9867] [S0] [4] Packet 7 SERVICED
+[1.9867] [TCP Reno], cwnd=2, ssthresh=3, state=Slow Start
+[2.0218] [S1] [3] Packet 6 DROPPED
 [2.0218] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[2.6635] [SNone] [3] Packet 7 DROPPED
-[2.6635] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[2.6736] [SNone] [2] Packet 8 DROPPED
-[2.6736] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[2.7108] [SNone] [1] Packet 9 DROPPED
+[2.3494] [S0] [3] Packet 8 SERVICED
+[2.3494] [TCP Reno], cwnd=2, ssthresh=1, state=Additive Increase
+[2.7108] [S0] [2] Packet 9 DROPPED
 [2.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[2.7108] [0] Packet 11 ARRIVAL
-[3.7108] [SNone] [1] Packet 11 DROPPED
-[3.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[3.7108] [0] Packet 12 ARRIVAL
-[4.7108] [SNone] [1] Packet 12 DROPPED
-[4.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[4.7108] [0] Packet 13 ARRIVAL
-[5.7108] [SNone] [1] Packet 13 DROPPED
-[5.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[5.7108] [0] Packet 14 ARRIVAL
-[6.7108] [SNone] [1] Packet 14 DROPPED
-[6.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[6.7108] [0] Packet 15 ARRIVAL
-[7.7108] [SNone] [1] Packet 15 DROPPED
-[7.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[7.7108] [0] Packet 16 ARRIVAL
-[8.7108] [SNone] [1] Packet 16 DROPPED
-[8.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[8.7108] [0] Packet 17 ARRIVAL
-[9.7108] [SNone] [1] Packet 17 DROPPED
-[9.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[9.7108] [0] Packet 18 ARRIVAL
-[10.7108] [SNone] [1] Packet 18 DROPPED
-[10.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[10.7108] [0] Packet 19 ARRIVAL
-[11.7108] [SNone] [1] Packet 19 DROPPED
-[11.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[11.7108] [0] Packet 20 ARRIVAL
-[12.7108] [SNone] [1] Packet 20 DROPPED
-[12.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[12.7108] [0] Packet 21 ARRIVAL
-[13.7108] [SNone] [1] Packet 21 DROPPED
-[13.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[13.7108] [0] Packet 22 ARRIVAL
-[14.7108] [SNone] [1] Packet 22 DROPPED
-[14.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[14.7108] [0] Packet 23 ARRIVAL
-[15.7108] [SNone] [1] Packet 23 DROPPED
-[15.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[15.7108] [0] Packet 24 ARRIVAL
-[16.7108] [SNone] [1] Packet 24 DROPPED
-[16.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[16.7108] [0] Packet 25 ARRIVAL
-[17.7108] [SNone] [1] Packet 25 DROPPED
-[17.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[17.7108] [0] Packet 26 ARRIVAL
-[18.7108] [SNone] [1] Packet 26 DROPPED
-[18.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[18.7108] [0] Packet 27 ARRIVAL
-[19.7108] [SNone] [1] Packet 27 DROPPED
-[19.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[19.7108] [0] Packet 28 ARRIVAL
-[20.7108] [SNone] [1] Packet 28 DROPPED
-[20.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[20.7108] [0] Packet 29 ARRIVAL
-[21.7108] [SNone] [1] Packet 29 DROPPED
-[21.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[21.7108] [0] Packet 30 ARRIVAL
-[22.7108] [SNone] [1] Packet 30 DROPPED
-[22.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[22.7108] [0] Packet 31 ARRIVAL
-[23.7108] [SNone] [1] Packet 31 DROPPED
-[23.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[23.7108] [0] Packet 32 ARRIVAL
-[24.7108] [SNone] [1] Packet 32 DROPPED
-[24.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[24.7108] [0] Packet 33 ARRIVAL
-[25.7108] [SNone] [1] Packet 33 DROPPED
-[25.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[25.7108] [0] Packet 34 ARRIVAL
-[26.7108] [SNone] [1] Packet 34 DROPPED
-[26.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[26.7108] [0] Packet 35 ARRIVAL
-[27.7108] [SNone] [1] Packet 35 DROPPED
-[27.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[27.7108] [0] Packet 36 ARRIVAL
-[28.7108] [SNone] [1] Packet 36 DROPPED
-[28.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[28.7108] [0] Packet 37 ARRIVAL
-[29.7108] [SNone] [1] Packet 37 DROPPED
-[29.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[29.7108] [0] Packet 38 ARRIVAL
-[30.7108] [SNone] [1] Packet 38 DROPPED
-[30.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[30.7108] [0] Packet 39 ARRIVAL
-[31.7108] [SNone] [1] Packet 39 DROPPED
-[31.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[31.7108] [0] Packet 40 ARRIVAL
-[32.7108] [SNone] [1] Packet 40 DROPPED
-[32.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[32.7108] [0] Packet 41 ARRIVAL
-[33.7108] [SNone] [1] Packet 41 DROPPED
-[33.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[33.7108] [0] Packet 42 ARRIVAL
-[34.7108] [SNone] [1] Packet 42 DROPPED
-[34.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[34.7108] [0] Packet 43 ARRIVAL
-[35.7108] [SNone] [1] Packet 43 DROPPED
-[35.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[35.7108] [0] Packet 44 ARRIVAL
-[36.7108] [SNone] [1] Packet 44 DROPPED
-[36.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[36.7108] [0] Packet 45 ARRIVAL
-[37.7108] [SNone] [1] Packet 45 DROPPED
-[37.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[37.7108] [0] Packet 46 ARRIVAL
-[38.7108] [SNone] [1] Packet 46 DROPPED
-[38.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[38.7108] [0] Packet 47 ARRIVAL
-[39.7108] [SNone] [1] Packet 47 DROPPED
-[39.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[39.7108] [0] Packet 48 ARRIVAL
-[40.7108] [SNone] [1] Packet 48 DROPPED
-[40.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[40.7108] [0] Packet 49 ARRIVAL
-[41.7108] [SNone] [1] Packet 49 DROPPED
-[41.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[41.7108] [0] Packet 50 ARRIVAL
-[42.7108] [SNone] [1] Packet 50 DROPPED
-[42.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[42.7108] [0] Packet 51 ARRIVAL
-[43.7108] [SNone] [1] Packet 51 DROPPED
-[43.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[43.7108] [0] Packet 52 ARRIVAL
-[44.7108] [SNone] [1] Packet 52 DROPPED
-[44.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[44.7108] [0] Packet 53 ARRIVAL
-[45.7108] [SNone] [1] Packet 53 DROPPED
-[45.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[45.7108] [0] Packet 54 ARRIVAL
-[46.7108] [SNone] [1] Packet 54 DROPPED
-[46.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[46.7108] [0] Packet 55 ARRIVAL
-[47.7108] [SNone] [1] Packet 55 DROPPED
-[47.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[47.7108] [0] Packet 56 ARRIVAL
-[48.7108] [SNone] [1] Packet 56 DROPPED
-[48.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[48.7108] [0] Packet 57 ARRIVAL
-[49.7108] [SNone] [1] Packet 57 DROPPED
-[49.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[49.7108] [0] Packet 58 ARRIVAL
-[50.7108] [SNone] [1] Packet 58 DROPPED
-[50.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[50.7108] [0] Packet 59 ARRIVAL
-[51.7108] [SNone] [1] Packet 59 DROPPED
-[51.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[51.7108] [0] Packet 60 ARRIVAL
-[52.7108] [SNone] [1] Packet 60 DROPPED
-[52.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[52.7108] [0] Packet 61 ARRIVAL
-[53.7108] [SNone] [1] Packet 61 DROPPED
-[53.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[53.7108] [0] Packet 62 ARRIVAL
-[54.7108] [SNone] [1] Packet 62 DROPPED
-[54.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[54.7108] [0] Packet 63 ARRIVAL
-[55.7108] [SNone] [1] Packet 63 DROPPED
-[55.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[55.7108] [0] Packet 64 ARRIVAL
-[56.7108] [SNone] [1] Packet 64 DROPPED
-[56.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[56.7108] [0] Packet 65 ARRIVAL
-[57.7108] [SNone] [1] Packet 65 DROPPED
-[57.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[57.7108] [0] Packet 66 ARRIVAL
-[58.7108] [SNone] [1] Packet 66 DROPPED
-[58.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[58.7108] [0] Packet 67 ARRIVAL
-[59.7108] [SNone] [1] Packet 67 DROPPED
-[59.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[59.7108] [0] Packet 68 ARRIVAL
-[60.7108] [SNone] [1] Packet 68 DROPPED
-[60.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[60.7108] [0] Packet 69 ARRIVAL
-[61.7108] [SNone] [1] Packet 69 DROPPED
-[61.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[61.7108] [0] Packet 70 ARRIVAL
-[62.7108] [SNone] [1] Packet 70 DROPPED
-[62.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[62.7108] [0] Packet 71 ARRIVAL
-[63.7108] [SNone] [1] Packet 71 DROPPED
-[63.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[63.7108] [0] Packet 72 ARRIVAL
-[64.7108] [SNone] [1] Packet 72 DROPPED
-[64.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[64.7108] [0] Packet 73 ARRIVAL
-[65.7108] [SNone] [1] Packet 73 DROPPED
-[65.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[65.7108] [0] Packet 74 ARRIVAL
-[66.7108] [SNone] [1] Packet 74 DROPPED
-[66.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[66.7108] [0] Packet 75 ARRIVAL
-[67.7108] [SNone] [1] Packet 75 DROPPED
-[67.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[67.7108] [0] Packet 76 ARRIVAL
-[68.7108] [SNone] [1] Packet 76 DROPPED
-[68.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[68.7108] [0] Packet 77 ARRIVAL
-[69.7108] [SNone] [1] Packet 77 DROPPED
-[69.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[69.7108] [0] Packet 78 ARRIVAL
-[70.7108] [SNone] [1] Packet 78 DROPPED
-[70.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[70.7108] [0] Packet 79 ARRIVAL
-[71.7108] [SNone] [1] Packet 79 DROPPED
-[71.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[71.7108] [0] Packet 80 ARRIVAL
-[72.7108] [SNone] [1] Packet 80 DROPPED
-[72.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[72.7108] [0] Packet 81 ARRIVAL
-[73.7108] [SNone] [1] Packet 81 DROPPED
-[73.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[73.7108] [0] Packet 82 ARRIVAL
-[74.7108] [SNone] [1] Packet 82 DROPPED
-[74.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[74.7108] [0] Packet 83 ARRIVAL
-[75.7108] [SNone] [1] Packet 83 DROPPED
-[75.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[75.7108] [0] Packet 84 ARRIVAL
-[76.7108] [SNone] [1] Packet 84 DROPPED
-[76.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[76.7108] [0] Packet 85 ARRIVAL
-[77.7108] [SNone] [1] Packet 85 DROPPED
-[77.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[77.7108] [0] Packet 86 ARRIVAL
-[78.7108] [SNone] [1] Packet 86 DROPPED
-[78.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[78.7108] [0] Packet 87 ARRIVAL
-[79.7108] [SNone] [1] Packet 87 DROPPED
-[79.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[79.7108] [0] Packet 88 ARRIVAL
-[80.7108] [SNone] [1] Packet 88 DROPPED
-[80.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[80.7108] [0] Packet 89 ARRIVAL
-[81.7108] [SNone] [1] Packet 89 DROPPED
-[81.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[81.7108] [0] Packet 90 ARRIVAL
-[82.7108] [SNone] [1] Packet 90 DROPPED
-[82.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[82.7108] [0] Packet 91 ARRIVAL
-[83.7108] [SNone] [1] Packet 91 DROPPED
-[83.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[83.7108] [0] Packet 92 ARRIVAL
-[84.7108] [SNone] [1] Packet 92 DROPPED
-[84.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[84.7108] [0] Packet 93 ARRIVAL
-[85.7108] [SNone] [1] Packet 93 DROPPED
-[85.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[85.7108] [0] Packet 94 ARRIVAL
-[86.7108] [SNone] [1] Packet 94 DROPPED
-[86.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[86.7108] [0] Packet 95 ARRIVAL
-[87.7108] [SNone] [1] Packet 95 DROPPED
-[87.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[87.7108] [0] Packet 96 ARRIVAL
-[88.7108] [SNone] [1] Packet 96 DROPPED
-[88.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[88.7108] [0] Packet 97 ARRIVAL
-[89.7108] [SNone] [1] Packet 97 DROPPED
-[89.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[89.7108] [0] Packet 98 ARRIVAL
-[90.7108] [SNone] [1] Packet 98 DROPPED
-[90.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[90.7108] [0] Packet 99 ARRIVAL
-[91.7108] [SNone] [1] Packet 99 DROPPED
-[91.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[91.7108] [0] Packet 100 ARRIVAL
-[92.7108] [SNone] [1] Packet 100 DROPPED
-[92.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[92.7108] [0] Packet 101 ARRIVAL
-[93.7108] [SNone] [1] Packet 101 DROPPED
-[93.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[93.7108] [0] Packet 102 ARRIVAL
-[94.7108] [SNone] [1] Packet 102 DROPPED
-[94.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[94.7108] [0] Packet 103 ARRIVAL
-[95.7108] [SNone] [1] Packet 103 DROPPED
-[95.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[95.7108] [0] Packet 104 ARRIVAL
-[96.7108] [SNone] [1] Packet 104 DROPPED
-[96.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[96.7108] [0] Packet 105 ARRIVAL
-[97.7108] [SNone] [1] Packet 105 DROPPED
-[97.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[97.7108] [0] Packet 106 ARRIVAL
-[98.7108] [SNone] [1] Packet 106 DROPPED
-[98.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[98.7108] [0] Packet 107 ARRIVAL
-[99.7108] [SNone] [1] Packet 107 DROPPED
-[99.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[99.7108] [0] Packet 108 ARRIVAL
-[100.7108] [SNone] [1] Packet 108 DROPPED
-[100.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[100.7108] [0] Packet 109 ARRIVAL
-[101.7108] [SNone] [1] Packet 109 DROPPED
-[101.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[101.7108] [0] Packet 110 ARRIVAL
-[102.7108] [SNone] [1] Packet 110 DROPPED
-[102.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[102.7108] [0] Packet 111 ARRIVAL
-[103.7108] [SNone] [1] Packet 111 DROPPED
-[103.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[103.7108] [0] Packet 112 ARRIVAL
-[104.7108] [SNone] [1] Packet 112 DROPPED
-[104.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[104.7108] [0] Packet 113 ARRIVAL
-[105.7108] [SNone] [1] Packet 113 DROPPED
-[105.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[105.7108] [0] Packet 114 ARRIVAL
-[106.7108] [SNone] [1] Packet 114 DROPPED
-[106.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[106.7108] [0] Packet 115 ARRIVAL
-[107.7108] [SNone] [1] Packet 115 DROPPED
-[107.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[107.7108] [0] Packet 116 ARRIVAL
-[108.7108] [SNone] [1] Packet 116 DROPPED
-[108.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[108.7108] [0] Packet 117 ARRIVAL
-[109.7108] [SNone] [1] Packet 117 DROPPED
-[109.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[109.7108] [0] Packet 118 ARRIVAL
-[110.7108] [SNone] [1] Packet 118 DROPPED
-[110.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[110.7108] [0] Packet 119 ARRIVAL
-[111.7108] [SNone] [1] Packet 119 DROPPED
-[111.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[111.7108] [0] Packet 120 ARRIVAL
-[112.7108] [SNone] [1] Packet 120 DROPPED
-[112.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[112.7108] [0] Packet 121 ARRIVAL
-[113.7108] [SNone] [1] Packet 121 DROPPED
-[113.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[113.7108] [0] Packet 122 ARRIVAL
-[114.7108] [SNone] [1] Packet 122 DROPPED
-[114.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[114.7108] [0] Packet 123 ARRIVAL
-[115.7108] [SNone] [1] Packet 123 DROPPED
-[115.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[115.7108] [0] Packet 124 ARRIVAL
-[116.7108] [SNone] [1] Packet 124 DROPPED
-[116.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[116.7108] [0] Packet 125 ARRIVAL
-[117.7108] [SNone] [1] Packet 125 DROPPED
-[117.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[117.7108] [0] Packet 126 ARRIVAL
-[118.7108] [SNone] [1] Packet 126 DROPPED
-[118.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[118.7108] [0] Packet 127 ARRIVAL
-[119.7108] [SNone] [1] Packet 127 DROPPED
-[119.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[119.7108] [0] Packet 128 ARRIVAL
-[120.7108] [SNone] [1] Packet 128 DROPPED
-[120.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[120.7108] [0] Packet 129 ARRIVAL
-[121.7108] [SNone] [1] Packet 129 DROPPED
-[121.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[121.7108] [0] Packet 130 ARRIVAL
-[122.7108] [SNone] [1] Packet 130 DROPPED
-[122.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[122.7108] [0] Packet 131 ARRIVAL
-[123.7108] [SNone] [1] Packet 131 DROPPED
-[123.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[123.7108] [0] Packet 132 ARRIVAL
-[124.7108] [SNone] [1] Packet 132 DROPPED
-[124.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[124.7108] [0] Packet 133 ARRIVAL
-[125.7108] [SNone] [1] Packet 133 DROPPED
-[125.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[125.7108] [0] Packet 134 ARRIVAL
-[126.7108] [SNone] [1] Packet 134 DROPPED
-[126.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[126.7108] [0] Packet 135 ARRIVAL
-[127.7108] [SNone] [1] Packet 135 DROPPED
-[127.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[127.7108] [0] Packet 136 ARRIVAL
-[128.7108] [SNone] [1] Packet 136 DROPPED
-[128.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[128.7108] [0] Packet 137 ARRIVAL
-[129.7108] [SNone] [1] Packet 137 DROPPED
-[129.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[129.7108] [0] Packet 138 ARRIVAL
-[130.7108] [SNone] [1] Packet 138 DROPPED
-[130.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[130.7108] [0] Packet 139 ARRIVAL
-[131.7108] [SNone] [1] Packet 139 DROPPED
-[131.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[131.7108] [0] Packet 140 ARRIVAL
-[132.7108] [SNone] [1] Packet 140 DROPPED
-[132.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[132.7108] [0] Packet 141 ARRIVAL
-[133.7108] [SNone] [1] Packet 141 DROPPED
-[133.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[133.7108] [0] Packet 142 ARRIVAL
-[134.7108] [SNone] [1] Packet 142 DROPPED
-[134.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[134.7108] [0] Packet 143 ARRIVAL
-[135.7108] [SNone] [1] Packet 143 DROPPED
-[135.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[135.7108] [0] Packet 144 ARRIVAL
-[136.7108] [SNone] [1] Packet 144 DROPPED
-[136.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[136.7108] [0] Packet 145 ARRIVAL
-[137.7108] [SNone] [1] Packet 145 DROPPED
-[137.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[137.7108] [0] Packet 146 ARRIVAL
-[138.7108] [SNone] [1] Packet 146 DROPPED
-[138.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[138.7108] [0] Packet 147 ARRIVAL
-[139.7108] [SNone] [1] Packet 147 DROPPED
-[139.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[139.7108] [0] Packet 148 ARRIVAL
-[140.7108] [SNone] [1] Packet 148 DROPPED
-[140.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[140.7108] [0] Packet 149 ARRIVAL
-[141.7108] [SNone] [1] Packet 149 DROPPED
-[141.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[141.7108] [0] Packet 150 ARRIVAL
-[142.7108] [SNone] [1] Packet 150 DROPPED
-[142.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[142.7108] [0] Packet 151 ARRIVAL
-[143.7108] [SNone] [1] Packet 151 DROPPED
-[143.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[143.7108] [0] Packet 152 ARRIVAL
-[144.7108] [SNone] [1] Packet 152 DROPPED
-[144.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[144.7108] [0] Packet 153 ARRIVAL
-[145.7108] [SNone] [1] Packet 153 DROPPED
-[145.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[145.7108] [0] Packet 154 ARRIVAL
-[146.7108] [SNone] [1] Packet 154 DROPPED
-[146.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[146.7108] [0] Packet 155 ARRIVAL
-[147.7108] [SNone] [1] Packet 155 DROPPED
-[147.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[147.7108] [0] Packet 156 ARRIVAL
-[148.7108] [SNone] [1] Packet 156 DROPPED
-[148.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[148.7108] [0] Packet 157 ARRIVAL
-[149.7108] [SNone] [1] Packet 157 DROPPED
-[149.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[149.7108] [0] Packet 158 ARRIVAL
-[150.7108] [SNone] [1] Packet 158 DROPPED
-[150.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[150.7108] [0] Packet 159 ARRIVAL
-[151.7108] [SNone] [1] Packet 159 DROPPED
-[151.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[151.7108] [0] Packet 160 ARRIVAL
-[152.7108] [SNone] [1] Packet 160 DROPPED
-[152.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[152.7108] [0] Packet 161 ARRIVAL
-[153.7108] [SNone] [1] Packet 161 DROPPED
-[153.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[153.7108] [0] Packet 162 ARRIVAL
-[154.7108] [SNone] [1] Packet 162 DROPPED
-[154.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[154.7108] [0] Packet 163 ARRIVAL
-[155.7108] [SNone] [1] Packet 163 DROPPED
-[155.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[155.7108] [0] Packet 164 ARRIVAL
-[156.7108] [SNone] [1] Packet 164 DROPPED
-[156.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[156.7108] [0] Packet 165 ARRIVAL
-[157.7108] [SNone] [1] Packet 165 DROPPED
-[157.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[157.7108] [0] Packet 166 ARRIVAL
-[158.7108] [SNone] [1] Packet 166 DROPPED
-[158.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[158.7108] [0] Packet 167 ARRIVAL
-[159.7108] [SNone] [1] Packet 167 DROPPED
-[159.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[159.7108] [0] Packet 168 ARRIVAL
-[160.7108] [SNone] [1] Packet 168 DROPPED
-[160.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[160.7108] [0] Packet 169 ARRIVAL
-[161.7108] [SNone] [1] Packet 169 DROPPED
-[161.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[161.7108] [0] Packet 170 ARRIVAL
-[162.7108] [SNone] [1] Packet 170 DROPPED
-[162.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[162.7108] [0] Packet 171 ARRIVAL
-[163.7108] [SNone] [1] Packet 171 DROPPED
-[163.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[163.7108] [0] Packet 172 ARRIVAL
-[164.7108] [SNone] [1] Packet 172 DROPPED
-[164.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[164.7108] [0] Packet 173 ARRIVAL
-[165.7108] [SNone] [1] Packet 173 DROPPED
-[165.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[165.7108] [0] Packet 174 ARRIVAL
-[166.7108] [SNone] [1] Packet 174 DROPPED
-[166.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[166.7108] [0] Packet 175 ARRIVAL
-[167.7108] [SNone] [1] Packet 175 DROPPED
-[167.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[167.7108] [0] Packet 176 ARRIVAL
-[168.7108] [SNone] [1] Packet 176 DROPPED
-[168.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[168.7108] [0] Packet 177 ARRIVAL
-[169.7108] [SNone] [1] Packet 177 DROPPED
-[169.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[169.7108] [0] Packet 178 ARRIVAL
-[170.7108] [SNone] [1] Packet 178 DROPPED
-[170.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[170.7108] [0] Packet 179 ARRIVAL
-[171.7108] [SNone] [1] Packet 179 DROPPED
-[171.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[171.7108] [0] Packet 180 ARRIVAL
-[172.7108] [SNone] [1] Packet 180 DROPPED
-[172.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[172.7108] [0] Packet 181 ARRIVAL
-[173.7108] [SNone] [1] Packet 181 DROPPED
-[173.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[173.7108] [0] Packet 182 ARRIVAL
-[174.7108] [SNone] [1] Packet 182 DROPPED
-[174.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[174.7108] [0] Packet 183 ARRIVAL
-[175.7108] [SNone] [1] Packet 183 DROPPED
-[175.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[175.7108] [0] Packet 184 ARRIVAL
-[176.7108] [SNone] [1] Packet 184 DROPPED
-[176.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[176.7108] [0] Packet 185 ARRIVAL
-[177.7108] [SNone] [1] Packet 185 DROPPED
-[177.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[177.7108] [0] Packet 186 ARRIVAL
-[178.7108] [SNone] [1] Packet 186 DROPPED
-[178.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[178.7108] [0] Packet 187 ARRIVAL
-[179.7108] [SNone] [1] Packet 187 DROPPED
-[179.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[179.7108] [0] Packet 188 ARRIVAL
-[180.7108] [SNone] [1] Packet 188 DROPPED
-[180.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[180.7108] [0] Packet 189 ARRIVAL
-[181.7108] [SNone] [1] Packet 189 DROPPED
-[181.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[181.7108] [0] Packet 190 ARRIVAL
-[182.7108] [SNone] [1] Packet 190 DROPPED
-[182.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[182.7108] [0] Packet 191 ARRIVAL
-[183.7108] [SNone] [1] Packet 191 DROPPED
-[183.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[183.7108] [0] Packet 192 ARRIVAL
-[184.7108] [SNone] [1] Packet 192 DROPPED
-[184.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[184.7108] [0] Packet 193 ARRIVAL
-[185.7108] [SNone] [1] Packet 193 DROPPED
-[185.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[185.7108] [0] Packet 194 ARRIVAL
-[186.7108] [SNone] [1] Packet 194 DROPPED
-[186.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[186.7108] [0] Packet 195 ARRIVAL
-[187.7108] [SNone] [1] Packet 195 DROPPED
-[187.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[187.7108] [0] Packet 196 ARRIVAL
-[188.7108] [SNone] [1] Packet 196 DROPPED
-[188.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[188.7108] [0] Packet 197 ARRIVAL
-[189.7108] [SNone] [1] Packet 197 DROPPED
-[189.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[189.7108] [0] Packet 198 ARRIVAL
-[190.7108] [SNone] [1] Packet 198 DROPPED
-[190.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[190.7108] [0] Packet 199 ARRIVAL
-[191.7108] [SNone] [1] Packet 199 DROPPED
-[191.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[191.7108] [0] Packet 200 ARRIVAL
-[192.7108] [SNone] [1] Packet 200 DROPPED
-[192.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[192.7108] [0] Packet 201 ARRIVAL
-[193.7108] [SNone] [1] Packet 201 DROPPED
-[193.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[193.7108] [0] Packet 202 ARRIVAL
-[194.7108] [SNone] [1] Packet 202 DROPPED
-[194.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[194.7108] [0] Packet 203 ARRIVAL
-[195.7108] [SNone] [1] Packet 203 DROPPED
-[195.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[195.7108] [0] Packet 204 ARRIVAL
-[196.7108] [SNone] [1] Packet 204 DROPPED
-[196.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[196.7108] [0] Packet 205 ARRIVAL
-[197.7108] [SNone] [1] Packet 205 DROPPED
-[197.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[197.7108] [0] Packet 206 ARRIVAL
-[198.7108] [SNone] [1] Packet 206 DROPPED
-[198.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[198.7108] [0] Packet 207 ARRIVAL
-[199.7108] [SNone] [1] Packet 207 DROPPED
-[199.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[199.7108] [0] Packet 208 ARRIVAL
-[200.7108] [SNone] [1] Packet 208 DROPPED
-[200.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[200.7108] [0] Packet 209 ARRIVAL
-[201.7108] [SNone] [1] Packet 209 DROPPED
-[201.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[201.7108] [0] Packet 210 ARRIVAL
-[202.7108] [SNone] [1] Packet 210 DROPPED
-[202.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[202.7108] [0] Packet 211 ARRIVAL
-[203.7108] [SNone] [1] Packet 211 DROPPED
-[203.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[203.7108] [0] Packet 212 ARRIVAL
-[204.7108] [SNone] [1] Packet 212 DROPPED
-[204.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[204.7108] [0] Packet 213 ARRIVAL
-[205.7108] [SNone] [1] Packet 213 DROPPED
-[205.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[205.7108] [0] Packet 214 ARRIVAL
-[206.7108] [SNone] [1] Packet 214 DROPPED
-[206.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[206.7108] [0] Packet 215 ARRIVAL
-[207.7108] [SNone] [1] Packet 215 DROPPED
-[207.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[207.7108] [0] Packet 216 ARRIVAL
-[208.7108] [SNone] [1] Packet 216 DROPPED
-[208.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[208.7108] [0] Packet 217 ARRIVAL
-[209.7108] [SNone] [1] Packet 217 DROPPED
-[209.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[209.7108] [0] Packet 218 ARRIVAL
-[210.7108] [SNone] [1] Packet 218 DROPPED
-[210.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[210.7108] [0] Packet 219 ARRIVAL
-[211.7108] [SNone] [1] Packet 219 DROPPED
-[211.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[211.7108] [0] Packet 220 ARRIVAL
-[212.7108] [SNone] [1] Packet 220 DROPPED
-[212.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[212.7108] [0] Packet 221 ARRIVAL
-[213.7108] [SNone] [1] Packet 221 DROPPED
-[213.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[213.7108] [0] Packet 222 ARRIVAL
-[214.7108] [SNone] [1] Packet 222 DROPPED
-[214.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[214.7108] [0] Packet 223 ARRIVAL
-[215.7108] [SNone] [1] Packet 223 DROPPED
-[215.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[215.7108] [0] Packet 224 ARRIVAL
-[216.7108] [SNone] [1] Packet 224 DROPPED
-[216.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[216.7108] [0] Packet 225 ARRIVAL
-[217.7108] [SNone] [1] Packet 225 DROPPED
-[217.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[217.7108] [0] Packet 226 ARRIVAL
-[218.7108] [SNone] [1] Packet 226 DROPPED
-[218.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[218.7108] [0] Packet 227 ARRIVAL
-[219.7108] [SNone] [1] Packet 227 DROPPED
-[219.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[219.7108] [0] Packet 228 ARRIVAL
-[220.7108] [SNone] [1] Packet 228 DROPPED
-[220.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[220.7108] [0] Packet 229 ARRIVAL
-[221.7108] [SNone] [1] Packet 229 DROPPED
-[221.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[221.7108] [0] Packet 230 ARRIVAL
-[222.7108] [SNone] [1] Packet 230 DROPPED
-[222.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[222.7108] [0] Packet 231 ARRIVAL
-[223.7108] [SNone] [1] Packet 231 DROPPED
-[223.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[223.7108] [0] Packet 232 ARRIVAL
-[224.7108] [SNone] [1] Packet 232 DROPPED
-[224.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[224.7108] [0] Packet 233 ARRIVAL
-[225.7108] [SNone] [1] Packet 233 DROPPED
-[225.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[225.7108] [0] Packet 234 ARRIVAL
-[226.7108] [SNone] [1] Packet 234 DROPPED
-[226.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[226.7108] [0] Packet 235 ARRIVAL
-[227.7108] [SNone] [1] Packet 235 DROPPED
-[227.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[227.7108] [0] Packet 236 ARRIVAL
-[228.7108] [SNone] [1] Packet 236 DROPPED
-[228.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[228.7108] [0] Packet 237 ARRIVAL
-[229.7108] [SNone] [1] Packet 237 DROPPED
-[229.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[229.7108] [0] Packet 238 ARRIVAL
-[230.7108] [SNone] [1] Packet 238 DROPPED
-[230.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[230.7108] [0] Packet 239 ARRIVAL
-[231.7108] [SNone] [1] Packet 239 DROPPED
-[231.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[231.7108] [0] Packet 240 ARRIVAL
-[232.7108] [SNone] [1] Packet 240 DROPPED
-[232.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[232.7108] [0] Packet 241 ARRIVAL
-[233.7108] [SNone] [1] Packet 241 DROPPED
-[233.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[233.7108] [0] Packet 242 ARRIVAL
-[234.7108] [SNone] [1] Packet 242 DROPPED
-[234.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[234.7108] [0] Packet 243 ARRIVAL
-[235.7108] [SNone] [1] Packet 243 DROPPED
-[235.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[235.7108] [0] Packet 244 ARRIVAL
-[236.7108] [SNone] [1] Packet 244 DROPPED
-[236.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[236.7108] [0] Packet 245 ARRIVAL
-[237.7108] [SNone] [1] Packet 245 DROPPED
-[237.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[237.7108] [0] Packet 246 ARRIVAL
-[238.7108] [SNone] [1] Packet 246 DROPPED
-[238.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[238.7108] [0] Packet 247 ARRIVAL
-[239.7108] [SNone] [1] Packet 247 DROPPED
-[239.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[239.7108] [0] Packet 248 ARRIVAL
-[240.7108] [SNone] [1] Packet 248 DROPPED
-[240.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[240.7108] [0] Packet 249 ARRIVAL
-[241.7108] [SNone] [1] Packet 249 DROPPED
-[241.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[241.7108] [0] Packet 250 ARRIVAL
-[242.7108] [SNone] [1] Packet 250 DROPPED
-[242.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[242.7108] [0] Packet 251 ARRIVAL
-[243.7108] [SNone] [1] Packet 251 DROPPED
-[243.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[243.7108] [0] Packet 252 ARRIVAL
-[244.7108] [SNone] [1] Packet 252 DROPPED
-[244.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[244.7108] [0] Packet 253 ARRIVAL
-[245.7108] [SNone] [1] Packet 253 DROPPED
-[245.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[245.7108] [0] Packet 254 ARRIVAL
-[246.7108] [SNone] [1] Packet 254 DROPPED
-[246.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[246.7108] [0] Packet 255 ARRIVAL
-[247.7108] [SNone] [1] Packet 255 DROPPED
-[247.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[247.7108] [0] Packet 256 ARRIVAL
-[248.7108] [SNone] [1] Packet 256 DROPPED
-[248.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[248.7108] [0] Packet 257 ARRIVAL
-[249.7108] [SNone] [1] Packet 257 DROPPED
-[249.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[249.7108] [0] Packet 258 ARRIVAL
-[250.7108] [SNone] [1] Packet 258 DROPPED
-[250.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[250.7108] [0] Packet 259 ARRIVAL
-[251.7108] [SNone] [1] Packet 259 DROPPED
-[251.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[251.7108] [0] Packet 260 ARRIVAL
-[252.7108] [SNone] [1] Packet 260 DROPPED
-[252.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[252.7108] [0] Packet 261 ARRIVAL
-[253.7108] [SNone] [1] Packet 261 DROPPED
-[253.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[253.7108] [0] Packet 262 ARRIVAL
-[254.7108] [SNone] [1] Packet 262 DROPPED
-[254.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[254.7108] [0] Packet 263 ARRIVAL
-[255.7108] [SNone] [1] Packet 263 DROPPED
-[255.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[255.7108] [0] Packet 264 ARRIVAL
-[256.7108] [SNone] [1] Packet 264 DROPPED
-[256.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[256.7108] [0] Packet 265 ARRIVAL
-[257.7108] [SNone] [1] Packet 265 DROPPED
-[257.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[257.7108] [0] Packet 266 ARRIVAL
-[258.7108] [SNone] [1] Packet 266 DROPPED
-[258.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[258.7108] [0] Packet 267 ARRIVAL
-[259.7108] [SNone] [1] Packet 267 DROPPED
-[259.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[259.7108] [0] Packet 268 ARRIVAL
-[260.7108] [SNone] [1] Packet 268 DROPPED
-[260.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[260.7108] [0] Packet 269 ARRIVAL
-[261.7108] [SNone] [1] Packet 269 DROPPED
-[261.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[261.7108] [0] Packet 270 ARRIVAL
-[262.7108] [SNone] [1] Packet 270 DROPPED
-[262.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[262.7108] [0] Packet 271 ARRIVAL
-[263.7108] [SNone] [1] Packet 271 DROPPED
-[263.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[263.7108] [0] Packet 272 ARRIVAL
-[264.7108] [SNone] [1] Packet 272 DROPPED
-[264.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[264.7108] [0] Packet 273 ARRIVAL
-[265.7108] [SNone] [1] Packet 273 DROPPED
-[265.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[265.7108] [0] Packet 274 ARRIVAL
-[266.7108] [SNone] [1] Packet 274 DROPPED
-[266.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[266.7108] [0] Packet 275 ARRIVAL
-[267.7108] [SNone] [1] Packet 275 DROPPED
-[267.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[267.7108] [0] Packet 276 ARRIVAL
-[268.7108] [SNone] [1] Packet 276 DROPPED
-[268.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[268.7108] [0] Packet 277 ARRIVAL
-[269.7108] [SNone] [1] Packet 277 DROPPED
-[269.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[269.7108] [0] Packet 278 ARRIVAL
-[270.7108] [SNone] [1] Packet 278 DROPPED
-[270.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[270.7108] [0] Packet 279 ARRIVAL
-[271.7108] [SNone] [1] Packet 279 DROPPED
-[271.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[271.7108] [0] Packet 280 ARRIVAL
-[272.7108] [SNone] [1] Packet 280 DROPPED
-[272.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[272.7108] [0] Packet 281 ARRIVAL
-[273.7108] [SNone] [1] Packet 281 DROPPED
-[273.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[273.7108] [0] Packet 282 ARRIVAL
-[274.7108] [SNone] [1] Packet 282 DROPPED
-[274.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[274.7108] [0] Packet 283 ARRIVAL
-[275.7108] [SNone] [1] Packet 283 DROPPED
-[275.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[275.7108] [0] Packet 284 ARRIVAL
-[276.7108] [SNone] [1] Packet 284 DROPPED
-[276.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[276.7108] [0] Packet 285 ARRIVAL
-[277.7108] [SNone] [1] Packet 285 DROPPED
-[277.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[277.7108] [0] Packet 286 ARRIVAL
-[278.7108] [SNone] [1] Packet 286 DROPPED
-[278.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[278.7108] [0] Packet 287 ARRIVAL
-[279.7108] [SNone] [1] Packet 287 DROPPED
-[279.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[279.7108] [0] Packet 288 ARRIVAL
-[280.7108] [SNone] [1] Packet 288 DROPPED
-[280.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[280.7108] [0] Packet 289 ARRIVAL
-[281.7108] [SNone] [1] Packet 289 DROPPED
-[281.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[281.7108] [0] Packet 290 ARRIVAL
-[282.7108] [SNone] [1] Packet 290 DROPPED
-[282.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[282.7108] [0] Packet 291 ARRIVAL
-[283.7108] [SNone] [1] Packet 291 DROPPED
-[283.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[283.7108] [0] Packet 292 ARRIVAL
-[284.7108] [SNone] [1] Packet 292 DROPPED
-[284.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[284.7108] [0] Packet 293 ARRIVAL
-[285.7108] [SNone] [1] Packet 293 DROPPED
-[285.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[285.7108] [0] Packet 294 ARRIVAL
-[286.7108] [SNone] [1] Packet 294 DROPPED
-[286.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[286.7108] [0] Packet 295 ARRIVAL
-[287.7108] [SNone] [1] Packet 295 DROPPED
-[287.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[287.7108] [0] Packet 296 ARRIVAL
-[288.7108] [SNone] [1] Packet 296 DROPPED
-[288.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[288.7108] [0] Packet 297 ARRIVAL
-[289.7108] [SNone] [1] Packet 297 DROPPED
-[289.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[289.7108] [0] Packet 298 ARRIVAL
-[290.7108] [SNone] [1] Packet 298 DROPPED
-[290.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
-[290.7108] [0] Packet 299 ARRIVAL
-[291.7108] [SNone] [1] Packet 299 DROPPED
-[291.7108] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[2.7280] [SNone] [2] Packet 10 DROPPED
+[2.7280] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[2.7860] [SNone] [1] Packet 11 DROPPED
+[2.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[2.7860] [0] Packet 13 ARRIVAL
+[3.7860] [SNone] [1] Packet 13 DROPPED
+[3.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[3.7860] [0] Packet 14 ARRIVAL
+[4.7860] [SNone] [1] Packet 14 DROPPED
+[4.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[4.7860] [0] Packet 15 ARRIVAL
+[5.7860] [SNone] [1] Packet 15 DROPPED
+[5.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[5.7860] [0] Packet 16 ARRIVAL
+[6.7860] [SNone] [1] Packet 16 DROPPED
+[6.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[6.7860] [0] Packet 17 ARRIVAL
+[7.7860] [SNone] [1] Packet 17 DROPPED
+[7.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[7.7860] [0] Packet 18 ARRIVAL
+[8.7860] [SNone] [1] Packet 18 DROPPED
+[8.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[8.7860] [0] Packet 19 ARRIVAL
+[9.7860] [SNone] [1] Packet 19 DROPPED
+[9.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[9.7860] [0] Packet 20 ARRIVAL
+[10.7860] [SNone] [1] Packet 20 DROPPED
+[10.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[10.7860] [0] Packet 21 ARRIVAL
+[11.7860] [SNone] [1] Packet 21 DROPPED
+[11.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[11.7860] [0] Packet 22 ARRIVAL
+[12.7860] [SNone] [1] Packet 22 DROPPED
+[12.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[12.7860] [0] Packet 23 ARRIVAL
+[13.7860] [SNone] [1] Packet 23 DROPPED
+[13.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[13.7860] [0] Packet 24 ARRIVAL
+[14.7860] [SNone] [1] Packet 24 DROPPED
+[14.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[14.7860] [0] Packet 25 ARRIVAL
+[15.7860] [SNone] [1] Packet 25 DROPPED
+[15.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[15.7860] [0] Packet 26 ARRIVAL
+[16.7860] [SNone] [1] Packet 26 DROPPED
+[16.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[16.7860] [0] Packet 27 ARRIVAL
+[17.7860] [SNone] [1] Packet 27 DROPPED
+[17.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[17.7860] [0] Packet 28 ARRIVAL
+[18.7860] [SNone] [1] Packet 28 DROPPED
+[18.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[18.7860] [0] Packet 29 ARRIVAL
+[19.7860] [SNone] [1] Packet 29 DROPPED
+[19.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[19.7860] [0] Packet 30 ARRIVAL
+[20.7860] [SNone] [1] Packet 30 DROPPED
+[20.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[20.7860] [0] Packet 31 ARRIVAL
+[21.7860] [SNone] [1] Packet 31 DROPPED
+[21.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[21.7860] [0] Packet 32 ARRIVAL
+[22.7860] [SNone] [1] Packet 32 DROPPED
+[22.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[22.7860] [0] Packet 33 ARRIVAL
+[23.7860] [SNone] [1] Packet 33 DROPPED
+[23.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[23.7860] [0] Packet 34 ARRIVAL
+[24.7860] [SNone] [1] Packet 34 DROPPED
+[24.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[24.7860] [0] Packet 35 ARRIVAL
+[25.7860] [SNone] [1] Packet 35 DROPPED
+[25.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[25.7860] [0] Packet 36 ARRIVAL
+[26.7860] [SNone] [1] Packet 36 DROPPED
+[26.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[26.7860] [0] Packet 37 ARRIVAL
+[27.7860] [SNone] [1] Packet 37 DROPPED
+[27.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[27.7860] [0] Packet 38 ARRIVAL
+[28.7860] [SNone] [1] Packet 38 DROPPED
+[28.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[28.7860] [0] Packet 39 ARRIVAL
+[29.7860] [SNone] [1] Packet 39 DROPPED
+[29.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[29.7860] [0] Packet 40 ARRIVAL
+[30.7860] [SNone] [1] Packet 40 DROPPED
+[30.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[30.7860] [0] Packet 41 ARRIVAL
+[31.7860] [SNone] [1] Packet 41 DROPPED
+[31.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[31.7860] [0] Packet 42 ARRIVAL
+[32.7860] [SNone] [1] Packet 42 DROPPED
+[32.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[32.7860] [0] Packet 43 ARRIVAL
+[33.7860] [SNone] [1] Packet 43 DROPPED
+[33.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[33.7860] [0] Packet 44 ARRIVAL
+[34.7860] [SNone] [1] Packet 44 DROPPED
+[34.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[34.7860] [0] Packet 45 ARRIVAL
+[35.7860] [SNone] [1] Packet 45 DROPPED
+[35.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[35.7860] [0] Packet 46 ARRIVAL
+[36.7860] [SNone] [1] Packet 46 DROPPED
+[36.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[36.7860] [0] Packet 47 ARRIVAL
+[37.7860] [SNone] [1] Packet 47 DROPPED
+[37.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[37.7860] [0] Packet 48 ARRIVAL
+[38.7860] [SNone] [1] Packet 48 DROPPED
+[38.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[38.7860] [0] Packet 49 ARRIVAL
+[39.7860] [SNone] [1] Packet 49 DROPPED
+[39.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[39.7860] [0] Packet 50 ARRIVAL
+[40.7860] [SNone] [1] Packet 50 DROPPED
+[40.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[40.7860] [0] Packet 51 ARRIVAL
+[41.7860] [SNone] [1] Packet 51 DROPPED
+[41.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[41.7860] [0] Packet 52 ARRIVAL
+[42.7860] [SNone] [1] Packet 52 DROPPED
+[42.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[42.7860] [0] Packet 53 ARRIVAL
+[43.7860] [SNone] [1] Packet 53 DROPPED
+[43.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[43.7860] [0] Packet 54 ARRIVAL
+[44.7860] [SNone] [1] Packet 54 DROPPED
+[44.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[44.7860] [0] Packet 55 ARRIVAL
+[45.7860] [SNone] [1] Packet 55 DROPPED
+[45.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[45.7860] [0] Packet 56 ARRIVAL
+[46.7860] [SNone] [1] Packet 56 DROPPED
+[46.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[46.7860] [0] Packet 57 ARRIVAL
+[47.7860] [SNone] [1] Packet 57 DROPPED
+[47.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[47.7860] [0] Packet 58 ARRIVAL
+[48.7860] [SNone] [1] Packet 58 DROPPED
+[48.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[48.7860] [0] Packet 59 ARRIVAL
+[49.7860] [SNone] [1] Packet 59 DROPPED
+[49.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[49.7860] [0] Packet 60 ARRIVAL
+[50.7860] [SNone] [1] Packet 60 DROPPED
+[50.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[50.7860] [0] Packet 61 ARRIVAL
+[51.7860] [SNone] [1] Packet 61 DROPPED
+[51.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[51.7860] [0] Packet 62 ARRIVAL
+[52.7860] [SNone] [1] Packet 62 DROPPED
+[52.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[52.7860] [0] Packet 63 ARRIVAL
+[53.7860] [SNone] [1] Packet 63 DROPPED
+[53.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[53.7860] [0] Packet 64 ARRIVAL
+[54.7860] [SNone] [1] Packet 64 DROPPED
+[54.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[54.7860] [0] Packet 65 ARRIVAL
+[55.7860] [SNone] [1] Packet 65 DROPPED
+[55.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[55.7860] [0] Packet 66 ARRIVAL
+[56.7860] [SNone] [1] Packet 66 DROPPED
+[56.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[56.7860] [0] Packet 67 ARRIVAL
+[57.7860] [SNone] [1] Packet 67 DROPPED
+[57.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[57.7860] [0] Packet 68 ARRIVAL
+[58.7860] [SNone] [1] Packet 68 DROPPED
+[58.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[58.7860] [0] Packet 69 ARRIVAL
+[59.7860] [SNone] [1] Packet 69 DROPPED
+[59.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[59.7860] [0] Packet 70 ARRIVAL
+[60.7860] [SNone] [1] Packet 70 DROPPED
+[60.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[60.7860] [0] Packet 71 ARRIVAL
+[61.7860] [SNone] [1] Packet 71 DROPPED
+[61.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[61.7860] [0] Packet 72 ARRIVAL
+[62.7860] [SNone] [1] Packet 72 DROPPED
+[62.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[62.7860] [0] Packet 73 ARRIVAL
+[63.7860] [SNone] [1] Packet 73 DROPPED
+[63.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[63.7860] [0] Packet 74 ARRIVAL
+[64.7860] [SNone] [1] Packet 74 DROPPED
+[64.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[64.7860] [0] Packet 75 ARRIVAL
+[65.7860] [SNone] [1] Packet 75 DROPPED
+[65.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[65.7860] [0] Packet 76 ARRIVAL
+[66.7860] [SNone] [1] Packet 76 DROPPED
+[66.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[66.7860] [0] Packet 77 ARRIVAL
+[67.7860] [SNone] [1] Packet 77 DROPPED
+[67.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[67.7860] [0] Packet 78 ARRIVAL
+[68.7860] [SNone] [1] Packet 78 DROPPED
+[68.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[68.7860] [0] Packet 79 ARRIVAL
+[69.7860] [SNone] [1] Packet 79 DROPPED
+[69.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[69.7860] [0] Packet 80 ARRIVAL
+[70.7860] [SNone] [1] Packet 80 DROPPED
+[70.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[70.7860] [0] Packet 81 ARRIVAL
+[71.7860] [SNone] [1] Packet 81 DROPPED
+[71.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[71.7860] [0] Packet 82 ARRIVAL
+[72.7860] [SNone] [1] Packet 82 DROPPED
+[72.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[72.7860] [0] Packet 83 ARRIVAL
+[73.7860] [SNone] [1] Packet 83 DROPPED
+[73.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[73.7860] [0] Packet 84 ARRIVAL
+[74.7860] [SNone] [1] Packet 84 DROPPED
+[74.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[74.7860] [0] Packet 85 ARRIVAL
+[75.7860] [SNone] [1] Packet 85 DROPPED
+[75.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[75.7860] [0] Packet 86 ARRIVAL
+[76.7860] [SNone] [1] Packet 86 DROPPED
+[76.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[76.7860] [0] Packet 87 ARRIVAL
+[77.7860] [SNone] [1] Packet 87 DROPPED
+[77.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[77.7860] [0] Packet 88 ARRIVAL
+[78.7860] [SNone] [1] Packet 88 DROPPED
+[78.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[78.7860] [0] Packet 89 ARRIVAL
+[79.7860] [SNone] [1] Packet 89 DROPPED
+[79.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[79.7860] [0] Packet 90 ARRIVAL
+[80.7860] [SNone] [1] Packet 90 DROPPED
+[80.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[80.7860] [0] Packet 91 ARRIVAL
+[81.7860] [SNone] [1] Packet 91 DROPPED
+[81.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[81.7860] [0] Packet 92 ARRIVAL
+[82.7860] [SNone] [1] Packet 92 DROPPED
+[82.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[82.7860] [0] Packet 93 ARRIVAL
+[83.7860] [SNone] [1] Packet 93 DROPPED
+[83.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[83.7860] [0] Packet 94 ARRIVAL
+[84.7860] [SNone] [1] Packet 94 DROPPED
+[84.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[84.7860] [0] Packet 95 ARRIVAL
+[85.7860] [SNone] [1] Packet 95 DROPPED
+[85.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[85.7860] [0] Packet 96 ARRIVAL
+[86.7860] [SNone] [1] Packet 96 DROPPED
+[86.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[86.7860] [0] Packet 97 ARRIVAL
+[87.7860] [SNone] [1] Packet 97 DROPPED
+[87.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[87.7860] [0] Packet 98 ARRIVAL
+[88.7860] [SNone] [1] Packet 98 DROPPED
+[88.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[88.7860] [0] Packet 99 ARRIVAL
+[89.7860] [SNone] [1] Packet 99 DROPPED
+[89.7860] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
 
-=== Simulation Results for M/M/1 Queue ===
+=== Simulation Results for M/M/c Queue ===
 Simulation Parameters:
   - Arrival Rate (λ): 20
   - Service Rate (μ): 1
   - Deadline Rate (θ): 1 (Exp: False)
+  - Number of Servers (c): 2
   - Queue Size: 4
-  - Total Packets: 300
+  - Total Packets: 100
   - Congestion Control: reno
 
 Simulation Statistics:
-  - Simulation Time: 291.7108 seconds
-  - Blocked Rate: 0.0033 (0.33%)
-  - Dropped Rate: 0.9767 (97.67%)
-  - Total Loss Rate: 0.9800 (98.00%)
-  - Total Packets Processed: 7
-    - Service Count: 6
+  - Simulation Time: 89.7860 seconds
+  - Blocked Rate: 0.0100 (1.00%)
+  - Dropped Rate: 0.9100 (91.00%)
+  - Total Loss Rate: 0.9200 (92.00%)
+  - Total Packets Processed: 9
+    - Service Count: 8
     - Drop Count: 0
     - Block Count: 1
-  - Throughput: 0.0206 packets/second
-  - Average Latency: 0.6219 seconds
+  - Throughput: 0.0891 packets/second
+  - Average Latency: 0.5913 seconds
