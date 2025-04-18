@@ -1,0 +1,921 @@
+[0.0000] [0] Packet 0 ARRIVAL
+[0.0469] [1] Packet 0 SERVICED
+[0.0469] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[0.6020] [0] Packet 1 ARRIVAL
+[0.7337] [1] Packet 1 SERVICED
+[0.7337] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[0.7846] [0] Packet 2 ARRIVAL
+[0.8016] [1] Packet 2 SERVICED
+[0.8016] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[0.8185] [0] Packet 3 ARRIVAL
+[0.8245] [1] Packet 3 SERVICED
+[0.8245] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[1.2208] [0] Packet 4 ARRIVAL
+[1.3127] [1] Packet 4 SERVICED
+[1.3127] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[1.4670] [0] Packet 5 ARRIVAL
+[1.4691] [1] Packet 5 SERVICED
+[1.4691] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[2.1677] [0] Packet 6 ARRIVAL
+[2.3464] [1] Packet 6 SERVICED
+[2.3464] [TCP CUBIC], cwnd=2, w_max=1, state=Cubic Increase
+[2.3464] [0] Packet 7 ARRIVAL
+[2.3869] [1] Packet 8 ARRIVAL
+[2.3665] [2] Packet 7 SERVICED
+[2.3665] [TCP CUBIC], cwnd=2, w_max=1, state=Cubic Increase
+[2.5357] [1] Packet 9 ARRIVAL
+[2.4027] [2] Packet 8 SERVICED
+[2.4027] [TCP CUBIC], cwnd=2, w_max=1, state=Cubic Increase
+[2.6045] [1] Packet 10 ARRIVAL
+[2.4593] [2] Packet 9 SERVICED
+[2.4593] [TCP CUBIC], cwnd=2, w_max=1, state=Cubic Increase
+[2.6346] [1] Packet 11 ARRIVAL
+[2.5539] [2] Packet 10 SERVICED
+[2.5539] [TCP CUBIC], cwnd=3, w_max=1, state=Cubic Increase
+[2.7258] [1] Packet 12 ARRIVAL
+[3.0334] [2] Packet 13 ARRIVAL
+[2.5885] [3] Packet 11 SERVICED
+[2.5885] [TCP CUBIC], cwnd=3, w_max=1, state=Cubic Increase
+[3.1778] [2] Packet 14 ARRIVAL
+[2.6494] [3] Packet 12 SERVICED
+[2.6494] [TCP CUBIC], cwnd=3, w_max=1, state=Cubic Increase
+[3.1873] [2] Packet 15 ARRIVAL
+[2.6716] [3] Packet 13 SERVICED
+[2.6716] [TCP CUBIC], cwnd=3, w_max=1, state=Cubic Increase
+[3.2247] [2] Packet 16 ARRIVAL
+[2.7614] [3] Packet 14 SERVICED
+[2.7614] [TCP CUBIC], cwnd=3, w_max=1, state=Cubic Increase
+[3.8195] [2] Packet 17 ARRIVAL
+[2.8549] [3] Packet 15 SERVICED
+[2.8549] [TCP CUBIC], cwnd=4, w_max=1, state=Cubic Increase
+[4.1499] [2] Packet 18 ARRIVAL
+[4.1705] [3] Packet 19 ARRIVAL
+[2.8616] [4] Packet 16 SERVICED
+[2.8616] [TCP CUBIC], cwnd=4, w_max=1, state=Cubic Increase
+[4.2865] [3] Packet 20 ARRIVAL
+[3.1987] [4] Packet 17 SERVICED
+[3.1987] [TCP CUBIC], cwnd=6, w_max=1, state=Cubic Increase
+[4.4232] [3] Packet 21 ARRIVAL
+[4.9033] [4] Packet 22 ARRIVAL
+[4.9033] [4] Packet 22 BLOCKED
+[5.1206] [4] Packet 23 ARRIVAL
+[5.1206] [4] Packet 23 BLOCKED
+[3.2350] [4] Packet 18 SERVICED
+[3.2350] [TCP CUBIC], cwnd=6, w_max=1, state=Cubic Increase
+[5.2674] [3] Packet 24 ARRIVAL
+[3.3503] [4] Packet 19 SERVICED
+[3.3503] [TCP CUBIC], cwnd=6, w_max=1, state=Cubic Increase
+[5.3083] [3] Packet 25 ARRIVAL
+[3.3633] [4] Packet 20 SERVICED
+[3.3633] [TCP CUBIC], cwnd=7, w_max=1, state=Cubic Increase
+[5.6067] [3] Packet 26 ARRIVAL
+[6.0571] [4] Packet 27 ARRIVAL
+[6.0571] [4] Packet 27 BLOCKED
+[3.3668] [4] Packet 21 SERVICED
+[3.3668] [TCP CUBIC], cwnd=7, w_max=1, state=Cubic Increase
+[6.5670] [3] Packet 28 ARRIVAL
+[3.4459] [4] Packet 24 SERVICED
+[3.4459] [TCP CUBIC], cwnd=7, w_max=1, state=Cubic Increase
+[6.6107] [3] Packet 29 ARRIVAL
+[3.7952] [4] Packet 25 SERVICED
+[3.7952] [TCP CUBIC], cwnd=10, w_max=1, state=Cubic Increase
+[6.6894] [3] Packet 30 ARRIVAL
+[6.7527] [4] Packet 31 ARRIVAL
+[6.7527] [4] Packet 31 BLOCKED
+[6.8409] [4] Packet 32 ARRIVAL
+[6.8409] [4] Packet 32 BLOCKED
+[6.9974] [4] Packet 33 ARRIVAL
+[6.9974] [4] Packet 33 BLOCKED
+[4.0757] [4] Packet 26 SERVICED
+[4.0757] [TCP CUBIC], cwnd=13, w_max=1, state=Cubic Increase
+[7.3215] [3] Packet 34 ARRIVAL
+[8.1883] [4] Packet 35 ARRIVAL
+[8.1883] [4] Packet 35 BLOCKED
+[8.2326] [4] Packet 36 ARRIVAL
+[8.2326] [4] Packet 36 BLOCKED
+[8.5706] [4] Packet 37 ARRIVAL
+[8.5706] [4] Packet 37 BLOCKED
+[4.0850] [4] Packet 28 SERVICED
+[4.0850] [TCP CUBIC], cwnd=13, w_max=1, state=Cubic Increase
+[8.8317] [3] Packet 38 ARRIVAL
+[4.0896] [4] Packet 29 SERVICED
+[4.0896] [TCP CUBIC], cwnd=13, w_max=1, state=Cubic Increase
+[8.8471] [3] Packet 39 ARRIVAL
+[4.1388] [4] Packet 30 SERVICED
+[4.1388] [TCP CUBIC], cwnd=14, w_max=1, state=Cubic Increase
+[8.8718] [3] Packet 40 ARRIVAL
+[9.0670] [4] Packet 41 ARRIVAL
+[9.0670] [4] Packet 41 BLOCKED
+[4.1466] [4] Packet 34 SERVICED
+[4.1466] [TCP CUBIC], cwnd=14, w_max=1, state=Cubic Increase
+[9.0802] [3] Packet 42 ARRIVAL
+[4.2941] [4] Packet 38 SERVICED
+[4.2941] [TCP CUBIC], cwnd=16, w_max=1, state=Cubic Increase
+[9.1588] [3] Packet 43 ARRIVAL
+[9.3618] [4] Packet 44 ARRIVAL
+[9.3618] [4] Packet 44 BLOCKED
+[9.4896] [4] Packet 45 ARRIVAL
+[9.4896] [4] Packet 45 BLOCKED
+[4.3385] [4] Packet 39 SERVICED
+[4.3385] [TCP CUBIC], cwnd=16, w_max=1, state=Cubic Increase
+[9.7394] [3] Packet 46 ARRIVAL
+[4.5374] [4] Packet 40 SERVICED
+[4.5374] [TCP CUBIC], cwnd=19, w_max=1, state=Cubic Increase
+[9.9042] [3] Packet 47 ARRIVAL
+[10.0404] [4] Packet 48 ARRIVAL
+[10.0404] [4] Packet 48 BLOCKED
+[10.1519] [4] Packet 49 ARRIVAL
+[10.1519] [4] Packet 49 BLOCKED
+[10.1748] [4] Packet 50 ARRIVAL
+[10.1748] [4] Packet 50 BLOCKED
+[4.5746] [4] Packet 42 SERVICED
+[4.5746] [TCP CUBIC], cwnd=20, w_max=1, state=Cubic Increase
+[10.3771] [3] Packet 51 ARRIVAL
+[10.5192] [4] Packet 52 ARRIVAL
+[10.5192] [4] Packet 52 BLOCKED
+[4.7054] [4] Packet 43 SERVICED
+[4.7054] [TCP CUBIC], cwnd=22, w_max=1, state=Cubic Increase
+[10.5765] [3] Packet 53 ARRIVAL
+[10.8583] [4] Packet 54 ARRIVAL
+[10.8583] [4] Packet 54 BLOCKED
+[10.8743] [4] Packet 55 ARRIVAL
+[10.8743] [4] Packet 55 BLOCKED
+[4.8484] [4] Packet 46 SERVICED
+[4.8484] [TCP CUBIC], cwnd=25, w_max=1, state=Cubic Increase
+[10.9095] [3] Packet 56 ARRIVAL
+[11.2397] [4] Packet 57 ARRIVAL
+[11.2397] [4] Packet 57 BLOCKED
+[11.6500] [4] Packet 58 ARRIVAL
+[11.6500] [4] Packet 58 BLOCKED
+[11.6913] [4] Packet 59 ARRIVAL
+[11.6913] [4] Packet 59 BLOCKED
+[4.9033] [TCP CUBIC], cwnd=18, w_max=25, state=Cubic Loss
+[4.9958] [4] Packet 47 SERVICED
+[4.9958] [TCP CUBIC], cwnd=13, w_max=18, state=Cubic Increase
+[5.0336] [3] Packet 51 SERVICED
+[5.0336] [TCP CUBIC], cwnd=13, w_max=18, state=Cubic Increase
+[5.0864] [2] Packet 53 SERVICED
+[5.0864] [TCP CUBIC], cwnd=13, w_max=18, state=Cubic Increase
+[5.1206] [TCP CUBIC], cwnd=9, w_max=13, state=Cubic Loss
+[5.3519] [1] Packet 56 SERVICED
+[5.3519] [TCP CUBIC], cwnd=6, w_max=9, state=Cubic Increase
+[6.0571] [TCP CUBIC], cwnd=4, w_max=6, state=Cubic Loss
+[6.7527] [TCP CUBIC], cwnd=3, w_max=4, state=Cubic Loss
+[6.8409] [TCP CUBIC], cwnd=2, w_max=3, state=Cubic Loss
+[6.9974] [TCP CUBIC], cwnd=1, w_max=2, state=Cubic Loss
+[8.1883] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[8.2326] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[8.5706] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[9.0670] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[9.3618] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[9.4896] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[10.0404] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[10.1519] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[10.1748] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[10.5192] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[10.8583] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[10.8743] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[11.2397] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[11.6500] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[11.6913] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[11.8463] [0] Packet 60 ARRIVAL
+[12.0110] [1] Packet 60 SERVICED
+[12.0110] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[12.2991] [0] Packet 61 ARRIVAL
+[12.3374] [1] Packet 61 SERVICED
+[12.3374] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[12.3374] [0] Packet 62 ARRIVAL
+[12.3633] [1] Packet 62 SERVICED
+[12.3633] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[12.4488] [0] Packet 63 ARRIVAL
+[12.6192] [1] Packet 63 SERVICED
+[12.6192] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[12.8431] [0] Packet 64 ARRIVAL
+[12.8438] [1] Packet 64 SERVICED
+[12.8438] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[12.9861] [0] Packet 65 ARRIVAL
+[13.0401] [1] Packet 65 SERVICED
+[13.0401] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[13.0401] [0] Packet 66 ARRIVAL
+[13.0529] [1] Packet 66 SERVICED
+[13.0529] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[13.1225] [0] Packet 67 ARRIVAL
+[13.4088] [1] Packet 67 SERVICED
+[13.4088] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[13.4088] [0] Packet 68 ARRIVAL
+[13.4819] [1] Packet 68 SERVICED
+[13.4819] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[13.6516] [0] Packet 69 ARRIVAL
+[13.6968] [1] Packet 69 SERVICED
+[13.6968] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[14.3652] [0] Packet 70 ARRIVAL
+[14.6934] [1] Packet 70 SERVICED
+[14.6934] [TCP CUBIC], cwnd=3, w_max=1, state=Cubic Increase
+[14.6934] [0] Packet 71 ARRIVAL
+[14.7649] [1] Packet 72 ARRIVAL
+[14.7725] [2] Packet 73 ARRIVAL
+[14.7621] [3] Packet 71 SERVICED
+[14.7621] [TCP CUBIC], cwnd=4, w_max=1, state=Cubic Increase
+[14.9122] [2] Packet 74 ARRIVAL
+[14.9775] [3] Packet 75 ARRIVAL
+[14.7956] [4] Packet 72 SERVICED
+[14.7956] [TCP CUBIC], cwnd=4, w_max=1, state=Cubic Increase
+[15.0323] [3] Packet 76 ARRIVAL
+[14.8897] [4] Packet 73 SERVICED
+[14.8897] [TCP CUBIC], cwnd=4, w_max=1, state=Cubic Increase
+[15.1667] [3] Packet 77 ARRIVAL
+[14.8950] [4] Packet 74 SERVICED
+[14.8950] [TCP CUBIC], cwnd=4, w_max=1, state=Cubic Increase
+[15.2221] [3] Packet 78 ARRIVAL
+[15.1339] [4] Packet 75 SERVICED
+[15.1339] [TCP CUBIC], cwnd=5, w_max=1, state=Cubic Increase
+[15.5089] [3] Packet 79 ARRIVAL
+[15.7695] [4] Packet 80 ARRIVAL
+[15.7695] [4] Packet 80 BLOCKED
+[15.1495] [4] Packet 76 SERVICED
+[15.1495] [TCP CUBIC], cwnd=5, w_max=1, state=Cubic Increase
+[15.9696] [3] Packet 81 ARRIVAL
+[15.5739] [4] Packet 77 SERVICED
+[15.5739] [TCP CUBIC], cwnd=8, w_max=1, state=Cubic Increase
+[16.1231] [3] Packet 82 ARRIVAL
+[16.4838] [4] Packet 83 ARRIVAL
+[16.4838] [4] Packet 83 BLOCKED
+[16.5251] [4] Packet 84 ARRIVAL
+[16.5251] [4] Packet 84 BLOCKED
+[16.7038] [4] Packet 85 ARRIVAL
+[16.7038] [4] Packet 85 BLOCKED
+[15.6854] [4] Packet 78 SERVICED
+[15.6854] [TCP CUBIC], cwnd=9, w_max=1, state=Cubic Increase
+[16.7072] [3] Packet 86 ARRIVAL
+[16.7585] [4] Packet 87 ARRIVAL
+[16.7585] [4] Packet 87 BLOCKED
+[15.7126] [4] Packet 79 SERVICED
+[15.7126] [TCP CUBIC], cwnd=10, w_max=1, state=Cubic Increase
+[16.7969] [3] Packet 88 ARRIVAL
+[16.8946] [4] Packet 89 ARRIVAL
+[16.8946] [4] Packet 89 BLOCKED
+[15.7695] [TCP CUBIC], cwnd=7, w_max=10, state=Cubic Loss
+[15.8130] [4] Packet 81 SERVICED
+[15.8130] [TCP CUBIC], cwnd=5, w_max=7, state=Cubic Increase
+[15.8224] [3] Packet 82 SERVICED
+[15.8224] [TCP CUBIC], cwnd=5, w_max=7, state=Cubic Increase
+[15.8942] [2] Packet 86 SERVICED
+[15.8942] [TCP CUBIC], cwnd=5, w_max=7, state=Cubic Increase
+[16.0116] [1] Packet 88 SERVICED
+[16.0116] [TCP CUBIC], cwnd=6, w_max=7, state=Cubic Increase
+[16.9242] [0] Packet 90 ARRIVAL
+[16.4838] [TCP CUBIC], cwnd=4, w_max=6, state=Cubic Loss
+[16.5251] [TCP CUBIC], cwnd=3, w_max=4, state=Cubic Loss
+[16.7038] [TCP CUBIC], cwnd=2, w_max=3, state=Cubic Loss
+[16.7585] [TCP CUBIC], cwnd=1, w_max=2, state=Cubic Loss
+[16.8946] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[16.9659] [1] Packet 90 SERVICED
+[16.9659] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[16.9659] [0] Packet 91 ARRIVAL
+[17.2246] [1] Packet 91 SERVICED
+[17.2246] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[17.3856] [0] Packet 92 ARRIVAL
+[17.4154] [1] Packet 92 SERVICED
+[17.4154] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[17.6014] [0] Packet 93 ARRIVAL
+[17.7713] [1] Packet 93 SERVICED
+[17.7713] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[17.7713] [0] Packet 94 ARRIVAL
+[17.8467] [1] Packet 94 SERVICED
+[17.8467] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[17.8467] [0] Packet 95 ARRIVAL
+[17.8565] [1] Packet 95 SERVICED
+[17.8565] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[18.3018] [0] Packet 96 ARRIVAL
+[18.5324] [1] Packet 96 SERVICED
+[18.5324] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[18.5324] [0] Packet 97 ARRIVAL
+[18.5738] [1] Packet 97 SERVICED
+[18.5738] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[18.6184] [0] Packet 98 ARRIVAL
+[18.7478] [1] Packet 98 SERVICED
+[18.7478] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[19.0732] [0] Packet 99 ARRIVAL
+[19.2913] [1] Packet 99 SERVICED
+[19.2913] [TCP CUBIC], cwnd=2, w_max=1, state=Cubic Increase
+[19.3759] [0] Packet 100 ARRIVAL
+[19.3935] [1] Packet 101 ARRIVAL
+[19.4786] [2] Packet 100 SERVICED
+[19.4786] [TCP CUBIC], cwnd=3, w_max=1, state=Cubic Increase
+[19.8511] [1] Packet 102 ARRIVAL
+[19.8530] [2] Packet 103 ARRIVAL
+[19.4963] [3] Packet 101 SERVICED
+[19.4963] [TCP CUBIC], cwnd=3, w_max=1, state=Cubic Increase
+[20.0708] [2] Packet 104 ARRIVAL
+[19.5895] [3] Packet 102 SERVICED
+[19.5895] [TCP CUBIC], cwnd=3, w_max=1, state=Cubic Increase
+[20.1059] [2] Packet 105 ARRIVAL
+[19.6002] [3] Packet 103 SERVICED
+[19.6002] [TCP CUBIC], cwnd=3, w_max=1, state=Cubic Increase
+[20.3413] [2] Packet 106 ARRIVAL
+[19.6007] [3] Packet 104 SERVICED
+[19.6007] [TCP CUBIC], cwnd=3, w_max=1, state=Cubic Increase
+[20.3921] [2] Packet 107 ARRIVAL
+[19.6803] [3] Packet 105 SERVICED
+[19.6803] [TCP CUBIC], cwnd=3, w_max=1, state=Cubic Increase
+[20.4463] [2] Packet 108 ARRIVAL
+[19.7858] [3] Packet 106 SERVICED
+[19.7858] [TCP CUBIC], cwnd=4, w_max=1, state=Cubic Increase
+[20.7207] [2] Packet 109 ARRIVAL
+[21.0991] [3] Packet 110 ARRIVAL
+[19.9104] [4] Packet 107 SERVICED
+[19.9104] [TCP CUBIC], cwnd=4, w_max=1, state=Cubic Increase
+[21.2671] [3] Packet 111 ARRIVAL
+[19.9497] [4] Packet 108 SERVICED
+[19.9497] [TCP CUBIC], cwnd=5, w_max=1, state=Cubic Increase
+[21.3588] [3] Packet 112 ARRIVAL
+[21.4148] [4] Packet 113 ARRIVAL
+[21.4148] [4] Packet 113 BLOCKED
+[20.0546] [4] Packet 109 SERVICED
+[20.0546] [TCP CUBIC], cwnd=5, w_max=1, state=Cubic Increase
+[21.5146] [3] Packet 114 ARRIVAL
+[20.1618] [4] Packet 110 SERVICED
+[20.1618] [TCP CUBIC], cwnd=6, w_max=1, state=Cubic Increase
+[21.7141] [3] Packet 115 ARRIVAL
+[21.8538] [4] Packet 116 ARRIVAL
+[21.8538] [4] Packet 116 BLOCKED
+[20.1716] [4] Packet 111 SERVICED
+[20.1716] [TCP CUBIC], cwnd=6, w_max=1, state=Cubic Increase
+[21.9895] [3] Packet 117 ARRIVAL
+[20.2024] [4] Packet 112 SERVICED
+[20.2024] [TCP CUBIC], cwnd=6, w_max=1, state=Cubic Increase
+[22.2458] [3] Packet 118 ARRIVAL
+[20.4250] [4] Packet 114 SERVICED
+[20.4250] [TCP CUBIC], cwnd=8, w_max=1, state=Cubic Increase
+[22.2507] [3] Packet 119 ARRIVAL
+[22.2897] [4] Packet 120 ARRIVAL
+[22.2897] [4] Packet 120 BLOCKED
+[22.9052] [4] Packet 121 ARRIVAL
+[22.9052] [4] Packet 121 BLOCKED
+[20.5834] [4] Packet 115 SERVICED
+[20.5834] [TCP CUBIC], cwnd=9, w_max=1, state=Cubic Increase
+[22.9977] [3] Packet 122 ARRIVAL
+[23.5248] [4] Packet 123 ARRIVAL
+[23.5248] [4] Packet 123 BLOCKED
+[20.6051] [4] Packet 117 SERVICED
+[20.6051] [TCP CUBIC], cwnd=9, w_max=1, state=Cubic Increase
+[24.2050] [3] Packet 124 ARRIVAL
+[20.6381] [4] Packet 118 SERVICED
+[20.6381] [TCP CUBIC], cwnd=9, w_max=1, state=Cubic Increase
+[24.5884] [3] Packet 125 ARRIVAL
+[20.7418] [4] Packet 119 SERVICED
+[20.7418] [TCP CUBIC], cwnd=10, w_max=1, state=Cubic Increase
+[24.6857] [3] Packet 126 ARRIVAL
+[24.7619] [4] Packet 127 ARRIVAL
+[24.7619] [4] Packet 127 BLOCKED
+[20.7434] [4] Packet 122 SERVICED
+[20.7434] [TCP CUBIC], cwnd=10, w_max=1, state=Cubic Increase
+[24.9247] [3] Packet 128 ARRIVAL
+[21.0747] [4] Packet 124 SERVICED
+[21.0747] [TCP CUBIC], cwnd=14, w_max=1, state=Cubic Increase
+[25.1628] [3] Packet 129 ARRIVAL
+[25.1833] [4] Packet 130 ARRIVAL
+[25.1833] [4] Packet 130 BLOCKED
+[26.1054] [4] Packet 131 ARRIVAL
+[26.1054] [4] Packet 131 BLOCKED
+[26.2515] [4] Packet 132 ARRIVAL
+[26.2515] [4] Packet 132 BLOCKED
+[26.5215] [4] Packet 133 ARRIVAL
+[26.5215] [4] Packet 133 BLOCKED
+[21.1096] [4] Packet 125 SERVICED
+[21.1096] [TCP CUBIC], cwnd=15, w_max=1, state=Cubic Increase
+[26.7640] [3] Packet 134 ARRIVAL
+[26.8335] [4] Packet 135 ARRIVAL
+[26.8335] [4] Packet 135 BLOCKED
+[21.3001] [4] Packet 126 SERVICED
+[21.3001] [TCP CUBIC], cwnd=17, w_max=1, state=Cubic Increase
+[27.1657] [3] Packet 136 ARRIVAL
+[27.6547] [4] Packet 137 ARRIVAL
+[27.6547] [4] Packet 137 BLOCKED
+[27.7939] [4] Packet 138 ARRIVAL
+[27.7939] [4] Packet 138 BLOCKED
+[21.4148] [TCP CUBIC], cwnd=12, w_max=17, state=Cubic Loss
+[21.5752] [4] Packet 128 SERVICED
+[21.5752] [TCP CUBIC], cwnd=8, w_max=12, state=Cubic Increase
+[21.6596] [3] Packet 129 SERVICED
+[21.6596] [TCP CUBIC], cwnd=9, w_max=12, state=Cubic Increase
+[21.7042] [2] Packet 134 SERVICED
+[21.7042] [TCP CUBIC], cwnd=9, w_max=12, state=Cubic Increase
+[21.8538] [TCP CUBIC], cwnd=6, w_max=9, state=Cubic Loss
+[21.9060] [1] Packet 136 SERVICED
+[21.9060] [TCP CUBIC], cwnd=4, w_max=6, state=Cubic Increase
+[22.2897] [TCP CUBIC], cwnd=3, w_max=4, state=Cubic Loss
+[22.9052] [TCP CUBIC], cwnd=2, w_max=3, state=Cubic Loss
+[23.5248] [TCP CUBIC], cwnd=1, w_max=2, state=Cubic Loss
+[24.7619] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[25.1833] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[26.1054] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[26.2515] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[26.5215] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[26.8335] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[27.6547] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[27.7939] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[28.0038] [0] Packet 139 ARRIVAL
+[28.1249] [1] Packet 139 SERVICED
+[28.1249] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[28.3216] [0] Packet 140 ARRIVAL
+[28.5423] [1] Packet 140 SERVICED
+[28.5423] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[28.5423] [0] Packet 141 ARRIVAL
+[28.5894] [1] Packet 141 SERVICED
+[28.5894] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[28.5894] [0] Packet 142 ARRIVAL
+[28.6757] [1] Packet 142 SERVICED
+[28.6757] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[28.6757] [0] Packet 143 ARRIVAL
+[28.7384] [1] Packet 143 SERVICED
+[28.7384] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[28.8322] [0] Packet 144 ARRIVAL
+[28.8660] [1] Packet 144 SERVICED
+[28.8660] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[29.0109] [0] Packet 145 ARRIVAL
+[29.0140] [1] Packet 145 SERVICED
+[29.0140] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[29.0185] [0] Packet 146 ARRIVAL
+[29.1915] [1] Packet 146 SERVICED
+[29.1915] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[29.1915] [0] Packet 147 ARRIVAL
+[29.2051] [1] Packet 147 SERVICED
+[29.2051] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[29.3392] [0] Packet 148 ARRIVAL
+[29.4862] [1] Packet 148 SERVICED
+[29.4862] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[29.4862] [0] Packet 149 ARRIVAL
+[29.5837] [1] Packet 149 SERVICED
+[29.5837] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[29.5837] [0] Packet 150 ARRIVAL
+[29.5890] [1] Packet 150 SERVICED
+[29.5890] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[29.7353] [0] Packet 151 ARRIVAL
+[29.8131] [1] Packet 151 SERVICED
+[29.8131] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[29.9382] [0] Packet 152 ARRIVAL
+[30.0677] [1] Packet 152 SERVICED
+[30.0677] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[30.6829] [0] Packet 153 ARRIVAL
+[30.7555] [1] Packet 153 SERVICED
+[30.7555] [TCP CUBIC], cwnd=3, w_max=1, state=Cubic Increase
+[30.7609] [0] Packet 154 ARRIVAL
+[30.8241] [1] Packet 155 ARRIVAL
+[30.8404] [2] Packet 156 ARRIVAL
+[30.9195] [3] Packet 154 SERVICED
+[30.9195] [TCP CUBIC], cwnd=4, w_max=1, state=Cubic Increase
+[31.4979] [2] Packet 157 ARRIVAL
+[31.7360] [3] Packet 158 ARRIVAL
+[30.9773] [4] Packet 155 SERVICED
+[30.9773] [TCP CUBIC], cwnd=4, w_max=1, state=Cubic Increase
+[31.7741] [3] Packet 159 ARRIVAL
+[30.9798] [4] Packet 156 SERVICED
+[30.9798] [TCP CUBIC], cwnd=4, w_max=1, state=Cubic Increase
+[31.8317] [3] Packet 160 ARRIVAL
+[31.1606] [4] Packet 157 SERVICED
+[31.1606] [TCP CUBIC], cwnd=5, w_max=1, state=Cubic Increase
+[32.0824] [3] Packet 161 ARRIVAL
+[32.1481] [4] Packet 162 ARRIVAL
+[32.1481] [4] Packet 162 BLOCKED
+[31.2132] [4] Packet 158 SERVICED
+[31.2132] [TCP CUBIC], cwnd=5, w_max=1, state=Cubic Increase
+[32.4159] [3] Packet 163 ARRIVAL
+[31.2302] [4] Packet 159 SERVICED
+[31.2302] [TCP CUBIC], cwnd=5, w_max=1, state=Cubic Increase
+[32.6051] [3] Packet 164 ARRIVAL
+[31.3099] [4] Packet 160 SERVICED
+[31.3099] [TCP CUBIC], cwnd=6, w_max=1, state=Cubic Increase
+[32.6621] [3] Packet 165 ARRIVAL
+[32.9457] [4] Packet 166 ARRIVAL
+[32.9457] [4] Packet 166 BLOCKED
+[31.4178] [4] Packet 161 SERVICED
+[31.4178] [TCP CUBIC], cwnd=6, w_max=1, state=Cubic Increase
+[32.9704] [3] Packet 167 ARRIVAL
+[31.4986] [4] Packet 163 SERVICED
+[31.4986] [TCP CUBIC], cwnd=7, w_max=1, state=Cubic Increase
+[32.9787] [3] Packet 168 ARRIVAL
+[33.2219] [4] Packet 169 ARRIVAL
+[33.2219] [4] Packet 169 BLOCKED
+[31.5530] [4] Packet 164 SERVICED
+[31.5530] [TCP CUBIC], cwnd=7, w_max=1, state=Cubic Increase
+[33.2425] [3] Packet 170 ARRIVAL
+[31.5970] [4] Packet 165 SERVICED
+[31.5970] [TCP CUBIC], cwnd=8, w_max=1, state=Cubic Increase
+[33.3708] [3] Packet 171 ARRIVAL
+[33.4846] [4] Packet 172 ARRIVAL
+[33.4846] [4] Packet 172 BLOCKED
+[31.6018] [4] Packet 167 SERVICED
+[31.6018] [TCP CUBIC], cwnd=8, w_max=1, state=Cubic Increase
+[33.6760] [3] Packet 173 ARRIVAL
+[31.7952] [4] Packet 168 SERVICED
+[31.7952] [TCP CUBIC], cwnd=9, w_max=1, state=Cubic Increase
+[33.6852] [3] Packet 174 ARRIVAL
+[33.8818] [4] Packet 175 ARRIVAL
+[33.8818] [4] Packet 175 BLOCKED
+[31.8628] [4] Packet 170 SERVICED
+[31.8628] [TCP CUBIC], cwnd=10, w_max=1, state=Cubic Increase
+[34.2701] [3] Packet 176 ARRIVAL
+[34.3057] [4] Packet 177 ARRIVAL
+[34.3057] [4] Packet 177 BLOCKED
+[31.8818] [4] Packet 171 SERVICED
+[31.8818] [TCP CUBIC], cwnd=10, w_max=1, state=Cubic Increase
+[34.5114] [3] Packet 178 ARRIVAL
+[31.9827] [4] Packet 173 SERVICED
+[31.9827] [TCP CUBIC], cwnd=11, w_max=1, state=Cubic Increase
+[34.6876] [3] Packet 179 ARRIVAL
+[34.8590] [4] Packet 180 ARRIVAL
+[34.8590] [4] Packet 180 BLOCKED
+[32.0296] [4] Packet 174 SERVICED
+[32.0296] [TCP CUBIC], cwnd=12, w_max=1, state=Cubic Increase
+[35.0652] [3] Packet 181 ARRIVAL
+[35.2229] [4] Packet 182 ARRIVAL
+[35.2229] [4] Packet 182 BLOCKED
+[32.1371] [4] Packet 176 SERVICED
+[32.1371] [TCP CUBIC], cwnd=13, w_max=1, state=Cubic Increase
+[35.3205] [3] Packet 183 ARRIVAL
+[35.7920] [4] Packet 184 ARRIVAL
+[35.7920] [4] Packet 184 BLOCKED
+[32.1398] [4] Packet 178 SERVICED
+[32.1398] [TCP CUBIC], cwnd=13, w_max=1, state=Cubic Increase
+[35.8064] [3] Packet 185 ARRIVAL
+[32.1481] [TCP CUBIC], cwnd=9, w_max=13, state=Cubic Loss
+[32.4215] [4] Packet 179 SERVICED
+[32.4215] [TCP CUBIC], cwnd=6, w_max=9, state=Cubic Increase
+[32.4828] [3] Packet 181 SERVICED
+[32.4828] [TCP CUBIC], cwnd=7, w_max=9, state=Cubic Increase
+[32.8077] [2] Packet 183 SERVICED
+[32.8077] [TCP CUBIC], cwnd=8, w_max=9, state=Cubic Increase
+[32.8183] [1] Packet 185 SERVICED
+[32.8183] [TCP CUBIC], cwnd=8, w_max=9, state=Cubic Increase
+[32.9457] [TCP CUBIC], cwnd=6, w_max=8, state=Cubic Loss
+[33.2219] [TCP CUBIC], cwnd=4, w_max=6, state=Cubic Loss
+[33.4846] [TCP CUBIC], cwnd=3, w_max=4, state=Cubic Loss
+[33.8818] [TCP CUBIC], cwnd=2, w_max=3, state=Cubic Loss
+[34.3057] [TCP CUBIC], cwnd=1, w_max=2, state=Cubic Loss
+[34.8590] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[35.2229] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[35.7920] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[35.8101] [0] Packet 186 ARRIVAL
+[35.8200] [1] Packet 186 SERVICED
+[35.8200] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[36.0399] [0] Packet 187 ARRIVAL
+[36.0472] [1] Packet 187 SERVICED
+[36.0472] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[36.1167] [0] Packet 188 ARRIVAL
+[36.3030] [1] Packet 188 SERVICED
+[36.3030] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[36.3030] [0] Packet 189 ARRIVAL
+[36.4715] [1] Packet 189 SERVICED
+[36.4715] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[36.4715] [0] Packet 190 ARRIVAL
+[36.4841] [1] Packet 190 SERVICED
+[36.4841] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[36.7101] [0] Packet 191 ARRIVAL
+[36.8093] [1] Packet 191 SERVICED
+[36.8093] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[37.1300] [0] Packet 192 ARRIVAL
+[37.2628] [1] Packet 192 SERVICED
+[37.2628] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[37.4554] [0] Packet 193 ARRIVAL
+[37.4885] [1] Packet 193 SERVICED
+[37.4885] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[37.4945] [0] Packet 194 ARRIVAL
+[37.6333] [1] Packet 194 SERVICED
+[37.6333] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[37.8233] [0] Packet 195 ARRIVAL
+[38.2890] [1] Packet 195 SERVICED
+[38.2890] [TCP CUBIC], cwnd=3, w_max=1, state=Cubic Increase
+[38.2890] [0] Packet 196 ARRIVAL
+[38.5886] [1] Packet 197 ARRIVAL
+[39.1226] [2] Packet 198 ARRIVAL
+[38.3355] [3] Packet 196 SERVICED
+[38.3355] [TCP CUBIC], cwnd=3, w_max=1, state=Cubic Increase
+[39.2347] [2] Packet 199 ARRIVAL
+[38.3772] [3] Packet 197 SERVICED
+[38.3772] [TCP CUBIC], cwnd=3, w_max=1, state=Cubic Increase
+[39.5156] [2] Packet 200 ARRIVAL
+[38.5727] [3] Packet 198 SERVICED
+[38.5727] [TCP CUBIC], cwnd=4, w_max=1, state=Cubic Increase
+[39.9813] [2] Packet 201 ARRIVAL
+[40.3316] [3] Packet 202 ARRIVAL
+[38.7117] [4] Packet 199 SERVICED
+[38.7117] [TCP CUBIC], cwnd=4, w_max=1, state=Cubic Increase
+[40.7833] [3] Packet 203 ARRIVAL
+[38.7226] [4] Packet 200 SERVICED
+[38.7226] [TCP CUBIC], cwnd=4, w_max=1, state=Cubic Increase
+[40.7855] [3] Packet 204 ARRIVAL
+[38.7929] [4] Packet 201 SERVICED
+[38.7929] [TCP CUBIC], cwnd=5, w_max=1, state=Cubic Increase
+[40.8047] [3] Packet 205 ARRIVAL
+[41.4041] [4] Packet 206 ARRIVAL
+[41.4041] [4] Packet 206 BLOCKED
+[38.8315] [4] Packet 202 SERVICED
+[38.8315] [TCP CUBIC], cwnd=5, w_max=1, state=Cubic Increase
+[41.5745] [3] Packet 207 ARRIVAL
+[38.8808] [4] Packet 203 SERVICED
+[38.8808] [TCP CUBIC], cwnd=5, w_max=1, state=Cubic Increase
+[41.6935] [3] Packet 208 ARRIVAL
+[39.1166] [4] Packet 204 SERVICED
+[39.1166] [TCP CUBIC], cwnd=6, w_max=1, state=Cubic Increase
+[41.7732] [3] Packet 209 ARRIVAL
+[42.0523] [4] Packet 210 ARRIVAL
+[42.0523] [4] Packet 210 BLOCKED
+[39.1551] [4] Packet 205 SERVICED
+[39.1551] [TCP CUBIC], cwnd=7, w_max=1, state=Cubic Increase
+[42.3641] [3] Packet 211 ARRIVAL
+[42.5005] [4] Packet 212 ARRIVAL
+[42.5005] [4] Packet 212 BLOCKED
+[39.2550] [4] Packet 207 SERVICED
+[39.2550] [TCP CUBIC], cwnd=7, w_max=1, state=Cubic Increase
+[42.6600] [3] Packet 213 ARRIVAL
+[39.2897] [4] Packet 208 SERVICED
+[39.2897] [TCP CUBIC], cwnd=8, w_max=1, state=Cubic Increase
+[43.0973] [3] Packet 214 ARRIVAL
+[43.1222] [4] Packet 215 ARRIVAL
+[43.1222] [4] Packet 215 BLOCKED
+[39.4013] [4] Packet 209 SERVICED
+[39.4013] [TCP CUBIC], cwnd=9, w_max=1, state=Cubic Increase
+[43.4089] [3] Packet 216 ARRIVAL
+[43.4302] [4] Packet 217 ARRIVAL
+[43.4302] [4] Packet 217 BLOCKED
+[39.4109] [4] Packet 211 SERVICED
+[39.4109] [TCP CUBIC], cwnd=9, w_max=1, state=Cubic Increase
+[43.6717] [3] Packet 218 ARRIVAL
+[39.4691] [4] Packet 213 SERVICED
+[39.4691] [TCP CUBIC], cwnd=9, w_max=1, state=Cubic Increase
+[44.0167] [3] Packet 219 ARRIVAL
+[39.5124] [4] Packet 214 SERVICED
+[39.5124] [TCP CUBIC], cwnd=10, w_max=1, state=Cubic Increase
+[44.0337] [3] Packet 220 ARRIVAL
+[44.8968] [4] Packet 221 ARRIVAL
+[44.8968] [4] Packet 221 BLOCKED
+[39.6086] [4] Packet 216 SERVICED
+[39.6086] [TCP CUBIC], cwnd=11, w_max=1, state=Cubic Increase
+[44.9894] [3] Packet 222 ARRIVAL
+[45.5778] [4] Packet 223 ARRIVAL
+[45.5778] [4] Packet 223 BLOCKED
+[39.6162] [4] Packet 218 SERVICED
+[39.6162] [TCP CUBIC], cwnd=11, w_max=1, state=Cubic Increase
+[45.8578] [3] Packet 224 ARRIVAL
+[39.7387] [4] Packet 219 SERVICED
+[39.7387] [TCP CUBIC], cwnd=12, w_max=1, state=Cubic Increase
+[45.8752] [3] Packet 225 ARRIVAL
+[46.0387] [4] Packet 226 ARRIVAL
+[46.0387] [4] Packet 226 BLOCKED
+[39.7476] [4] Packet 220 SERVICED
+[39.7476] [TCP CUBIC], cwnd=12, w_max=1, state=Cubic Increase
+[46.5124] [3] Packet 227 ARRIVAL
+[39.9151] [4] Packet 222 SERVICED
+[39.9151] [TCP CUBIC], cwnd=14, w_max=1, state=Cubic Increase
+[46.6481] [3] Packet 228 ARRIVAL
+[46.7745] [4] Packet 229 ARRIVAL
+[46.7745] [4] Packet 229 BLOCKED
+[46.7998] [4] Packet 230 ARRIVAL
+[46.7998] [4] Packet 230 BLOCKED
+[39.9623] [4] Packet 224 SERVICED
+[39.9623] [TCP CUBIC], cwnd=15, w_max=1, state=Cubic Increase
+[47.0093] [3] Packet 231 ARRIVAL
+[47.1844] [4] Packet 232 ARRIVAL
+[47.1844] [4] Packet 232 BLOCKED
+[40.1124] [4] Packet 225 SERVICED
+[40.1124] [TCP CUBIC], cwnd=16, w_max=1, state=Cubic Increase
+[47.2784] [3] Packet 233 ARRIVAL
+[47.6843] [4] Packet 234 ARRIVAL
+[47.6843] [4] Packet 234 BLOCKED
+[40.1242] [4] Packet 227 SERVICED
+[40.1242] [TCP CUBIC], cwnd=17, w_max=1, state=Cubic Increase
+[48.3449] [3] Packet 235 ARRIVAL
+[49.0454] [4] Packet 236 ARRIVAL
+[49.0454] [4] Packet 236 BLOCKED
+[40.1254] [4] Packet 228 SERVICED
+[40.1254] [TCP CUBIC], cwnd=17, w_max=1, state=Cubic Increase
+[49.4889] [3] Packet 237 ARRIVAL
+[40.2624] [4] Packet 231 SERVICED
+[40.2624] [TCP CUBIC], cwnd=19, w_max=1, state=Cubic Increase
+[50.4803] [3] Packet 238 ARRIVAL
+[50.6417] [4] Packet 239 ARRIVAL
+[50.6417] [4] Packet 239 BLOCKED
+[50.7898] [4] Packet 240 ARRIVAL
+[50.7898] [4] Packet 240 BLOCKED
+[40.2961] [4] Packet 233 SERVICED
+[40.2961] [TCP CUBIC], cwnd=19, w_max=1, state=Cubic Increase
+[51.0278] [3] Packet 241 ARRIVAL
+[40.2973] [4] Packet 235 SERVICED
+[40.2973] [TCP CUBIC], cwnd=19, w_max=1, state=Cubic Increase
+[51.2253] [3] Packet 242 ARRIVAL
+[40.3723] [4] Packet 237 SERVICED
+[40.3723] [TCP CUBIC], cwnd=20, w_max=1, state=Cubic Increase
+[51.6882] [3] Packet 243 ARRIVAL
+[51.7541] [4] Packet 244 ARRIVAL
+[51.7541] [4] Packet 244 BLOCKED
+[40.3800] [4] Packet 238 SERVICED
+[40.3800] [TCP CUBIC], cwnd=20, w_max=1, state=Cubic Increase
+[52.1961] [3] Packet 245 ARRIVAL
+[40.4406] [4] Packet 241 SERVICED
+[40.4406] [TCP CUBIC], cwnd=21, w_max=1, state=Cubic Increase
+[52.3897] [3] Packet 246 ARRIVAL
+[52.4313] [4] Packet 247 ARRIVAL
+[52.4313] [4] Packet 247 BLOCKED
+[40.5284] [4] Packet 242 SERVICED
+[40.5284] [TCP CUBIC], cwnd=23, w_max=1, state=Cubic Increase
+[52.5185] [3] Packet 248 ARRIVAL
+[52.5347] [4] Packet 249 ARRIVAL
+[52.5347] [4] Packet 249 BLOCKED
+[53.3915] [4] Packet 250 ARRIVAL
+[53.3915] [4] Packet 250 BLOCKED
+[40.5330] [4] Packet 243 SERVICED
+[40.5330] [TCP CUBIC], cwnd=23, w_max=1, state=Cubic Increase
+[53.5451] [3] Packet 251 ARRIVAL
+[40.5938] [4] Packet 245 SERVICED
+[40.5938] [TCP CUBIC], cwnd=24, w_max=1, state=Cubic Increase
+[53.8813] [3] Packet 252 ARRIVAL
+[53.9168] [4] Packet 253 ARRIVAL
+[53.9168] [4] Packet 253 BLOCKED
+[40.6263] [4] Packet 246 SERVICED
+[40.6263] [TCP CUBIC], cwnd=25, w_max=1, state=Cubic Increase
+[54.2626] [3] Packet 254 ARRIVAL
+[54.5213] [4] Packet 255 ARRIVAL
+[54.5213] [4] Packet 255 BLOCKED
+[40.7140] [4] Packet 248 SERVICED
+[40.7140] [TCP CUBIC], cwnd=26, w_max=1, state=Cubic Increase
+[54.6296] [3] Packet 256 ARRIVAL
+[55.0317] [4] Packet 257 ARRIVAL
+[55.0317] [4] Packet 257 BLOCKED
+[40.7510] [4] Packet 251 SERVICED
+[40.7510] [TCP CUBIC], cwnd=27, w_max=1, state=Cubic Increase
+[55.0371] [3] Packet 258 ARRIVAL
+[55.3698] [4] Packet 259 ARRIVAL
+[55.3698] [4] Packet 259 BLOCKED
+[40.8664] [4] Packet 252 SERVICED
+[40.8664] [TCP CUBIC], cwnd=29, w_max=1, state=Cubic Increase
+[55.4024] [3] Packet 260 ARRIVAL
+[55.4983] [4] Packet 261 ARRIVAL
+[55.4983] [4] Packet 261 BLOCKED
+[55.8675] [4] Packet 262 ARRIVAL
+[55.8675] [4] Packet 262 BLOCKED
+[41.1656] [4] Packet 254 SERVICED
+[41.1656] [TCP CUBIC], cwnd=36, w_max=1, state=Cubic Increase
+[55.9940] [3] Packet 263 ARRIVAL
+[56.0578] [4] Packet 264 ARRIVAL
+[56.0578] [4] Packet 264 BLOCKED
+[56.4579] [4] Packet 265 ARRIVAL
+[56.4579] [4] Packet 265 BLOCKED
+[58.0924] [4] Packet 266 ARRIVAL
+[58.0924] [4] Packet 266 BLOCKED
+[58.2545] [4] Packet 267 ARRIVAL
+[58.2545] [4] Packet 267 BLOCKED
+[58.8338] [4] Packet 268 ARRIVAL
+[58.8338] [4] Packet 268 BLOCKED
+[58.8906] [4] Packet 269 ARRIVAL
+[58.8906] [4] Packet 269 BLOCKED
+[58.9183] [4] Packet 270 ARRIVAL
+[58.9183] [4] Packet 270 BLOCKED
+[41.4041] [TCP CUBIC], cwnd=25, w_max=36, state=Cubic Loss
+[41.4355] [4] Packet 256 SERVICED
+[41.4355] [TCP CUBIC], cwnd=18, w_max=25, state=Cubic Increase
+[41.4827] [3] Packet 258 SERVICED
+[41.4827] [TCP CUBIC], cwnd=18, w_max=25, state=Cubic Increase
+[41.5729] [2] Packet 260 SERVICED
+[41.5729] [TCP CUBIC], cwnd=19, w_max=25, state=Cubic Increase
+[41.6265] [1] Packet 263 SERVICED
+[41.6265] [TCP CUBIC], cwnd=19, w_max=25, state=Cubic Increase
+[42.0523] [TCP CUBIC], cwnd=13, w_max=19, state=Cubic Loss
+[42.5005] [TCP CUBIC], cwnd=9, w_max=13, state=Cubic Loss
+[43.1222] [TCP CUBIC], cwnd=6, w_max=9, state=Cubic Loss
+[43.4302] [TCP CUBIC], cwnd=4, w_max=6, state=Cubic Loss
+[44.8968] [TCP CUBIC], cwnd=3, w_max=4, state=Cubic Loss
+[45.5778] [TCP CUBIC], cwnd=2, w_max=3, state=Cubic Loss
+[46.0387] [TCP CUBIC], cwnd=1, w_max=2, state=Cubic Loss
+[46.7745] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[46.7998] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[47.1844] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[47.6843] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[49.0454] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[50.6417] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[50.7898] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[51.7541] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[52.4313] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[52.5347] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[53.3915] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[53.9168] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[54.5213] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[55.0317] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[55.3698] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[55.4983] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[55.8675] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[56.0578] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[56.4579] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[58.0924] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[58.2545] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[58.8338] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[58.8906] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[58.9183] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Loss
+[59.1046] [0] Packet 271 ARRIVAL
+[59.1306] [1] Packet 271 SERVICED
+[59.1306] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[59.3274] [0] Packet 272 ARRIVAL
+[59.4237] [1] Packet 272 SERVICED
+[59.4237] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[59.4237] [0] Packet 273 ARRIVAL
+[59.4357] [1] Packet 273 SERVICED
+[59.4357] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[59.6464] [0] Packet 274 ARRIVAL
+[59.7198] [1] Packet 274 SERVICED
+[59.7198] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[59.9423] [0] Packet 275 ARRIVAL
+[60.0157] [1] Packet 275 SERVICED
+[60.0157] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[60.3247] [0] Packet 276 ARRIVAL
+[60.4049] [1] Packet 276 SERVICED
+[60.4049] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[60.4893] [0] Packet 277 ARRIVAL
+[60.6986] [1] Packet 277 SERVICED
+[60.6986] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[60.6986] [0] Packet 278 ARRIVAL
+[60.7130] [1] Packet 278 SERVICED
+[60.7130] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[60.7130] [0] Packet 279 ARRIVAL
+[60.8537] [1] Packet 279 SERVICED
+[60.8537] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[60.9066] [0] Packet 280 ARRIVAL
+[61.0284] [1] Packet 280 SERVICED
+[61.0284] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[61.0284] [0] Packet 281 ARRIVAL
+[61.0431] [1] Packet 281 SERVICED
+[61.0431] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[61.0431] [0] Packet 282 ARRIVAL
+[61.0862] [1] Packet 282 SERVICED
+[61.0862] [TCP CUBIC], cwnd=1, w_max=1, state=Cubic Increase
+[61.2213] [0] Packet 283 ARRIVAL
+[61.2711] [1] Packet 283 SERVICED
+[61.2711] [TCP CUBIC], cwnd=2, w_max=1, state=Cubic Increase
+[61.3364] [0] Packet 284 ARRIVAL
+[61.4220] [1] Packet 285 ARRIVAL
+[61.5709] [2] Packet 284 SERVICED
+[61.5709] [TCP CUBIC], cwnd=2, w_max=1, state=Cubic Increase
+[61.7282] [1] Packet 286 ARRIVAL
+[61.6431] [2] Packet 285 SERVICED
+[61.6431] [TCP CUBIC], cwnd=3, w_max=1, state=Cubic Increase
+[61.9228] [1] Packet 287 ARRIVAL
+[62.5201] [2] Packet 288 ARRIVAL
+[61.6936] [3] Packet 286 SERVICED
+[61.6936] [TCP CUBIC], cwnd=3, w_max=1, state=Cubic Increase
+[63.0424] [2] Packet 289 ARRIVAL
+[61.8919] [3] Packet 287 SERVICED
+[61.8919] [TCP CUBIC], cwnd=4, w_max=1, state=Cubic Increase
+[63.1021] [2] Packet 290 ARRIVAL
+[63.8849] [3] Packet 291 ARRIVAL
+[61.9078] [4] Packet 288 SERVICED
+[61.9078] [TCP CUBIC], cwnd=4, w_max=1, state=Cubic Increase
+[63.9646] [3] Packet 292 ARRIVAL
+[61.9755] [4] Packet 289 SERVICED
+[61.9755] [TCP CUBIC], cwnd=4, w_max=1, state=Cubic Increase
+[64.0195] [3] Packet 293 ARRIVAL
+[62.0370] [4] Packet 290 SERVICED
+[62.0370] [TCP CUBIC], cwnd=4, w_max=1, state=Cubic Increase
+[64.0471] [3] Packet 294 ARRIVAL
+[62.1049] [4] Packet 291 SERVICED
+[62.1049] [TCP CUBIC], cwnd=5, w_max=1, state=Cubic Increase
+[64.0801] [3] Packet 295 ARRIVAL
+[64.2849] [4] Packet 296 ARRIVAL
+[64.2849] [4] Packet 296 BLOCKED
+[62.2052] [4] Packet 292 SERVICED
+[62.2052] [TCP CUBIC], cwnd=5, w_max=1, state=Cubic Increase
+[64.3697] [3] Packet 297 ARRIVAL
+[62.2131] [4] Packet 293 SERVICED
+[62.2131] [TCP CUBIC], cwnd=5, w_max=1, state=Cubic Increase
+[64.4982] [3] Packet 298 ARRIVAL
+[62.2268] [4] Packet 294 SERVICED
+[62.2268] [TCP CUBIC], cwnd=5, w_max=1, state=Cubic Increase
+[64.5360] [3] Packet 299 ARRIVAL
+[62.2417] [4] Packet 295 SERVICED
+[62.2417] [TCP CUBIC], cwnd=5, w_max=1, state=Cubic Increase
+[62.4688] [3] Packet 297 SERVICED
+[62.4688] [TCP CUBIC], cwnd=7, w_max=1, state=Cubic Increase
+[62.5790] [2] Packet 298 SERVICED
+[62.5790] [TCP CUBIC], cwnd=8, w_max=1, state=Cubic Increase
+[62.6003] [1] Packet 299 SERVICED
+[62.6003] [TCP CUBIC], cwnd=8, w_max=1, state=Cubic Increase
+[64.2849] [TCP CUBIC], cwnd=6, w_max=8, state=Cubic Loss
+
+=== Simulation Results for M/M/1 Queue ===
+Simulation Parameters:
+  - Arrival Rate (λ): 5
+  - Service Rate (μ): 10
+  - Deadline Rate (θ): 1 (Exp: False)
+  - Queue Size: 4
+  - Total Packets: 300
+  - Congestion Control: cubic
+
+Simulation Statistics:
+  - Simulation Time: 64.5444 seconds
+  - Blocked Rate: 0.2733 (27.33%)
+  - Dropped Rate: 0.0000 (0.00%)
+  - Total Loss Rate: 0.2733 (27.33%)
+  - Total Packets Processed: 300
+    - Service Count: 218
+    - Drop Count: 0
+    - Block Count: 82
+  - Throughput: 3.3775 packets/second
+  - Average Latency: -1.9642 seconds

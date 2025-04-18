@@ -1,0 +1,921 @@
+[0.0000] [0] Packet 0 ARRIVAL
+[0.0469] [1] Packet 0 SERVICED
+[0.0469] [TCP Reno], cwnd=2, ssthresh=10, state=Slow Start
+[0.6020] [0] Packet 1 ARRIVAL
+[0.7846] [1] Packet 2 ARRIVAL
+[0.7337] [2] Packet 1 SERVICED
+[0.7337] [TCP Reno], cwnd=4, ssthresh=10, state=Slow Start
+[0.8185] [1] Packet 3 ARRIVAL
+[1.2208] [2] Packet 4 ARRIVAL
+[1.4670] [3] Packet 5 ARRIVAL
+[0.7507] [4] Packet 2 SERVICED
+[0.7507] [TCP Reno], cwnd=8, ssthresh=10, state=Slow Start
+[2.1677] [3] Packet 6 ARRIVAL
+[2.2155] [4] Packet 7 ARRIVAL
+[2.2155] [4] Packet 7 BLOCKED
+[2.2560] [4] Packet 8 ARRIVAL
+[2.2560] [4] Packet 8 BLOCKED
+[2.4048] [4] Packet 9 ARRIVAL
+[2.4048] [4] Packet 9 BLOCKED
+[2.4736] [4] Packet 10 ARRIVAL
+[2.4736] [4] Packet 10 BLOCKED
+[0.7566] [4] Packet 3 SERVICED
+[0.7566] [TCP Reno], cwnd=16, ssthresh=10, state=Slow Start
+[2.5037] [3] Packet 11 ARRIVAL
+[2.5949] [4] Packet 12 ARRIVAL
+[2.5949] [4] Packet 12 BLOCKED
+[2.9025] [4] Packet 13 ARRIVAL
+[2.9025] [4] Packet 13 BLOCKED
+[3.0469] [4] Packet 14 ARRIVAL
+[3.0469] [4] Packet 14 BLOCKED
+[3.0564] [4] Packet 15 ARRIVAL
+[3.0564] [4] Packet 15 BLOCKED
+[3.0938] [4] Packet 16 ARRIVAL
+[3.0938] [4] Packet 16 BLOCKED
+[3.6886] [4] Packet 17 ARRIVAL
+[3.6886] [4] Packet 17 BLOCKED
+[4.0190] [4] Packet 18 ARRIVAL
+[4.0190] [4] Packet 18 BLOCKED
+[4.0396] [4] Packet 19 ARRIVAL
+[4.0396] [4] Packet 19 BLOCKED
+[0.8486] [4] Packet 4 SERVICED
+[0.8486] [TCP Reno], cwnd=16, ssthresh=10, state=Additive Increase
+[4.1556] [3] Packet 20 ARRIVAL
+[0.8506] [4] Packet 5 SERVICED
+[0.8506] [TCP Reno], cwnd=16, ssthresh=10, state=Additive Increase
+[4.2923] [3] Packet 21 ARRIVAL
+[1.0293] [4] Packet 6 SERVICED
+[1.0293] [TCP Reno], cwnd=16, ssthresh=10, state=Additive Increase
+[4.7724] [3] Packet 22 ARRIVAL
+[1.0638] [4] Packet 11 SERVICED
+[1.0638] [TCP Reno], cwnd=16, ssthresh=10, state=Additive Increase
+[4.9897] [3] Packet 23 ARRIVAL
+[1.0768] [4] Packet 20 SERVICED
+[1.0768] [TCP Reno], cwnd=16, ssthresh=10, state=Additive Increase
+[5.1365] [3] Packet 24 ARRIVAL
+[1.0803] [4] Packet 21 SERVICED
+[1.0803] [TCP Reno], cwnd=16, ssthresh=10, state=Additive Increase
+[5.1774] [3] Packet 25 ARRIVAL
+[1.1103] [4] Packet 22 SERVICED
+[1.1103] [TCP Reno], cwnd=16, ssthresh=10, state=Additive Increase
+[5.4758] [3] Packet 26 ARRIVAL
+[1.1476] [4] Packet 23 SERVICED
+[1.1476] [TCP Reno], cwnd=16, ssthresh=10, state=Additive Increase
+[5.9262] [3] Packet 27 ARRIVAL
+[1.2268] [4] Packet 24 SERVICED
+[1.2268] [TCP Reno], cwnd=16, ssthresh=10, state=Additive Increase
+[6.4361] [3] Packet 28 ARRIVAL
+[1.5760] [4] Packet 25 SERVICED
+[1.5760] [TCP Reno], cwnd=16, ssthresh=10, state=Additive Increase
+[6.4797] [3] Packet 29 ARRIVAL
+[1.8566] [4] Packet 26 SERVICED
+[1.8566] [TCP Reno], cwnd=16, ssthresh=10, state=Additive Increase
+[6.5585] [3] Packet 30 ARRIVAL
+[1.9477] [4] Packet 27 SERVICED
+[1.9477] [TCP Reno], cwnd=16, ssthresh=10, state=Additive Increase
+[6.6218] [3] Packet 31 ARRIVAL
+[1.9569] [4] Packet 28 SERVICED
+[1.9569] [TCP Reno], cwnd=16, ssthresh=10, state=Additive Increase
+[6.7100] [3] Packet 32 ARRIVAL
+[1.9616] [4] Packet 29 SERVICED
+[1.9616] [TCP Reno], cwnd=16, ssthresh=10, state=Additive Increase
+[6.8665] [3] Packet 33 ARRIVAL
+[2.0108] [4] Packet 30 SERVICED
+[2.0108] [TCP Reno], cwnd=16, ssthresh=10, state=Additive Increase
+[7.1906] [3] Packet 34 ARRIVAL
+[2.1872] [4] Packet 31 SERVICED
+[2.1872] [TCP Reno], cwnd=17, ssthresh=10, state=Additive Increase
+[8.0574] [3] Packet 35 ARRIVAL
+[8.1017] [4] Packet 36 ARRIVAL
+[8.1017] [4] Packet 36 BLOCKED
+[2.2155] [TCP Reno], cwnd=1, ssthresh=8, state=Multiplicative Decrease
+[2.2202] [4] Packet 32 SERVICED
+[2.2202] [TCP Reno], cwnd=2, ssthresh=8, state=Slow Start
+[2.2354] [3] Packet 33 SERVICED
+[2.2354] [TCP Reno], cwnd=4, ssthresh=8, state=Slow Start
+[2.2431] [2] Packet 34 SERVICED
+[2.2431] [TCP Reno], cwnd=8, ssthresh=8, state=Slow Start
+[2.2560] [TCP Reno], cwnd=1, ssthresh=4, state=Multiplicative Decrease
+[2.3911] [1] Packet 35 SERVICED
+[2.3911] [TCP Reno], cwnd=2, ssthresh=4, state=Slow Start
+[2.4048] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[2.4736] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[2.5949] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[2.9025] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[3.0469] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[3.0564] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[3.0938] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[3.6886] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[4.0190] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[4.0396] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[8.1017] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[8.4397] [0] Packet 37 ARRIVAL
+[8.5624] [1] Packet 37 SERVICED
+[8.5624] [TCP Reno], cwnd=2, ssthresh=1, state=Additive Increase
+[8.7008] [0] Packet 38 ARRIVAL
+[8.7162] [1] Packet 39 ARRIVAL
+[8.8484] [2] Packet 38 SERVICED
+[8.8484] [TCP Reno], cwnd=2, ssthresh=1, state=Additive Increase
+[8.8484] [1] Packet 40 ARRIVAL
+[8.8927] [2] Packet 39 SERVICED
+[8.8927] [TCP Reno], cwnd=3, ssthresh=1, state=Additive Increase
+[9.0436] [1] Packet 41 ARRIVAL
+[9.0568] [2] Packet 42 ARRIVAL
+[9.0916] [3] Packet 40 SERVICED
+[9.0916] [TCP Reno], cwnd=3, ssthresh=1, state=Additive Increase
+[9.1354] [2] Packet 43 ARRIVAL
+[9.1318] [3] Packet 41 SERVICED
+[9.1318] [TCP Reno], cwnd=3, ssthresh=1, state=Additive Increase
+[9.3384] [2] Packet 44 ARRIVAL
+[9.1690] [3] Packet 42 SERVICED
+[9.1690] [TCP Reno], cwnd=4, ssthresh=1, state=Additive Increase
+[9.4662] [2] Packet 45 ARRIVAL
+[9.7160] [3] Packet 46 ARRIVAL
+[9.2998] [4] Packet 43 SERVICED
+[9.2998] [TCP Reno], cwnd=4, ssthresh=1, state=Additive Increase
+[9.8808] [3] Packet 47 ARRIVAL
+[9.5180] [4] Packet 44 SERVICED
+[9.5180] [TCP Reno], cwnd=4, ssthresh=1, state=Additive Increase
+[10.0170] [3] Packet 48 ARRIVAL
+[9.5308] [4] Packet 45 SERVICED
+[9.5308] [TCP Reno], cwnd=4, ssthresh=1, state=Additive Increase
+[10.1285] [3] Packet 49 ARRIVAL
+[9.6738] [4] Packet 46 SERVICED
+[9.6738] [TCP Reno], cwnd=5, ssthresh=1, state=Additive Increase
+[10.1514] [3] Packet 50 ARRIVAL
+[10.3537] [4] Packet 51 ARRIVAL
+[10.3537] [4] Packet 51 BLOCKED
+[9.8212] [4] Packet 47 SERVICED
+[9.8212] [TCP Reno], cwnd=5, ssthresh=1, state=Additive Increase
+[10.4958] [3] Packet 52 ARRIVAL
+[9.8952] [4] Packet 48 SERVICED
+[9.8952] [TCP Reno], cwnd=5, ssthresh=1, state=Additive Increase
+[10.5531] [3] Packet 53 ARRIVAL
+[9.8978] [4] Packet 49 SERVICED
+[9.8978] [TCP Reno], cwnd=5, ssthresh=1, state=Additive Increase
+[10.8349] [3] Packet 54 ARRIVAL
+[9.9009] [4] Packet 50 SERVICED
+[9.9009] [TCP Reno], cwnd=5, ssthresh=1, state=Additive Increase
+[10.8509] [3] Packet 55 ARRIVAL
+[10.1391] [4] Packet 52 SERVICED
+[10.1391] [TCP Reno], cwnd=6, ssthresh=1, state=Additive Increase
+[10.8861] [3] Packet 56 ARRIVAL
+[11.2163] [4] Packet 57 ARRIVAL
+[11.2163] [4] Packet 57 BLOCKED
+[10.1919] [4] Packet 53 SERVICED
+[10.1919] [TCP Reno], cwnd=6, ssthresh=1, state=Additive Increase
+[11.6266] [3] Packet 58 ARRIVAL
+[10.2179] [4] Packet 54 SERVICED
+[10.2179] [TCP Reno], cwnd=6, ssthresh=1, state=Additive Increase
+[11.6679] [3] Packet 59 ARRIVAL
+[10.2521] [4] Packet 55 SERVICED
+[10.2521] [TCP Reno], cwnd=6, ssthresh=1, state=Additive Increase
+[11.8229] [3] Packet 60 ARRIVAL
+[10.3537] [TCP Reno], cwnd=1, ssthresh=3, state=Multiplicative Decrease
+[10.5176] [4] Packet 56 SERVICED
+[10.5176] [TCP Reno], cwnd=2, ssthresh=3, state=Slow Start
+[10.6804] [3] Packet 58 SERVICED
+[10.6804] [TCP Reno], cwnd=4, ssthresh=3, state=Slow Start
+[12.2757] [2] Packet 61 ARRIVAL
+[10.9035] [3] Packet 59 SERVICED
+[10.9035] [TCP Reno], cwnd=4, ssthresh=3, state=Additive Increase
+[12.2990] [2] Packet 62 ARRIVAL
+[11.0682] [3] Packet 60 SERVICED
+[11.0682] [TCP Reno], cwnd=4, ssthresh=3, state=Additive Increase
+[12.4105] [2] Packet 63 ARRIVAL
+[11.1065] [3] Packet 61 SERVICED
+[11.1065] [TCP Reno], cwnd=4, ssthresh=3, state=Additive Increase
+[12.8047] [2] Packet 64 ARRIVAL
+[11.1323] [3] Packet 62 SERVICED
+[11.1323] [TCP Reno], cwnd=5, ssthresh=3, state=Additive Increase
+[12.9477] [2] Packet 65 ARRIVAL
+[12.9979] [3] Packet 66 ARRIVAL
+[11.2163] [TCP Reno], cwnd=1, ssthresh=2, state=Multiplicative Decrease
+[11.3027] [4] Packet 63 SERVICED
+[11.3027] [TCP Reno], cwnd=2, ssthresh=2, state=Slow Start
+[11.3034] [3] Packet 64 SERVICED
+[11.3034] [TCP Reno], cwnd=2, ssthresh=2, state=Additive Increase
+[11.3575] [2] Packet 65 SERVICED
+[11.3575] [TCP Reno], cwnd=3, ssthresh=2, state=Additive Increase
+[13.0803] [1] Packet 67 ARRIVAL
+[13.1584] [2] Packet 68 ARRIVAL
+[11.3702] [3] Packet 66 SERVICED
+[11.3702] [TCP Reno], cwnd=3, ssthresh=2, state=Additive Increase
+[13.4012] [2] Packet 69 ARRIVAL
+[11.6565] [3] Packet 67 SERVICED
+[11.6565] [TCP Reno], cwnd=3, ssthresh=2, state=Additive Increase
+[14.1148] [2] Packet 70 ARRIVAL
+[11.7297] [3] Packet 68 SERVICED
+[11.7297] [TCP Reno], cwnd=4, ssthresh=2, state=Additive Increase
+[14.1728] [2] Packet 71 ARRIVAL
+[14.2444] [3] Packet 72 ARRIVAL
+[11.7749] [4] Packet 69 SERVICED
+[11.7749] [TCP Reno], cwnd=4, ssthresh=2, state=Additive Increase
+[14.2519] [3] Packet 73 ARRIVAL
+[12.1031] [4] Packet 70 SERVICED
+[12.1031] [TCP Reno], cwnd=4, ssthresh=2, state=Additive Increase
+[14.3916] [3] Packet 74 ARRIVAL
+[12.1718] [4] Packet 71 SERVICED
+[12.1718] [TCP Reno], cwnd=4, ssthresh=2, state=Additive Increase
+[14.4569] [3] Packet 75 ARRIVAL
+[12.2054] [4] Packet 72 SERVICED
+[12.2054] [TCP Reno], cwnd=5, ssthresh=2, state=Additive Increase
+[14.5117] [3] Packet 76 ARRIVAL
+[14.6461] [4] Packet 77 ARRIVAL
+[14.6461] [4] Packet 77 BLOCKED
+[12.2994] [4] Packet 73 SERVICED
+[12.2994] [TCP Reno], cwnd=5, ssthresh=2, state=Additive Increase
+[14.7016] [3] Packet 78 ARRIVAL
+[12.3047] [4] Packet 74 SERVICED
+[12.3047] [TCP Reno], cwnd=5, ssthresh=2, state=Additive Increase
+[14.9884] [3] Packet 79 ARRIVAL
+[12.5436] [4] Packet 75 SERVICED
+[12.5436] [TCP Reno], cwnd=5, ssthresh=2, state=Additive Increase
+[15.2489] [3] Packet 80 ARRIVAL
+[12.5592] [4] Packet 76 SERVICED
+[12.5592] [TCP Reno], cwnd=5, ssthresh=2, state=Additive Increase
+[15.4490] [3] Packet 81 ARRIVAL
+[12.6708] [4] Packet 78 SERVICED
+[12.6708] [TCP Reno], cwnd=6, ssthresh=2, state=Additive Increase
+[15.6025] [3] Packet 82 ARRIVAL
+[15.9632] [4] Packet 83 ARRIVAL
+[15.9632] [4] Packet 83 BLOCKED
+[12.6979] [4] Packet 79 SERVICED
+[12.6979] [TCP Reno], cwnd=6, ssthresh=2, state=Additive Increase
+[16.0045] [3] Packet 84 ARRIVAL
+[12.7437] [4] Packet 80 SERVICED
+[12.7437] [TCP Reno], cwnd=6, ssthresh=2, state=Additive Increase
+[16.1833] [3] Packet 85 ARRIVAL
+[12.8441] [4] Packet 81 SERVICED
+[12.8441] [TCP Reno], cwnd=6, ssthresh=2, state=Additive Increase
+[16.1866] [3] Packet 86 ARRIVAL
+[12.8536] [4] Packet 82 SERVICED
+[12.8536] [TCP Reno], cwnd=6, ssthresh=2, state=Additive Increase
+[16.2380] [3] Packet 87 ARRIVAL
+[12.8578] [4] Packet 84 SERVICED
+[12.8578] [TCP Reno], cwnd=6, ssthresh=2, state=Additive Increase
+[16.2763] [3] Packet 88 ARRIVAL
+[12.9709] [4] Packet 85 SERVICED
+[12.9709] [TCP Reno], cwnd=7, ssthresh=2, state=Additive Increase
+[16.3741] [3] Packet 89 ARRIVAL
+[16.4037] [4] Packet 90 ARRIVAL
+[16.4037] [4] Packet 90 BLOCKED
+[13.0427] [4] Packet 86 SERVICED
+[13.0427] [TCP Reno], cwnd=7, ssthresh=2, state=Additive Increase
+[16.4278] [3] Packet 91 ARRIVAL
+[13.1463] [4] Packet 87 SERVICED
+[13.1463] [TCP Reno], cwnd=7, ssthresh=2, state=Additive Increase
+[16.8474] [3] Packet 92 ARRIVAL
+[13.2637] [4] Packet 88 SERVICED
+[13.2637] [TCP Reno], cwnd=7, ssthresh=2, state=Additive Increase
+[17.0632] [3] Packet 93 ARRIVAL
+[13.5398] [4] Packet 89 SERVICED
+[13.5398] [TCP Reno], cwnd=7, ssthresh=2, state=Additive Increase
+[17.2252] [3] Packet 94 ARRIVAL
+[13.7984] [4] Packet 91 SERVICED
+[13.7984] [TCP Reno], cwnd=7, ssthresh=2, state=Additive Increase
+[17.2806] [3] Packet 95 ARRIVAL
+[13.8282] [4] Packet 92 SERVICED
+[13.8282] [TCP Reno], cwnd=7, ssthresh=2, state=Additive Increase
+[17.7356] [3] Packet 96 ARRIVAL
+[13.9982] [4] Packet 93 SERVICED
+[13.9982] [TCP Reno], cwnd=8, ssthresh=2, state=Additive Increase
+[17.9361] [3] Packet 97 ARRIVAL
+[18.0220] [4] Packet 98 ARRIVAL
+[18.0220] [4] Packet 98 BLOCKED
+[14.0736] [4] Packet 94 SERVICED
+[14.0736] [TCP Reno], cwnd=8, ssthresh=2, state=Additive Increase
+[18.4769] [3] Packet 99 ARRIVAL
+[14.0834] [4] Packet 95 SERVICED
+[14.0834] [TCP Reno], cwnd=8, ssthresh=2, state=Additive Increase
+[18.7796] [3] Packet 100 ARRIVAL
+[14.3140] [4] Packet 96 SERVICED
+[14.3140] [TCP Reno], cwnd=8, ssthresh=2, state=Additive Increase
+[18.7972] [3] Packet 101 ARRIVAL
+[14.3555] [4] Packet 97 SERVICED
+[14.3555] [TCP Reno], cwnd=8, ssthresh=2, state=Additive Increase
+[19.2548] [3] Packet 102 ARRIVAL
+[14.5736] [4] Packet 99 SERVICED
+[14.5736] [TCP Reno], cwnd=8, ssthresh=2, state=Additive Increase
+[19.2566] [3] Packet 103 ARRIVAL
+[14.6461] [TCP Reno], cwnd=1, ssthresh=4, state=Multiplicative Decrease
+[14.6763] [4] Packet 100 SERVICED
+[14.6763] [TCP Reno], cwnd=2, ssthresh=4, state=Slow Start
+[14.6939] [3] Packet 101 SERVICED
+[14.6939] [TCP Reno], cwnd=4, ssthresh=4, state=Slow Start
+[14.7872] [2] Packet 102 SERVICED
+[14.7872] [TCP Reno], cwnd=4, ssthresh=4, state=Additive Increase
+[14.7979] [1] Packet 103 SERVICED
+[14.7979] [TCP Reno], cwnd=4, ssthresh=4, state=Additive Increase
+[19.4745] [0] Packet 104 ARRIVAL
+[15.9632] [TCP Reno], cwnd=1, ssthresh=2, state=Multiplicative Decrease
+[16.4037] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[18.0220] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[19.4750] [1] Packet 104 SERVICED
+[19.4750] [TCP Reno], cwnd=2, ssthresh=1, state=Additive Increase
+[19.5095] [0] Packet 105 ARRIVAL
+[19.7450] [1] Packet 106 ARRIVAL
+[19.5891] [2] Packet 105 SERVICED
+[19.5891] [TCP Reno], cwnd=2, ssthresh=1, state=Additive Increase
+[19.7958] [1] Packet 107 ARRIVAL
+[19.6947] [2] Packet 106 SERVICED
+[19.6947] [TCP Reno], cwnd=3, ssthresh=1, state=Additive Increase
+[19.8500] [1] Packet 108 ARRIVAL
+[20.1244] [2] Packet 109 ARRIVAL
+[19.8192] [3] Packet 107 SERVICED
+[19.8192] [TCP Reno], cwnd=3, ssthresh=1, state=Additive Increase
+[20.5028] [2] Packet 110 ARRIVAL
+[19.8586] [3] Packet 108 SERVICED
+[19.8586] [TCP Reno], cwnd=3, ssthresh=1, state=Additive Increase
+[20.6708] [2] Packet 111 ARRIVAL
+[19.9634] [3] Packet 109 SERVICED
+[19.9634] [TCP Reno], cwnd=4, ssthresh=1, state=Additive Increase
+[20.7625] [2] Packet 112 ARRIVAL
+[20.8185] [3] Packet 113 ARRIVAL
+[20.0706] [4] Packet 110 SERVICED
+[20.0706] [TCP Reno], cwnd=4, ssthresh=1, state=Additive Increase
+[20.9183] [3] Packet 114 ARRIVAL
+[20.0805] [4] Packet 111 SERVICED
+[20.0805] [TCP Reno], cwnd=4, ssthresh=1, state=Additive Increase
+[21.1178] [3] Packet 115 ARRIVAL
+[20.1113] [4] Packet 112 SERVICED
+[20.1113] [TCP Reno], cwnd=4, ssthresh=1, state=Additive Increase
+[21.2575] [3] Packet 116 ARRIVAL
+[20.4725] [4] Packet 113 SERVICED
+[20.4725] [TCP Reno], cwnd=5, ssthresh=1, state=Additive Increase
+[21.3931] [3] Packet 117 ARRIVAL
+[21.6495] [4] Packet 118 ARRIVAL
+[21.6495] [4] Packet 118 BLOCKED
+[20.6951] [4] Packet 114 SERVICED
+[20.6951] [TCP Reno], cwnd=5, ssthresh=1, state=Additive Increase
+[21.6544] [3] Packet 119 ARRIVAL
+[20.8535] [4] Packet 115 SERVICED
+[20.8535] [TCP Reno], cwnd=5, ssthresh=1, state=Additive Increase
+[21.6934] [3] Packet 120 ARRIVAL
+[20.9395] [4] Packet 116 SERVICED
+[20.9395] [TCP Reno], cwnd=5, ssthresh=1, state=Additive Increase
+[22.3089] [3] Packet 121 ARRIVAL
+[20.9612] [4] Packet 117 SERVICED
+[20.9612] [TCP Reno], cwnd=5, ssthresh=1, state=Additive Increase
+[22.4014] [3] Packet 122 ARRIVAL
+[21.0649] [4] Packet 119 SERVICED
+[21.0649] [TCP Reno], cwnd=6, ssthresh=1, state=Additive Increase
+[22.9285] [3] Packet 123 ARRIVAL
+[23.6087] [4] Packet 124 ARRIVAL
+[23.6087] [4] Packet 124 BLOCKED
+[21.3470] [4] Packet 120 SERVICED
+[21.3470] [TCP Reno], cwnd=6, ssthresh=1, state=Additive Increase
+[23.9921] [3] Packet 125 ARRIVAL
+[21.5934] [4] Packet 121 SERVICED
+[21.5934] [TCP Reno], cwnd=6, ssthresh=1, state=Additive Increase
+[24.0894] [3] Packet 126 ARRIVAL
+[21.5949] [4] Packet 122 SERVICED
+[21.5949] [TCP Reno], cwnd=6, ssthresh=1, state=Additive Increase
+[24.1656] [3] Packet 127 ARRIVAL
+[21.6495] [TCP Reno], cwnd=1, ssthresh=3, state=Multiplicative Decrease
+[21.6508] [4] Packet 123 SERVICED
+[21.6508] [TCP Reno], cwnd=2, ssthresh=3, state=Slow Start
+[21.6857] [3] Packet 125 SERVICED
+[21.6857] [TCP Reno], cwnd=4, ssthresh=3, state=Slow Start
+[24.3284] [2] Packet 128 ARRIVAL
+[21.8762] [3] Packet 126 SERVICED
+[21.8762] [TCP Reno], cwnd=4, ssthresh=3, state=Additive Increase
+[24.5665] [2] Packet 129 ARRIVAL
+[21.8948] [3] Packet 127 SERVICED
+[21.8948] [TCP Reno], cwnd=4, ssthresh=3, state=Additive Increase
+[24.5870] [2] Packet 130 ARRIVAL
+[22.1699] [3] Packet 128 SERVICED
+[22.1699] [TCP Reno], cwnd=4, ssthresh=3, state=Additive Increase
+[25.5091] [2] Packet 131 ARRIVAL
+[22.2543] [3] Packet 129 SERVICED
+[22.2543] [TCP Reno], cwnd=5, ssthresh=3, state=Additive Increase
+[25.6552] [2] Packet 132 ARRIVAL
+[25.9252] [3] Packet 133 ARRIVAL
+[22.3498] [4] Packet 130 SERVICED
+[22.3498] [TCP Reno], cwnd=5, ssthresh=3, state=Additive Increase
+[26.1677] [3] Packet 134 ARRIVAL
+[22.3648] [4] Packet 131 SERVICED
+[22.3648] [TCP Reno], cwnd=5, ssthresh=3, state=Additive Increase
+[26.2372] [3] Packet 135 ARRIVAL
+[22.5747] [4] Packet 132 SERVICED
+[22.5747] [TCP Reno], cwnd=5, ssthresh=3, state=Additive Increase
+[26.5694] [3] Packet 136 ARRIVAL
+[22.6941] [4] Packet 133 SERVICED
+[22.6941] [TCP Reno], cwnd=5, ssthresh=3, state=Additive Increase
+[27.0584] [3] Packet 137 ARRIVAL
+[22.7387] [4] Packet 134 SERVICED
+[22.7387] [TCP Reno], cwnd=6, ssthresh=3, state=Additive Increase
+[27.1976] [3] Packet 138 ARRIVAL
+[27.4075] [4] Packet 139 ARRIVAL
+[27.4075] [4] Packet 139 BLOCKED
+[22.9044] [4] Packet 135 SERVICED
+[22.9044] [TCP Reno], cwnd=6, ssthresh=3, state=Additive Increase
+[27.7253] [3] Packet 140 ARRIVAL
+[23.1062] [4] Packet 136 SERVICED
+[23.1062] [TCP Reno], cwnd=6, ssthresh=3, state=Additive Increase
+[27.8078] [3] Packet 141 ARRIVAL
+[23.1778] [4] Packet 137 SERVICED
+[23.1778] [TCP Reno], cwnd=6, ssthresh=3, state=Additive Increase
+[27.8275] [3] Packet 142 ARRIVAL
+[23.3379] [4] Packet 138 SERVICED
+[23.3379] [TCP Reno], cwnd=6, ssthresh=3, state=Additive Increase
+[27.8348] [3] Packet 143 ARRIVAL
+[23.5586] [4] Packet 140 SERVICED
+[23.5586] [TCP Reno], cwnd=6, ssthresh=3, state=Additive Increase
+[27.9913] [3] Packet 144 ARRIVAL
+[23.6057] [4] Packet 141 SERVICED
+[23.6057] [TCP Reno], cwnd=7, ssthresh=3, state=Additive Increase
+[28.1700] [3] Packet 145 ARRIVAL
+[28.1776] [4] Packet 146 ARRIVAL
+[28.1776] [4] Packet 146 BLOCKED
+[23.6087] [TCP Reno], cwnd=1, ssthresh=3, state=Multiplicative Decrease
+[23.6921] [4] Packet 142 SERVICED
+[23.6921] [TCP Reno], cwnd=2, ssthresh=3, state=Slow Start
+[23.7547] [3] Packet 143 SERVICED
+[23.7547] [TCP Reno], cwnd=4, ssthresh=3, state=Slow Start
+[23.7885] [2] Packet 144 SERVICED
+[23.7885] [TCP Reno], cwnd=4, ssthresh=3, state=Additive Increase
+[28.2669] [1] Packet 147 ARRIVAL
+[23.7916] [2] Packet 145 SERVICED
+[23.7916] [TCP Reno], cwnd=4, ssthresh=3, state=Additive Increase
+[28.4147] [1] Packet 148 ARRIVAL
+[23.8052] [2] Packet 147 SERVICED
+[23.8052] [TCP Reno], cwnd=4, ssthresh=3, state=Additive Increase
+[28.4633] [1] Packet 149 ARRIVAL
+[23.9521] [2] Packet 148 SERVICED
+[23.9521] [TCP Reno], cwnd=5, ssthresh=3, state=Additive Increase
+[28.4811] [1] Packet 150 ARRIVAL
+[28.6327] [2] Packet 151 ARRIVAL
+[24.0497] [3] Packet 149 SERVICED
+[24.0497] [TCP Reno], cwnd=5, ssthresh=3, state=Additive Increase
+[28.8356] [2] Packet 152 ARRIVAL
+[24.0550] [3] Packet 150 SERVICED
+[24.0550] [TCP Reno], cwnd=5, ssthresh=3, state=Additive Increase
+[29.5803] [2] Packet 153 ARRIVAL
+[24.1328] [3] Packet 151 SERVICED
+[24.1328] [TCP Reno], cwnd=5, ssthresh=3, state=Additive Increase
+[29.6583] [2] Packet 154 ARRIVAL
+[24.2623] [3] Packet 152 SERVICED
+[24.2623] [TCP Reno], cwnd=5, ssthresh=3, state=Additive Increase
+[29.7215] [2] Packet 155 ARRIVAL
+[24.3349] [3] Packet 153 SERVICED
+[24.3349] [TCP Reno], cwnd=6, ssthresh=3, state=Additive Increase
+[29.7378] [2] Packet 156 ARRIVAL
+[30.3953] [3] Packet 157 ARRIVAL
+[24.4935] [4] Packet 154 SERVICED
+[24.4935] [TCP Reno], cwnd=6, ssthresh=3, state=Additive Increase
+[30.6334] [3] Packet 158 ARRIVAL
+[24.5513] [4] Packet 155 SERVICED
+[24.5513] [TCP Reno], cwnd=6, ssthresh=3, state=Additive Increase
+[30.6715] [3] Packet 159 ARRIVAL
+[24.5538] [4] Packet 156 SERVICED
+[24.5538] [TCP Reno], cwnd=6, ssthresh=3, state=Additive Increase
+[30.7291] [3] Packet 160 ARRIVAL
+[24.7346] [4] Packet 157 SERVICED
+[24.7346] [TCP Reno], cwnd=6, ssthresh=3, state=Additive Increase
+[30.9799] [3] Packet 161 ARRIVAL
+[24.7872] [4] Packet 158 SERVICED
+[24.7872] [TCP Reno], cwnd=6, ssthresh=3, state=Additive Increase
+[31.0456] [3] Packet 162 ARRIVAL
+[24.8042] [4] Packet 159 SERVICED
+[24.8042] [TCP Reno], cwnd=7, ssthresh=3, state=Additive Increase
+[31.3134] [3] Packet 163 ARRIVAL
+[31.5026] [4] Packet 164 ARRIVAL
+[31.5026] [4] Packet 164 BLOCKED
+[24.8839] [4] Packet 160 SERVICED
+[24.8839] [TCP Reno], cwnd=7, ssthresh=3, state=Additive Increase
+[31.5595] [3] Packet 165 ARRIVAL
+[24.9918] [4] Packet 161 SERVICED
+[24.9918] [TCP Reno], cwnd=7, ssthresh=3, state=Additive Increase
+[31.8431] [3] Packet 166 ARRIVAL
+[25.3016] [4] Packet 162 SERVICED
+[25.3016] [TCP Reno], cwnd=7, ssthresh=3, state=Additive Increase
+[31.8678] [3] Packet 167 ARRIVAL
+[25.3824] [4] Packet 163 SERVICED
+[25.3824] [TCP Reno], cwnd=7, ssthresh=3, state=Additive Increase
+[31.8761] [3] Packet 168 ARRIVAL
+[25.4264] [4] Packet 165 SERVICED
+[25.4264] [TCP Reno], cwnd=7, ssthresh=3, state=Additive Increase
+[32.1194] [3] Packet 169 ARRIVAL
+[25.4279] [4] Packet 166 SERVICED
+[25.4279] [TCP Reno], cwnd=7, ssthresh=3, state=Additive Increase
+[32.1400] [3] Packet 170 ARRIVAL
+[25.4326] [4] Packet 167 SERVICED
+[25.4326] [TCP Reno], cwnd=8, ssthresh=3, state=Additive Increase
+[32.2683] [3] Packet 171 ARRIVAL
+[32.3820] [4] Packet 172 ARRIVAL
+[32.3820] [4] Packet 172 BLOCKED
+[25.6260] [4] Packet 168 SERVICED
+[25.6260] [TCP Reno], cwnd=8, ssthresh=3, state=Additive Increase
+[32.5734] [3] Packet 173 ARRIVAL
+[25.6903] [4] Packet 169 SERVICED
+[25.6903] [TCP Reno], cwnd=8, ssthresh=3, state=Additive Increase
+[32.5827] [3] Packet 174 ARRIVAL
+[25.7580] [4] Packet 170 SERVICED
+[25.7580] [TCP Reno], cwnd=8, ssthresh=3, state=Additive Increase
+[32.7793] [3] Packet 175 ARRIVAL
+[25.7770] [4] Packet 171 SERVICED
+[25.7770] [TCP Reno], cwnd=8, ssthresh=3, state=Additive Increase
+[33.1676] [3] Packet 176 ARRIVAL
+[25.8778] [4] Packet 173 SERVICED
+[25.8778] [TCP Reno], cwnd=8, ssthresh=3, state=Additive Increase
+[33.2031] [3] Packet 177 ARRIVAL
+[25.9247] [4] Packet 174 SERVICED
+[25.9247] [TCP Reno], cwnd=8, ssthresh=3, state=Additive Increase
+[33.4088] [3] Packet 178 ARRIVAL
+[25.9947] [4] Packet 175 SERVICED
+[25.9947] [TCP Reno], cwnd=8, ssthresh=3, state=Additive Increase
+[33.5851] [3] Packet 179 ARRIVAL
+[26.1022] [4] Packet 176 SERVICED
+[26.1022] [TCP Reno], cwnd=9, ssthresh=3, state=Additive Increase
+[33.7564] [3] Packet 180 ARRIVAL
+[33.9626] [4] Packet 181 ARRIVAL
+[33.9626] [4] Packet 181 BLOCKED
+[26.1095] [4] Packet 177 SERVICED
+[26.1095] [TCP Reno], cwnd=9, ssthresh=3, state=Additive Increase
+[34.1204] [3] Packet 182 ARRIVAL
+[26.1122] [4] Packet 178 SERVICED
+[26.1122] [TCP Reno], cwnd=9, ssthresh=3, state=Additive Increase
+[34.2179] [3] Packet 183 ARRIVAL
+[26.3939] [4] Packet 179 SERVICED
+[26.3939] [TCP Reno], cwnd=9, ssthresh=3, state=Additive Increase
+[34.6895] [3] Packet 184 ARRIVAL
+[26.4430] [4] Packet 180 SERVICED
+[26.4430] [TCP Reno], cwnd=9, ssthresh=3, state=Additive Increase
+[34.7038] [3] Packet 185 ARRIVAL
+[26.7268] [4] Packet 182 SERVICED
+[26.7268] [TCP Reno], cwnd=9, ssthresh=3, state=Additive Increase
+[34.7075] [3] Packet 186 ARRIVAL
+[27.0517] [4] Packet 183 SERVICED
+[27.0517] [TCP Reno], cwnd=9, ssthresh=3, state=Additive Increase
+[34.9373] [3] Packet 187 ARRIVAL
+[27.0735] [4] Packet 184 SERVICED
+[27.0735] [TCP Reno], cwnd=9, ssthresh=3, state=Additive Increase
+[35.0141] [3] Packet 188 ARRIVAL
+[27.0842] [4] Packet 185 SERVICED
+[27.0842] [TCP Reno], cwnd=9, ssthresh=3, state=Additive Increase
+[35.0188] [3] Packet 189 ARRIVAL
+[27.0941] [4] Packet 186 SERVICED
+[27.0941] [TCP Reno], cwnd=10, ssthresh=3, state=Additive Increase
+[35.0850] [3] Packet 190 ARRIVAL
+[35.3237] [4] Packet 191 ARRIVAL
+[35.3237] [4] Packet 191 BLOCKED
+[27.1015] [4] Packet 187 SERVICED
+[27.1015] [TCP Reno], cwnd=10, ssthresh=3, state=Additive Increase
+[35.7436] [3] Packet 192 ARRIVAL
+[27.2878] [4] Packet 188 SERVICED
+[27.2878] [TCP Reno], cwnd=10, ssthresh=3, state=Additive Increase
+[36.0690] [3] Packet 193 ARRIVAL
+[27.4075] [TCP Reno], cwnd=1, ssthresh=5, state=Multiplicative Decrease
+[27.4563] [4] Packet 189 SERVICED
+[27.4563] [TCP Reno], cwnd=2, ssthresh=5, state=Slow Start
+[27.4688] [3] Packet 190 SERVICED
+[27.4688] [TCP Reno], cwnd=4, ssthresh=5, state=Slow Start
+[27.6017] [2] Packet 192 SERVICED
+[27.6017] [TCP Reno], cwnd=8, ssthresh=5, state=Slow Start
+[36.1080] [1] Packet 194 ARRIVAL
+[36.4369] [2] Packet 195 ARRIVAL
+[27.6348] [3] Packet 193 SERVICED
+[27.6348] [TCP Reno], cwnd=8, ssthresh=5, state=Additive Increase
+[36.5433] [2] Packet 196 ARRIVAL
+[27.7737] [3] Packet 194 SERVICED
+[27.7737] [TCP Reno], cwnd=8, ssthresh=5, state=Additive Increase
+[36.8429] [2] Packet 197 ARRIVAL
+[28.1776] [TCP Reno], cwnd=1, ssthresh=4, state=Multiplicative Decrease
+[28.2394] [3] Packet 195 SERVICED
+[28.2394] [TCP Reno], cwnd=2, ssthresh=4, state=Slow Start
+[28.2859] [2] Packet 196 SERVICED
+[28.2859] [TCP Reno], cwnd=4, ssthresh=4, state=Slow Start
+[28.3276] [1] Packet 197 SERVICED
+[28.3276] [TCP Reno], cwnd=4, ssthresh=4, state=Additive Increase
+[31.5026] [TCP Reno], cwnd=1, ssthresh=2, state=Multiplicative Decrease
+[32.3820] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[33.9626] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[35.3237] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[37.3769] [0] Packet 198 ARRIVAL
+[37.5724] [1] Packet 198 SERVICED
+[37.5724] [TCP Reno], cwnd=2, ssthresh=1, state=Additive Increase
+[37.5724] [0] Packet 199 ARRIVAL
+[37.8533] [1] Packet 200 ARRIVAL
+[37.7114] [2] Packet 199 SERVICED
+[37.7114] [TCP Reno], cwnd=2, ssthresh=1, state=Additive Increase
+[38.3190] [1] Packet 201 ARRIVAL
+[37.7222] [2] Packet 200 SERVICED
+[37.7222] [TCP Reno], cwnd=3, ssthresh=1, state=Additive Increase
+[38.6693] [1] Packet 202 ARRIVAL
+[39.1210] [2] Packet 203 ARRIVAL
+[37.7926] [3] Packet 201 SERVICED
+[37.7926] [TCP Reno], cwnd=3, ssthresh=1, state=Additive Increase
+[39.1232] [2] Packet 204 ARRIVAL
+[37.8312] [3] Packet 202 SERVICED
+[37.8312] [TCP Reno], cwnd=3, ssthresh=1, state=Additive Increase
+[39.1424] [2] Packet 205 ARRIVAL
+[37.8805] [3] Packet 203 SERVICED
+[37.8805] [TCP Reno], cwnd=4, ssthresh=1, state=Additive Increase
+[39.7417] [2] Packet 206 ARRIVAL
+[39.9121] [3] Packet 207 ARRIVAL
+[38.1163] [4] Packet 204 SERVICED
+[38.1163] [TCP Reno], cwnd=4, ssthresh=1, state=Additive Increase
+[40.0311] [3] Packet 208 ARRIVAL
+[38.1547] [4] Packet 205 SERVICED
+[38.1547] [TCP Reno], cwnd=4, ssthresh=1, state=Additive Increase
+[40.1108] [3] Packet 209 ARRIVAL
+[38.4555] [4] Packet 206 SERVICED
+[38.4555] [TCP Reno], cwnd=4, ssthresh=1, state=Additive Increase
+[40.3900] [3] Packet 210 ARRIVAL
+[38.5555] [4] Packet 207 SERVICED
+[38.5555] [TCP Reno], cwnd=5, ssthresh=1, state=Additive Increase
+[40.7018] [3] Packet 211 ARRIVAL
+[40.8382] [4] Packet 212 ARRIVAL
+[40.8382] [4] Packet 212 BLOCKED
+[38.5902] [4] Packet 208 SERVICED
+[38.5902] [TCP Reno], cwnd=5, ssthresh=1, state=Additive Increase
+[40.9977] [3] Packet 213 ARRIVAL
+[38.7018] [4] Packet 209 SERVICED
+[38.7018] [TCP Reno], cwnd=5, ssthresh=1, state=Additive Increase
+[41.4350] [3] Packet 214 ARRIVAL
+[38.8586] [4] Packet 210 SERVICED
+[38.8586] [TCP Reno], cwnd=5, ssthresh=1, state=Additive Increase
+[41.4599] [3] Packet 215 ARRIVAL
+[38.8682] [4] Packet 211 SERVICED
+[38.8682] [TCP Reno], cwnd=5, ssthresh=1, state=Additive Increase
+[41.7466] [3] Packet 216 ARRIVAL
+[38.9264] [4] Packet 213 SERVICED
+[38.9264] [TCP Reno], cwnd=6, ssthresh=1, state=Additive Increase
+[41.7679] [3] Packet 217 ARRIVAL
+[42.0094] [4] Packet 218 ARRIVAL
+[42.0094] [4] Packet 218 BLOCKED
+[38.9697] [4] Packet 214 SERVICED
+[38.9697] [TCP Reno], cwnd=6, ssthresh=1, state=Additive Increase
+[42.3544] [3] Packet 219 ARRIVAL
+[38.9851] [4] Packet 215 SERVICED
+[38.9851] [TCP Reno], cwnd=6, ssthresh=1, state=Additive Increase
+[42.3714] [3] Packet 220 ARRIVAL
+[39.0814] [4] Packet 216 SERVICED
+[39.0814] [TCP Reno], cwnd=6, ssthresh=1, state=Additive Increase
+[43.2345] [3] Packet 221 ARRIVAL
+[39.0902] [4] Packet 217 SERVICED
+[39.0902] [TCP Reno], cwnd=6, ssthresh=1, state=Additive Increase
+[43.3271] [3] Packet 222 ARRIVAL
+[39.2127] [4] Packet 219 SERVICED
+[39.2127] [TCP Reno], cwnd=6, ssthresh=1, state=Additive Increase
+[43.9155] [3] Packet 223 ARRIVAL
+[39.2215] [4] Packet 220 SERVICED
+[39.2215] [TCP Reno], cwnd=7, ssthresh=1, state=Additive Increase
+[44.1955] [3] Packet 224 ARRIVAL
+[44.2129] [4] Packet 225 ARRIVAL
+[44.2129] [4] Packet 225 BLOCKED
+[39.2684] [4] Packet 221 SERVICED
+[39.2684] [TCP Reno], cwnd=7, ssthresh=1, state=Additive Increase
+[44.3764] [3] Packet 226 ARRIVAL
+[39.4360] [4] Packet 222 SERVICED
+[39.4360] [TCP Reno], cwnd=7, ssthresh=1, state=Additive Increase
+[44.8500] [3] Packet 227 ARRIVAL
+[39.8628] [4] Packet 223 SERVICED
+[39.8628] [TCP Reno], cwnd=7, ssthresh=1, state=Additive Increase
+[44.9857] [3] Packet 228 ARRIVAL
+[39.9101] [4] Packet 224 SERVICED
+[39.9101] [TCP Reno], cwnd=7, ssthresh=1, state=Additive Increase
+[45.1122] [3] Packet 229 ARRIVAL
+[39.9653] [4] Packet 226 SERVICED
+[39.9653] [TCP Reno], cwnd=7, ssthresh=1, state=Additive Increase
+[45.1375] [3] Packet 230 ARRIVAL
+[39.9770] [4] Packet 227 SERVICED
+[39.9770] [TCP Reno], cwnd=7, ssthresh=1, state=Additive Increase
+[45.3470] [3] Packet 231 ARRIVAL
+[39.9782] [4] Packet 228 SERVICED
+[39.9782] [TCP Reno], cwnd=8, ssthresh=1, state=Additive Increase
+[45.5221] [3] Packet 232 ARRIVAL
+[45.6161] [4] Packet 233 ARRIVAL
+[45.6161] [4] Packet 233 BLOCKED
+[39.9840] [4] Packet 229 SERVICED
+[39.9840] [TCP Reno], cwnd=8, ssthresh=1, state=Additive Increase
+[46.0220] [3] Packet 234 ARRIVAL
+[39.9965] [4] Packet 230 SERVICED
+[39.9965] [TCP Reno], cwnd=8, ssthresh=1, state=Additive Increase
+[46.6826] [3] Packet 235 ARRIVAL
+[40.1335] [4] Packet 231 SERVICED
+[40.1335] [TCP Reno], cwnd=8, ssthresh=1, state=Additive Increase
+[47.3831] [3] Packet 236 ARRIVAL
+[40.4610] [4] Packet 232 SERVICED
+[40.4610] [TCP Reno], cwnd=8, ssthresh=1, state=Additive Increase
+[47.8266] [3] Packet 237 ARRIVAL
+[40.4863] [4] Packet 234 SERVICED
+[40.4863] [TCP Reno], cwnd=8, ssthresh=1, state=Additive Increase
+[48.8180] [3] Packet 238 ARRIVAL
+[40.4875] [4] Packet 235 SERVICED
+[40.4875] [TCP Reno], cwnd=8, ssthresh=1, state=Additive Increase
+[48.9794] [3] Packet 239 ARRIVAL
+[40.4920] [4] Packet 236 SERVICED
+[40.4920] [TCP Reno], cwnd=8, ssthresh=1, state=Additive Increase
+[49.1275] [3] Packet 240 ARRIVAL
+[40.5670] [4] Packet 237 SERVICED
+[40.5670] [TCP Reno], cwnd=9, ssthresh=1, state=Additive Increase
+[49.3655] [3] Packet 241 ARRIVAL
+[49.5630] [4] Packet 242 ARRIVAL
+[49.5630] [4] Packet 242 BLOCKED
+[40.5746] [4] Packet 238 SERVICED
+[40.5746] [TCP Reno], cwnd=9, ssthresh=1, state=Additive Increase
+[50.0259] [3] Packet 243 ARRIVAL
+[40.8382] [TCP Reno], cwnd=1, ssthresh=4, state=Multiplicative Decrease
+[40.9230] [4] Packet 239 SERVICED
+[40.9230] [TCP Reno], cwnd=2, ssthresh=4, state=Slow Start
+[41.0223] [3] Packet 240 SERVICED
+[41.0223] [TCP Reno], cwnd=4, ssthresh=4, state=Slow Start
+[41.0829] [2] Packet 241 SERVICED
+[41.0829] [TCP Reno], cwnd=4, ssthresh=4, state=Additive Increase
+[41.0875] [1] Packet 243 SERVICED
+[41.0875] [TCP Reno], cwnd=4, ssthresh=4, state=Additive Increase
+[42.0094] [TCP Reno], cwnd=1, ssthresh=2, state=Multiplicative Decrease
+[44.2129] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[45.6161] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[49.5630] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[50.0918] [0] Packet 244 ARRIVAL
+[50.3922] [1] Packet 244 SERVICED
+[50.3922] [TCP Reno], cwnd=2, ssthresh=1, state=Additive Increase
+[50.5338] [0] Packet 245 ARRIVAL
+[50.7273] [1] Packet 246 ARRIVAL
+[50.5946] [2] Packet 245 SERVICED
+[50.5946] [TCP Reno], cwnd=2, ssthresh=1, state=Additive Increase
+[50.7690] [1] Packet 247 ARRIVAL
+[50.6271] [2] Packet 246 SERVICED
+[50.6271] [TCP Reno], cwnd=3, ssthresh=1, state=Additive Increase
+[50.8562] [1] Packet 248 ARRIVAL
+[50.8724] [2] Packet 249 ARRIVAL
+[50.6894] [3] Packet 247 SERVICED
+[50.6894] [TCP Reno], cwnd=3, ssthresh=1, state=Additive Increase
+[51.7292] [2] Packet 250 ARRIVAL
+[50.7770] [3] Packet 248 SERVICED
+[50.7770] [TCP Reno], cwnd=3, ssthresh=1, state=Additive Increase
+[51.8828] [2] Packet 251 ARRIVAL
+[51.1435] [3] Packet 249 SERVICED
+[51.1435] [TCP Reno], cwnd=4, ssthresh=1, state=Additive Increase
+[52.2190] [2] Packet 252 ARRIVAL
+[52.2545] [3] Packet 253 ARRIVAL
+[51.2633] [4] Packet 250 SERVICED
+[51.2633] [TCP Reno], cwnd=4, ssthresh=1, state=Additive Increase
+[52.6003] [3] Packet 254 ARRIVAL
+[51.3003] [4] Packet 251 SERVICED
+[51.3003] [TCP Reno], cwnd=4, ssthresh=1, state=Additive Increase
+[52.8590] [3] Packet 255 ARRIVAL
+[51.4157] [4] Packet 252 SERVICED
+[51.4157] [TCP Reno], cwnd=4, ssthresh=1, state=Additive Increase
+[52.9673] [3] Packet 256 ARRIVAL
+[51.6576] [4] Packet 253 SERVICED
+[51.6576] [TCP Reno], cwnd=5, ssthresh=1, state=Additive Increase
+[53.3694] [3] Packet 257 ARRIVAL
+[53.3747] [4] Packet 258 ARRIVAL
+[53.3747] [4] Packet 258 BLOCKED
+[51.9567] [4] Packet 254 SERVICED
+[51.9567] [TCP Reno], cwnd=5, ssthresh=1, state=Additive Increase
+[53.7075] [3] Packet 259 ARRIVAL
+[52.0518] [4] Packet 255 SERVICED
+[52.0518] [TCP Reno], cwnd=5, ssthresh=1, state=Additive Increase
+[53.7401] [3] Packet 260 ARRIVAL
+[52.3217] [4] Packet 256 SERVICED
+[52.3217] [TCP Reno], cwnd=5, ssthresh=1, state=Additive Increase
+[53.8360] [3] Packet 261 ARRIVAL
+[52.3263] [4] Packet 257 SERVICED
+[52.3263] [TCP Reno], cwnd=5, ssthresh=1, state=Additive Increase
+[54.2052] [3] Packet 262 ARRIVAL
+[52.7627] [4] Packet 259 SERVICED
+[52.7627] [TCP Reno], cwnd=6, ssthresh=1, state=Additive Increase
+[54.3316] [3] Packet 263 ARRIVAL
+[54.3955] [4] Packet 264 ARRIVAL
+[54.3955] [4] Packet 264 BLOCKED
+[52.8529] [4] Packet 260 SERVICED
+[52.8529] [TCP Reno], cwnd=6, ssthresh=1, state=Additive Increase
+[54.7956] [3] Packet 265 ARRIVAL
+[53.2033] [4] Packet 261 SERVICED
+[53.2033] [TCP Reno], cwnd=6, ssthresh=1, state=Additive Increase
+[56.4301] [3] Packet 266 ARRIVAL
+[53.3747] [TCP Reno], cwnd=1, ssthresh=3, state=Multiplicative Decrease
+[53.3855] [4] Packet 262 SERVICED
+[53.3855] [TCP Reno], cwnd=2, ssthresh=3, state=Slow Start
+[53.4391] [3] Packet 263 SERVICED
+[53.4391] [TCP Reno], cwnd=4, ssthresh=3, state=Slow Start
+[56.5922] [2] Packet 267 ARRIVAL
+[53.6067] [3] Packet 265 SERVICED
+[53.6067] [TCP Reno], cwnd=4, ssthresh=3, state=Additive Increase
+[57.1715] [2] Packet 268 ARRIVAL
+[54.1762] [3] Packet 266 SERVICED
+[54.1762] [TCP Reno], cwnd=4, ssthresh=3, state=Additive Increase
+[57.2283] [2] Packet 269 ARRIVAL
+[54.3227] [3] Packet 267 SERVICED
+[54.3227] [TCP Reno], cwnd=4, ssthresh=3, state=Additive Increase
+[57.2559] [2] Packet 270 ARRIVAL
+[54.3955] [TCP Reno], cwnd=1, ssthresh=2, state=Multiplicative Decrease
+[54.5122] [3] Packet 268 SERVICED
+[54.5122] [TCP Reno], cwnd=2, ssthresh=2, state=Slow Start
+[54.5721] [2] Packet 269 SERVICED
+[54.5721] [TCP Reno], cwnd=2, ssthresh=2, state=Additive Increase
+[57.4423] [1] Packet 271 ARRIVAL
+[54.8801] [2] Packet 270 SERVICED
+[54.8801] [TCP Reno], cwnd=3, ssthresh=2, state=Additive Increase
+[57.6651] [1] Packet 272 ARRIVAL
+[57.7538] [2] Packet 273 ARRIVAL
+[54.9061] [3] Packet 271 SERVICED
+[54.9061] [TCP Reno], cwnd=3, ssthresh=2, state=Additive Increase
+[57.9765] [2] Packet 274 ARRIVAL
+[55.0023] [3] Packet 272 SERVICED
+[55.0023] [TCP Reno], cwnd=3, ssthresh=2, state=Additive Increase
+[58.2724] [2] Packet 275 ARRIVAL
+[55.0144] [3] Packet 273 SERVICED
+[55.0144] [TCP Reno], cwnd=4, ssthresh=2, state=Additive Increase
+[58.6548] [2] Packet 276 ARRIVAL
+[58.8194] [3] Packet 277 ARRIVAL
+[55.0878] [4] Packet 274 SERVICED
+[55.0878] [TCP Reno], cwnd=4, ssthresh=2, state=Additive Increase
+[58.9227] [3] Packet 278 ARRIVAL
+[55.1613] [4] Packet 275 SERVICED
+[55.1613] [TCP Reno], cwnd=4, ssthresh=2, state=Additive Increase
+[58.9286] [3] Packet 279 ARRIVAL
+[55.2415] [4] Packet 276 SERVICED
+[55.2415] [TCP Reno], cwnd=4, ssthresh=2, state=Additive Increase
+[59.1222] [3] Packet 280 ARRIVAL
+[55.4508] [4] Packet 277 SERVICED
+[55.4508] [TCP Reno], cwnd=5, ssthresh=2, state=Additive Increase
+[59.1701] [3] Packet 281 ARRIVAL
+[59.1731] [4] Packet 282 ARRIVAL
+[59.1731] [4] Packet 282 BLOCKED
+[55.4652] [4] Packet 278 SERVICED
+[55.4652] [TCP Reno], cwnd=5, ssthresh=2, state=Additive Increase
+[59.3513] [3] Packet 283 ARRIVAL
+[55.6059] [4] Packet 279 SERVICED
+[55.6059] [TCP Reno], cwnd=5, ssthresh=2, state=Additive Increase
+[59.4664] [3] Packet 284 ARRIVAL
+[55.7277] [4] Packet 280 SERVICED
+[55.7277] [TCP Reno], cwnd=5, ssthresh=2, state=Additive Increase
+[59.5520] [3] Packet 285 ARRIVAL
+[55.7423] [4] Packet 281 SERVICED
+[55.7423] [TCP Reno], cwnd=5, ssthresh=2, state=Additive Increase
+[59.8582] [3] Packet 286 ARRIVAL
+[55.7921] [4] Packet 283 SERVICED
+[55.7921] [TCP Reno], cwnd=6, ssthresh=2, state=Additive Increase
+[60.0528] [3] Packet 287 ARRIVAL
+[60.6501] [4] Packet 288 ARRIVAL
+[60.6501] [4] Packet 288 BLOCKED
+[56.0267] [4] Packet 284 SERVICED
+[56.0267] [TCP Reno], cwnd=6, ssthresh=2, state=Additive Increase
+[61.1724] [3] Packet 289 ARRIVAL
+[56.0988] [4] Packet 285 SERVICED
+[56.0988] [TCP Reno], cwnd=6, ssthresh=2, state=Additive Increase
+[61.2321] [3] Packet 290 ARRIVAL
+[56.1493] [4] Packet 286 SERVICED
+[56.1493] [TCP Reno], cwnd=6, ssthresh=2, state=Additive Increase
+[62.0149] [3] Packet 291 ARRIVAL
+[56.3476] [4] Packet 287 SERVICED
+[56.3476] [TCP Reno], cwnd=6, ssthresh=2, state=Additive Increase
+[62.0946] [3] Packet 292 ARRIVAL
+[56.4154] [4] Packet 289 SERVICED
+[56.4154] [TCP Reno], cwnd=6, ssthresh=2, state=Additive Increase
+[62.1495] [3] Packet 293 ARRIVAL
+[56.4768] [4] Packet 290 SERVICED
+[56.4768] [TCP Reno], cwnd=7, ssthresh=2, state=Additive Increase
+[62.1771] [3] Packet 294 ARRIVAL
+[62.2101] [4] Packet 295 ARRIVAL
+[62.2101] [4] Packet 295 BLOCKED
+[56.5447] [4] Packet 291 SERVICED
+[56.5447] [TCP Reno], cwnd=7, ssthresh=2, state=Additive Increase
+[62.4149] [3] Packet 296 ARRIVAL
+[56.6450] [4] Packet 292 SERVICED
+[56.6450] [TCP Reno], cwnd=7, ssthresh=2, state=Additive Increase
+[62.4997] [3] Packet 297 ARRIVAL
+[56.6529] [4] Packet 293 SERVICED
+[56.6529] [TCP Reno], cwnd=7, ssthresh=2, state=Additive Increase
+[62.6282] [3] Packet 298 ARRIVAL
+[56.6666] [4] Packet 294 SERVICED
+[56.6666] [TCP Reno], cwnd=7, ssthresh=2, state=Additive Increase
+[62.6660] [3] Packet 299 ARRIVAL
+[56.6867] [4] Packet 296 SERVICED
+[56.6867] [TCP Reno], cwnd=7, ssthresh=2, state=Additive Increase
+[56.9138] [3] Packet 297 SERVICED
+[56.9138] [TCP Reno], cwnd=7, ssthresh=2, state=Additive Increase
+[57.0239] [2] Packet 298 SERVICED
+[57.0239] [TCP Reno], cwnd=8, ssthresh=2, state=Additive Increase
+[57.0453] [1] Packet 299 SERVICED
+[57.0453] [TCP Reno], cwnd=8, ssthresh=2, state=Additive Increase
+[59.1731] [TCP Reno], cwnd=1, ssthresh=4, state=Multiplicative Decrease
+[60.6501] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+[62.2101] [TCP Reno], cwnd=1, ssthresh=1, state=Multiplicative Decrease
+
+=== Simulation Results for M/M/1 Queue ===
+Simulation Parameters:
+  - Arrival Rate (λ): 5
+  - Service Rate (μ): 10
+  - Deadline Rate (θ): 1 (Exp: False)
+  - Queue Size: 4
+  - Total Packets: 300
+  - Congestion Control: reno
+
+Simulation Statistics:
+  - Simulation Time: 62.6744 seconds
+  - Blocked Rate: 0.1233 (12.33%)
+  - Dropped Rate: 0.0000 (0.00%)
+  - Total Loss Rate: 0.1233 (12.33%)
+  - Total Packets Processed: 300
+    - Service Count: 263
+    - Drop Count: 0
+    - Block Count: 37
+  - Throughput: 4.1963 packets/second
+  - Average Latency: -3.1723 seconds

@@ -596,7 +596,7 @@ def main():
     queue_size = 4 
     is_exp_drop = False
 
-    tcp_cc = 'reno'
+    tcp_cc = 'cubic'
     
     # init simulator
     sim = Simulator(lmbda=lmbda, mu=mu, theta=theta, size=queue_size, is_exp_drop=is_exp_drop, tcp_cc=tcp_cc)
