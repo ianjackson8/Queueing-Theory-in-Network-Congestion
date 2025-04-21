@@ -79,7 +79,7 @@ class TCPReno(CongestionControl):
         '''
         # if cwnd is less than ssthresh, increase cwnd linearly
         if self.cwnd < self.ssthresh:
-            self.cwnd *= 2
+            self.cwnd += 1
             phase = "Slow Start"
 
         # after reaching ssthresh, increase cwnd by 1/cwnd for each ACK
@@ -324,6 +324,7 @@ class Queue():
 
             # if queue was empty, process immediately; else, it waits for its limit time (expiration)
             if self.queue_len == 0:
+                packet.service_end_time = event_time + packet.service_time
                 return Event(packet.id, packet.service_end_time, PacketStatus.SERVICED)
             else:
                 return Event(packet.id, packet.limit_time, PacketStatus.DROP)
@@ -344,7 +345,14 @@ class Queue():
             # packet successfully gets serviced and exits
             self.n_service += 1 
             print(f"[{event_time:.4f}] [{queue_len}] Packet {packet.id} SERVICED")
-            self.latency_log.append(event_time - packet.arrival_time)
+
+            latency = event_time - packet.arrival_time
+
+            if latency < 0:
+                print(f"\033[33mWARN: Negative latency for packet {packet.id} ({latency:.4f})\033[0m")
+                # latency = 0
+
+            self.latency_log.append(latency)
 
             # remove the serviced packet from the queue
             self.priority_queue = [p for p in self.priority_queue if p.id != packet.id]
@@ -355,8 +363,9 @@ class Queue():
                 return None
 
             # otherwise, schedule service for the next packet in the queue
-            next_packet = self.priority_queue[0]
-            return Event(next_packet.id, event_time + next_packet.service_time, PacketStatus.SERVICED)
+            next_packet: Packet = self.priority_queue[0]
+            next_packet.service_end_time = event_time + next_packet.service_time
+            return Event(next_packet.id, next_packet.service_end_time, PacketStatus.SERVICED)
         
         elif status == PacketStatus.BLOCK:
             # self.n_block += 1 
@@ -553,6 +562,17 @@ class Simulator():
 
         # TODO: fix coloring of the plot
         if self.cc:
+            # get the type of CC
+            if type(self.cc) is TCPReno:
+                cc_type = "TCP Reno"
+                cc_type_file = "reno"
+            elif type(self.cc) is TCPCubic:
+                cc_type = "TCP CUBIC"
+                cc_type_file = "cubic"
+            else:
+                cc_type = "Unknown CC"
+                cc_type_file = "unk"
+
             zipped = sorted(zip(self.cc.time_log, self.cc.cwnd_log, self.cc.state_log))
             times, cwnds, states = zip(*zipped)
             plt.figure(figsize=(12, 4))
@@ -565,22 +585,22 @@ class Simulator():
                 start_time = times[i]
                 end_time = times[i + 1]
 
-                ax.axvspan(start_time, end_time, alpha=0.2,
-                        color={
-                            'Slow Start': 'blue', 
-                            'Additive Increase': 'yellow', 
-                            'Multiplicative Decrease': 'red',
-                            'Cubic Increase': 'yellow',
-                            'Cubic Loss': 'red'
-                        }.get(state, 'gray'),
-                        label=state if state not in ax.get_legend_handles_labels()[1] else "")
+                # ax.axvspan(start_time, end_time, alpha=0.2,
+                #         color={
+                #             'Slow Start': 'blue', 
+                #             'Additive Increase': 'yellow', 
+                #             'Multiplicative Decrease': 'red',
+                #             'Cubic Increase': 'yellow',
+                #             'Cubic Loss': 'red'
+                #         }.get(state, 'gray'),
+                #         label=state if state not in ax.get_legend_handles_labels()[1] else "")
 
             plt.xlabel('Time')
             plt.ylabel('Congestion Window Size')
-            plt.title('TCP Reno cwnd Over Time with State Transitions')
+            plt.title(f'{cc_type} cwnd Over Time')
             plt.grid(True)
             plt.legend()
-            plt.savefig(os.path.join(results_folder, "tcp_reno_cwnd_over_time.png"))
+            plt.savefig(os.path.join(results_folder, f"{cc_type_file}_cwnd_over_time.png"))
 
 #== Methods ==#
 
@@ -589,14 +609,14 @@ class Simulator():
 def main():
     # set parameters
     mu = 10  # service rate (μ)
-    lmbda = 20 # arrival rate (λ)
+    lmbda = 5 # arrival rate (λ)
     theta = 1 # deadline rate or fixed deadline time (θ)
     n_packet = 300
 
     queue_size = 4 
     is_exp_drop = False
 
-    tcp_cc = 'cubic'
+    tcp_cc = 'reno'
     
     # init simulator
     sim = Simulator(lmbda=lmbda, mu=mu, theta=theta, size=queue_size, is_exp_drop=is_exp_drop, tcp_cc=tcp_cc)
