@@ -21,6 +21,9 @@ from numpy import random as rnd
 
 rnd.seed(42)  
 
+#== Global Variables ==#
+RESULTS_PATH = 'results/E5/E5.1'
+
 #== Congestion Control Classes ==#
 class CongestionControl:
     '''
@@ -444,8 +447,8 @@ def packet_generator(env: simpy.Environment, router: NetworkRouter, lam: float, 
     for i in range(num_packets):
         arrival_time = env.now
         service_time = rnd.exponential(1 / mu)
-        # deadline = rnd.exponential(1 / theta)
-        deadline = theta if theta > 0 else float('inf')
+        deadline = rnd.exponential(1 / theta)
+        # deadline = theta if theta > 0 else float('inf')
 
         packet = Packet(id=i, arrival_time=arrival_time, service_time=service_time, deadline=deadline)
         print(f"[{env.now:.4f}] Packet {i} ARRIVAL")
@@ -496,10 +499,10 @@ def run_simulation(lam: float, mu: float, theta: float, queue_size: int, num_pac
     print(f"Throughput: {throughput:.4f} packets/sec")
     print("=========================")
 
-    plot_results(router)
+    plot_results(router, cc)
     if cc: plot_cwnd(cc)
 
-def plot_results(router: NetworkRouter):
+def plot_results(router: NetworkRouter, cc):
     '''
     Plot the results of the simulation.
 
@@ -507,10 +510,20 @@ def plot_results(router: NetworkRouter):
         router (NetworkRouter): the network router containing the logs
     '''
 
+    # get name of congestion control method
+    if isinstance(cc, NoCongestionControl):
+        cc_meth = "none"
+    elif isinstance(cc, TCPReno):
+        cc_meth = "reno"
+    elif isinstance(cc, TCPCubic):
+        cc_meth = "cubic"
+    else:
+        cc_meth = "none"
+
     # create a results folder if does not exist
-    results_folder = "results"
-    if not os.path.exists(results_folder):
-        os.makedirs(results_folder)
+    # results_folder = "results"
+    if not os.path.exists(RESULTS_PATH):
+        os.makedirs(RESULTS_PATH)
 
     # cumulative Serviced and Dropped Packets
     plt.figure(figsize=(10, 5))
@@ -522,7 +535,7 @@ def plot_results(router: NetworkRouter):
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
-    plt.savefig(os.path.join(results_folder, "cumulative_packet_events_over_time.png"))
+    plt.savefig(os.path.join(RESULTS_PATH, f"{cc_meth}_cumulative_packet_events_over_time.png"))
 
     # queue Length Over Time
     plt.figure(figsize=(10, 5))
@@ -532,7 +545,7 @@ def plot_results(router: NetworkRouter):
     plt.title("Queue Length Over Time")
     plt.grid(True)
     plt.tight_layout()
-    plt.savefig(os.path.join(results_folder, "queue_length_over_time.png"))
+    plt.savefig(os.path.join(RESULTS_PATH, f"{cc_meth}_queue_length_over_time.png"))
 
 def plot_cwnd(cc):
     if not hasattr(cc, 'cwnd_log') or not hasattr(cc, 'state_log'):
@@ -541,13 +554,13 @@ def plot_cwnd(cc):
     
     # get name of congestion control method
     if isinstance(cc, NoCongestionControl):
-        cc_meth = "no_cc"
+        cc_meth = "none"
     elif isinstance(cc, TCPReno):
         cc_meth = "reno"
     elif isinstance(cc, TCPCubic):
         cc_meth = "cubic"
     else:
-        cc_meth = "unk"
+        cc_meth = "none"
 
     # extract logs
     time = cc.time_log
@@ -599,17 +612,26 @@ def plot_cwnd(cc):
     ax.grid(True)
     plt.tight_layout()
 
-    plt.savefig(os.path.join("results", f"{cc_meth}_cwnd_over_time.png"))
+    plt.savefig(os.path.join(RESULTS_PATH, f"{cc_meth}_cwnd_over_time.png"))
 
 #== Main Execution ==#
 if __name__ == "__main__":
     # define params
-    lam = 10
+    lam = 15
     mu = 10
+    queue_size = 5
     theta = 1
-    queue_size = 4
-    num_packets = 100
-    tcp_cc = TCPReno()
+    num_packets = 500
+
+    argparser = argparse.ArgumentParser()
+    argparser.add_argument('--n', type=float, default=1)
+    args = argparser.parse_args()
+
+    n = int(args.n)
+    
+    if n == 1: tcp_cc = None
+    elif n == 2: tcp_cc = TCPReno()
+    elif n == 3: tcp_cc = TCPCubic()
 
     print("== Simulation Parameters ==")
     print(f"  - Arrival Rate (λ): {lam}")

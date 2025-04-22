@@ -1,0 +1,1020 @@
+== Simulation Parameters ==
+  - Arrival Rate (λ): 20
+  - Service Rate (μ): 10
+  - Deadline Rate (θ): 1
+  - Queue Size: 5
+  - Total Packets: 500
+  - Congestion Control: None
+===========================
+
+== Simulation Start ==
+[0.0000] Packet 0 ARRIVAL
+[0.0469] Packet 0 SERVICED, delay=0.0469
+[0.1505] Packet 1 ARRIVAL
+[0.1962] Packet 2 ARRIVAL
+[0.2046] Packet 3 ARRIVAL
+[0.2822] Packet 1 SERVICED, delay=0.1317
+[0.2991] Packet 2 SERVICED, delay=0.1030
+[0.3051] Packet 3 SERVICED, delay=0.1005
+[0.3052] Packet 4 ARRIVAL
+[0.3668] Packet 5 ARRIVAL
+[0.3971] Packet 4 SERVICED, delay=0.0919
+[0.3992] Packet 5 SERVICED, delay=0.0324
+[0.5419] Packet 6 ARRIVAL
+[0.5539] Packet 7 ARRIVAL
+[0.5640] Packet 8 ARRIVAL
+[0.6012] Packet 9 ARRIVAL
+[0.6184] Packet 10 ARRIVAL
+[0.6259] Packet 11 ARRIVAL
+[0.6259] Packet 11 DROPPED (queue full)
+[0.6487] Packet 12 ARRIVAL
+[0.6487] Packet 12 DROPPED (queue full)
+[0.7206] Packet 6 SERVICED, delay=0.1786
+[0.7256] Packet 13 ARRIVAL
+[0.7406] Packet 7 SERVICED, delay=0.1868
+[0.7617] Packet 14 ARRIVAL
+[0.7641] Packet 15 ARRIVAL
+[0.7641] Packet 15 DROPPED (queue full)
+[0.7735] Packet 16 ARRIVAL
+[0.7735] Packet 16 DROPPED (queue full)
+[0.7769] Packet 8 SERVICED, delay=0.2129
+[0.8335] Packet 9 SERVICED, delay=0.2323
+[0.9221] Packet 17 ARRIVAL
+[0.9281] Packet 10 SERVICED, delay=0.3097
+[0.9504] Packet 13 SERVICED, delay=0.2248
+[1.0048] Packet 18 ARRIVAL
+[1.0099] Packet 19 ARRIVAL
+[1.0389] Packet 20 ARRIVAL
+[1.0401] Packet 14 SERVICED, delay=0.2784
+[1.0731] Packet 21 ARRIVAL
+[1.1931] Packet 22 ARRIVAL
+[1.1931] Packet 22 DROPPED (queue full)
+[1.2474] Packet 23 ARRIVAL
+[1.2474] Packet 23 DROPPED (queue full)
+[1.2841] Packet 24 ARRIVAL
+[1.2841] Packet 24 DROPPED (queue full)
+[1.2943] Packet 25 ARRIVAL
+[1.2943] Packet 25 DROPPED (queue full)
+[1.3690] Packet 26 ARRIVAL
+[1.3690] Packet 26 DROPPED (queue full)
+[1.3772] Packet 17 SERVICED, delay=0.4551
+[1.4135] Packet 18 SERVICED, delay=0.4088
+[1.4816] Packet 27 ARRIVAL
+[1.5288] Packet 19 SERVICED, delay=0.5189
+[1.5418] Packet 20 SERVICED, delay=0.5029
+[1.5453] Packet 21 SERVICED, delay=0.4722
+[1.6090] Packet 28 ARRIVAL
+[1.6199] Packet 29 ARRIVAL
+[1.6364] Packet 27 SERVICED, delay=0.1549
+[1.6396] Packet 30 ARRIVAL
+[1.6457] Packet 28 SERVICED, delay=0.0367
+[1.6503] Packet 29 SERVICED, delay=0.0304
+[1.6554] Packet 31 ARRIVAL
+[1.6775] Packet 32 ARRIVAL
+[1.6995] Packet 30 SERVICED, delay=0.0599
+[1.7166] Packet 33 ARRIVAL
+[1.7976] Packet 34 ARRIVAL
+[1.8760] Packet 31 SERVICED, delay=0.2205
+[1.9090] Packet 32 SERVICED, delay=0.2315
+[1.9242] Packet 33 SERVICED, delay=0.2075
+[1.9319] Packet 34 SERVICED, delay=0.1343
+[2.0144] Packet 35 ARRIVAL
+[2.0254] Packet 36 ARRIVAL
+[2.1099] Packet 37 ARRIVAL
+[2.1623] Packet 35 SERVICED, delay=0.1479
+[2.1629] Packet 36 SERVICED, delay=0.1374
+[2.1752] Packet 38 ARRIVAL
+[2.1791] Packet 39 ARRIVAL
+[2.1852] Packet 40 ARRIVAL
+[2.2340] Packet 41 ARRIVAL
+[2.2373] Packet 42 ARRIVAL
+[2.2373] Packet 42 DROPPED (queue full)
+[2.2570] Packet 43 ARRIVAL
+[2.2570] Packet 43 DROPPED (queue full)
+[2.2856] Packet 37 SERVICED, delay=0.1756
+[2.3077] Packet 44 ARRIVAL
+[2.3397] Packet 45 ARRIVAL
+[2.3397] Packet 45 DROPPED (queue full)
+[2.4021] Packet 46 ARRIVAL
+[2.4021] Packet 46 DROPPED (queue full)
+[2.4331] Packet 38 SERVICED, delay=0.2579
+[2.4433] Packet 47 ARRIVAL
+[2.4774] Packet 48 ARRIVAL
+[2.4774] Packet 48 DROPPED (queue full)
+[2.4775] Packet 39 SERVICED, delay=0.2984
+[2.5053] Packet 49 ARRIVAL
+[2.5110] Packet 50 ARRIVAL
+[2.5110] Packet 50 DROPPED (queue full)
+[2.5616] Packet 51 ARRIVAL
+[2.5616] Packet 51 DROPPED (queue full)
+[2.5971] Packet 52 ARRIVAL
+[2.5971] Packet 52 DROPPED (queue full)
+[2.6114] Packet 53 ARRIVAL
+[2.6114] Packet 53 DROPPED (queue full)
+[2.6763] Packet 40 SERVICED, delay=0.4911
+[2.6818] Packet 54 ARRIVAL
+[2.6859] Packet 55 ARRIVAL
+[2.6859] Packet 55 DROPPED (queue full)
+[2.6946] Packet 56 ARRIVAL
+[2.6946] Packet 56 DROPPED (queue full)
+[2.7165] Packet 41 SERVICED, delay=0.4825
+[2.7772] Packet 57 ARRIVAL
+[2.8798] Packet 58 ARRIVAL
+[2.8798] Packet 58 DROPPED (queue full)
+[2.8901] Packet 59 ARRIVAL
+[2.8901] Packet 59 DROPPED (queue full)
+[2.9288] Packet 60 ARRIVAL
+[2.9288] Packet 60 DROPPED (queue full)
+[2.9347] Packet 44 SERVICED, delay=0.6270
+[3.0421] Packet 61 ARRIVAL
+[3.0479] Packet 62 ARRIVAL
+[3.0479] Packet 62 DROPPED (queue full)
+[3.0757] Packet 63 ARRIVAL
+[3.0757] Packet 63 DROPPED (queue full)
+[3.0821] Packet 47 SERVICED, delay=0.6388
+[3.0847] Packet 49 SERVICED, delay=0.5794
+[3.1107] Packet 54 SERVICED, delay=0.4288
+[3.1743] Packet 64 ARRIVAL
+[3.2100] Packet 65 ARRIVAL
+[3.2110] Packet 57 SERVICED, delay=0.4338
+[3.2226] Packet 66 ARRIVAL
+[3.2432] Packet 67 ARRIVAL
+[3.2493] Packet 61 SERVICED, delay=0.2072
+[3.2500] Packet 64 SERVICED, delay=0.0757
+[3.2627] Packet 68 ARRIVAL
+[3.3040] Packet 65 SERVICED, delay=0.0940
+[3.3168] Packet 66 SERVICED, delay=0.0942
+[3.3234] Packet 69 ARRIVAL
+[3.5018] Packet 70 ARRIVAL
+[3.5163] Packet 71 ARRIVAL
+[3.5342] Packet 72 ARRIVAL
+[3.5342] Packet 72 DROPPED (queue full)
+[3.5361] Packet 73 ARRIVAL
+[3.5361] Packet 73 DROPPED (queue full)
+[3.5710] Packet 74 ARRIVAL
+[3.5710] Packet 74 DROPPED (queue full)
+[3.5874] Packet 75 ARRIVAL
+[3.5874] Packet 75 DROPPED (queue full)
+[3.6010] Packet 76 ARRIVAL
+[3.6010] Packet 76 DROPPED (queue full)
+[3.6031] Packet 67 SERVICED, delay=0.3599
+[3.6347] Packet 77 ARRIVAL
+[3.6485] Packet 78 ARRIVAL
+[3.6485] Packet 78 DROPPED (queue full)
+[3.6763] Packet 68 SERVICED, delay=0.4135
+[3.7202] Packet 79 ARRIVAL
+[3.7215] Packet 69 SERVICED, delay=0.3980
+[3.7853] Packet 80 ARRIVAL
+[3.8354] Packet 81 ARRIVAL
+[3.8354] Packet 81 DROPPED (queue full)
+[3.8737] Packet 82 ARRIVAL
+[3.8737] Packet 82 DROPPED (queue full)
+[3.9639] Packet 83 ARRIVAL
+[3.9639] Packet 83 DROPPED (queue full)
+[3.9742] Packet 84 ARRIVAL
+[3.9742] Packet 84 DROPPED (queue full)
+[4.0189] Packet 85 ARRIVAL
+[4.0189] Packet 85 DROPPED (queue full)
+[4.0198] Packet 86 ARRIVAL
+[4.0198] Packet 86 DROPPED (queue full)
+[4.0326] Packet 87 ARRIVAL
+[4.0326] Packet 87 DROPPED (queue full)
+[4.0422] Packet 88 ARRIVAL
+[4.0422] Packet 88 DROPPED (queue full)
+[4.0497] Packet 70 SERVICED, delay=0.5478
+[4.0666] Packet 89 ARRIVAL
+[4.0740] Packet 90 ARRIVAL
+[4.0740] Packet 90 DROPPED (queue full)
+[4.0801] Packet 91 ARRIVAL
+[4.0801] Packet 91 DROPPED (queue full)
+[4.1184] Packet 71 SERVICED, delay=0.6021
+[4.1850] Packet 92 ARRIVAL
+[4.2389] Packet 93 ARRIVAL
+[4.2389] Packet 93 DROPPED (queue full)
+[4.2794] Packet 94 ARRIVAL
+[4.2794] Packet 94 DROPPED (queue full)
+[4.2933] Packet 95 ARRIVAL
+[4.2933] Packet 95 DROPPED (queue full)
+[4.4070] Packet 96 ARRIVAL
+[4.4070] Packet 96 DROPPED (queue full)
+[4.4572] Packet 97 ARRIVAL
+[4.4572] Packet 97 DROPPED (queue full)
+[4.4786] Packet 98 ARRIVAL
+[4.4786] Packet 98 DROPPED (queue full)
+[4.5428] Packet 77 SERVICED, delay=0.9082
+[4.5700] Packet 79 SERVICED, delay=0.8497
+[4.5923] Packet 99 ARRIVAL
+[4.6158] Packet 80 SERVICED, delay=0.8305
+[4.6680] Packet 100 ARRIVAL
+[4.6724] Packet 101 ARRIVAL
+[4.7868] Packet 102 ARRIVAL
+[4.7868] Packet 102 DROPPED (queue full)
+[4.7873] Packet 103 ARRIVAL
+[4.7873] Packet 103 DROPPED (queue full)
+[4.8417] Packet 104 ARRIVAL
+[4.8417] Packet 104 DROPPED (queue full)
+[4.8505] Packet 105 ARRIVAL
+[4.8505] Packet 105 DROPPED (queue full)
+[4.8918] Packet 89 SERVICED, delay=0.8252
+[4.9094] Packet 106 ARRIVAL
+[4.9217] Packet 92 SERVICED, delay=0.7367
+[4.9221] Packet 107 ARRIVAL
+[4.9356] Packet 108 ARRIVAL
+[4.9356] Packet 108 DROPPED (queue full)
+[5.0042] Packet 109 ARRIVAL
+[5.0042] Packet 109 DROPPED (queue full)
+[5.0988] Packet 110 ARRIVAL
+[5.0988] Packet 110 DROPPED (queue full)
+[5.1398] Packet 99 SERVICED, delay=0.5474
+[5.1408] Packet 111 ARRIVAL
+[5.1638] Packet 112 ARRIVAL
+[5.1638] Packet 112 DROPPED (queue full)
+[5.1777] Packet 113 ARRIVAL
+[5.1777] Packet 113 DROPPED (queue full)
+[5.2027] Packet 114 ARRIVAL
+[5.2027] Packet 114 DROPPED (queue full)
+[5.2425] Packet 100 SERVICED, delay=0.5745
+[5.2526] Packet 115 ARRIVAL
+[5.2601] Packet 101 SERVICED, delay=0.5877
+[5.2875] Packet 116 ARRIVAL
+[5.3214] Packet 117 ARRIVAL
+[5.3214] Packet 117 DROPPED (queue full)
+[5.3657] Packet 106 SERVICED, delay=0.4563
+[5.3855] Packet 118 ARRIVAL
+[5.3867] Packet 119 ARRIVAL
+[5.3867] Packet 119 DROPPED (queue full)
+[5.3965] Packet 120 ARRIVAL
+[5.3965] Packet 120 DROPPED (queue full)
+[5.4902] Packet 107 SERVICED, delay=0.5682
+[5.5001] Packet 111 SERVICED, delay=0.3592
+[5.5504] Packet 121 ARRIVAL
+[5.5735] Packet 122 ARRIVAL
+[5.6585] Packet 115 SERVICED, delay=0.4059
+[5.7052] Packet 123 ARRIVAL
+[5.7445] Packet 116 SERVICED, delay=0.4570
+[5.7774] Packet 118 SERVICED, delay=0.3919
+[5.8753] Packet 124 ARRIVAL
+[5.9712] Packet 125 ARRIVAL
+[5.9955] Packet 126 ARRIVAL
+[5.9955] Packet 126 DROPPED (queue full)
+[6.0145] Packet 127 ARRIVAL
+[6.0145] Packet 127 DROPPED (queue full)
+[6.0238] Packet 121 SERVICED, delay=0.4734
+[6.0253] Packet 122 SERVICED, delay=0.4519
+[6.0552] Packet 128 ARRIVAL
+[6.0812] Packet 123 SERVICED, delay=0.3760
+[6.1148] Packet 129 ARRIVAL
+[6.1199] Packet 130 ARRIVAL
+[6.3504] Packet 131 ARRIVAL
+[6.3504] Packet 131 DROPPED (queue full)
+[6.3869] Packet 132 ARRIVAL
+[6.3869] Packet 132 DROPPED (queue full)
+[6.4126] Packet 124 SERVICED, delay=0.5373
+[6.4475] Packet 125 SERVICED, delay=0.4763
+[6.4544] Packet 133 ARRIVAL
+[6.5150] Packet 134 ARRIVAL
+[6.5324] Packet 135 ARRIVAL
+[6.5324] Packet 135 DROPPED (queue full)
+[6.6155] Packet 136 ARRIVAL
+[6.6155] Packet 136 DROPPED (queue full)
+[6.7226] Packet 128 SERVICED, delay=0.6674
+[6.7377] Packet 137 ARRIVAL
+[6.7725] Packet 138 ARRIVAL
+[6.7725] Packet 138 DROPPED (queue full)
+[6.8070] Packet 129 SERVICED, delay=0.6923
+[6.8250] Packet 139 ARRIVAL
+[6.9025] Packet 130 SERVICED, delay=0.7826
+[6.9044] Packet 140 ARRIVAL
+[6.9251] Packet 141 ARRIVAL
+[6.9251] Packet 141 DROPPED (queue full)
+[6.9300] Packet 142 ARRIVAL
+[6.9300] Packet 142 DROPPED (queue full)
+[6.9318] Packet 143 ARRIVAL
+[6.9318] Packet 143 DROPPED (queue full)
+[6.9709] Packet 144 ARRIVAL
+[6.9709] Packet 144 DROPPED (queue full)
+[7.0156] Packet 145 ARRIVAL
+[7.0156] Packet 145 DROPPED (queue full)
+[7.0175] Packet 146 ARRIVAL
+[7.0175] Packet 146 DROPPED (queue full)
+[7.0219] Packet 133 SERVICED, delay=0.5675
+[7.0399] Packet 147 ARRIVAL
+[7.0664] Packet 134 SERVICED, delay=0.5514
+[7.0768] Packet 148 ARRIVAL
+[7.0889] Packet 149 ARRIVAL
+[7.0889] Packet 149 DROPPED (queue full)
+[7.0934] Packet 150 ARRIVAL
+[7.0934] Packet 150 DROPPED (queue full)
+[7.1313] Packet 151 ARRIVAL
+[7.1313] Packet 151 DROPPED (queue full)
+[7.1380] Packet 137 SERVICED, delay=0.4003
+[7.1820] Packet 152 ARRIVAL
+[7.2591] Packet 139 SERVICED, delay=0.4341
+[7.3682] Packet 153 ARRIVAL
+[7.3877] Packet 154 ARRIVAL
+[7.3877] Packet 154 DROPPED (queue full)
+[7.4035] Packet 155 ARRIVAL
+[7.4035] Packet 155 DROPPED (queue full)
+[7.4076] Packet 156 ARRIVAL
+[7.4076] Packet 156 DROPPED (queue full)
+[7.4798] Packet 140 SERVICED, delay=0.5754
+[7.4934] Packet 147 SERVICED, delay=0.4536
+[7.5720] Packet 157 ARRIVAL
+[7.6315] Packet 158 ARRIVAL
+[7.6404] Packet 148 SERVICED, delay=0.5636
+[7.6410] Packet 159 ARRIVAL
+[7.6554] Packet 160 ARRIVAL
+[7.6554] Packet 160 DROPPED (queue full)
+[7.7181] Packet 161 ARRIVAL
+[7.7181] Packet 161 DROPPED (queue full)
+[7.7345] Packet 162 ARRIVAL
+[7.7345] Packet 162 DROPPED (queue full)
+[7.7699] Packet 152 SERVICED, delay=0.5878
+[7.8015] Packet 163 ARRIVAL
+[7.8425] Packet 153 SERVICED, delay=0.4743
+[7.8488] Packet 164 ARRIVAL
+[7.8630] Packet 165 ARRIVAL
+[7.8630] Packet 165 DROPPED (queue full)
+[7.9339] Packet 166 ARRIVAL
+[7.9339] Packet 166 DROPPED (queue full)
+[7.9401] Packet 167 ARRIVAL
+[7.9401] Packet 167 DROPPED (queue full)
+[7.9422] Packet 168 ARRIVAL
+[7.9422] Packet 168 DROPPED (queue full)
+[8.0030] Packet 169 ARRIVAL
+[8.0030] Packet 169 DROPPED (queue full)
+[8.0081] Packet 170 ARRIVAL
+[8.0081] Packet 170 DROPPED (queue full)
+[8.0233] Packet 157 SERVICED, delay=0.4513
+[8.0402] Packet 171 ARRIVAL
+[8.0686] Packet 172 ARRIVAL
+[8.0686] Packet 172 DROPPED (queue full)
+[8.0759] Packet 158 SERVICED, delay=0.4444
+[8.0929] Packet 159 SERVICED, delay=0.4519
+[8.1165] Packet 173 ARRIVAL
+[8.1188] Packet 174 ARRIVAL
+[8.1679] Packet 175 ARRIVAL
+[8.1679] Packet 175 DROPPED (queue full)
+[8.1737] Packet 163 SERVICED, delay=0.3722
+[8.2281] Packet 164 SERVICED, delay=0.3793
+[8.2471] Packet 171 SERVICED, delay=0.2069
+[8.2650] Packet 176 ARRIVAL
+[8.2739] Packet 177 ARRIVAL
+[8.3253] Packet 178 ARRIVAL
+[8.3479] Packet 173 SERVICED, delay=0.2315
+[8.3694] Packet 179 ARRIVAL
+[8.3949] Packet 174 SERVICED, delay=0.2761
+[8.4122] Packet 180 ARRIVAL
+[8.4638] Packet 181 ARRIVAL
+[8.4638] Packet 181 DROPPED (queue full)
+[8.5024] Packet 176 SERVICED, delay=0.2374
+[8.5032] Packet 182 ARRIVAL
+[8.5097] Packet 177 SERVICED, delay=0.2358
+[8.5124] Packet 178 SERVICED, delay=0.1871
+[8.5276] Packet 183 ARRIVAL
+[8.6455] Packet 184 ARRIVAL
+[8.6491] Packet 185 ARRIVAL
+[8.6491] Packet 185 DROPPED (queue full)
+[8.6500] Packet 186 ARRIVAL
+[8.6500] Packet 186 DROPPED (queue full)
+[8.7074] Packet 187 ARRIVAL
+[8.7074] Packet 187 DROPPED (queue full)
+[8.7267] Packet 188 ARRIVAL
+[8.7267] Packet 188 DROPPED (queue full)
+[8.7278] Packet 189 ARRIVAL
+[8.7278] Packet 189 DROPPED (queue full)
+[8.7444] Packet 190 ARRIVAL
+[8.7444] Packet 190 DROPPED (queue full)
+[8.7941] Packet 179 SERVICED, delay=0.4247
+[8.8040] Packet 191 ARRIVAL
+[8.8432] Packet 180 SERVICED, delay=0.4310
+[8.9090] Packet 192 ARRIVAL
+[8.9904] Packet 193 ARRIVAL
+[8.9904] Packet 193 DROPPED (queue full)
+[9.0001] Packet 194 ARRIVAL
+[9.0001] Packet 194 DROPPED (queue full)
+[9.0823] Packet 195 ARRIVAL
+[9.0823] Packet 195 DROPPED (queue full)
+[9.1089] Packet 196 ARRIVAL
+[9.1089] Packet 196 DROPPED (queue full)
+[9.1270] Packet 182 SERVICED, delay=0.6238
+[9.1838] Packet 197 ARRIVAL
+[9.3173] Packet 198 ARRIVAL
+[9.3173] Packet 198 DROPPED (queue full)
+[9.3454] Packet 199 ARRIVAL
+[9.3454] Packet 199 DROPPED (queue full)
+[9.4156] Packet 200 ARRIVAL
+[9.4156] Packet 200 DROPPED (queue full)
+[9.4520] Packet 183 SERVICED, delay=0.9243
+[9.4737] Packet 184 SERVICED, delay=0.8283
+[9.5320] Packet 201 ARRIVAL
+[9.5729] Packet 191 SERVICED, delay=0.7688
+[9.6196] Packet 202 ARRIVAL
+[9.7057] Packet 192 SERVICED, delay=0.7967
+[9.7325] Packet 203 ARRIVAL
+[9.7331] Packet 204 ARRIVAL
+[9.7379] Packet 205 ARRIVAL
+[9.7379] Packet 205 DROPPED (queue full)
+[9.7474] Packet 197 SERVICED, delay=0.5635
+[9.8178] Packet 201 SERVICED, delay=0.2857
+[9.8563] Packet 202 SERVICED, delay=0.2367
+[9.8877] Packet 206 ARRIVAL
+[9.9056] Packet 203 SERVICED, delay=0.1731
+[9.9303] Packet 207 ARRIVAL
+[9.9601] Packet 208 ARRIVAL
+[9.9800] Packet 209 ARRIVAL
+[10.0498] Packet 210 ARRIVAL
+[10.0498] Packet 210 DROPPED (queue full)
+[10.1277] Packet 211 ARRIVAL
+[10.1277] Packet 211 DROPPED (queue full)
+[10.1414] Packet 204 SERVICED, delay=0.4084
+[10.1618] Packet 212 ARRIVAL
+[10.2017] Packet 213 ARRIVAL
+[10.2017] Packet 213 DROPPED (queue full)
+[10.3110] Packet 214 ARRIVAL
+[10.3110] Packet 214 DROPPED (queue full)
+[10.3172] Packet 215 ARRIVAL
+[10.3172] Packet 215 DROPPED (queue full)
+[10.3889] Packet 216 ARRIVAL
+[10.3889] Packet 216 DROPPED (queue full)
+[10.3942] Packet 217 ARRIVAL
+[10.3942] Packet 217 DROPPED (queue full)
+[10.4422] Packet 206 SERVICED, delay=0.5545
+[10.4546] Packet 218 ARRIVAL
+[10.5409] Packet 219 ARRIVAL
+[10.5409] Packet 219 DROPPED (queue full)
+[10.5421] Packet 207 SERVICED, delay=0.6118
+[10.5451] Packet 220 ARRIVAL
+[10.5768] Packet 208 SERVICED, delay=0.6168
+[10.6885] Packet 209 SERVICED, delay=0.7085
+[10.6944] Packet 212 SERVICED, delay=0.5326
+[10.7020] Packet 218 SERVICED, delay=0.2473
+[10.7108] Packet 220 SERVICED, delay=0.1657
+[10.7609] Packet 221 ARRIVAL
+[10.7840] Packet 222 ARRIVAL
+[10.8078] Packet 221 SERVICED, delay=0.0469
+[10.9311] Packet 223 ARRIVAL
+[10.9753] Packet 222 SERVICED, delay=0.1913
+[11.0011] Packet 224 ARRIVAL
+[11.0055] Packet 225 ARRIVAL
+[11.0464] Packet 226 ARRIVAL
+[11.1648] Packet 227 ARRIVAL
+[11.1987] Packet 228 ARRIVAL
+[11.1987] Packet 228 DROPPED (queue full)
+[11.2303] Packet 229 ARRIVAL
+[11.2303] Packet 229 DROPPED (queue full)
+[11.2366] Packet 230 ARRIVAL
+[11.2366] Packet 230 DROPPED (queue full)
+[11.2890] Packet 231 ARRIVAL
+[11.2890] Packet 231 DROPPED (queue full)
+[11.3328] Packet 232 ARRIVAL
+[11.3328] Packet 232 DROPPED (queue full)
+[11.3563] Packet 233 ARRIVAL
+[11.3563] Packet 233 DROPPED (queue full)
+[11.4022] Packet 223 SERVICED, delay=0.4711
+[11.4494] Packet 224 SERVICED, delay=0.4483
+[11.4578] Packet 234 ARRIVAL
+[11.5995] Packet 225 SERVICED, delay=0.5940
+[11.6229] Packet 235 ARRIVAL
+[11.6547] Packet 226 SERVICED, delay=0.6084
+[11.6665] Packet 227 SERVICED, delay=0.5017
+[11.6918] Packet 234 SERVICED, delay=0.2341
+[11.6931] Packet 235 SERVICED, delay=0.0701
+[11.7980] Packet 236 ARRIVAL
+[11.8024] Packet 236 SERVICED, delay=0.0044
+[11.9089] Packet 237 ARRIVAL
+[11.9839] Packet 237 SERVICED, delay=0.0750
+[12.1568] Packet 238 ARRIVAL
+[12.1644] Packet 238 SERVICED, delay=0.0077
+[12.1971] Packet 239 ARRIVAL
+[12.2341] Packet 240 ARRIVAL
+[12.2936] Packet 241 ARRIVAL
+[12.3430] Packet 242 ARRIVAL
+[12.4587] Packet 243 ARRIVAL
+[12.4752] Packet 244 ARRIVAL
+[12.4752] Packet 244 DROPPED (queue full)
+[12.5455] Packet 239 SERVICED, delay=0.3484
+[12.5857] Packet 245 ARRIVAL
+[12.6341] Packet 246 ARRIVAL
+[12.6341] Packet 246 DROPPED (queue full)
+[12.6445] Packet 247 ARRIVAL
+[12.6445] Packet 247 DROPPED (queue full)
+[12.6447] Packet 240 SERVICED, delay=0.4106
+[12.6663] Packet 248 ARRIVAL
+[12.6704] Packet 249 ARRIVAL
+[12.6704] Packet 249 DROPPED (queue full)
+[12.7054] Packet 241 SERVICED, delay=0.4117
+[12.7931] Packet 242 SERVICED, delay=0.4501
+[12.7978] Packet 243 SERVICED, delay=0.3391
+[12.8586] Packet 245 SERVICED, delay=0.2729
+[12.8846] Packet 250 ARRIVAL
+[12.9230] Packet 251 ARRIVAL
+[12.9462] Packet 248 SERVICED, delay=0.2799
+[13.0070] Packet 252 ARRIVAL
+[13.0159] Packet 253 ARRIVAL
+[13.0660] Packet 250 SERVICED, delay=0.1815
+[13.1023] Packet 254 ARRIVAL
+[13.1031] Packet 251 SERVICED, delay=0.1801
+[13.1670] Packet 255 ARRIVAL
+[13.1941] Packet 256 ARRIVAL
+[13.2185] Packet 252 SERVICED, delay=0.2115
+[13.2946] Packet 257 ARRIVAL
+[13.2960] Packet 258 ARRIVAL
+[13.2960] Packet 258 DROPPED (queue full)
+[13.3791] Packet 259 ARRIVAL
+[13.3791] Packet 259 DROPPED (queue full)
+[13.3873] Packet 260 ARRIVAL
+[13.3873] Packet 260 DROPPED (queue full)
+[13.4113] Packet 261 ARRIVAL
+[13.4113] Packet 261 DROPPED (queue full)
+[13.4603] Packet 253 SERVICED, delay=0.4444
+[13.5036] Packet 262 ARRIVAL
+[13.5352] Packet 263 ARRIVAL
+[13.5352] Packet 263 DROPPED (queue full)
+[13.5511] Packet 264 ARRIVAL
+[13.5511] Packet 264 DROPPED (queue full)
+[13.6512] Packet 265 ARRIVAL
+[13.6512] Packet 265 DROPPED (queue full)
+[13.7595] Packet 254 SERVICED, delay=0.6572
+[13.8545] Packet 255 SERVICED, delay=0.6875
+[14.0598] Packet 266 ARRIVAL
+[14.1003] Packet 267 ARRIVAL
+[14.1244] Packet 256 SERVICED, delay=0.9303
+[14.1291] Packet 257 SERVICED, delay=0.8344
+[14.2451] Packet 268 ARRIVAL
+[14.2593] Packet 269 ARRIVAL
+[14.2663] Packet 270 ARRIVAL
+[14.2663] Packet 270 DROPPED (queue full)
+[14.3113] Packet 262 SERVICED, delay=0.8077
+[14.3128] Packet 271 ARRIVAL
+[14.3685] Packet 272 ARRIVAL
+[14.3685] Packet 272 DROPPED (queue full)
+[14.3907] Packet 273 ARRIVAL
+[14.3907] Packet 273 DROPPED (queue full)
+[14.4464] Packet 274 ARRIVAL
+[14.4464] Packet 274 DROPPED (queue full)
+[14.5204] Packet 275 ARRIVAL
+[14.5204] Packet 275 DROPPED (queue full)
+[14.6160] Packet 276 ARRIVAL
+[14.6160] Packet 276 DROPPED (queue full)
+[14.6571] Packet 277 ARRIVAL
+[14.6571] Packet 277 DROPPED (queue full)
+[14.6830] Packet 278 ARRIVAL
+[14.6830] Packet 278 DROPPED (queue full)
+[14.6844] Packet 279 ARRIVAL
+[14.6844] Packet 279 DROPPED (queue full)
+[14.7328] Packet 280 ARRIVAL
+[14.7328] Packet 280 DROPPED (queue full)
+[14.7448] Packet 281 ARRIVAL
+[14.7448] Packet 281 DROPPED (queue full)
+[14.7455] Packet 282 ARRIVAL
+[14.7455] Packet 282 DROPPED (queue full)
+[14.7901] Packet 283 ARRIVAL
+[14.7901] Packet 283 DROPPED (queue full)
+[14.8189] Packet 284 ARRIVAL
+[14.8189] Packet 284 DROPPED (queue full)
+[14.8403] Packet 285 ARRIVAL
+[14.8403] Packet 285 DROPPED (queue full)
+[14.8808] Packet 266 SERVICED, delay=0.8210
+[14.9168] Packet 286 ARRIVAL
+[14.9655] Packet 287 ARRIVAL
+[14.9655] Packet 287 DROPPED (queue full)
+[15.0273] Packet 267 SERVICED, delay=0.9270
+[15.1148] Packet 288 ARRIVAL
+[15.2168] Packet 268 SERVICED, delay=0.9716
+[15.2454] Packet 289 ARRIVAL
+[15.2603] Packet 290 ARRIVAL
+[15.2603] Packet 290 DROPPED (queue full)
+[15.2767] Packet 269 SERVICED, delay=1.0173
+[15.3026] Packet 271 SERVICED, delay=0.9898
+[15.3531] Packet 286 SERVICED, delay=0.4363
+[15.3690] Packet 288 SERVICED, delay=0.2542
+[15.4368] Packet 289 SERVICED, delay=0.1914
+[15.4560] Packet 291 ARRIVAL
+[15.4759] Packet 292 ARRIVAL
+[15.4897] Packet 293 ARRIVAL
+[15.4965] Packet 294 ARRIVAL
+[15.5048] Packet 295 ARRIVAL
+[15.5238] Packet 291 SERVICED, delay=0.0678
+[15.5560] Packet 296 ARRIVAL
+[15.5772] Packet 297 ARRIVAL
+[15.5772] Packet 297 DROPPED (queue full)
+[15.6093] Packet 298 ARRIVAL
+[15.6093] Packet 298 DROPPED (queue full)
+[15.6188] Packet 299 ARRIVAL
+[15.6188] Packet 299 DROPPED (queue full)
+[15.6209] Packet 300 ARRIVAL
+[15.6209] Packet 300 DROPPED (queue full)
+[15.6242] Packet 292 SERVICED, delay=0.1483
+[15.6321] Packet 293 SERVICED, delay=0.1424
+[15.6372] Packet 301 ARRIVAL
+[15.6418] Packet 302 ARRIVAL
+[15.6458] Packet 294 SERVICED, delay=0.1492
+[15.6607] Packet 295 SERVICED, delay=0.1559
+[15.6727] Packet 303 ARRIVAL
+[15.6808] Packet 296 SERVICED, delay=0.1248
+[15.6954] Packet 304 ARRIVAL
+[15.7003] Packet 301 SERVICED, delay=0.0631
+[15.7131] Packet 302 SERVICED, delay=0.0713
+[15.7362] Packet 303 SERVICED, delay=0.0635
+[15.7540] Packet 305 ARRIVAL
+[15.8062] Packet 304 SERVICED, delay=0.1109
+[15.8103] Packet 305 SERVICED, delay=0.0563
+[15.8343] Packet 306 ARRIVAL
+[15.8386] Packet 307 ARRIVAL
+[15.9332] Packet 306 SERVICED, delay=0.0989
+[15.9654] Packet 308 ARRIVAL
+[15.9816] Packet 309 ARRIVAL
+[16.0506] Packet 310 ARRIVAL
+[16.0623] Packet 311 ARRIVAL
+[16.0955] Packet 312 ARRIVAL
+[16.0955] Packet 312 DROPPED (queue full)
+[16.1185] Packet 313 ARRIVAL
+[16.1185] Packet 313 DROPPED (queue full)
+[16.1400] Packet 307 SERVICED, delay=0.3014
+[16.1463] Packet 308 SERVICED, delay=0.1809
+[16.1873] Packet 314 ARRIVAL
+[16.2018] Packet 315 ARRIVAL
+[16.3104] Packet 309 SERVICED, delay=0.3288
+[16.3146] Packet 316 ARRIVAL
+[16.3308] Packet 310 SERVICED, delay=0.2802
+[16.3526] Packet 317 ARRIVAL
+[16.3771] Packet 311 SERVICED, delay=0.3147
+[16.3808] Packet 314 SERVICED, delay=0.1935
+[16.3823] Packet 318 ARRIVAL
+[16.3961] Packet 319 ARRIVAL
+[16.4198] Packet 320 ARRIVAL
+[16.4198] Packet 320 DROPPED (queue full)
+[16.4393] Packet 321 ARRIVAL
+[16.4393] Packet 321 DROPPED (queue full)
+[16.4591] Packet 322 ARRIVAL
+[16.4591] Packet 322 DROPPED (queue full)
+[16.5057] Packet 315 SERVICED, delay=0.3039
+[16.5697] Packet 323 ARRIVAL
+[16.5774] Packet 316 SERVICED, delay=0.2628
+[16.5888] Packet 317 SERVICED, delay=0.2362
+[16.6265] Packet 324 ARRIVAL
+[16.6610] Packet 325 ARRIVAL
+[16.6648] Packet 318 SERVICED, delay=0.2826
+[16.6962] Packet 319 SERVICED, delay=0.3000
+[16.6996] Packet 326 ARRIVAL
+[16.7680] Packet 327 ARRIVAL
+[16.7748] Packet 328 ARRIVAL
+[16.7748] Packet 328 DROPPED (queue full)
+[16.7862] Packet 323 SERVICED, delay=0.2165
+[16.7973] Packet 329 ARRIVAL
+[16.8396] Packet 330 ARRIVAL
+[16.8396] Packet 330 DROPPED (queue full)
+[16.9419] Packet 324 SERVICED, delay=0.3154
+[16.9510] Packet 325 SERVICED, delay=0.2899
+[17.0394] Packet 326 SERVICED, delay=0.3398
+[17.0549] Packet 331 ARRIVAL
+[17.0685] Packet 332 ARRIVAL
+[17.0768] Packet 333 ARRIVAL
+[17.0855] Packet 334 ARRIVAL
+[17.0855] Packet 334 DROPPED (queue full)
+[17.0959] Packet 327 SERVICED, delay=0.3279
+[17.1023] Packet 335 ARRIVAL
+[17.1997] Packet 329 SERVICED, delay=0.4024
+[17.2159] Packet 336 ARRIVAL
+[17.2530] Packet 337 ARRIVAL
+[17.2530] Packet 337 DROPPED (queue full)
+[17.2928] Packet 331 SERVICED, delay=0.2378
+[17.3035] Packet 332 SERVICED, delay=0.2350
+[17.3318] Packet 333 SERVICED, delay=0.2550
+[17.3508] Packet 335 SERVICED, delay=0.2485
+[17.3592] Packet 336 SERVICED, delay=0.1433
+[17.4550] Packet 338 ARRIVAL
+[17.4668] Packet 338 SERVICED, delay=0.0119
+[17.4803] Packet 339 ARRIVAL
+[17.5806] Packet 340 ARRIVAL
+[17.5955] Packet 341 ARRIVAL
+[17.6508] Packet 342 ARRIVAL
+[17.6915] Packet 343 ARRIVAL
+[17.7079] Packet 344 ARRIVAL
+[17.7079] Packet 344 DROPPED (queue full)
+[17.7182] Packet 345 ARRIVAL
+[17.7182] Packet 345 DROPPED (queue full)
+[17.7459] Packet 346 ARRIVAL
+[17.7459] Packet 346 DROPPED (queue full)
+[17.7598] Packet 347 ARRIVAL
+[17.7598] Packet 347 DROPPED (queue full)
+[17.8070] Packet 348 ARRIVAL
+[17.8070] Packet 348 DROPPED (queue full)
+[17.8292] Packet 339 SERVICED, delay=0.3489
+[17.8505] Packet 349 ARRIVAL
+[17.8833] Packet 350 ARRIVAL
+[17.8833] Packet 350 DROPPED (queue full)
+[17.8860] Packet 351 ARRIVAL
+[17.8860] Packet 351 DROPPED (queue full)
+[17.8932] Packet 352 ARRIVAL
+[17.8932] Packet 352 DROPPED (queue full)
+[17.9991] Packet 340 SERVICED, delay=0.4185
+[18.0178] Packet 341 SERVICED, delay=0.4223
+[18.1232] Packet 353 ARRIVAL
+[18.2063] Packet 354 ARRIVAL
+[18.2635] Packet 355 ARRIVAL
+[18.2635] Packet 355 DROPPED (queue full)
+[18.2829] Packet 342 SERVICED, delay=0.6321
+[18.3087] Packet 356 ARRIVAL
+[18.3353] Packet 357 ARRIVAL
+[18.3353] Packet 357 DROPPED (queue full)
+[18.3676] Packet 343 SERVICED, delay=0.6762
+[18.3844] Packet 349 SERVICED, delay=0.5339
+[18.4233] Packet 353 SERVICED, delay=0.3001
+[18.4527] Packet 354 SERVICED, delay=0.2465
+[18.4679] Packet 358 ARRIVAL
+[18.5165] Packet 356 SERVICED, delay=0.2078
+[18.6356] Packet 359 ARRIVAL
+[18.6941] Packet 358 SERVICED, delay=0.2262
+[18.7012] Packet 360 ARRIVAL
+[18.7073] Packet 359 SERVICED, delay=0.0718
+[18.7112] Packet 361 ARRIVAL
+[18.7787] Packet 362 ARRIVAL
+[18.8710] Packet 363 ARRIVAL
+[18.9503] Packet 364 ARRIVAL
+[18.9592] Packet 365 ARRIVAL
+[18.9592] Packet 365 DROPPED (queue full)
+[18.9859] Packet 360 SERVICED, delay=0.2848
+[18.9928] Packet 361 SERVICED, delay=0.2816
+[19.0434] Packet 366 ARRIVAL
+[19.0783] Packet 362 SERVICED, delay=0.2995
+[19.0805] Packet 367 ARRIVAL
+[19.0933] Packet 363 SERVICED, delay=0.2224
+[19.1158] Packet 364 SERVICED, delay=0.1656
+[19.1853] Packet 368 ARRIVAL
+[19.2253] Packet 366 SERVICED, delay=0.1818
+[19.2697] Packet 367 SERVICED, delay=0.1892
+[19.2701] Packet 369 ARRIVAL
+[19.2938] Packet 370 ARRIVAL
+[19.3117] Packet 371 ARRIVAL
+[19.3195] Packet 368 SERVICED, delay=0.1342
+[19.3466] Packet 372 ARRIVAL
+[19.3774] Packet 369 SERVICED, delay=0.1072
+[19.4395] Packet 370 SERVICED, delay=0.1457
+[19.4616] Packet 373 ARRIVAL
+[19.5008] Packet 374 ARRIVAL
+[19.5497] Packet 375 ARRIVAL
+[19.5772] Packet 371 SERVICED, delay=0.2654
+[19.6036] Packet 372 SERVICED, delay=0.2569
+[19.6520] Packet 373 SERVICED, delay=0.1905
+[19.6903] Packet 376 ARRIVAL
+[19.7106] Packet 377 ARRIVAL
+[19.7896] Packet 378 ARRIVAL
+[19.8278] Packet 379 ARRIVAL
+[19.8278] Packet 379 DROPPED (queue full)
+[19.8890] Packet 374 SERVICED, delay=0.3882
+[19.9014] Packet 375 SERVICED, delay=0.3517
+[19.9055] Packet 380 ARRIVAL
+[19.9241] Packet 381 ARRIVAL
+[19.9923] Packet 382 ARRIVAL
+[19.9923] Packet 382 DROPPED (queue full)
+[20.0002] Packet 376 SERVICED, delay=0.3100
+[20.0152] Packet 377 SERVICED, delay=0.3046
+[20.0344] Packet 383 ARRIVAL
+[20.1120] Packet 378 SERVICED, delay=0.3223
+[20.1284] Packet 380 SERVICED, delay=0.2230
+[20.1391] Packet 384 ARRIVAL
+[20.1570] Packet 381 SERVICED, delay=0.2329
+[20.2252] Packet 385 ARRIVAL
+[20.3007] Packet 383 SERVICED, delay=0.2663
+[20.3189] Packet 386 ARRIVAL
+[20.3426] Packet 384 SERVICED, delay=0.2035
+[20.3442] Packet 387 ARRIVAL
+[20.3523] Packet 388 ARRIVAL
+[20.3543] Packet 385 SERVICED, delay=0.1291
+[20.3680] Packet 386 SERVICED, delay=0.0491
+[20.4164] Packet 389 ARRIVAL
+[20.4676] Packet 390 ARRIVAL
+[20.5068] Packet 391 ARRIVAL
+[20.5276] Packet 387 SERVICED, delay=0.1833
+[20.5280] Packet 392 ARRIVAL
+[20.5536] Packet 388 SERVICED, delay=0.2013
+[20.6475] Packet 393 ARRIVAL
+[20.6731] Packet 394 ARRIVAL
+[20.6731] Packet 394 DROPPED (queue full)
+[20.6809] Packet 389 SERVICED, delay=0.2645
+[20.7993] Packet 390 SERVICED, delay=0.3317
+[20.8203] Packet 395 ARRIVAL
+[20.8283] Packet 391 SERVICED, delay=0.3216
+[20.8484] Packet 392 SERVICED, delay=0.3204
+[20.8644] Packet 396 ARRIVAL
+[20.9117] Packet 397 ARRIVAL
+[20.9359] Packet 393 SERVICED, delay=0.2884
+[20.9526] Packet 395 SERVICED, delay=0.1323
+[21.0145] Packet 398 ARRIVAL
+[21.0231] Packet 396 SERVICED, delay=0.1587
+[21.0249] Packet 397 SERVICED, delay=0.1132
+[21.0561] Packet 399 ARRIVAL
+[21.1840] Packet 400 ARRIVAL
+[21.1923] Packet 401 ARRIVAL
+[21.2389] Packet 402 ARRIVAL
+[21.2939] Packet 398 SERVICED, delay=0.2794
+[21.3056] Packet 403 ARRIVAL
+[21.4132] Packet 399 SERVICED, delay=0.3571
+[21.4355] Packet 404 ARRIVAL
+[21.4415] Packet 405 ARRIVAL
+[21.4415] Packet 405 DROPPED (queue full)
+[21.5328] Packet 406 ARRIVAL
+[21.5328] Packet 406 DROPPED (queue full)
+[21.5360] Packet 400 SERVICED, delay=0.3520
+[21.6219] Packet 401 SERVICED, delay=0.4296
+[21.6596] Packet 407 ARRIVAL
+[21.6771] Packet 402 SERVICED, delay=0.4381
+[21.6962] Packet 408 ARRIVAL
+[21.7217] Packet 409 ARRIVAL
+[21.7421] Packet 410 ARRIVAL
+[21.7421] Packet 410 DROPPED (queue full)
+[21.7423] Packet 411 ARRIVAL
+[21.7423] Packet 411 DROPPED (queue full)
+[21.7677] Packet 412 ARRIVAL
+[21.7677] Packet 412 DROPPED (queue full)
+[21.8939] Packet 413 ARRIVAL
+[21.8939] Packet 413 DROPPED (queue full)
+[21.9152] Packet 414 ARRIVAL
+[21.9152] Packet 414 DROPPED (queue full)
+[21.9453] Packet 415 ARRIVAL
+[21.9453] Packet 415 DROPPED (queue full)
+[21.9495] Packet 403 SERVICED, delay=0.6438
+[21.9754] Packet 416 ARRIVAL
+[21.9851] Packet 417 ARRIVAL
+[21.9851] Packet 417 DROPPED (queue full)
+[22.0094] Packet 404 SERVICED, delay=0.5739
+[22.0122] Packet 418 ARRIVAL
+[22.0347] Packet 419 ARRIVAL
+[22.0347] Packet 419 DROPPED (queue full)
+[22.0848] Packet 420 ARRIVAL
+[22.0848] Packet 420 DROPPED (queue full)
+[22.1392] Packet 421 ARRIVAL
+[22.1392] Packet 421 DROPPED (queue full)
+[22.2133] Packet 407 SERVICED, delay=0.5537
+[22.3015] Packet 422 ARRIVAL
+[22.3028] Packet 408 SERVICED, delay=0.6066
+[22.3084] Packet 409 SERVICED, delay=0.5868
+[22.3236] Packet 416 SERVICED, delay=0.3482
+[22.3283] Packet 423 ARRIVAL
+[22.5699] Packet 418 SERVICED, delay=0.5577
+[22.5860] Packet 422 SERVICED, delay=0.2845
+[22.5950] Packet 423 SERVICED, delay=0.2667
+[22.6167] Packet 424 ARRIVAL
+[22.6619] Packet 425 ARRIVAL
+[22.6865] Packet 424 SERVICED, delay=0.0698
+[22.6934] Packet 425 SERVICED, delay=0.0315
+[22.7313] Packet 426 ARRIVAL
+[22.7548] Packet 426 SERVICED, delay=0.0236
+[22.8454] Packet 427 ARRIVAL
+[22.8560] Packet 428 ARRIVAL
+[22.8684] Packet 427 SERVICED, delay=0.0230
+[22.8721] Packet 428 SERVICED, delay=0.0161
+[22.8879] Packet 429 ARRIVAL
+[22.8913] Packet 430 ARRIVAL
+[22.9215] Packet 431 ARRIVAL
+[22.9506] Packet 432 ARRIVAL
+[22.9711] Packet 429 SERVICED, delay=0.0832
+[22.9916] Packet 433 ARRIVAL
+[23.0016] Packet 434 ARRIVAL
+[23.1205] Packet 430 SERVICED, delay=0.2292
+[23.1477] Packet 435 ARRIVAL
+[23.1635] Packet 436 ARRIVAL
+[23.1635] Packet 436 DROPPED (queue full)
+[23.1897] Packet 437 ARRIVAL
+[23.1897] Packet 437 DROPPED (queue full)
+[23.1949] Packet 431 SERVICED, delay=0.2733
+[23.1982] Packet 438 ARRIVAL
+[23.2461] Packet 432 SERVICED, delay=0.2955
+[23.2520] Packet 439 ARRIVAL
+[23.2629] Packet 433 SERVICED, delay=0.2713
+[23.2646] Packet 440 ARRIVAL
+[23.3203] Packet 441 ARRIVAL
+[23.3203] Packet 441 DROPPED (queue full)
+[23.3258] Packet 442 ARRIVAL
+[23.3258] Packet 442 DROPPED (queue full)
+[23.3356] Packet 443 ARRIVAL
+[23.3356] Packet 443 DROPPED (queue full)
+[23.3492] Packet 444 ARRIVAL
+[23.3492] Packet 444 DROPPED (queue full)
+[23.3631] Packet 445 ARRIVAL
+[23.3631] Packet 445 DROPPED (queue full)
+[23.4599] Packet 446 ARRIVAL
+[23.4599] Packet 446 DROPPED (queue full)
+[23.4608] Packet 434 SERVICED, delay=0.4592
+[23.4852] Packet 447 ARRIVAL
+[23.4967] Packet 448 ARRIVAL
+[23.4967] Packet 448 DROPPED (queue full)
+[23.5076] Packet 435 SERVICED, delay=0.3599
+[23.6100] Packet 449 ARRIVAL
+[23.6145] Packet 450 ARRIVAL
+[23.6145] Packet 450 DROPPED (queue full)
+[23.6159] Packet 451 ARRIVAL
+[23.6159] Packet 451 DROPPED (queue full)
+[23.6334] Packet 438 SERVICED, delay=0.4352
+[23.6362] Packet 439 SERVICED, delay=0.3842
+[23.6596] Packet 452 ARRIVAL
+[23.6625] Packet 440 SERVICED, delay=0.3979
+[23.7712] Packet 453 ARRIVAL
+[23.7727] Packet 447 SERVICED, delay=0.2875
+[23.7740] Packet 449 SERVICED, delay=0.1640
+[23.7921] Packet 454 ARRIVAL
+[23.8160] Packet 455 ARRIVAL
+[23.8288] Packet 452 SERVICED, delay=0.1692
+[23.8316] Packet 456 ARRIVAL
+[23.8579] Packet 457 ARRIVAL
+[23.8866] Packet 458 ARRIVAL
+[23.8866] Packet 458 DROPPED (queue full)
+[23.9988] Packet 453 SERVICED, delay=0.2276
+[24.0289] Packet 454 SERVICED, delay=0.2368
+[24.0348] Packet 459 ARRIVAL
+[24.0424] Packet 460 ARRIVAL
+[24.0758] Packet 461 ARRIVAL
+[24.0758] Packet 461 DROPPED (queue full)
+[24.1181] Packet 455 SERVICED, delay=0.3021
+[24.1562] Packet 462 ARRIVAL
+[24.1574] Packet 463 ARRIVAL
+[24.1574] Packet 463 DROPPED (queue full)
+[24.1964] Packet 464 ARRIVAL
+[24.1964] Packet 464 DROPPED (queue full)
+[24.2113] Packet 465 ARRIVAL
+[24.2113] Packet 465 DROPPED (queue full)
+[24.2160] Packet 456 SERVICED, delay=0.3844
+[24.2963] Packet 457 SERVICED, delay=0.4383
+[24.3013] Packet 466 ARRIVAL
+[24.3386] Packet 467 ARRIVAL
+[24.3545] Packet 468 ARRIVAL
+[24.3545] Packet 468 DROPPED (queue full)
+[24.4405] Packet 459 SERVICED, delay=0.4057
+[24.4774] Packet 469 ARRIVAL
+[24.5203] Packet 470 ARRIVAL
+[24.5203] Packet 470 DROPPED (queue full)
+[24.5607] Packet 471 ARRIVAL
+[24.5607] Packet 471 DROPPED (queue full)
+[24.6433] Packet 460 SERVICED, delay=0.6010
+[24.6493] Packet 472 ARRIVAL
+[24.6498] Packet 473 ARRIVAL
+[24.6498] Packet 473 DROPPED (queue full)
+[24.6987] Packet 462 SERVICED, delay=0.5425
+[24.7649] Packet 474 ARRIVAL
+[24.8104] Packet 475 ARRIVAL
+[24.8104] Packet 475 DROPPED (queue full)
+[24.8651] Packet 476 ARRIVAL
+[24.8651] Packet 476 DROPPED (queue full)
+[24.9880] Packet 477 ARRIVAL
+[24.9880] Packet 477 DROPPED (queue full)
+[25.0122] Packet 478 ARRIVAL
+[25.0122] Packet 478 DROPPED (queue full)
+[25.0146] Packet 479 ARRIVAL
+[25.0146] Packet 479 DROPPED (queue full)
+[25.0816] Packet 480 ARRIVAL
+[25.0816] Packet 480 DROPPED (queue full)
+[25.1148] Packet 466 SERVICED, delay=0.8134
+[25.1278] Packet 481 ARRIVAL
+[25.1336] Packet 467 SERVICED, delay=0.7950
+[25.1461] Packet 469 SERVICED, delay=0.6688
+[25.1524] Packet 482 ARRIVAL
+[25.1693] Packet 472 SERVICED, delay=0.5200
+[25.1744] Packet 483 ARRIVAL
+[25.1920] Packet 484 ARRIVAL
+[25.2244] Packet 485 ARRIVAL
+[25.2244] Packet 485 DROPPED (queue full)
+[25.3625] Packet 486 ARRIVAL
+[25.3625] Packet 486 DROPPED (queue full)
+[25.3746] Packet 487 ARRIVAL
+[25.3746] Packet 487 DROPPED (queue full)
+[25.3763] Packet 474 SERVICED, delay=0.6114
+[25.3898] Packet 488 ARRIVAL
+[25.3924] Packet 489 ARRIVAL
+[25.3924] Packet 489 DROPPED (queue full)
+[25.4045] Packet 481 SERVICED, delay=0.2767
+[25.4378] Packet 490 ARRIVAL
+[25.4385] Packet 482 SERVICED, delay=0.2861
+[25.5115] Packet 491 ARRIVAL
+[25.5154] Packet 492 ARRIVAL
+[25.5154] Packet 492 DROPPED (queue full)
+[25.5496] Packet 493 ARRIVAL
+[25.5496] Packet 493 DROPPED (queue full)
+[25.5655] Packet 483 SERVICED, delay=0.3911
+[25.5782] Packet 494 ARRIVAL
+[25.6491] Packet 484 SERVICED, delay=0.4570
+[25.6637] Packet 495 ARRIVAL
+[25.7230] Packet 496 ARRIVAL
+[25.7230] Packet 496 DROPPED (queue full)
+[25.7395] Packet 488 SERVICED, delay=0.3497
+[25.7676] Packet 497 ARRIVAL
+[25.7724] Packet 498 ARRIVAL
+[25.7724] Packet 498 DROPPED (queue full)
+[25.7797] Packet 499 ARRIVAL
+[25.7797] Packet 499 DROPPED (queue full)
+[25.7801] Packet 490 SERVICED, delay=0.3423
+[25.7914] Packet 491 SERVICED, delay=0.2799
+[25.8197] Packet 494 SERVICED, delay=0.2416
+[25.9804] Packet 495 SERVICED, delay=0.3167
+[26.0251] Packet 497 SERVICED, delay=0.2576
+
+== Simulation Results ==
+Simulation Time: 26.77 seconds
+Total Packets: 500
+Serviced: 279
+Dropped: 221
+Loss Rate: 44.20%
+Average Delay: 0.3565 seconds
+Throughput: 10.4231 packets/sec
+=========================

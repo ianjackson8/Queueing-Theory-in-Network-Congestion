@@ -1,0 +1,120 @@
+== Simulation Parameters ==
+  - Arrival Rate (λ): 10
+  - Service Rate (μ): 10
+  - Deadline Rate (θ): 1
+  - Queue Size: 5
+  - Total Packets: 50
+  - Congestion Control: <__main__.TCPReno object at 0x118279990>
+===========================
+
+== Simulation Start ==
+[0.0469] Packet 0 SERVICED, delay=0.0469
+[0.0469] [TCP Reno], cwnd=2.00, ssthresh=10.00, state=Slow Start
+[0.8010] Packet 1 SERVICED, delay=0.3010
+[0.8010] [TCP Reno], cwnd=3.00, ssthresh=10.00, state=Slow Start
+[0.9327] Packet 2 SERVICED, delay=0.4327
+[0.9327] [TCP Reno], cwnd=4.00, ssthresh=10.00, state=Slow Start
+[1.0913] Packet 3 SERVICED, delay=0.0913
+[1.0913] [TCP Reno], cwnd=5.00, ssthresh=10.00, state=Slow Start
+[1.1083] Packet 4 SERVICED, delay=0.1083
+[1.1083] [TCP Reno], cwnd=6.00, ssthresh=10.00, state=Slow Start
+[1.1252] Packet 5 SERVICED, delay=0.1252
+[1.1252] [TCP Reno], cwnd=7.00, ssthresh=10.00, state=Slow Start
+[1.1312] Packet 6 SERVICED, delay=0.1312
+[1.1312] [TCP Reno], cwnd=8.00, ssthresh=10.00, state=Slow Start
+[1.5000] Packet 12 DROPPED (queue full)
+[1.5000] [TCP Reno LOSS], cwnd reset to 1, ssthresh=4
+[1.5000] Packet 13 DROPPED (queue full)
+[1.5000] [TCP Reno LOSS], cwnd reset to 1, ssthresh=1
+[1.5000] Packet 14 DROPPED (queue full)
+[1.5000] [TCP Reno LOSS], cwnd reset to 1, ssthresh=1
+[1.7011] Packet 7 SERVICED, delay=0.2011
+[1.7011] [TCP Reno], cwnd=2.00, ssthresh=1.00, state=Congestion Avoidance
+[1.7930] Packet 8 SERVICED, delay=0.2930
+[1.7930] [TCP Reno], cwnd=2.50, ssthresh=1.00, state=Congestion Avoidance
+[1.9162] Packet 9 SERVICED, delay=0.4162
+[1.9162] [TCP Reno], cwnd=2.90, ssthresh=1.00, state=Congestion Avoidance
+[1.9182] Packet 10 SERVICED, delay=0.4182
+[1.9182] [TCP Reno], cwnd=3.24, ssthresh=1.00, state=Congestion Avoidance
+[2.2686] Packet 11 SERVICED, delay=0.7686
+[2.2686] [TCP Reno], cwnd=3.55, ssthresh=1.00, state=Congestion Avoidance
+[2.2889] Packet 15 SERVICED, delay=0.2889
+[2.2889] [TCP Reno], cwnd=3.83, ssthresh=1.00, state=Congestion Avoidance
+[2.3251] Packet 16 SERVICED, delay=0.3251
+[2.3251] [TCP Reno], cwnd=4.10, ssthresh=1.00, state=Congestion Avoidance
+[2.5744] Packet 17 SERVICED, delay=0.0744
+[2.5744] [TCP Reno], cwnd=4.34, ssthresh=1.00, state=Congestion Avoidance
+[2.6309] Packet 18 SERVICED, delay=0.1309
+[2.6309] [TCP Reno], cwnd=4.57, ssthresh=1.00, state=Congestion Avoidance
+[2.6654] Packet 19 SERVICED, delay=0.1654
+[2.6654] [TCP Reno], cwnd=4.79, ssthresh=1.00, state=Congestion Avoidance
+[2.7600] Packet 20 SERVICED, delay=0.2600
+[2.7600] [TCP Reno], cwnd=5.00, ssthresh=1.00, state=Congestion Avoidance
+[3.0150] Packet 21 SERVICED, delay=0.0150
+[3.0150] [TCP Reno], cwnd=5.20, ssthresh=1.00, state=Congestion Avoidance
+[3.0496] Packet 22 SERVICED, delay=0.0496
+[3.0496] [TCP Reno], cwnd=5.39, ssthresh=1.00, state=Congestion Avoidance
+[3.0952] Packet 23 SERVICED, delay=0.0952
+[3.0952] [TCP Reno], cwnd=5.58, ssthresh=1.00, state=Congestion Avoidance
+[3.1561] Packet 24 SERVICED, delay=0.1561
+[3.1561] [TCP Reno], cwnd=5.75, ssthresh=1.00, state=Congestion Avoidance
+[3.6538] Packet 25 SERVICED, delay=0.1538
+[3.6538] [TCP Reno], cwnd=5.93, ssthresh=1.00, state=Congestion Avoidance
+[3.6761] Packet 26 SERVICED, delay=0.1761
+[3.6761] [TCP Reno], cwnd=6.10, ssthresh=1.00, state=Congestion Avoidance
+[3.7483] Packet 27 SERVICED, delay=0.2483
+[3.7483] [TCP Reno], cwnd=6.26, ssthresh=1.00, state=Congestion Avoidance
+[3.8380] Packet 28 SERVICED, delay=0.3380
+[3.8380] [TCP Reno], cwnd=6.42, ssthresh=1.00, state=Congestion Avoidance
+[3.8428] Packet 29 SERVICED, delay=0.3428
+[3.8428] [TCP Reno], cwnd=6.58, ssthresh=1.00, state=Congestion Avoidance
+[4.0000] Packet 35 DROPPED (queue full)
+[4.0000] [TCP Reno LOSS], cwnd reset to 1, ssthresh=3.0
+[4.0935] Packet 30 SERVICED, delay=0.0935
+[4.0935] [TCP Reno], cwnd=2.00, ssthresh=3.00, state=Slow Start
+[4.1122] Packet 31 SERVICED, delay=0.1122
+[4.1122] [TCP Reno], cwnd=3.00, ssthresh=3.00, state=Congestion Avoidance
+[4.1190] Packet 32 SERVICED, delay=0.1190
+[4.1190] [TCP Reno], cwnd=3.33, ssthresh=3.00, state=Congestion Avoidance
+[4.4163] Packet 33 SERVICED, delay=0.4163
+[4.4163] [TCP Reno], cwnd=3.63, ssthresh=3.00, state=Congestion Avoidance
+[4.7534] Packet 34 SERVICED, delay=0.7534
+[4.7534] [TCP Reno], cwnd=3.91, ssthresh=3.00, state=Congestion Avoidance
+[4.7897] Packet 36 SERVICED, delay=0.2897
+[4.7897] [TCP Reno], cwnd=4.16, ssthresh=3.00, state=Congestion Avoidance
+[4.8000] Packet 37 SERVICED, delay=0.3000
+[4.8000] [TCP Reno], cwnd=4.40, ssthresh=3.00, state=Congestion Avoidance
+[5.1153] Packet 38 SERVICED, delay=0.1153
+[5.1153] [TCP Reno], cwnd=4.63, ssthresh=3.00, state=Congestion Avoidance
+[5.1733] Packet 39 SERVICED, delay=0.1733
+[5.1733] [TCP Reno], cwnd=4.85, ssthresh=3.00, state=Congestion Avoidance
+[5.1863] Packet 40 SERVICED, delay=0.1863
+[5.1863] [TCP Reno], cwnd=5.05, ssthresh=3.00, state=Congestion Avoidance
+[5.2547] Packet 41 SERVICED, delay=0.2547
+[5.2547] [TCP Reno], cwnd=5.25, ssthresh=3.00, state=Congestion Avoidance
+[5.5035] Packet 42 SERVICED, delay=0.0035
+[5.5035] [TCP Reno], cwnd=5.44, ssthresh=3.00, state=Congestion Avoidance
+[5.7435] Packet 43 SERVICED, delay=0.2435
+[5.7435] [TCP Reno], cwnd=5.63, ssthresh=3.00, state=Congestion Avoidance
+[5.7735] Packet 44 SERVICED, delay=0.2735
+[5.7735] [TCP Reno], cwnd=5.80, ssthresh=3.00, state=Congestion Avoidance
+[5.8821] Packet 45 SERVICED, delay=0.3821
+[5.8821] [TCP Reno], cwnd=5.98, ssthresh=3.00, state=Congestion Avoidance
+[5.9195] Packet 46 SERVICED, delay=0.4195
+[5.9195] [TCP Reno], cwnd=6.14, ssthresh=3.00, state=Congestion Avoidance
+[6.0734] Packet 47 SERVICED, delay=0.0734
+[6.0734] [TCP Reno], cwnd=6.31, ssthresh=3.00, state=Congestion Avoidance
+[6.1525] Packet 48 SERVICED, delay=0.1525
+[6.1525] [TCP Reno], cwnd=6.46, ssthresh=3.00, state=Congestion Avoidance
+[6.1730] Packet 49 SERVICED, delay=0.1730
+[6.1730] [TCP Reno], cwnd=6.62, ssthresh=3.00, state=Congestion Avoidance
+
+== Simulation Results ==
+Simulation Time: 7.00 seconds
+Total Packets: 50
+Serviced: 46
+Dropped: 4
+Loss Rate: 8.00%
+Average Delay: 0.2323 seconds
+Throughput: 6.5714 packets/sec
+=========================
