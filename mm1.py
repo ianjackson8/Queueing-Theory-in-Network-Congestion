@@ -150,6 +150,52 @@ class TCPReno(CongestionControl):
 
         print(f"[{time:.4f}] [TCP Reno DUPACK], Fast Recovery, cwnd={self.cwnd}, ssthresh={self.ssthresh}")
 
+class TCPCubic(CongestionControl):
+    def __init__(self, C=0.4, beta=0.2):
+        super().__init__()
+        self.C = C
+        self.beta = beta
+        self.W_max = 1.0       # cwnd before last loss
+        self.t_last_congestion = 0.0  # time of last loss
+        self.K = 0             # computed after loss
+        self.state = "Cubic"
+
+        self.cwnd_log.append(self.cwnd)
+        self.time_log.append(0.0)
+        self.ssthresh_log.append(None)
+        self.state_log.append(self.state)
+
+    def on_ack(self, time):
+        # Time since last congestion
+        t = time - self.t_last_congestion
+
+        # Cubic window growth function
+        self.K = (self.W_max * (1 - self.beta) / self.C) ** (1/3)
+        cubic_cwnd = self.C * ((t - self.K) ** 3) + self.W_max
+
+        # Clamp to at least 1.0
+        self.cwnd = max(cubic_cwnd, 1.0)
+
+        # Logging
+        self.cwnd_log.append(self.cwnd)
+        self.time_log.append(time)
+        self.ssthresh_log.append(self.W_max * (1 - self.beta))
+        self.state_log.append(self.state)
+
+        print(f"[{time:.4f}] [TCP CUBIC] cwnd={self.cwnd:.2f} (W_max={self.W_max:.2f}, K={self.K:.2f})")
+
+    def on_loss(self, time):
+        self.W_max = self.cwnd
+        self.cwnd = self.cwnd * (1 - self.beta)
+        self.t_last_congestion = time
+
+        # Logging
+        self.cwnd_log.append(self.cwnd)
+        self.time_log.append(time)
+        self.ssthresh_log.append(self.W_max * (1 - self.beta))
+        self.state_log.append("Loss")
+
+        print(f"[{time:.4f}] [TCP CUBIC LOSS] cwnd reduced to {self.cwnd:.2f}, W_max set to {self.W_max:.2f}")
 
 #==  Classes ==#
 class Packet:
@@ -498,6 +544,8 @@ def plot_cwnd(cc):
         cc_meth = "no_cc"
     elif isinstance(cc, TCPReno):
         cc_meth = "reno"
+    elif isinstance(cc, TCPCubic):
+        cc_meth = "cubic"
     else:
         cc_meth = "unk"
 
@@ -516,30 +564,31 @@ def plot_cwnd(cc):
     # ax.plot(time, ssthresh, label="ssthresh", color='orange', linestyle='--')
 
     # highlight regions by TCP state
-    color_map = {
-        "Slow Start": "white",
-        "Congestion Avoidance": "white",
-        "Fast Recovery": "white",
-        "Loss": "white"
-    }
+    # color_map = {
+    #     "Slow Start": "white",
+    #     "Congestion Avoidance": "white",
+    #     "Fast Recovery": "white",
+    #     "Loss": "white",
+    #     "Cubic": "white",
+    # }
 
     start_time = time[0]
     current_state = states[0]
 
-    for i in range(1, len(time)):
-        if states[i] != current_state:
-            end_time = time[i]
-            # ax.axvspan(start_time, end_time, facecolor=color_map.get(current_state, "white"), alpha=0.3, label=current_state if start_time == time[0] else "")
-            ax.axvspan(start_time, end_time, facecolor=color_map.get(current_state, "white"), alpha=0.3)
-            start_time = end_time
-            current_state = states[i]
+    # for i in range(1, len(time)):
+    #     if states[i] != current_state:
+    #         end_time = time[i]
+    #         # ax.axvspan(start_time, end_time, facecolor=color_map.get(current_state, "white"), alpha=0.3, label=current_state if start_time == time[0] else "")
+    #         ax.axvspan(start_time, end_time, facecolor=color_map.get(current_state, "white"), alpha=0.3)
+    #         start_time = end_time
+    #         current_state = states[i]
 
     for i in range(len(states)):
         if states[i] == "Loss":
             ax.axvline(time[i], color='black', linestyle=':', alpha=1, label='Loss' if i == 0 else "")
 
     # Capture final region
-    ax.axvspan(start_time, time[-1], facecolor=color_map.get(current_state, "white"), alpha=0.3, label=current_state if states.count(current_state) == 1 else "")
+    # ax.axvspan(start_time, time[-1], facecolor=color_map.get(current_state, "white"), alpha=0.3, label=current_state if states.count(current_state) == 1 else "")
 
     # Final plot setup
     ax.set_title(f"TCP {cc_meth} cwnd Over Time with State Regions")
