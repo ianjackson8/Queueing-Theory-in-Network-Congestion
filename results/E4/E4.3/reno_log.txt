@@ -1,0 +1,1930 @@
+== Simulation Parameters ==
+  - Arrival Rate (λ): 10
+  - Service Rate (μ): 10
+  - Deadline Rate (θ): 1
+  - Queue Size: 5
+  - Total Packets: 1000
+  - Congestion Control: <__main__.TCPReno object at 0x1121da740>
+===========================
+
+== Simulation Results ==
+Simulation Time: 89.81 seconds
+Total Packets: 1000
+Serviced: 840
+Dropped: 160
+Loss Rate: 16.00%
+Average Delay: 0.3862 seconds
+Throughput: 9.3526 packets/sec
+=========================
+
+== Simulation Log ==
+[0.0469] Packet 0 SERVICED, delay=0.0469
+[0.0469] [TCP Reno], cwnd=2.00, ssthresh=10.00, state=Slow Start
+[0.4327] Packet 1 SERVICED, delay=0.1317
+[0.4327] [TCP Reno], cwnd=3.00, ssthresh=10.00, state=Slow Start
+[0.5240] Packet 2 SERVICED, delay=0.2230
+[0.5240] [TCP Reno], cwnd=4.00, ssthresh=10.00, state=Slow Start
+[0.6339] Packet 3 SERVICED, delay=0.0919
+[0.6339] [TCP Reno], cwnd=5.00, ssthresh=10.00, state=Slow Start
+[0.7571] Packet 4 SERVICED, delay=0.2150
+[0.7571] [TCP Reno], cwnd=6.00, ssthresh=10.00, state=Slow Start
+[0.7592] Packet 5 SERVICED, delay=0.2171
+[0.7592] [TCP Reno], cwnd=7.00, ssthresh=10.00, state=Slow Start
+[0.7772] Packet 11 DROPPED (queue full)
+[0.7772] Packet 12 DROPPED (queue full)
+[0.7772] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[1.1095] Packet 6 SERVICED, delay=0.5675
+[1.1095] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[1.1334] Packet 7 SERVICED, delay=0.4127
+[1.1334] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[1.1534] Packet 8 SERVICED, delay=0.4328
+[1.1534] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[1.2278] Packet 9 SERVICED, delay=0.4506
+[1.2278] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[1.2844] Packet 10 SERVICED, delay=0.5072
+[1.2844] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[1.3741] Packet 13 SERVICED, delay=0.1926
+[1.3741] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[1.3789] Packet 14 SERVICED, delay=0.1973
+[1.3789] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[1.3976] Packet 15 SERVICED, delay=0.1225
+[1.3976] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[1.9163] Packet 16 SERVICED, delay=0.3371
+[1.9163] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[2.0815] Packet 17 SERVICED, delay=0.5023
+[2.0815] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[2.1081] Packet 23 DROPPED (queue full)
+[2.1081] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[2.1178] Packet 18 SERVICED, delay=0.5386
+[2.1178] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[2.1281] Packet 19 SERVICED, delay=0.5489
+[2.1281] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[2.2434] Packet 20 SERVICED, delay=0.6642
+[2.2434] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[2.2733] Packet 21 SERVICED, delay=0.3112
+[2.2733] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[2.3468] Packet 22 SERVICED, delay=0.2386
+[2.3468] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[2.6960] Packet 24 SERVICED, delay=0.5675
+[2.6960] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[2.9765] Packet 25 SERVICED, delay=0.6988
+[2.9765] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[3.2018] Packet 26 SERVICED, delay=0.9240
+[3.2018] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[3.3689] Packet 28 DROPPED (timeout)
+[3.3689] [TCP Reno LOSS], cwnd reset to 2, ssthresh=2
+[3.4567] Packet 27 SERVICED, delay=1.0878
+[3.4567] [TCP Reno], cwnd=3.00, ssthresh=2.00, state=Congestion Avoidance
+[3.4897] Packet 29 SERVICED, delay=0.7536
+[3.4897] [TCP Reno], cwnd=3.00, ssthresh=2.00, state=Congestion Avoidance
+[3.4974] Packet 30 SERVICED, delay=0.5058
+[3.4974] [TCP Reno], cwnd=3.00, ssthresh=2.00, state=Congestion Avoidance
+[3.5951] Packet 31 SERVICED, delay=0.0222
+[3.5951] [TCP Reno], cwnd=4.00, ssthresh=2.00, state=Congestion Avoidance
+[3.5957] Packet 32 SERVICED, delay=0.0227
+[3.5957] [TCP Reno], cwnd=4.00, ssthresh=2.00, state=Congestion Avoidance
+[3.7647] Packet 33 SERVICED, delay=0.1917
+[3.7647] [TCP Reno], cwnd=4.00, ssthresh=2.00, state=Congestion Avoidance
+[3.8952] Packet 34 SERVICED, delay=0.1996
+[3.8952] [TCP Reno], cwnd=4.00, ssthresh=2.00, state=Congestion Avoidance
+[4.0428] Packet 35 SERVICED, delay=0.3471
+[4.0428] [TCP Reno], cwnd=5.00, ssthresh=2.00, state=Congestion Avoidance
+[4.0504] Packet 36 SERVICED, delay=0.3548
+[4.0504] [TCP Reno], cwnd=5.00, ssthresh=2.00, state=Congestion Avoidance
+[4.1481] Packet 37 SERVICED, delay=0.1968
+[4.1481] [TCP Reno], cwnd=5.00, ssthresh=2.00, state=Congestion Avoidance
+[4.1883] Packet 38 SERVICED, delay=0.2370
+[4.1883] [TCP Reno], cwnd=5.00, ssthresh=2.00, state=Congestion Avoidance
+[4.2897] Packet 39 SERVICED, delay=0.1246
+[4.2897] [TCP Reno], cwnd=5.00, ssthresh=2.00, state=Congestion Avoidance
+[4.5080] Packet 40 SERVICED, delay=0.3428
+[4.5080] [TCP Reno], cwnd=6.00, ssthresh=2.00, state=Congestion Avoidance
+[4.5719] Packet 41 SERVICED, delay=0.4067
+[4.5719] [TCP Reno], cwnd=6.00, ssthresh=2.00, state=Congestion Avoidance
+[4.5795] Packet 47 DROPPED (queue full)
+[4.5795] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[4.5846] Packet 42 SERVICED, delay=0.4194
+[4.5846] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[4.7277] Packet 43 SERVICED, delay=0.4376
+[4.7277] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[4.8100] Packet 44 SERVICED, delay=0.5200
+[4.8100] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[4.8658] Packet 45 SERVICED, delay=0.2863
+[4.8658] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[4.8684] Packet 46 SERVICED, delay=0.2889
+[4.8684] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[5.1065] Packet 48 SERVICED, delay=0.3139
+[5.1065] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[5.1594] Packet 49 SERVICED, delay=0.3380
+[5.1594] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[5.1853] Packet 50 SERVICED, delay=0.2231
+[5.1853] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[5.1933] Packet 51 SERVICED, delay=0.2311
+[5.1933] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[5.2276] Packet 52 SERVICED, delay=0.2653
+[5.2276] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[5.2453] Packet 58 DROPPED (queue full)
+[5.3228] Packet 59 DROPPED (queue full)
+[5.4104] Packet 53 SERVICED, delay=0.1651
+[5.4104] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[5.5107] Packet 54 SERVICED, delay=0.2654
+[5.5107] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[5.5492] Packet 62 DROPPED (queue full)
+[5.6049] Packet 63 DROPPED (queue full)
+[5.6049] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[5.7159] Packet 55 SERVICED, delay=0.4706
+[5.7159] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[5.8787] Packet 56 SERVICED, delay=0.6334
+[5.8787] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[5.8993] Packet 57 SERVICED, delay=0.6540
+[5.8993] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[5.9376] Packet 60 SERVICED, delay=0.3884
+[5.9376] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[5.9493] Packet 61 SERVICED, delay=0.4000
+[5.9493] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[5.9744] Packet 64 SERVICED, delay=0.0461
+[5.9744] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[5.9871] Packet 65 SERVICED, delay=0.0589
+[5.9871] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[6.2735] Packet 66 SERVICED, delay=0.3040
+[6.2735] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[6.3125] Packet 67 SERVICED, delay=0.3430
+[6.3125] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[6.3856] Packet 68 SERVICED, delay=0.4162
+[6.3856] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[6.4191] Packet 74 DROPPED (queue full)
+[6.4228] Packet 75 DROPPED (queue full)
+[6.4308] Packet 69 SERVICED, delay=0.3400
+[6.4308] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[6.4927] Packet 77 DROPPED (queue full)
+[6.7316] Packet 78 DROPPED (queue full)
+[6.7316] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[6.7876] Packet 70 SERVICED, delay=0.6967
+[6.7876] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[6.8166] Packet 71 SERVICED, delay=0.3975
+[6.8166] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[6.8854] Packet 72 SERVICED, delay=0.4663
+[6.8854] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[6.9212] Packet 73 SERVICED, delay=0.5021
+[6.9212] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[6.9265] Packet 76 SERVICED, delay=0.4338
+[6.9265] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[7.2666] Packet 79 SERVICED, delay=0.0277
+[7.2666] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[7.3781] Packet 80 SERVICED, delay=0.1392
+[7.3781] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[7.5215] Packet 81 SERVICED, delay=0.2826
+[7.5215] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[7.5486] Packet 82 SERVICED, delay=0.3098
+[7.5486] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[7.6789] Packet 83 SERVICED, delay=0.4400
+[7.6789] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[7.7789] Packet 84 SERVICED, delay=0.4942
+[7.7789] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[7.7817] Packet 90 DROPPED (queue full)
+[7.7817] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[7.8557] Packet 85 SERVICED, delay=0.4706
+[7.8557] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[7.8944] Packet 86 SERVICED, delay=0.3194
+[7.8944] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[7.9150] Packet 87 SERVICED, delay=0.3401
+[7.9150] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[7.9167] Packet 88 SERVICED, delay=0.1350
+[7.9167] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[7.9884] Packet 89 SERVICED, delay=0.2068
+[7.9884] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[8.1059] Packet 91 SERVICED, delay=0.2014
+[8.1059] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[8.3819] Packet 92 SERVICED, delay=0.4286
+[8.3819] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[8.3967] Packet 93 SERVICED, delay=0.4434
+[8.3967] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[8.4087] Packet 94 SERVICED, delay=0.4137
+[8.4087] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[8.6674] Packet 95 SERVICED, delay=0.6723
+[8.6674] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[8.6972] Packet 96 SERVICED, delay=0.4923
+[8.6972] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[8.7200] Packet 102 DROPPED (queue full)
+[8.7629] Packet 103 DROPPED (queue full)
+[8.7782] Packet 97 SERVICED, delay=0.2955
+[8.7782] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[8.8536] Packet 98 SERVICED, delay=0.3709
+[8.8536] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[8.8813] Packet 99 SERVICED, delay=0.3986
+[8.8813] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[8.9903] Packet 107 DROPPED (queue full)
+[8.9903] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[9.1120] Packet 100 SERVICED, delay=0.3920
+[9.1120] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[9.2123] Packet 101 SERVICED, delay=0.4923
+[9.2123] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[9.4304] Packet 104 SERVICED, delay=0.4400
+[9.4304] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[9.5817] Packet 105 SERVICED, delay=0.5914
+[9.5817] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[9.6845] Packet 106 SERVICED, delay=0.6941
+[9.6845] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[9.7777] Packet 108 SERVICED, delay=0.5409
+[9.7777] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[9.8954] Packet 109 SERVICED, delay=0.4405
+[9.8954] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[10.0200] Packet 110 SERVICED, delay=0.4341
+[10.0200] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[10.1249] Packet 111 SERVICED, delay=0.3353
+[10.1249] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[10.3141] Packet 112 SERVICED, delay=0.5245
+[10.3141] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[10.3185] Packet 118 DROPPED (queue full)
+[10.3185] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[10.4212] Packet 113 SERVICED, delay=0.6317
+[10.4212] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[10.4521] Packet 114 SERVICED, delay=0.5228
+[10.4521] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[10.5020] Packet 115 SERVICED, delay=0.1835
+[10.5020] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[10.7246] Packet 116 SERVICED, delay=0.4061
+[10.7246] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[10.8243] Packet 117 SERVICED, delay=0.5059
+[10.8243] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[10.8922] Packet 119 SERVICED, delay=0.4179
+[10.8922] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[10.9251] Packet 120 SERVICED, delay=0.3009
+[10.9251] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[10.9446] Packet 121 SERVICED, delay=0.2142
+[10.9446] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[11.3202] Packet 122 SERVICED, delay=0.3078
+[11.3202] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[11.5666] Packet 123 SERVICED, delay=0.5541
+[11.5666] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[11.6002] Packet 129 DROPPED (queue full)
+[11.6002] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[11.6128] Packet 124 SERVICED, delay=0.6003
+[11.6128] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[11.6144] Packet 125 SERVICED, delay=0.6019
+[11.6144] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[11.8779] Packet 126 SERVICED, delay=0.8654
+[11.8779] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[12.2093] Packet 127 SERVICED, delay=0.8008
+[12.2093] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[12.2442] Packet 128 SERVICED, delay=0.6440
+[12.2442] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[12.2823] Packet 130 SERVICED, delay=0.4916
+[12.2823] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[12.5574] Packet 131 SERVICED, delay=0.6668
+[12.5574] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[12.6759] Packet 132 SERVICED, delay=0.0151
+[12.6759] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[12.7490] Packet 133 SERVICED, delay=0.0881
+[12.7490] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[12.9588] Packet 134 SERVICED, delay=0.2980
+[12.9588] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[13.0938] Packet 135 SERVICED, delay=0.4330
+[13.0938] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[13.1139] Packet 141 DROPPED (queue full)
+[13.1139] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[13.2132] Packet 136 SERVICED, delay=0.5524
+[13.2132] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[13.2578] Packet 137 SERVICED, delay=0.4757
+[13.2578] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[13.2926] Packet 138 SERVICED, delay=0.5105
+[13.2926] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[13.4943] Packet 139 SERVICED, delay=0.3804
+[13.4943] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[13.7388] Packet 140 SERVICED, delay=0.6249
+[13.7388] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[13.8438] Packet 142 SERVICED, delay=0.5001
+[13.8438] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[13.9648] Packet 143 SERVICED, delay=0.6212
+[13.9648] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[14.1856] Packet 144 SERVICED, delay=0.6831
+[14.1856] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[14.2638] Packet 145 SERVICED, delay=0.5104
+[14.2638] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[14.2976] Packet 146 SERVICED, delay=0.5442
+[14.2976] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[14.3014] Packet 147 SERVICED, delay=0.4555
+[14.3014] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[14.3460] Packet 148 SERVICED, delay=0.3272
+[14.3460] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[14.3507] Packet 154 DROPPED (queue full)
+[14.3507] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[14.3703] Packet 149 SERVICED, delay=0.1171
+[14.3703] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[14.3793] Packet 150 SERVICED, delay=0.0285
+[14.3793] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[14.3846] Packet 151 SERVICED, delay=0.0338
+[14.3846] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[14.4604] Packet 152 SERVICED, delay=0.1096
+[14.4604] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[14.5381] Packet 153 SERVICED, delay=0.1874
+[14.5381] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[14.9105] Packet 155 SERVICED, delay=0.4303
+[14.9105] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[14.9831] Packet 156 SERVICED, delay=0.5029
+[14.9831] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[15.0221] Packet 157 SERVICED, delay=0.5419
+[15.0221] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[15.0537] Packet 158 SERVICED, delay=0.4149
+[15.0537] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[15.1115] Packet 159 SERVICED, delay=0.4727
+[15.1115] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[15.1261] Packet 165 DROPPED (queue full)
+[15.2341] Packet 166 DROPPED (queue full)
+[15.2923] Packet 160 SERVICED, delay=0.3140
+[15.2923] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[15.3449] Packet 161 SERVICED, delay=0.2476
+[15.3449] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[15.3639] Packet 162 SERVICED, delay=0.2666
+[15.3639] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[15.3809] Packet 163 SERVICED, delay=0.2836
+[15.3809] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[15.4606] Packet 164 SERVICED, delay=0.3345
+[15.4606] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[15.5439] Packet 172 DROPPED (queue full)
+[15.5439] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[15.6778] Packet 167 SERVICED, delay=0.1339
+[15.6778] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[15.7586] Packet 168 SERVICED, delay=0.2147
+[15.7586] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[15.8532] Packet 169 SERVICED, delay=0.3093
+[15.8532] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[15.9076] Packet 170 SERVICED, delay=0.3637
+[15.9076] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[15.9361] Packet 171 SERVICED, delay=0.3922
+[15.9361] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[16.0577] Packet 173 SERVICED, delay=0.1559
+[16.0577] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[16.1220] Packet 174 SERVICED, delay=0.2202
+[16.1220] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[16.1896] Packet 175 SERVICED, delay=0.2776
+[16.1896] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[16.2086] Packet 176 SERVICED, delay=0.2324
+[16.2086] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[16.2655] Packet 177 SERVICED, delay=0.2893
+[16.2655] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[16.2680] Packet 183 DROPPED (queue full)
+[16.2753] Packet 184 DROPPED (queue full)
+[16.2780] Packet 185 DROPPED (queue full)
+[16.3663] Packet 178 SERVICED, delay=0.2436
+[16.3663] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[16.3710] Packet 179 SERVICED, delay=0.2483
+[16.3710] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[16.4409] Packet 180 SERVICED, delay=0.1730
+[16.4409] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[16.5597] Packet 189 DROPPED (queue full)
+[16.5597] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[16.6351] Packet 181 SERVICED, delay=0.3671
+[16.6351] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[16.7426] Packet 182 SERVICED, delay=0.4746
+[16.7426] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[16.8282] Packet 186 SERVICED, delay=0.2685
+[16.8282] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[16.8774] Packet 187 SERVICED, delay=0.3177
+[16.8774] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[16.9804] Packet 188 SERVICED, delay=0.4208
+[16.9804] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[17.0292] Packet 190 SERVICED, delay=0.1069
+[17.0292] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[17.3542] Packet 191 SERVICED, delay=0.4318
+[17.3542] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[17.5899] Packet 192 SERVICED, delay=0.6675
+[17.5899] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[17.5973] Packet 193 SERVICED, delay=0.5087
+[17.5973] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[17.6357] Packet 194 SERVICED, delay=0.5471
+[17.6357] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[17.6675] Packet 200 DROPPED (queue full)
+[17.6675] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[17.8221] Packet 195 SERVICED, delay=0.7334
+[17.8221] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[17.9212] Packet 196 SERVICED, delay=0.4968
+[17.9212] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[18.0540] Packet 197 SERVICED, delay=0.4196
+[18.0540] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[18.2167] Packet 198 SERVICED, delay=0.5823
+[18.2167] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[18.2363] Packet 199 SERVICED, delay=0.5687
+[18.2363] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[18.3508] Packet 201 SERVICED, delay=0.0532
+[18.3508] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[18.3974] Packet 202 SERVICED, delay=0.0997
+[18.3974] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[18.5472] Packet 203 SERVICED, delay=0.2495
+[18.5472] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[18.5888] Packet 204 SERVICED, delay=0.2912
+[18.5888] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[18.8559] Packet 205 SERVICED, delay=0.5582
+[18.8559] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[18.8791] Packet 211 DROPPED (queue full)
+[18.8791] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[18.9119] Packet 206 SERVICED, delay=0.4188
+[18.9119] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[19.0509] Packet 207 SERVICED, delay=0.5577
+[19.0509] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[19.0618] Packet 208 SERVICED, delay=0.4282
+[19.0618] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[19.2946] Packet 209 SERVICED, delay=0.6610
+[19.2946] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[19.3332] Packet 210 SERVICED, delay=0.4541
+[19.3332] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[19.3427] Packet 212 SERVICED, delay=0.1775
+[19.3427] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[19.3812] Packet 213 SERVICED, delay=0.2159
+[19.3812] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[19.7658] Packet 214 SERVICED, delay=0.3008
+[19.7658] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[19.8510] Packet 215 SERVICED, delay=0.3860
+[19.8510] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[19.9509] Packet 216 SERVICED, delay=0.4859
+[19.9509] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[19.9811] Packet 222 DROPPED (queue full)
+[19.9811] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[20.0104] Packet 217 SERVICED, delay=0.5454
+[20.0104] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[20.0451] Packet 218 SERVICED, delay=0.5801
+[20.0451] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[20.2010] Packet 219 SERVICED, delay=0.2881
+[20.2010] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[20.2105] Packet 220 SERVICED, delay=0.2977
+[20.2105] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[20.2165] Packet 221 SERVICED, delay=0.2354
+[20.2165] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[20.3012] Packet 223 SERVICED, delay=0.0432
+[20.3012] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[20.3136] Packet 224 SERVICED, delay=0.0557
+[20.3136] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[20.3291] Packet 225 SERVICED, delay=0.0711
+[20.3291] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[20.4724] Packet 226 SERVICED, delay=0.2144
+[20.4724] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[20.5687] Packet 227 SERVICED, delay=0.3107
+[20.5687] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[20.5763] Packet 228 SERVICED, delay=0.1781
+[20.5763] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[20.7488] Packet 229 SERVICED, delay=0.3506
+[20.7488] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[20.8470] Packet 235 DROPPED (queue full)
+[20.8713] Packet 230 SERVICED, delay=0.4731
+[20.8713] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[20.9182] Packet 231 SERVICED, delay=0.0711
+[20.9182] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[20.9645] Packet 232 SERVICED, delay=0.1174
+[20.9645] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[20.9870] Packet 239 DROPPED (queue full)
+[20.9870] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[21.1320] Packet 233 SERVICED, delay=0.2850
+[21.1320] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[21.4262] Packet 234 SERVICED, delay=0.5792
+[21.4262] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[21.4734] Packet 236 SERVICED, delay=0.4864
+[21.4734] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[21.4822] Packet 237 SERVICED, delay=0.4951
+[21.4822] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[21.6323] Packet 238 SERVICED, delay=0.6453
+[21.6323] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[21.6449] Packet 240 SERVICED, delay=0.2161
+[21.6449] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[21.7820] Packet 241 SERVICED, delay=0.2359
+[21.7820] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[21.8696] Packet 242 SERVICED, delay=0.3234
+[21.8696] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[21.9206] Packet 243 SERVICED, delay=0.0470
+[21.9206] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[21.9542] Packet 244 SERVICED, delay=0.0806
+[21.9542] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[22.1572] Packet 245 SERVICED, delay=0.2836
+[22.1572] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[22.1825] Packet 246 SERVICED, delay=0.3089
+[22.1825] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[22.2251] Packet 252 DROPPED (queue full)
+[22.2251] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[22.5128] Packet 247 SERVICED, delay=0.6392
+[22.5128] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[22.5172] Packet 248 SERVICED, delay=0.2921
+[22.5172] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[22.7390] Packet 249 SERVICED, delay=0.5139
+[22.7390] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[22.8140] Packet 250 SERVICED, delay=0.5889
+[22.8140] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[23.3096] Packet 251 SERVICED, delay=1.0846
+[23.3096] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[23.3837] Packet 253 SERVICED, delay=0.7296
+[23.3837] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[23.5027] Packet 254 SERVICED, delay=0.7493
+[23.5027] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[23.6015] Packet 255 SERVICED, delay=0.7874
+[23.6015] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[23.8224] Packet 256 SERVICED, delay=0.3512
+[23.8224] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[23.8832] Packet 257 SERVICED, delay=0.4120
+[23.8832] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[23.9800] Packet 258 SERVICED, delay=0.5088
+[23.9800] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[23.9842] Packet 264 DROPPED (queue full)
+[23.9842] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[24.0009] Packet 259 SERVICED, delay=0.4971
+[24.0009] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[24.0885] Packet 260 SERVICED, delay=0.4788
+[24.0885] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[24.5169] Packet 261 SERVICED, delay=0.5326
+[24.5169] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[24.6367] Packet 262 SERVICED, delay=0.6524
+[24.6367] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[24.7135] Packet 263 SERVICED, delay=0.7292
+[24.7135] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[24.8289] Packet 265 SERVICED, delay=0.6766
+[24.8289] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[25.1281] Packet 266 SERVICED, delay=0.5433
+[25.1281] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[25.2231] Packet 267 SERVICED, delay=0.5090
+[25.2231] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[25.2773] Packet 268 SERVICED, delay=0.5631
+[25.2773] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[25.5472] Packet 269 SERVICED, delay=0.8330
+[25.5472] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[25.5518] Packet 270 SERVICED, delay=0.6366
+[25.5518] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[25.5883] Packet 276 DROPPED (queue full)
+[25.5883] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[25.9882] Packet 271 SERVICED, delay=0.8568
+[25.9882] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[26.0362] Packet 272 SERVICED, delay=0.7983
+[26.0362] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[26.2208] Packet 273 SERVICED, delay=0.6325
+[26.2208] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[26.4030] Packet 274 SERVICED, delay=0.8147
+[26.4030] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[26.4662] Packet 275 SERVICED, delay=0.8779
+[26.4662] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[27.3804] Packet 277 SERVICED, delay=0.5695
+[27.3804] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[27.4615] Packet 278 SERVICED, delay=0.6506
+[27.4615] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[27.6080] Packet 279 SERVICED, delay=0.7971
+[27.6080] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[27.8110] Packet 281 DROPPED (timeout)
+[27.8110] [TCP Reno LOSS], cwnd reset to 2, ssthresh=2
+[27.8977] Packet 280 SERVICED, delay=1.0867
+[27.8977] [TCP Reno], cwnd=3.00, ssthresh=2.00, state=Congestion Avoidance
+[27.9939] Packet 282 SERVICED, delay=0.5423
+[27.9939] [TCP Reno], cwnd=3.00, ssthresh=2.00, state=Congestion Avoidance
+[28.0060] Packet 283 SERVICED, delay=0.5100
+[28.0060] [TCP Reno], cwnd=3.00, ssthresh=2.00, state=Congestion Avoidance
+[28.1540] Packet 284 SERVICED, delay=0.4732
+[28.1540] [TCP Reno], cwnd=4.00, ssthresh=2.00, state=Congestion Avoidance
+[28.2363] Packet 285 SERVICED, delay=0.2106
+[28.2363] [TCP Reno], cwnd=4.00, ssthresh=2.00, state=Congestion Avoidance
+[28.4455] Packet 286 SERVICED, delay=0.4199
+[28.4455] [TCP Reno], cwnd=4.00, ssthresh=2.00, state=Congestion Avoidance
+[28.5424] Packet 287 SERVICED, delay=0.3070
+[28.5424] [TCP Reno], cwnd=4.00, ssthresh=2.00, state=Congestion Avoidance
+[28.6642] Packet 288 SERVICED, delay=0.4288
+[28.6642] [TCP Reno], cwnd=5.00, ssthresh=2.00, state=Congestion Avoidance
+[28.6788] Packet 289 SERVICED, delay=0.4195
+[28.6788] [TCP Reno], cwnd=5.00, ssthresh=2.00, state=Congestion Avoidance
+[28.9133] Packet 290 SERVICED, delay=0.4129
+[28.9133] [TCP Reno], cwnd=5.00, ssthresh=2.00, state=Congestion Avoidance
+[28.9855] Packet 291 SERVICED, delay=0.4423
+[28.9855] [TCP Reno], cwnd=5.00, ssthresh=2.00, state=Congestion Avoidance
+[29.0360] Packet 292 SERVICED, delay=0.3397
+[29.0360] [TCP Reno], cwnd=5.00, ssthresh=2.00, state=Congestion Avoidance
+[29.1333] Packet 293 SERVICED, delay=0.4370
+[29.1333] [TCP Reno], cwnd=6.00, ssthresh=2.00, state=Congestion Avoidance
+[29.3316] Packet 294 SERVICED, delay=0.6353
+[29.3316] [TCP Reno], cwnd=6.00, ssthresh=2.00, state=Congestion Avoidance
+[29.3475] Packet 295 SERVICED, delay=0.3526
+[29.3475] [TCP Reno], cwnd=6.00, ssthresh=2.00, state=Congestion Avoidance
+[29.5155] Packet 301 DROPPED (queue full)
+[29.5155] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[29.6087] Packet 296 SERVICED, delay=0.6138
+[29.6087] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[29.6386] Packet 297 SERVICED, delay=0.5759
+[29.6386] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[29.7064] Packet 298 SERVICED, delay=0.1909
+[29.7064] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[29.7463] Packet 299 SERVICED, delay=0.2308
+[29.7463] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[29.8466] Packet 300 SERVICED, delay=0.3311
+[29.8466] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[29.8667] Packet 302 SERVICED, delay=0.1820
+[29.8667] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[30.0938] Packet 303 SERVICED, delay=0.3667
+[30.0938] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[30.2039] Packet 304 SERVICED, delay=0.4126
+[30.2039] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[30.2366] Packet 305 SERVICED, delay=0.3823
+[30.2366] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[30.2560] Packet 306 SERVICED, delay=0.4017
+[30.2560] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[30.2928] Packet 312 DROPPED (queue full)
+[30.2991] Packet 313 DROPPED (queue full)
+[30.3178] Packet 307 SERVICED, delay=0.4414
+[30.3178] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[30.3218] Packet 308 SERVICED, delay=0.1897
+[30.3218] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[30.4207] Packet 309 SERVICED, delay=0.1279
+[30.4207] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[30.4292] Packet 310 SERVICED, delay=0.1365
+[30.4292] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[30.4631] Packet 318 DROPPED (queue full)
+[30.5594] Packet 319 DROPPED (queue full)
+[30.5594] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[30.6360] Packet 311 SERVICED, delay=0.3433
+[30.6360] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[30.7740] Packet 314 SERVICED, delay=0.3108
+[30.7740] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[30.7944] Packet 315 SERVICED, delay=0.3312
+[30.7944] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[30.8178] Packet 316 SERVICED, delay=0.3547
+[30.8178] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[30.8641] Packet 317 SERVICED, delay=0.4010
+[30.8641] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[30.9891] Packet 320 SERVICED, delay=0.1971
+[30.9891] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[31.0892] Packet 321 SERVICED, delay=0.0717
+[31.0892] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[31.1652] Packet 322 SERVICED, delay=0.1476
+[31.1652] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[31.1765] Packet 323 SERVICED, delay=0.1590
+[31.1765] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[31.2358] Packet 324 SERVICED, delay=0.2183
+[31.2358] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[31.3119] Packet 325 SERVICED, delay=0.2943
+[31.3119] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[31.3139] Packet 326 SERVICED, delay=0.1899
+[31.3139] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[31.3536] Packet 327 SERVICED, delay=0.1669
+[31.3536] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[31.3664] Packet 328 SERVICED, delay=0.1797
+[31.3664] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[31.4079] Packet 334 DROPPED (queue full)
+[31.4963] Packet 335 DROPPED (queue full)
+[31.4979] Packet 329 SERVICED, delay=0.0900
+[31.4979] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[31.5528] Packet 337 DROPPED (queue full)
+[31.5979] Packet 338 DROPPED (queue full)
+[31.5979] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[31.6116] Packet 330 SERVICED, delay=0.2037
+[31.6116] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[31.7673] Packet 331 SERVICED, delay=0.3594
+[31.7673] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[31.8363] Packet 332 SERVICED, delay=0.4284
+[31.8363] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[31.8454] Packet 333 SERVICED, delay=0.4375
+[31.8454] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[31.8590] Packet 336 SERVICED, delay=0.3062
+[31.8590] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[32.2502] Packet 339 SERVICED, delay=0.0931
+[32.2502] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[32.2773] Packet 340 SERVICED, delay=0.1202
+[32.2773] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[32.2880] Packet 341 SERVICED, delay=0.1309
+[32.2880] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[32.3046] Packet 342 SERVICED, delay=0.1475
+[32.3046] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[32.3329] Packet 343 SERVICED, delay=0.1757
+[32.3329] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[32.4750] Packet 349 DROPPED (queue full)
+[32.4833] Packet 344 SERVICED, delay=0.0084
+[32.4833] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[32.5577] Packet 345 SERVICED, delay=0.0827
+[32.5577] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[32.6105] Packet 346 SERVICED, delay=0.1355
+[32.6105] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[32.8239] Packet 353 DROPPED (queue full)
+[32.8239] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[33.0144] Packet 347 SERVICED, delay=0.5394
+[33.0144] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[33.0263] Packet 348 SERVICED, delay=0.5513
+[33.0263] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[33.2269] Packet 350 SERVICED, delay=0.4030
+[33.2269] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[33.3967] Packet 351 SERVICED, delay=0.5729
+[33.3967] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[33.4266] Packet 352 SERVICED, delay=0.6027
+[33.4266] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[33.5079] Packet 354 SERVICED, delay=0.3086
+[33.5079] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[33.5408] Packet 355 SERVICED, delay=0.2566
+[33.5408] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[33.5615] Packet 356 SERVICED, delay=0.1306
+[33.5615] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[33.6006] Packet 357 SERVICED, delay=0.1697
+[33.6006] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[33.6560] Packet 358 SERVICED, delay=0.2251
+[33.6560] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[33.6682] Packet 359 SERVICED, delay=0.1387
+[33.6682] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[33.6894] Packet 365 DROPPED (queue full)
+[33.7023] Packet 360 SERVICED, delay=0.0784
+[33.7023] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[33.7039] Packet 367 DROPPED (queue full)
+[33.7428] Packet 368 DROPPED (queue full)
+[33.7722] Packet 369 DROPPED (queue full)
+[33.7893] Packet 361 SERVICED, delay=0.1655
+[33.7893] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[33.8061] Packet 362 SERVICED, delay=0.1823
+[33.8061] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[33.8821] Packet 363 SERVICED, delay=0.1927
+[33.8821] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[33.8875] Packet 364 SERVICED, delay=0.1980
+[33.8875] [TCP Reno], cwnd=7.00, ssthresh=3.00, state=Congestion Avoidance
+[33.8940] Packet 366 SERVICED, delay=0.1901
+[33.8940] [TCP Reno], cwnd=7.00, ssthresh=3.00, state=Congestion Avoidance
+[33.9150] Packet 375 DROPPED (queue full)
+[33.9150] Packet 376 DROPPED (queue full)
+[33.9150] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[34.0055] Packet 370 SERVICED, delay=0.0905
+[34.0055] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[34.0693] Packet 371 SERVICED, delay=0.1543
+[34.0693] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[34.1224] Packet 372 SERVICED, delay=0.2074
+[34.1224] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[34.1653] Packet 373 SERVICED, delay=0.2503
+[34.1653] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[34.4305] Packet 374 SERVICED, delay=0.5156
+[34.4305] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[34.4505] Packet 377 SERVICED, delay=0.1124
+[34.4505] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[34.4574] Packet 378 SERVICED, delay=0.1193
+[34.4574] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[34.5926] Packet 379 SERVICED, delay=0.2544
+[34.5926] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[34.6230] Packet 380 SERVICED, delay=0.0151
+[34.6230] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[34.7816] Packet 381 SERVICED, delay=0.1737
+[34.7816] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[34.8042] Packet 382 SERVICED, delay=0.1962
+[34.8042] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[34.8220] Packet 383 SERVICED, delay=0.2141
+[34.8220] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[34.8400] Packet 384 SERVICED, delay=0.2320
+[34.8400] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[34.8505] Packet 390 DROPPED (queue full)
+[34.8978] Packet 391 DROPPED (queue full)
+[34.9337] Packet 392 DROPPED (queue full)
+[34.9337] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[34.9494] Packet 385 SERVICED, delay=0.1729
+[34.9494] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[34.9938] Packet 386 SERVICED, delay=0.1433
+[34.9938] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[35.2036] Packet 387 SERVICED, delay=0.3530
+[35.2036] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[35.2534] Packet 388 SERVICED, delay=0.4029
+[35.2534] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[35.4230] Packet 389 SERVICED, delay=0.5725
+[35.4230] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[35.4494] Packet 393 SERVICED, delay=0.4459
+[35.4494] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[35.4979] Packet 394 SERVICED, delay=0.2645
+[35.4979] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[35.7348] Packet 395 SERVICED, delay=0.4230
+[35.7348] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[35.8336] Packet 396 SERVICED, delay=0.1304
+[35.8336] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[35.8744] Packet 397 SERVICED, delay=0.1712
+[35.8744] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[35.8894] Packet 398 SERVICED, delay=0.1862
+[35.8894] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[36.0243] Packet 404 DROPPED (queue full)
+[36.0243] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[36.0474] Packet 399 SERVICED, delay=0.3442
+[36.0474] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[36.1236] Packet 400 SERVICED, delay=0.3237
+[36.1236] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[36.2790] Packet 401 SERVICED, delay=0.2547
+[36.2790] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[36.2955] Packet 402 SERVICED, delay=0.2712
+[36.2955] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[36.3328] Packet 403 SERVICED, delay=0.3085
+[36.3328] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[36.3362] Packet 405 SERVICED, delay=0.1757
+[36.3362] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[36.5980] Packet 406 SERVICED, delay=0.2094
+[36.5980] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[36.6399] Packet 407 SERVICED, delay=0.2512
+[36.6399] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[36.8121] Packet 408 SERVICED, delay=0.4234
+[36.8121] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[36.8238] Packet 409 SERVICED, delay=0.4351
+[36.8238] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[36.8691] Packet 415 DROPPED (queue full)
+[36.9116] Packet 416 DROPPED (queue full)
+[37.0112] Packet 410 SERVICED, delay=0.6225
+[37.0112] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[37.0274] Packet 411 SERVICED, delay=0.4149
+[37.0274] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[37.1507] Packet 419 DROPPED (queue full)
+[37.1507] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[37.1547] Packet 412 SERVICED, delay=0.3881
+[37.1547] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[37.2731] Packet 413 SERVICED, delay=0.4040
+[37.2731] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[37.3514] Packet 414 SERVICED, delay=0.4822
+[37.3514] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[37.4389] Packet 417 SERVICED, delay=0.2883
+[37.4389] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[37.4901] Packet 418 SERVICED, delay=0.3395
+[37.4901] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[37.5068] Packet 420 SERVICED, delay=0.0619
+[37.5068] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[37.5950] Packet 421 SERVICED, delay=0.1501
+[37.5950] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[37.6655] Packet 422 SERVICED, delay=0.2206
+[37.6655] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[37.6674] Packet 423 SERVICED, delay=0.1279
+[37.6674] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[37.8730] Packet 424 SERVICED, delay=0.3336
+[37.8730] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[37.8785] Packet 430 DROPPED (queue full)
+[37.9337] Packet 431 DROPPED (queue full)
+[38.1420] Packet 425 SERVICED, delay=0.6026
+[38.1420] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[38.2060] Packet 433 DROPPED (queue full)
+[38.2060] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[38.2613] Packet 426 SERVICED, delay=0.6386
+[38.2613] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[38.3842] Packet 427 SERVICED, delay=0.5057
+[38.3842] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[38.4007] Packet 428 SERVICED, delay=0.5222
+[38.4007] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[38.4866] Packet 429 SERVICED, delay=0.6081
+[38.4866] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[38.7464] Packet 432 SERVICED, delay=0.5403
+[38.7464] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[38.9289] Packet 434 SERVICED, delay=0.2920
+[38.9289] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[38.9423] Packet 435 SERVICED, delay=0.3053
+[38.9423] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[39.1959] Packet 436 SERVICED, delay=0.5589
+[39.1959] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[39.2690] Packet 437 SERVICED, delay=0.4281
+[39.2690] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[39.3585] Packet 438 SERVICED, delay=0.5176
+[39.3585] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[39.4426] Packet 444 DROPPED (queue full)
+[39.4426] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[39.5209] Packet 439 SERVICED, delay=0.5826
+[39.5209] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[39.5717] Packet 440 SERVICED, delay=0.5923
+[39.5717] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[39.6142] Packet 441 SERVICED, delay=0.3054
+[39.6142] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[39.6568] Packet 442 SERVICED, delay=0.3480
+[39.6568] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[39.7170] Packet 443 SERVICED, delay=0.2744
+[39.7170] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[39.7713] Packet 445 SERVICED, delay=0.1649
+[39.7713] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[39.8977] Packet 446 SERVICED, delay=0.0450
+[39.8977] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[39.9846] Packet 447 SERVICED, delay=0.1319
+[39.9846] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[40.0846] Packet 448 SERVICED, delay=0.2319
+[40.0846] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[40.0859] Packet 449 SERVICED, delay=0.2333
+[40.0859] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[40.1949] Packet 450 SERVICED, delay=0.3422
+[40.1949] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[40.1969] Packet 456 DROPPED (queue full)
+[40.2038] Packet 457 DROPPED (queue full)
+[40.2130] Packet 451 SERVICED, delay=0.0161
+[40.2130] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[40.2274] Packet 459 DROPPED (queue full)
+[40.2486] Packet 460 DROPPED (queue full)
+[40.2665] Packet 452 SERVICED, delay=0.0696
+[40.2665] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[40.2755] Packet 453 SERVICED, delay=0.0786
+[40.2755] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[40.3124] Packet 463 DROPPED (queue full)
+[40.3728] Packet 464 DROPPED (queue full)
+[40.4309] Packet 465 DROPPED (queue full)
+[40.5130] Packet 466 DROPPED (queue full)
+[40.5130] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[40.8523] Packet 454 SERVICED, delay=0.6554
+[40.8523] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[40.9220] Packet 455 SERVICED, delay=0.7251
+[40.9220] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[41.1504] Packet 458 SERVICED, delay=0.9230
+[41.1504] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[41.2336] Packet 461 SERVICED, delay=0.9211
+[41.2336] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[41.2404] Packet 462 SERVICED, delay=0.9279
+[41.2404] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[41.2871] Packet 467 SERVICED, delay=0.2641
+[41.2871] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[41.3396] Packet 468 SERVICED, delay=0.1818
+[41.3396] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[41.4472] Packet 469 SERVICED, delay=0.1439
+[41.4472] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[41.4500] Packet 470 SERVICED, delay=0.1467
+[41.4500] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[41.4751] Packet 471 SERVICED, delay=0.1718
+[41.4751] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[41.5013] Packet 472 SERVICED, delay=0.1980
+[41.5013] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[41.5033] Packet 473 SERVICED, delay=0.0886
+[41.5033] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[41.5866] Packet 479 DROPPED (queue full)
+[41.5866] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[41.6063] Packet 474 SERVICED, delay=0.0197
+[41.6063] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[41.7121] Packet 475 SERVICED, delay=0.1254
+[41.7121] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[41.7393] Packet 476 SERVICED, delay=0.1526
+[41.7393] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[41.7498] Packet 477 SERVICED, delay=0.1631
+[41.7498] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[41.7776] Packet 478 SERVICED, delay=0.1910
+[41.7776] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[41.9575] Packet 480 SERVICED, delay=0.1773
+[41.9575] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[42.0082] Packet 481 SERVICED, delay=0.2279
+[42.0082] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[42.1184] Packet 482 SERVICED, delay=0.3382
+[42.1184] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[42.1414] Packet 483 SERVICED, delay=0.3612
+[42.1414] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[42.1761] Packet 484 SERVICED, delay=0.3959
+[42.1761] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[42.1774] Packet 485 SERVICED, delay=0.1705
+[42.1774] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[42.2007] Packet 486 SERVICED, delay=0.1849
+[42.2007] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[42.2554] Packet 487 SERVICED, delay=0.1294
+[42.2554] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[42.3492] Packet 493 DROPPED (queue full)
+[42.4470] Packet 494 DROPPED (queue full)
+[42.5193] Packet 488 SERVICED, delay=0.1701
+[42.5193] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[42.5274] Packet 496 DROPPED (queue full)
+[42.5611] Packet 489 SERVICED, delay=0.2119
+[42.5611] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[42.5911] Packet 490 SERVICED, delay=0.2419
+[42.5911] [TCP Reno], cwnd=7.00, ssthresh=3.00, state=Congestion Avoidance
+[42.6389] Packet 491 SERVICED, delay=0.2897
+[42.6389] [TCP Reno], cwnd=7.00, ssthresh=3.00, state=Congestion Avoidance
+[42.7281] Packet 492 SERVICED, delay=0.3789
+[42.7281] [TCP Reno], cwnd=7.00, ssthresh=3.00, state=Congestion Avoidance
+[42.7854] Packet 495 SERVICED, delay=0.2580
+[42.7854] [TCP Reno], cwnd=7.00, ssthresh=3.00, state=Congestion Avoidance
+[42.8239] Packet 502 DROPPED (queue full)
+[42.8239] Packet 503 DROPPED (queue full)
+[42.8239] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[42.9681] Packet 497 SERVICED, delay=0.1442
+[42.9681] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[42.9832] Packet 498 SERVICED, delay=0.1593
+[42.9832] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[43.1861] Packet 499 SERVICED, delay=0.3622
+[43.1861] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[43.2529] Packet 500 SERVICED, delay=0.4290
+[43.2529] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[43.4778] Packet 501 SERVICED, delay=0.6540
+[43.4778] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[43.5077] Packet 504 SERVICED, delay=0.4718
+[43.5077] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[43.9237] Packet 505 SERVICED, delay=0.6928
+[43.9237] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[43.9426] Packet 506 SERVICED, delay=0.6370
+[43.9426] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[43.9551] Packet 507 SERVICED, delay=0.3702
+[43.9551] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[44.0410] Packet 508 SERVICED, delay=0.4561
+[44.0410] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[44.0730] Packet 509 SERVICED, delay=0.4882
+[44.0730] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[44.0962] Packet 510 SERVICED, delay=0.1481
+[44.0962] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[44.0973] Packet 511 SERVICED, delay=0.1492
+[44.0973] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[44.1699] Packet 517 DROPPED (queue full)
+[44.1699] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[44.3275] Packet 512 SERVICED, delay=0.3647
+[44.3275] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[44.4185] Packet 513 SERVICED, delay=0.2486
+[44.4185] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[44.5103] Packet 514 SERVICED, delay=0.3404
+[44.5103] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[44.6197] Packet 515 SERVICED, delay=0.4498
+[44.6197] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[44.6389] Packet 516 SERVICED, delay=0.4691
+[44.6389] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[44.6476] Packet 518 SERVICED, delay=0.1450
+[44.6476] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[44.6757] Packet 519 SERVICED, delay=0.0807
+[44.6757] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[44.7098] Packet 520 SERVICED, delay=0.0655
+[44.7098] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[44.7538] Packet 521 SERVICED, delay=0.1094
+[44.7538] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[44.8807] Packet 522 SERVICED, delay=0.2364
+[44.8807] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[44.9367] Packet 528 DROPPED (queue full)
+[44.9643] Packet 523 SERVICED, delay=0.2847
+[44.9643] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[45.0276] Packet 530 DROPPED (queue full)
+[45.0289] Packet 524 SERVICED, delay=0.3493
+[45.0289] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[45.0388] Packet 532 DROPPED (queue full)
+[45.1073] Packet 533 DROPPED (queue full)
+[45.1643] Packet 534 DROPPED (queue full)
+[45.3051] Packet 525 SERVICED, delay=0.5166
+[45.3051] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[45.3353] Packet 536 DROPPED (queue full)
+[45.3353] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[45.4370] Packet 526 SERVICED, delay=0.6485
+[45.4370] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[45.4423] Packet 527 SERVICED, delay=0.5055
+[45.4423] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[45.4830] Packet 529 SERVICED, delay=0.4554
+[45.4830] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[45.4908] Packet 531 SERVICED, delay=0.4519
+[45.4908] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[45.6514] Packet 535 SERVICED, delay=0.3161
+[45.6514] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[45.6962] Packet 537 SERVICED, delay=0.2399
+[45.6962] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[45.7299] Packet 538 SERVICED, delay=0.0147
+[45.7299] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[46.0299] Packet 539 SERVICED, delay=0.3148
+[46.0299] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[46.0890] Packet 540 SERVICED, delay=0.3738
+[46.0890] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[46.1095] Packet 541 SERVICED, delay=0.3943
+[46.1095] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[46.1875] Packet 542 SERVICED, delay=0.4724
+[46.1875] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[46.2036] Packet 548 DROPPED (queue full)
+[46.3193] Packet 543 SERVICED, delay=0.3978
+[46.3193] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[46.4268] Packet 544 SERVICED, delay=0.3411
+[46.4268] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[46.6160] Packet 545 SERVICED, delay=0.4124
+[46.6160] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[46.6432] Packet 552 DROPPED (queue full)
+[46.6432] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[46.6447] Packet 546 SERVICED, delay=0.4411
+[46.6447] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[46.7119] Packet 547 SERVICED, delay=0.5083
+[46.7119] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[47.0003] Packet 549 SERVICED, delay=0.3571
+[47.0003] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[47.0043] Packet 550 SERVICED, delay=0.3611
+[47.0043] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[47.1266] Packet 551 SERVICED, delay=0.4834
+[47.1266] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[47.3737] Packet 553 SERVICED, delay=0.6267
+[47.3737] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[47.7279] Packet 554 SERVICED, delay=0.5644
+[47.7279] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[48.0166] Packet 555 SERVICED, delay=0.8531
+[48.0166] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[48.0809] Packet 556 SERVICED, delay=0.9174
+[48.0809] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[48.2790] Packet 557 SERVICED, delay=1.1155
+[48.2790] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[48.3082] Packet 563 DROPPED (queue full)
+[48.3082] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[48.4556] Packet 558 SERVICED, delay=1.0675
+[48.4556] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[48.4623] Packet 559 SERVICED, delay=0.6430
+[48.4623] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[48.5007] Packet 560 SERVICED, delay=0.4096
+[48.5007] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[48.5990] Packet 561 SERVICED, delay=0.5079
+[48.5990] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[48.6947] Packet 562 SERVICED, delay=0.3865
+[48.6947] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[48.6968] Packet 564 SERVICED, delay=0.1820
+[48.6968] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[48.9045] Packet 565 SERVICED, delay=0.3897
+[48.9045] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[49.0649] Packet 566 SERVICED, delay=0.1950
+[49.0649] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[49.6831] Packet 567 SERVICED, delay=0.8132
+[49.6831] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[49.7263] Packet 568 SERVICED, delay=0.8564
+[49.7263] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[49.7336] Packet 574 DROPPED (queue full)
+[49.7336] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[49.8720] Packet 569 SERVICED, delay=1.0022
+[49.8720] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[49.9374] Packet 570 SERVICED, delay=1.0161
+[49.9374] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[50.3515] Packet 571 SERVICED, delay=1.1245
+[50.3515] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[50.3853] Packet 572 SERVICED, delay=0.6868
+[50.3853] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[50.4119] Packet 573 SERVICED, delay=0.6783
+[50.4119] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[50.4677] Packet 575 SERVICED, delay=0.2923
+[50.4677] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[50.7672] Packet 576 SERVICED, delay=0.4048
+[50.7672] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[50.7766] Packet 577 SERVICED, delay=0.2599
+[50.7766] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[50.8307] Packet 578 SERVICED, delay=0.3139
+[50.8307] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[51.0420] Packet 579 SERVICED, delay=0.5252
+[51.0420] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[51.1660] Packet 585 DROPPED (queue full)
+[51.1660] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[51.3315] Packet 580 SERVICED, delay=0.8148
+[51.3315] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[51.3579] Packet 581 SERVICED, delay=0.1919
+[51.3579] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[51.6439] Packet 582 SERVICED, delay=0.4779
+[51.6439] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[51.7487] Packet 583 SERVICED, delay=0.5827
+[51.7487] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[51.8423] Packet 584 SERVICED, delay=0.6763
+[51.8423] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[51.8854] Packet 586 SERVICED, delay=0.4770
+[51.8854] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[52.1007] Packet 587 SERVICED, delay=0.3386
+[52.1007] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[52.3634] Packet 588 SERVICED, delay=0.6013
+[52.3634] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[52.3825] Packet 589 SERVICED, delay=0.0924
+[52.3825] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[52.4330] Packet 590 SERVICED, delay=0.1429
+[52.4330] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[52.4760] Packet 596 DROPPED (queue full)
+[52.4760] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[52.5750] Packet 591 SERVICED, delay=0.2849
+[52.5750] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[52.6940] Packet 592 SERVICED, delay=0.4040
+[52.6940] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[52.7195] Packet 593 SERVICED, delay=0.2435
+[52.7195] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[52.7448] Packet 594 SERVICED, delay=0.2688
+[52.7448] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[52.8218] Packet 595 SERVICED, delay=0.3458
+[52.8218] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[52.8527] Packet 597 SERVICED, delay=0.0704
+[52.8527] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[52.8665] Packet 598 SERVICED, delay=0.0842
+[52.8665] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[53.0861] Packet 599 SERVICED, delay=0.3038
+[53.0861] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[53.2920] Packet 600 SERVICED, delay=0.1981
+[53.2920] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[53.4578] Packet 601 SERVICED, delay=0.3640
+[53.4578] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[53.4999] Packet 607 DROPPED (queue full)
+[53.4999] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[53.5643] Packet 602 SERVICED, delay=0.4705
+[53.5643] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[53.6444] Packet 603 SERVICED, delay=0.5505
+[53.6444] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[53.6535] Packet 604 SERVICED, delay=0.5596
+[53.6535] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[53.7219] Packet 605 SERVICED, delay=0.3704
+[53.7219] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[53.7299] Packet 606 SERVICED, delay=0.2300
+[53.7299] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[53.9040] Packet 608 SERVICED, delay=0.1805
+[53.9040] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[53.9467] Packet 609 SERVICED, delay=0.2232
+[53.9467] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[54.0600] Packet 610 SERVICED, delay=0.3366
+[54.0600] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[54.0911] Packet 611 SERVICED, delay=0.2842
+[54.0911] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[54.3020] Packet 612 SERVICED, delay=0.4951
+[54.3020] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[54.4021] Packet 618 DROPPED (queue full)
+[54.4094] Packet 613 SERVICED, delay=0.4429
+[54.4094] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[54.4193] Packet 620 DROPPED (queue full)
+[54.4223] Packet 621 DROPPED (queue full)
+[54.4361] Packet 622 DROPPED (queue full)
+[54.5722] Packet 623 DROPPED (queue full)
+[54.5722] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[54.5995] Packet 614 SERVICED, delay=0.6330
+[54.5995] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[54.7228] Packet 615 SERVICED, delay=0.5542
+[54.7228] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[54.9042] Packet 616 SERVICED, delay=0.7356
+[54.9042] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[55.0006] Packet 617 SERVICED, delay=0.5985
+[55.0006] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[55.2133] Packet 619 SERVICED, delay=0.7940
+[55.2133] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[55.3918] Packet 624 SERVICED, delay=0.6492
+[55.3918] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[55.7891] Packet 625 SERVICED, delay=0.8453
+[55.7891] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[55.8192] Packet 626 SERVICED, delay=0.7755
+[55.8192] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[55.9705] Packet 627 SERVICED, delay=0.7487
+[55.9705] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[55.9818] Packet 628 SERVICED, delay=0.7600
+[55.9818] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[56.1004] Packet 634 DROPPED (queue full)
+[56.1004] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[56.3115] Packet 629 SERVICED, delay=0.8686
+[56.3115] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[56.3223] Packet 630 SERVICED, delay=0.4685
+[56.3223] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[56.5991] Packet 631 SERVICED, delay=0.7454
+[56.5991] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[56.6349] Packet 632 SERVICED, delay=0.6577
+[56.6349] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[56.6419] Packet 633 SERVICED, delay=0.5415
+[56.6419] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[57.0049] Packet 635 SERVICED, delay=0.5552
+[57.0049] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[57.1434] Packet 636 SERVICED, delay=0.3467
+[57.1434] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[57.1574] Packet 637 SERVICED, delay=0.3607
+[57.1574] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[57.2993] Packet 638 SERVICED, delay=0.5026
+[57.2993] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[57.3018] Packet 639 SERVICED, delay=0.5051
+[57.3018] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[57.4168] Packet 640 SERVICED, delay=0.3646
+[57.4168] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[57.7284] Packet 646 DROPPED (queue full)
+[57.7284] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[57.7840] Packet 641 SERVICED, delay=0.0555
+[57.7840] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[57.8440] Packet 642 SERVICED, delay=0.1156
+[57.8440] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[57.8619] Packet 643 SERVICED, delay=0.1334
+[57.8619] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[58.0202] Packet 644 SERVICED, delay=0.2918
+[58.0202] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[58.1386] Packet 645 SERVICED, delay=0.4101
+[58.1386] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[58.2448] Packet 647 SERVICED, delay=0.3937
+[58.2448] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[58.5462] Packet 648 SERVICED, delay=0.6631
+[58.5462] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[58.6006] Packet 649 SERVICED, delay=0.3570
+[58.6006] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[58.7023] Packet 650 SERVICED, delay=0.4587
+[58.7023] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[58.7530] Packet 651 SERVICED, delay=0.5094
+[58.7530] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[58.8852] Packet 657 DROPPED (queue full)
+[58.8852] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[59.1664] Packet 652 SERVICED, delay=0.8908
+[59.1664] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[59.1925] Packet 653 SERVICED, delay=0.6397
+[59.1925] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[59.2385] Packet 654 SERVICED, delay=0.5531
+[59.2385] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[59.3026] Packet 655 SERVICED, delay=0.4174
+[59.3026] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[59.6474] Packet 656 SERVICED, delay=0.7622
+[59.6474] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[59.7948] Packet 658 SERVICED, delay=0.5567
+[59.7948] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[59.9379] Packet 659 SERVICED, delay=0.5136
+[59.9379] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[60.0363] Packet 660 SERVICED, delay=0.6120
+[60.0363] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[60.1322] Packet 661 SERVICED, delay=0.4369
+[60.1322] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[60.2914] Packet 662 SERVICED, delay=0.5961
+[60.2914] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[60.3003] Packet 668 DROPPED (queue full)
+[60.3003] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[60.3477] Packet 663 SERVICED, delay=0.4451
+[60.3477] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[60.3543] Packet 664 SERVICED, delay=0.3617
+[60.3543] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[60.3857] Packet 665 SERVICED, delay=0.3058
+[60.3857] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[60.4228] Packet 666 SERVICED, delay=0.1833
+[60.4228] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[60.4240] Packet 667 SERVICED, delay=0.1237
+[60.4240] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[60.5156] Packet 669 SERVICED, delay=0.1001
+[60.5156] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[60.5501] Packet 670 SERVICED, delay=0.1346
+[60.5501] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[60.7468] Packet 671 SERVICED, delay=0.2126
+[60.7468] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[60.8981] Packet 672 SERVICED, delay=0.3639
+[60.8981] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[60.9022] Packet 673 SERVICED, delay=0.3680
+[60.9022] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[60.9492] Packet 679 DROPPED (queue full)
+[60.9574] Packet 680 DROPPED (queue full)
+[60.9677] Packet 674 SERVICED, delay=0.4334
+[60.9677] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[60.9716] Packet 682 DROPPED (queue full)
+[61.1329] Packet 683 DROPPED (queue full)
+[61.1512] Packet 684 DROPPED (queue full)
+[61.2524] Packet 685 DROPPED (queue full)
+[61.2556] Packet 686 DROPPED (queue full)
+[61.2609] Packet 687 DROPPED (queue full)
+[61.3844] Packet 688 DROPPED (queue full)
+[61.3844] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[61.3994] Packet 675 SERVICED, delay=0.8264
+[61.3994] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[61.5206] Packet 676 SERVICED, delay=0.7668
+[61.5206] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[61.5298] Packet 677 SERVICED, delay=0.5806
+[61.5298] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[61.5730] Packet 678 SERVICED, delay=0.6238
+[61.5730] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[61.6568] Packet 681 SERVICED, delay=0.6852
+[61.6568] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[61.7129] Packet 689 SERVICED, delay=0.0415
+[61.7129] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[61.8815] Packet 690 SERVICED, delay=0.2101
+[61.8815] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[61.8899] Packet 691 SERVICED, delay=0.2185
+[61.8899] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[62.1151] Packet 692 SERVICED, delay=0.4437
+[62.1151] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[62.1944] Packet 693 SERVICED, delay=0.5230
+[62.1944] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[62.2105] Packet 699 DROPPED (queue full)
+[62.2306] Packet 700 DROPPED (queue full)
+[62.2546] Packet 694 SERVICED, delay=0.4132
+[62.2546] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[62.3294] Packet 695 SERVICED, delay=0.3848
+[62.3294] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[62.3381] Packet 703 DROPPED (queue full)
+[62.3640] Packet 704 DROPPED (queue full)
+[62.4609] Packet 696 SERVICED, delay=0.5163
+[62.4609] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[62.4856] Packet 697 SERVICED, delay=0.2751
+[62.4856] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[62.7321] Packet 707 DROPPED (queue full)
+[62.7321] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[62.8580] Packet 698 SERVICED, delay=0.6476
+[62.8580] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[62.9270] Packet 701 SERVICED, delay=0.5889
+[62.9270] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[63.0080] Packet 702 SERVICED, delay=0.6699
+[63.0080] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[63.1131] Packet 705 SERVICED, delay=0.3810
+[63.1131] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[63.1354] Packet 706 SERVICED, delay=0.4033
+[63.1354] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[63.2653] Packet 708 SERVICED, delay=0.2280
+[63.2653] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[63.4010] Packet 709 SERVICED, delay=0.3637
+[63.4010] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[63.4474] Packet 710 SERVICED, delay=0.3122
+[63.4474] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[63.5787] Packet 711 SERVICED, delay=0.0041
+[63.5787] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[63.7804] Packet 712 SERVICED, delay=0.2059
+[63.7804] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[63.8669] Packet 713 SERVICED, delay=0.2923
+[63.8669] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[63.8722] Packet 719 DROPPED (queue full)
+[63.8722] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[63.9246] Packet 714 SERVICED, delay=0.3500
+[63.9246] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[64.0538] Packet 715 SERVICED, delay=0.4792
+[64.0538] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[64.2605] Packet 716 SERVICED, delay=0.6192
+[64.2605] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[64.3153] Packet 717 SERVICED, delay=0.4430
+[64.3153] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[64.3477] Packet 718 SERVICED, delay=0.4754
+[64.3477] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[64.3713] Packet 720 SERVICED, delay=0.2556
+[64.3713] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[64.5034] Packet 721 SERVICED, delay=0.1903
+[64.5034] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[64.6292] Packet 722 SERVICED, delay=0.3021
+[64.6292] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[64.6490] Packet 723 SERVICED, delay=0.0821
+[64.6490] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[64.6762] Packet 724 SERVICED, delay=0.1093
+[64.6762] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[64.7596] Packet 730 DROPPED (queue full)
+[64.8319] Packet 731 DROPPED (queue full)
+[64.9218] Packet 732 DROPPED (queue full)
+[64.9218] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[65.0316] Packet 725 SERVICED, delay=0.4647
+[65.0316] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[65.0515] Packet 726 SERVICED, delay=0.4846
+[65.0515] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[65.1193] Packet 727 SERVICED, delay=0.3597
+[65.1193] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[65.1477] Packet 728 SERVICED, delay=0.3881
+[65.1477] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[65.3523] Packet 729 SERVICED, delay=0.5927
+[65.3523] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[65.3822] Packet 733 SERVICED, delay=0.0621
+[65.3822] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[65.4891] Packet 734 SERVICED, delay=0.1690
+[65.4891] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[65.5284] Packet 735 SERVICED, delay=0.2083
+[65.5284] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[65.5425] Packet 736 SERVICED, delay=0.0739
+[65.5425] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[65.8925] Packet 737 SERVICED, delay=0.4239
+[65.8925] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[65.9094] Packet 743 DROPPED (queue full)
+[65.9530] Packet 738 SERVICED, delay=0.4844
+[65.9530] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[65.9606] Packet 739 SERVICED, delay=0.4651
+[65.9606] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[66.0017] Packet 740 SERVICED, delay=0.4143
+[66.0017] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[66.0427] Packet 747 DROPPED (queue full)
+[66.0427] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[66.1783] Packet 741 SERVICED, delay=0.5908
+[66.1783] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[66.1966] Packet 742 SERVICED, delay=0.2872
+[66.1966] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[66.3056] Packet 744 SERVICED, delay=0.2629
+[66.3056] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[66.3700] Packet 745 SERVICED, delay=0.3273
+[66.3700] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[66.5559] Packet 746 SERVICED, delay=0.5132
+[66.5559] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[66.5789] Packet 748 SERVICED, delay=0.2455
+[66.5789] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[66.5908] Packet 749 SERVICED, delay=0.2573
+[66.5908] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[66.6666] Packet 750 SERVICED, delay=0.2958
+[66.6666] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[66.6706] Packet 751 SERVICED, delay=0.0239
+[66.6706] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[66.6836] Packet 752 SERVICED, delay=0.0370
+[66.6836] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[66.6846] Packet 758 DROPPED (queue full)
+[66.7438] Packet 753 SERVICED, delay=0.0972
+[66.7438] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[67.0154] Packet 754 SERVICED, delay=0.3688
+[67.0154] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[67.0202] Packet 761 DROPPED (queue full)
+[67.0862] Packet 755 SERVICED, delay=0.4015
+[67.0862] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[67.0904] Packet 756 SERVICED, delay=0.4058
+[67.0904] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[67.1065] Packet 757 SERVICED, delay=0.4218
+[67.1065] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[67.1070] Packet 759 SERVICED, delay=0.0868
+[67.1070] [TCP Reno], cwnd=7.00, ssthresh=3.00, state=Congestion Avoidance
+[67.2227] Packet 766 DROPPED (queue full)
+[67.2227] Packet 767 DROPPED (queue full)
+[67.2227] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[67.4102] Packet 760 SERVICED, delay=0.3900
+[67.4102] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[67.4709] Packet 762 SERVICED, delay=0.2482
+[67.4709] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[67.5434] Packet 763 SERVICED, delay=0.3207
+[67.5434] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[67.6105] Packet 764 SERVICED, delay=0.3878
+[67.6105] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[67.7204] Packet 765 SERVICED, delay=0.4978
+[67.7204] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[68.0708] Packet 768 SERVICED, delay=0.5549
+[68.0708] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[68.1294] Packet 769 SERVICED, delay=0.4920
+[68.1294] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[68.3320] Packet 770 SERVICED, delay=0.6946
+[68.3320] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[68.5141] Packet 771 SERVICED, delay=0.7392
+[68.5141] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[68.8035] Packet 772 SERVICED, delay=1.0286
+[68.8035] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[68.8125] Packet 778 DROPPED (queue full)
+[68.8125] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[68.8880] Packet 773 SERVICED, delay=0.6300
+[68.8880] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[68.8911] Packet 774 SERVICED, delay=0.6331
+[68.8911] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[69.0081] Packet 775 SERVICED, delay=0.4828
+[69.0081] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[69.1209] Packet 776 SERVICED, delay=0.5957
+[69.1209] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[69.1322] Packet 777 SERVICED, delay=0.3197
+[69.1322] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[69.5616] Packet 779 SERVICED, delay=0.0049
+[69.5616] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[69.9396] Packet 780 SERVICED, delay=0.3829
+[69.9396] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[69.9918] Packet 781 SERVICED, delay=0.4352
+[69.9918] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[70.1964] Packet 782 SERVICED, delay=0.6398
+[70.1964] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[70.3489] Packet 783 SERVICED, delay=0.7923
+[70.3489] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[70.4376] Packet 789 DROPPED (queue full)
+[70.4376] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[70.4831] Packet 784 SERVICED, delay=0.8427
+[70.4831] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[70.5932] Packet 785 SERVICED, delay=0.6506
+[70.5932] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[70.7369] Packet 786 SERVICED, delay=0.6294
+[70.7369] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[70.7941] Packet 787 SERVICED, delay=0.5267
+[70.7941] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[70.8069] Packet 788 SERVICED, delay=0.3692
+[70.8069] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[70.8561] Packet 790 SERVICED, delay=0.1636
+[70.8561] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[70.8832] Packet 791 SERVICED, delay=0.1312
+[70.8832] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[70.9090] Packet 792 SERVICED, delay=0.1103
+[70.9090] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[71.0193] Packet 793 SERVICED, delay=0.1205
+[71.0193] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[71.1159] Packet 794 SERVICED, delay=0.2171
+[71.1159] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[71.1422] Packet 800 DROPPED (queue full)
+[71.1782] Packet 795 SERVICED, delay=0.2794
+[71.1782] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[71.2260] Packet 796 SERVICED, delay=0.3271
+[71.2260] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[71.2290] Packet 803 DROPPED (queue full)
+[71.2992] Packet 797 SERVICED, delay=0.2013
+[71.2992] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[71.3644] Packet 798 SERVICED, delay=0.2666
+[71.3644] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[71.3966] Packet 806 DROPPED (queue full)
+[71.4122] Packet 799 SERVICED, delay=0.2701
+[71.4122] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[71.4184] Packet 808 DROPPED (queue full)
+[71.4885] Packet 801 SERVICED, delay=0.2595
+[71.4885] [TCP Reno], cwnd=7.00, ssthresh=3.00, state=Congestion Avoidance
+[71.5821] Packet 802 SERVICED, delay=0.3532
+[71.5821] [TCP Reno], cwnd=7.00, ssthresh=3.00, state=Congestion Avoidance
+[71.6467] Packet 811 DROPPED (queue full)
+[71.6467] Packet 812 DROPPED (queue full)
+[71.6467] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[71.7088] Packet 804 SERVICED, delay=0.3121
+[71.7088] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[72.0200] Packet 805 SERVICED, delay=0.6234
+[72.0200] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[72.0208] Packet 807 SERVICED, delay=0.6024
+[72.0208] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[72.0487] Packet 809 SERVICED, delay=0.4020
+[72.0487] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[72.3105] Packet 810 SERVICED, delay=0.6638
+[72.3105] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[72.3879] Packet 813 SERVICED, delay=0.3583
+[72.3879] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[72.4252] Packet 814 SERVICED, delay=0.3956
+[72.4252] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[72.5512] Packet 815 SERVICED, delay=0.4273
+[72.5512] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[72.5712] Packet 816 SERVICED, delay=0.2148
+[72.5712] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[72.6457] Packet 817 SERVICED, delay=0.2893
+[72.6457] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[72.6570] Packet 818 SERVICED, delay=0.1771
+[72.6570] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[72.7408] Packet 819 SERVICED, delay=0.2609
+[72.7408] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[72.8390] Packet 825 DROPPED (queue full)
+[72.8390] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[72.9050] Packet 820 SERVICED, delay=0.0661
+[72.9050] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[73.0690] Packet 821 SERVICED, delay=0.2301
+[73.0690] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[73.1489] Packet 822 SERVICED, delay=0.3100
+[73.1489] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[73.1534] Packet 823 SERVICED, delay=0.3144
+[73.1534] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[73.2537] Packet 824 SERVICED, delay=0.4147
+[73.2537] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[73.4692] Packet 826 SERVICED, delay=0.3672
+[73.4692] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[73.5637] Packet 827 SERVICED, delay=0.4119
+[73.5637] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[73.7468] Packet 828 SERVICED, delay=0.5421
+[73.7468] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[73.7904] Packet 829 SERVICED, delay=0.3555
+[73.7904] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[73.8175] Packet 830 SERVICED, delay=0.3825
+[73.8175] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[73.8496] Packet 831 SERVICED, delay=0.2630
+[73.8496] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[73.8497] Packet 837 DROPPED (queue full)
+[73.8497] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[74.0225] Packet 832 SERVICED, delay=0.4359
+[74.0225] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[74.0326] Packet 833 SERVICED, delay=0.2807
+[74.0326] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[74.0927] Packet 834 SERVICED, delay=0.2430
+[74.0927] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[74.1810] Packet 835 SERVICED, delay=0.3314
+[74.1810] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[74.1994] Packet 836 SERVICED, delay=0.3498
+[74.1994] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[74.2239] Packet 838 SERVICED, delay=0.1756
+[74.2239] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[74.3173] Packet 839 SERVICED, delay=0.1538
+[74.3173] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[74.3437] Packet 840 SERVICED, delay=0.1011
+[74.3437] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[74.3932] Packet 841 SERVICED, delay=0.1507
+[74.3932] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[74.4835] Packet 842 SERVICED, delay=0.2409
+[74.4835] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[74.5522] Packet 843 SERVICED, delay=0.3096
+[74.5522] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[74.6831] Packet 849 DROPPED (queue full)
+[74.6977] Packet 844 SERVICED, delay=0.0147
+[74.6977] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[74.8165] Packet 845 SERVICED, delay=0.1335
+[74.8165] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[74.8683] Packet 846 SERVICED, delay=0.1853
+[74.8683] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[74.9242] Packet 847 SERVICED, delay=0.2412
+[74.9242] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[75.0507] Packet 848 SERVICED, delay=0.3676
+[75.0507] [TCP Reno], cwnd=7.00, ssthresh=3.00, state=Congestion Avoidance
+[75.1570] Packet 855 DROPPED (queue full)
+[75.1570] Packet 856 DROPPED (queue full)
+[75.1570] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[75.1708] Packet 850 SERVICED, delay=0.0137
+[75.1708] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[75.1818] Packet 851 SERVICED, delay=0.0247
+[75.1818] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[75.3106] Packet 852 SERVICED, delay=0.1536
+[75.3106] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[75.3970] Packet 853 SERVICED, delay=0.2400
+[75.3970] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[75.4290] Packet 854 SERVICED, delay=0.2720
+[75.4290] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[75.4503] Packet 857 SERVICED, delay=0.0687
+[75.4503] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[75.4894] Packet 858 SERVICED, delay=0.1078
+[75.4894] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[75.5332] Packet 859 SERVICED, delay=0.1259
+[75.5332] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[75.5402] Packet 860 SERVICED, delay=0.0525
+[75.5402] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[75.7014] Packet 861 SERVICED, delay=0.2136
+[75.7014] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[75.7280] Packet 862 SERVICED, delay=0.2403
+[75.7280] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[75.7558] Packet 868 DROPPED (queue full)
+[75.8870] Packet 869 DROPPED (queue full)
+[75.8932] Packet 870 DROPPED (queue full)
+[75.9401] Packet 863 SERVICED, delay=0.3747
+[75.9401] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[76.0453] Packet 864 SERVICED, delay=0.4799
+[76.0453] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[76.1214] Packet 865 SERVICED, delay=0.5561
+[76.1214] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[76.2093] Packet 874 DROPPED (queue full)
+[76.2093] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[76.6354] Packet 866 SERVICED, delay=0.8796
+[76.6354] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[76.7438] Packet 867 SERVICED, delay=0.9880
+[76.7438] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[76.7631] Packet 871 SERVICED, delay=0.5538
+[76.7631] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[76.8802] Packet 872 SERVICED, delay=0.6709
+[76.8802] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[76.9026] Packet 873 SERVICED, delay=0.6933
+[76.9026] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[77.0199] Packet 875 SERVICED, delay=0.0267
+[77.0199] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[77.0709] Packet 876 SERVICED, delay=0.0777
+[77.0709] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[77.0874] Packet 877 SERVICED, delay=0.0942
+[77.0874] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[77.5765] Packet 878 SERVICED, delay=0.5833
+[77.5765] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[77.8382] Packet 879 SERVICED, delay=0.8450
+[77.8382] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[78.0227] Packet 880 SERVICED, delay=0.9519
+[78.0227] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[78.0266] Packet 886 DROPPED (queue full)
+[78.0266] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[78.1204] Packet 881 SERVICED, delay=0.9760
+[78.1204] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[78.1298] Packet 882 SERVICED, delay=0.9854
+[78.1298] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[78.2531] Packet 883 SERVICED, delay=0.6271
+[78.2531] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[78.3338] Packet 884 SERVICED, delay=0.3072
+[78.3338] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[78.3703] Packet 885 SERVICED, delay=0.3437
+[78.3703] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[78.4428] Packet 887 SERVICED, delay=0.2651
+[78.4428] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[78.5115] Packet 888 SERVICED, delay=0.0820
+[78.5115] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[78.9963] Packet 889 SERVICED, delay=0.5668
+[78.9963] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[79.1870] Packet 890 SERVICED, delay=0.7575
+[79.1870] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[79.2104] Packet 891 SERVICED, delay=0.7809
+[79.2104] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[79.2227] Packet 892 SERVICED, delay=0.5265
+[79.2227] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[79.3131] Packet 898 DROPPED (queue full)
+[79.3131] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[79.3928] Packet 893 SERVICED, delay=0.6966
+[79.3928] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[79.5568] Packet 894 SERVICED, delay=0.3997
+[79.5568] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[79.5931] Packet 895 SERVICED, delay=0.2800
+[79.5931] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[79.6015] Packet 896 SERVICED, delay=0.2884
+[79.6015] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[79.6531] Packet 897 SERVICED, delay=0.3400
+[79.6531] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[79.9481] Packet 899 SERVICED, delay=0.1024
+[79.9481] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[80.1210] Packet 900 SERVICED, delay=0.2753
+[80.1210] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[80.1352] Packet 901 SERVICED, delay=0.2895
+[80.1352] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[80.3333] Packet 902 SERVICED, delay=0.4876
+[80.3333] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[80.5894] Packet 903 SERVICED, delay=0.7437
+[80.5894] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[80.7341] Packet 904 SERVICED, delay=0.7284
+[80.7341] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[80.7499] Packet 905 SERVICED, delay=0.6044
+[80.7499] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[80.7957] Packet 906 SERVICED, delay=0.6502
+[80.7957] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[80.8374] Packet 912 DROPPED (queue full)
+[80.8374] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[80.8755] Packet 907 SERVICED, delay=0.3757
+[80.8755] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[80.9321] Packet 908 SERVICED, delay=0.0948
+[80.9321] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[80.9695] Packet 909 SERVICED, delay=0.1321
+[80.9695] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[81.0401] Packet 910 SERVICED, delay=0.2027
+[81.0401] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[81.0979] Packet 911 SERVICED, delay=0.2606
+[81.0979] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[81.1223] Packet 913 SERVICED, delay=0.1825
+[81.1223] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[81.2273] Packet 914 SERVICED, delay=0.1909
+[81.2273] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[81.2337] Packet 915 SERVICED, delay=0.1807
+[81.2337] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[81.2952] Packet 916 SERVICED, delay=0.0906
+[81.2952] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[81.3012] Packet 917 SERVICED, delay=0.0966
+[81.3012] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[81.3294] Packet 923 DROPPED (queue full)
+[81.3400] Packet 924 DROPPED (queue full)
+[81.3465] Packet 925 DROPPED (queue full)
+[81.8284] Packet 918 SERVICED, delay=0.6237
+[81.8284] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[81.9178] Packet 927 DROPPED (queue full)
+[81.9178] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[82.2400] Packet 919 SERVICED, delay=0.9106
+[82.2400] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[82.2673] Packet 920 SERVICED, delay=0.9379
+[82.2673] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[82.2826] Packet 921 SERVICED, delay=0.9533
+[82.2826] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[82.2956] Packet 922 SERVICED, delay=0.9662
+[82.2956] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[82.4638] Packet 926 SERVICED, delay=0.5460
+[82.4638] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[82.5235] Packet 928 SERVICED, delay=0.1093
+[82.5235] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[82.5452] Packet 929 SERVICED, delay=0.1309
+[82.5452] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[82.5910] Packet 930 SERVICED, delay=0.1768
+[82.5910] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[82.7668] Packet 931 SERVICED, delay=0.2991
+[82.7668] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[82.8990] Packet 932 SERVICED, delay=0.4314
+[82.8990] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[82.9001] Packet 933 SERVICED, delay=0.2858
+[82.9001] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[82.9189] Packet 939 DROPPED (queue full)
+[82.9189] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[82.9540] Packet 934 SERVICED, delay=0.3396
+[82.9540] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[83.0196] Packet 935 SERVICED, delay=0.4053
+[83.0196] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[83.0344] Packet 936 SERVICED, delay=0.2452
+[83.0344] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[83.4068] Packet 937 SERVICED, delay=0.4879
+[83.4068] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[83.5685] Packet 938 SERVICED, delay=0.6496
+[83.5685] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[83.6291] Packet 940 SERVICED, delay=0.5523
+[83.6291] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[83.8151] Packet 941 SERVICED, delay=0.7383
+[83.8151] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[83.8623] Packet 942 SERVICED, delay=0.4543
+[83.8623] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[84.0849] Packet 943 SERVICED, delay=0.4115
+[84.0849] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[84.3958] Packet 944 SERVICED, delay=0.7224
+[84.3958] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[84.4821] Packet 950 DROPPED (queue full)
+[84.4821] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[84.5504] Packet 945 SERVICED, delay=0.8770
+[84.5504] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[84.6079] Packet 946 SERVICED, delay=0.7801
+[84.6079] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[84.6118] Packet 947 SERVICED, delay=0.5708
+[84.6118] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[84.6737] Packet 948 SERVICED, delay=0.4007
+[84.6737] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[84.8992] Packet 949 SERVICED, delay=0.4171
+[84.8992] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[84.9155] Packet 951 SERVICED, delay=0.2582
+[84.9155] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[85.0492] Packet 952 SERVICED, delay=0.3920
+[85.0492] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[85.1632] Packet 953 SERVICED, delay=0.4342
+[85.1632] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[85.3315] Packet 954 SERVICED, delay=0.1338
+[85.3315] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[85.3751] Packet 955 SERVICED, delay=0.1773
+[85.3751] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[85.4102] Packet 956 SERVICED, delay=0.2125
+[85.4102] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[85.4533] Packet 957 SERVICED, delay=0.2555
+[85.4533] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[85.4536] Packet 963 DROPPED (queue full)
+[85.6023] Packet 958 SERVICED, delay=0.4046
+[85.6023] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[85.6126] Packet 959 SERVICED, delay=0.2670
+[85.6126] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[85.7572] Packet 960 SERVICED, delay=0.3036
+[85.7572] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[85.7880] Packet 961 SERVICED, delay=0.3344
+[85.7880] [TCP Reno], cwnd=7.00, ssthresh=3.00, state=Congestion Avoidance
+[85.7901] Packet 962 SERVICED, delay=0.3365
+[85.7901] [TCP Reno], cwnd=7.00, ssthresh=3.00, state=Congestion Avoidance
+[85.7974] Packet 969 DROPPED (queue full)
+[85.7974] Packet 970 DROPPED (queue full)
+[85.7974] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[85.8324] Packet 964 SERVICED, delay=0.0350
+[85.8324] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[85.9790] Packet 965 SERVICED, delay=0.1816
+[85.9790] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[86.0770] Packet 966 SERVICED, delay=0.2796
+[86.0770] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[86.1251] Packet 967 SERVICED, delay=0.3278
+[86.1251] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[86.1482] Packet 968 SERVICED, delay=0.3508
+[86.1482] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[86.2237] Packet 971 SERVICED, delay=0.1741
+[86.2237] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[86.5600] Packet 972 SERVICED, delay=0.1603
+[86.5600] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[86.5946] Packet 973 SERVICED, delay=0.1950
+[86.5946] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[86.9857] Packet 974 SERVICED, delay=0.5860
+[86.9857] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[87.0778] Packet 975 SERVICED, delay=0.6781
+[87.0778] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[87.1122] Packet 981 DROPPED (queue full)
+[87.1122] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[87.1651] Packet 976 SERVICED, delay=0.7654
+[87.1651] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[87.2719] Packet 977 SERVICED, delay=0.5674
+[87.2719] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[87.2856] Packet 978 SERVICED, delay=0.5811
+[87.2856] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[87.3111] Packet 979 SERVICED, delay=0.3020
+[87.3111] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[87.3690] Packet 980 SERVICED, delay=0.2568
+[87.3690] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[87.4263] Packet 982 SERVICED, delay=0.0275
+[87.4263] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[87.4393] Packet 983 SERVICED, delay=0.0405
+[87.4393] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[87.4613] Packet 984 SERVICED, delay=0.0625
+[87.4613] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[87.6792] Packet 985 SERVICED, delay=0.2805
+[87.6792] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[87.7830] Packet 986 SERVICED, delay=0.3843
+[87.7830] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[87.7998] Packet 992 DROPPED (queue full)
+[87.9496] Packet 993 DROPPED (queue full)
+[87.9523] Packet 987 SERVICED, delay=0.5198
+[87.9523] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[87.9691] Packet 995 DROPPED (queue full)
+[88.1397] Packet 988 SERVICED, delay=0.5096
+[88.1397] [TCP Reno], cwnd=6.00, ssthresh=3.00, state=Congestion Avoidance
+[88.2462] Packet 997 DROPPED (queue full)
+[88.2462] [TCP Reno LOSS], cwnd reset to 3, ssthresh=3
+[88.3909] Packet 989 SERVICED, delay=0.7609
+[88.3909] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[88.4526] Packet 990 SERVICED, delay=0.6529
+[88.4526] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[88.6372] Packet 991 SERVICED, delay=0.8374
+[88.6372] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[88.7159] Packet 994 SERVICED, delay=0.7468
+[88.7159] [TCP Reno], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[88.7203] Packet 996 SERVICED, delay=0.4741
+[88.7203] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[88.7443] Packet 998 SERVICED, delay=0.1843
+[88.7443] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance
+[88.9462] Packet 999 SERVICED, delay=0.1320
+[88.9462] [TCP Reno], cwnd=5.00, ssthresh=3.00, state=Congestion Avoidance

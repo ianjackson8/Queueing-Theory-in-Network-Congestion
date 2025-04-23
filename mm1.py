@@ -22,7 +22,8 @@ from numpy import random as rnd
 rnd.seed(42)  
 
 #== Global Variables ==#
-RESULTS_PATH = 'results/E5/E5.1'
+RESULTS_PATH = 'results/E0'
+LOG_BUFFER = []
 
 #== Congestion Control Classes ==#
 class CongestionControl:
@@ -90,10 +91,10 @@ class NoCongestionControl(CongestionControl):
     def on_loss(self, time: float):
         pass
 
-class TCPReno(CongestionControl):
+class TCPTahoe(CongestionControl):
     def __init__(self):
         '''
-        Initialize TCP Reno congestion control parameters.
+        Initialize TCP Tahoe congestion control parameters.
         '''
         super().__init__()
         self.state = "Slow Start"  # initial state
@@ -107,7 +108,7 @@ class TCPReno(CongestionControl):
             time (float): the time at which the ACK was received
         '''
         if self.state == "Slow Start":
-            self.cwnd += 1
+            self.cwnd += self.cwnd
             if self.cwnd >= self.ssthresh:
                 self.state = "Congestion Avoidance"
         elif self.state == "Congestion Avoidance":
@@ -117,7 +118,9 @@ class TCPReno(CongestionControl):
         self.time_log.append(time)
         self.state_log.append(self.state)
         self.ssthresh_log.append(self.ssthresh)
-        print(f"[{time:.4f}] [TCP Reno], cwnd={self.cwnd:.2f}, ssthresh={self.ssthresh:.2f}, state={self.state}")
+
+        # global LOG_BUFFER
+        LOG_BUFFER.append((time ,f"[{time:.4f}] [TCP Tahoe], cwnd={self.cwnd:.2f}, ssthresh={self.ssthresh:.2f}, state={self.state}"))
 
     def on_loss(self, time: float):
         '''
@@ -136,7 +139,8 @@ class TCPReno(CongestionControl):
 
         self.state = "Slow Start"
 
-        print(f"[{time:.4f}] [TCP Reno LOSS], cwnd reset to {self.cwnd}, ssthresh={self.ssthresh}")
+        # global LOG_BUFFER
+        LOG_BUFFER.append((time, f"[{time:.4f}] [TCP Tahoe LOSS], cwnd reset to {self.cwnd}, ssthresh={self.ssthresh}"))
 
     def on_dup_ack(self, time: float):
         '''
@@ -151,7 +155,89 @@ class TCPReno(CongestionControl):
         self.state_log.append(self.state)
         self.ssthresh_log.append(self.ssthresh)
 
-        print(f"[{time:.4f}] [TCP Reno DUPACK], Fast Recovery, cwnd={self.cwnd}, ssthresh={self.ssthresh}")
+        # global LOG_BUFFER
+        LOG_BUFFER.append((time, f"[{time:.4f}] [TCP Tahoe DUPACK], Fast Recovery, cwnd={self.cwnd}, ssthresh={self.ssthresh}"))
+
+class TCPReno(CongestionControl):
+    def __init__(self, rtt=1.0):
+        '''
+        Initialize TCP Reno congestion control parameters.
+        '''
+        super().__init__()
+        self.state = "Slow Start"  # initial state
+        self.last_loss_time = -float("inf")
+        self.rtt = rtt  # Round-Trip Time estimate
+        self.last_ack_time = 0.0
+        self.ack_counter = 0
+
+    def on_ack(self, time: float):
+        '''
+        handle an AKC event
+
+        Args:
+            time (float): the time at which the ACK was received
+        '''
+        if self.state == "Slow Start":
+            self.cwnd += 1
+            if self.cwnd >= self.ssthresh:
+                self.state = "Congestion Avoidance"
+                self.ack_counter = 0
+
+        elif self.state == "Congestion Avoidance":
+            self.ack_counter += 1
+            if self.ack_counter >= self.cwnd:
+                self.cwnd += 1
+                self.ack_counter = 0
+
+        self.cwnd_log.append(self.cwnd)
+        self.time_log.append(time)
+        self.state_log.append(self.state)
+        self.ssthresh_log.append(self.ssthresh)
+
+        # global LOG_BUFFER
+        LOG_BUFFER.append((time, f"[{time:.4f}] [TCP Reno], cwnd={self.cwnd:.2f}, ssthresh={self.ssthresh:.2f}, state={self.state}"))
+
+    def on_loss(self, time: float):
+        '''
+        handle a packet loss event
+
+        Args:
+            time (float): the time at which the loss was detected
+        '''
+        # Avoid triggering loss response multiple times within an RTT
+        if time - self.last_loss_time < self.rtt:
+            return
+        
+        self.last_loss_time = time
+
+        self.ssthresh = max(self.cwnd // 2, 1)  
+        self.cwnd = max(self.ssthresh, 1)
+
+        self.cwnd_log.append(self.cwnd)
+        self.time_log.append(time)
+        self.state_log.append("Loss")
+        self.ssthresh_log.append(self.ssthresh)
+
+        self.state = "Slow Start"
+
+        # global LOG_BUFFER
+        LOG_BUFFER.append((time, f"[{time:.4f}] [TCP Reno LOSS], cwnd reset to {self.cwnd}, ssthresh={self.ssthresh}"))
+
+    def on_dup_ack(self, time: float):
+        '''
+        Handle 3 duplicate ACKs (Fast Retransmit + Fast Recovery).
+        '''
+        self.ssthresh = max(self.cwnd // 2, 1)
+        self.cwnd = self.ssthresh + 3
+        self.state = "Fast Recovery"
+
+        self.cwnd_log.append(self.cwnd)
+        self.time_log.append(time)
+        self.state_log.append(self.state)
+        self.ssthresh_log.append(self.ssthresh)
+
+        # global LOG_BUFFER
+        LOG_BUFFER.append((time, f"[{time:.4f}] [TCP Reno DUPACK], cwnd increased to {self.cwnd}, ssthresh={self.ssthresh}"))
 
 class TCPCubic(CongestionControl):
     def __init__(self, C=0.4, beta=0.2):
@@ -185,7 +271,8 @@ class TCPCubic(CongestionControl):
         self.ssthresh_log.append(self.W_max * (1 - self.beta))
         self.state_log.append(self.state)
 
-        print(f"[{time:.4f}] [TCP CUBIC] cwnd={self.cwnd:.2f} (W_max={self.W_max:.2f}, K={self.K:.2f})")
+        # global LOG_BUFFER
+        LOG_BUFFER.append((time, f"[{time:.4f}] [TCP CUBIC ACK], cwnd={self.cwnd:.2f}, W_max={self.W_max:.2f}, K={self.K:.2f}"))
 
     def on_loss(self, time):
         self.W_max = self.cwnd
@@ -198,7 +285,8 @@ class TCPCubic(CongestionControl):
         self.ssthresh_log.append(self.W_max * (1 - self.beta))
         self.state_log.append("Loss")
 
-        print(f"[{time:.4f}] [TCP CUBIC LOSS] cwnd reduced to {self.cwnd:.2f}, W_max set to {self.W_max:.2f}")
+        # global LOG_BUFFER
+        LOG_BUFFER.append((time, f"[{time:.4f}] [TCP CUBIC LOSS], cwnd reduced to {self.cwnd:.2f}, W_max set to {self.W_max:.2f}"))
 
 #==  Classes ==#
 class Packet:
@@ -273,8 +361,10 @@ class NetworkRouter:
         # drop if deadline has passed
         if now - packet.arrival_time > packet.deadline:
             self.dropped += 1
-            print(f"[{now:.4f}] Packet {packet.id} DROPPED (expired)")
             self.log_state()
+
+            # global LOG_BUFFER
+            LOG_BUFFER.append((now, f"[{now:.4f}] Packet {packet.id} DROPPED (expired)"))
 
             # congestion control
             if self.cc: self.cc.on_loss(now)
@@ -295,11 +385,13 @@ class NetworkRouter:
             if req not in result:
                 # timeout occurred, drop the packet
                 self.dropped += 1
-                print(f"[{now:.4f}] Packet {packet.id} DROPPED (timeout)")
                 self.log_state()
 
+                # global LOG_BUFFER
+                LOG_BUFFER.append((self.env.now, f"[{self.env.now:.4f}] Packet {packet.id} DROPPED (timeout)"))
+
                 # congestion control
-                if self.cc: self.cc.on_loss(now)
+                if self.cc: self.cc.on_loss(self.env.now)
 
                 # notify sender of loss
                 if self.sender: self.sender.notify_loss()
@@ -317,8 +409,10 @@ class NetworkRouter:
             delay = packet.finish_time - packet.arrival_time
             self.total_delay += delay
             self.serviced += 1
-            print(f"[{self.env.now:.4f}] Packet {packet.id} SERVICED, delay={delay:.4f}")
             self.log_state()
+
+            # global LOG_BUFFER
+            LOG_BUFFER.append((self.env.now, f"[{self.env.now:.4f}] Packet {packet.id} SERVICED, delay={delay:.4f}"))
 
             # congestion control
             if self.cc: self.cc.on_ack(self.env.now)
@@ -340,8 +434,10 @@ class NetworkRouter:
         if self.queue_size and len(self.queue) >= self.queue_size:
             # queue is full, drop the packet
             self.dropped += 1
-            print(f"[{self.env.now:.4f}] Packet {packet.id} DROPPED (queue full)")
             self.log_state()
+
+            # global LOG_BUFFER
+            LOG_BUFFER.append((self.env.now, f"[{self.env.now:.4f}] Packet {packet.id} DROPPED (queue full)"))
 
             # congestion control
             if self.cc: self.cc.on_loss(self.env.now)
@@ -413,7 +509,8 @@ class Sender:
                 self.in_flight += 1
                 self.router.receive(pkt)
                 self.sent_packets += 1
-            yield self.env.timeout(0.5)
+            # yield self.env.timeout(0.5)
+            yield self.env.timeout(rnd.exponential(1 / self.lam))
 
     def notify_ack(self, pkt_id = None):
         self.in_flight = max(0, self.in_flight - 1)
@@ -447,16 +544,18 @@ def packet_generator(env: simpy.Environment, router: NetworkRouter, lam: float, 
     for i in range(num_packets):
         arrival_time = env.now
         service_time = rnd.exponential(1 / mu)
-        deadline = rnd.exponential(1 / theta)
-        # deadline = theta if theta > 0 else float('inf')
+        # deadline = rnd.exponential(1 / theta)
+        deadline = theta if theta > 0 else float('inf')
 
         packet = Packet(id=i, arrival_time=arrival_time, service_time=service_time, deadline=deadline)
-        print(f"[{env.now:.4f}] Packet {i} ARRIVAL")
+
+        # global LOG_BUFFER
+        LOG_BUFFER.append((env.now, f"[{env.now:.4f}] Packet {i} ARRIVAL"))
         
         router.receive(packet)
         yield env.timeout(rnd.exponential(1 / lam))
 
-def run_simulation(lam: float, mu: float, theta: float, queue_size: int, num_packets: int, cc: CongestionControl = None):
+def run_simulation(lam: float, mu: float, theta: float, queue_size: int, num_packets: int, cc: CongestionControl = None, log_path: str = None):
     '''
     Run the M/M/1 queue simulation.
 
@@ -468,7 +567,6 @@ def run_simulation(lam: float, mu: float, theta: float, queue_size: int, num_pac
         num_packets (int): number of packets to generate
         cc (CongestionControl, optional): congestion control mechanism
     '''
-    print("== Simulation Start ==")
     env = simpy.Environment()
 
     if cc:
@@ -499,6 +597,19 @@ def run_simulation(lam: float, mu: float, theta: float, queue_size: int, num_pac
     print(f"Throughput: {throughput:.4f} packets/sec")
     print("=========================")
 
+    # save results to log file
+    if log_path:
+        with open(log_path, 'a') as f:
+            f.write("== Simulation Results ==\n")
+            f.write(f"Simulation Time: {env.now:.2f} seconds\n")
+            f.write(f"Total Packets: {total}\n")
+            f.write(f"Serviced: {serviced}\n")
+            f.write(f"Dropped: {dropped}\n")
+            f.write(f"Loss Rate: {100 * dropped / total:.2f}%\n")
+            f.write(f"Average Delay: {avg_delay:.4f} seconds\n")
+            f.write(f"Throughput: {throughput:.4f} packets/sec\n")
+            f.write("=========================\n\n")
+
     plot_results(router, cc)
     if cc: plot_cwnd(cc)
 
@@ -513,6 +624,8 @@ def plot_results(router: NetworkRouter, cc):
     # get name of congestion control method
     if isinstance(cc, NoCongestionControl):
         cc_meth = "none"
+    elif isinstance(cc, TCPTahoe):
+        cc_meth = "tahoe"
     elif isinstance(cc, TCPReno):
         cc_meth = "reno"
     elif isinstance(cc, TCPCubic):
@@ -524,6 +637,9 @@ def plot_results(router: NetworkRouter, cc):
     # results_folder = "results"
     if not os.path.exists(RESULTS_PATH):
         os.makedirs(RESULTS_PATH)
+
+    # print(f"{cc_meth}_time = {router.time_log}")
+    # print(f"{cc_meth}_dropped = {router.dropped_log}")
 
     # cumulative Serviced and Dropped Packets
     plt.figure(figsize=(10, 5))
@@ -555,6 +671,8 @@ def plot_cwnd(cc):
     # get name of congestion control method
     if isinstance(cc, NoCongestionControl):
         cc_meth = "none"
+    elif isinstance(cc, TCPTahoe):
+        cc_meth = "tahoe"
     elif isinstance(cc, TCPReno):
         cc_meth = "reno"
     elif isinstance(cc, TCPCubic):
@@ -571,6 +689,10 @@ def plot_cwnd(cc):
     # init plot
     plt.figure(figsize=(12, 6))
     ax = plt.gca()
+
+    # print(f"Method: {cc_meth}")
+    # print(f"{cc_meth}_time = {time}")
+    # print(f"{cc_meth}_cwnd = {cwnd}")
 
     # plot cwnd and ssthresh
     ax.plot(time, cwnd, label="cwnd", color='blue')
@@ -596,15 +718,15 @@ def plot_cwnd(cc):
     #         start_time = end_time
     #         current_state = states[i]
 
-    for i in range(len(states)):
-        if states[i] == "Loss":
-            ax.axvline(time[i], color='black', linestyle=':', alpha=1, label='Loss' if i == 0 else "")
+    # for i in range(len(states)):
+    #     if states[i] == "Loss":
+    #         ax.axvline(time[i], color='black', linestyle=':', alpha=1, label='Loss' if i == 0 else "")
 
     # Capture final region
     # ax.axvspan(start_time, time[-1], facecolor=color_map.get(current_state, "white"), alpha=0.3, label=current_state if states.count(current_state) == 1 else "")
 
     # Final plot setup
-    ax.set_title(f"TCP {cc_meth} cwnd Over Time with State Regions")
+    ax.set_title(f"TCP {cc_meth} cwnd Over Time")
     ax.set_xlabel("Time")
     ax.set_ylabel("Congestion Window (cwnd)")
     ax.legend()
@@ -616,22 +738,55 @@ def plot_cwnd(cc):
 
 #== Main Execution ==#
 if __name__ == "__main__":
+    argparser = argparse.ArgumentParser(description="M/M/1 Queue Simulation with Congestion Control")
+    argparser.add_argument('--cc', type=str, choices=['none', 'tahoe', 'reno', 'cubic'], default='none',
+                        help="Congestion Control Method: 'none', 'tahoe', 'reno', or 'cubic'")
+    argparser.add_argument('--results_path', type=str, default=RESULTS_PATH,
+                        help="Path to save results and logs (default: 'results/E0')")
+    argparser.add_argument('--lam', type=int, default=15, help="Arrival rate (λ) of packets (default: 15)")
+    argparser.add_argument('--mu', type=int, default=10, help="Service rate (μ) of packets (default: 10)")
+    argparser.add_argument('--theta', type=float, default=1, help="Deadline rate (θ) for packets (default: 1)")
+    argparser.add_argument('--queue_size', type=int, default=5, help="Maximum queue size (default: 5)")
+    argparser.add_argument('--num_packets', type=int, default=500, help="Total number of packets to simulate (default: 500)")
+    
+    args = argparser.parse_args()
+
+    # select congestion control method
+    if args.cc == 'none':
+        cc = None
+        cc_meth = "none"
+    elif args.cc == 'tahoe':
+        cc = TCPTahoe()
+        cc_meth = "tahoe"
+    elif args.cc == 'reno':
+        cc = TCPReno()
+        cc_meth = "reno"
+    elif args.cc == 'cubic':
+        cc = TCPCubic()
+        cc_meth = "cubic"
+    else:
+        cc = None
+        cc_meth = "none"
+
+    # set results path
+    if args.results_path:
+        RESULTS_PATH = args.results_path
+    else:
+        RESULTS_PATH = 'results/E0'
+
+
     # define params
-    lam = 15
+    lam = 10
     mu = 10
     queue_size = 5
     theta = 1
-    num_packets = 500
+    num_packets = args.num_packets
 
-    argparser = argparse.ArgumentParser()
-    argparser.add_argument('--n', type=float, default=1)
-    args = argparser.parse_args()
+    log_path = os.path.join(RESULTS_PATH, f"{cc_meth}_log.txt")
 
-    n = int(args.n)
-    
-    if n == 1: tcp_cc = None
-    elif n == 2: tcp_cc = TCPReno()
-    elif n == 3: tcp_cc = TCPCubic()
+    # if log file exist, remove it
+    if os.path.exists(log_path):
+        os.remove(log_path)
 
     print("== Simulation Parameters ==")
     print(f"  - Arrival Rate (λ): {lam}")
@@ -639,7 +794,26 @@ if __name__ == "__main__":
     print(f"  - Deadline Rate (θ): {theta}")
     print(f"  - Queue Size: {'Infinite' if queue_size is None else queue_size}")
     print(f"  - Total Packets: {num_packets}")
-    print(f"  - Congestion Control: {tcp_cc if tcp_cc else 'None'}")
+    print(f"  - Congestion Control: {cc if cc else 'None'}")
     print("===========================\n")
 
-    run_simulation(lam, mu, theta, queue_size, num_packets, cc=tcp_cc)
+    # write simulation parameters to log file
+    with open(log_path, 'w') as f:
+        f.write("== Simulation Parameters ==\n")
+        f.write(f"  - Arrival Rate (λ): {lam}\n")
+        f.write(f"  - Service Rate (μ): {mu}\n")
+        f.write(f"  - Deadline Rate (θ): {theta}\n")
+        f.write(f"  - Queue Size: {'Infinite' if queue_size is None else queue_size}\n")
+        f.write(f"  - Total Packets: {num_packets}\n")
+        f.write(f"  - Congestion Control: {cc if cc else 'None'}\n")
+        f.write("===========================\n\n")
+
+    run_simulation(lam, mu, theta, queue_size, num_packets, cc=cc, log_path=log_path)
+
+    
+    with open(log_path, 'a') as f:
+        f.write("== Simulation Log ==\n")
+        for t, log in sorted(LOG_BUFFER):
+            f.write(f"{log}\n")
+
+    print(f"\nLogs saved to {log_path}")

@@ -1,0 +1,1020 @@
+== Simulation Parameters ==
+  - Arrival Rate (λ): 15
+  - Service Rate (μ): 10
+  - Deadline Rate (θ): 1
+  - Queue Size: 10
+  - Total Packets: 500
+  - Congestion Control: <__main__.TCPTahoe object at 0x10ff0a530>
+===========================
+
+== Simulation Results ==
+Simulation Time: 48.41 seconds
+Total Packets: 500
+Serviced: 470
+Dropped: 30
+Loss Rate: 6.00%
+Average Delay: 0.5409 seconds
+Throughput: 9.7079 packets/sec
+=========================
+
+== Simulation Log ==
+[0.0469] Packet 0 SERVICED, delay=0.0469
+[0.0469] [TCP Tahoe], cwnd=2.00, ssthresh=10.00, state=Slow Start
+[0.3323] Packet 1 SERVICED, delay=0.1317
+[0.3323] [TCP Tahoe], cwnd=4.00, ssthresh=10.00, state=Slow Start
+[0.4236] Packet 2 SERVICED, delay=0.2230
+[0.4236] [TCP Tahoe], cwnd=8.00, ssthresh=10.00, state=Slow Start
+[0.5156] Packet 3 SERVICED, delay=0.1542
+[0.5156] [TCP Tahoe], cwnd=16.00, ssthresh=10.00, state=Congestion Avoidance
+[0.5949] Packet 14 DROPPED (queue full)
+[0.5949] Packet 15 DROPPED (queue full)
+[0.5949] Packet 16 DROPPED (queue full)
+[0.5949] Packet 17 DROPPED (queue full)
+[0.5949] Packet 18 DROPPED (queue full)
+[0.5949] Packet 19 DROPPED (queue full)
+[0.5949] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=1
+[0.5949] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=1
+[0.5949] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=1
+[0.5949] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=1
+[0.5949] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=1
+[0.5949] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=8
+[0.6387] Packet 4 SERVICED, delay=0.2773
+[0.6387] [TCP Tahoe], cwnd=2.00, ssthresh=1.00, state=Congestion Avoidance
+[0.6408] Packet 5 SERVICED, delay=0.2794
+[0.6408] [TCP Tahoe], cwnd=2.50, ssthresh=1.00, state=Congestion Avoidance
+[0.8194] Packet 6 SERVICED, delay=0.2245
+[0.8194] [TCP Tahoe], cwnd=2.90, ssthresh=1.00, state=Congestion Avoidance
+[0.8433] Packet 7 SERVICED, delay=0.2483
+[0.8433] [TCP Tahoe], cwnd=3.24, ssthresh=1.00, state=Congestion Avoidance
+[0.8633] Packet 8 SERVICED, delay=0.2684
+[0.8633] [TCP Tahoe], cwnd=3.55, ssthresh=1.00, state=Congestion Avoidance
+[0.8836] Packet 9 SERVICED, delay=0.2887
+[0.8836] [TCP Tahoe], cwnd=3.83, ssthresh=1.00, state=Congestion Avoidance
+[0.9199] Packet 10 SERVICED, delay=0.3249
+[0.9199] [TCP Tahoe], cwnd=4.10, ssthresh=1.00, state=Congestion Avoidance
+[0.9943] Packet 11 SERVICED, delay=0.3993
+[0.9943] [TCP Tahoe], cwnd=4.34, ssthresh=1.00, state=Congestion Avoidance
+[1.0508] Packet 12 SERVICED, delay=0.4559
+[1.0508] [TCP Tahoe], cwnd=4.57, ssthresh=1.00, state=Congestion Avoidance
+[1.0852] Packet 13 SERVICED, delay=0.4903
+[1.0852] [TCP Tahoe], cwnd=4.79, ssthresh=1.00, state=Congestion Avoidance
+[1.4223] Packet 20 SERVICED, delay=0.4238
+[1.4223] [TCP Tahoe], cwnd=5.00, ssthresh=1.00, state=Congestion Avoidance
+[1.5875] Packet 21 SERVICED, delay=0.5891
+[1.5875] [TCP Tahoe], cwnd=5.20, ssthresh=1.00, state=Congestion Avoidance
+[1.6455] Packet 22 SERVICED, delay=0.5392
+[1.6455] [TCP Tahoe], cwnd=5.39, ssthresh=1.00, state=Congestion Avoidance
+[1.6586] Packet 23 SERVICED, delay=0.5522
+[1.6586] [TCP Tahoe], cwnd=5.58, ssthresh=1.00, state=Congestion Avoidance
+[1.7320] Packet 24 SERVICED, delay=0.3004
+[1.7320] [TCP Tahoe], cwnd=5.75, ssthresh=1.00, state=Congestion Avoidance
+[1.8812] Packet 25 SERVICED, delay=0.1504
+[1.8812] [TCP Tahoe], cwnd=5.93, ssthresh=1.00, state=Congestion Avoidance
+[2.1617] Packet 26 SERVICED, delay=0.4309
+[2.1617] [TCP Tahoe], cwnd=6.10, ssthresh=1.00, state=Congestion Avoidance
+[2.3869] Packet 27 SERVICED, delay=0.6561
+[2.3869] [TCP Tahoe], cwnd=6.26, ssthresh=1.00, state=Congestion Avoidance
+[2.4780] Packet 28 SERVICED, delay=0.7472
+[2.4780] [TCP Tahoe], cwnd=6.42, ssthresh=1.00, state=Congestion Avoidance
+[2.4873] Packet 29 SERVICED, delay=0.5865
+[2.4873] [TCP Tahoe], cwnd=6.58, ssthresh=1.00, state=Congestion Avoidance
+[2.5091] Packet 30 SERVICED, delay=0.6083
+[2.5091] [TCP Tahoe], cwnd=6.73, ssthresh=1.00, state=Congestion Avoidance
+[2.5243] Packet 31 SERVICED, delay=0.3191
+[2.5243] [TCP Tahoe], cwnd=6.88, ssthresh=1.00, state=Congestion Avoidance
+[2.6863] Packet 32 SERVICED, delay=0.4811
+[2.6863] [TCP Tahoe], cwnd=7.02, ssthresh=1.00, state=Congestion Avoidance
+[2.8343] Packet 33 SERVICED, delay=0.3350
+[2.8343] [TCP Tahoe], cwnd=7.17, ssthresh=1.00, state=Congestion Avoidance
+[2.8564] Packet 34 SERVICED, delay=0.3571
+[2.8564] [TCP Tahoe], cwnd=7.30, ssthresh=1.00, state=Congestion Avoidance
+[2.8570] Packet 35 SERVICED, delay=0.3577
+[2.8570] [TCP Tahoe], cwnd=7.44, ssthresh=1.00, state=Congestion Avoidance
+[2.9797] Packet 36 SERVICED, delay=0.3677
+[2.9797] [TCP Tahoe], cwnd=7.58, ssthresh=1.00, state=Congestion Avoidance
+[3.1103] Packet 37 SERVICED, delay=0.4983
+[3.1103] [TCP Tahoe], cwnd=7.71, ssthresh=1.00, state=Congestion Avoidance
+[3.1180] Packet 38 SERVICED, delay=0.4076
+[3.1180] [TCP Tahoe], cwnd=7.84, ssthresh=1.00, state=Congestion Avoidance
+[3.1624] Packet 39 SERVICED, delay=0.4520
+[3.1624] [TCP Tahoe], cwnd=7.97, ssthresh=1.00, state=Congestion Avoidance
+[3.2600] Packet 40 SERVICED, delay=0.4089
+[3.2600] [TCP Tahoe], cwnd=8.09, ssthresh=1.00, state=Congestion Avoidance
+[3.2666] Packet 41 SERVICED, delay=0.3886
+[3.2666] [TCP Tahoe], cwnd=8.21, ssthresh=1.00, state=Congestion Avoidance
+[3.3038] Packet 42 SERVICED, delay=0.4259
+[3.3038] [TCP Tahoe], cwnd=8.34, ssthresh=1.00, state=Congestion Avoidance
+[3.4053] Packet 43 SERVICED, delay=0.4140
+[3.4053] [TCP Tahoe], cwnd=8.46, ssthresh=1.00, state=Congestion Avoidance
+[3.4692] Packet 44 SERVICED, delay=0.3324
+[3.4692] [TCP Tahoe], cwnd=8.57, ssthresh=1.00, state=Congestion Avoidance
+[3.4819] Packet 45 SERVICED, delay=0.3451
+[3.4819] [TCP Tahoe], cwnd=8.69, ssthresh=1.00, state=Congestion Avoidance
+[3.6250] Packet 46 SERVICED, delay=0.4049
+[3.6250] [TCP Tahoe], cwnd=8.81, ssthresh=1.00, state=Congestion Avoidance
+[3.7724] Packet 47 SERVICED, delay=0.4974
+[3.7724] [TCP Tahoe], cwnd=8.92, ssthresh=1.00, state=Congestion Avoidance
+[3.8404] Packet 48 SERVICED, delay=0.5654
+[3.8404] [TCP Tahoe], cwnd=9.03, ssthresh=1.00, state=Congestion Avoidance
+[3.9144] Packet 49 SERVICED, delay=0.6394
+[3.9144] [TCP Tahoe], cwnd=9.14, ssthresh=1.00, state=Congestion Avoidance
+[3.9170] Packet 50 SERVICED, delay=0.6048
+[3.9170] [TCP Tahoe], cwnd=9.25, ssthresh=1.00, state=Congestion Avoidance
+[3.9880] Packet 51 SERVICED, delay=0.5735
+[3.9880] [TCP Tahoe], cwnd=9.36, ssthresh=1.00, state=Congestion Avoidance
+[4.0167] Packet 52 SERVICED, delay=0.4434
+[4.0167] [TCP Tahoe], cwnd=9.47, ssthresh=1.00, state=Congestion Avoidance
+[4.0695] Packet 53 SERVICED, delay=0.4962
+[4.0695] [TCP Tahoe], cwnd=9.57, ssthresh=1.00, state=Congestion Avoidance
+[4.0955] Packet 54 SERVICED, delay=0.4283
+[4.0955] [TCP Tahoe], cwnd=9.68, ssthresh=1.00, state=Congestion Avoidance
+[4.2606] Packet 55 SERVICED, delay=0.3765
+[4.2606] [TCP Tahoe], cwnd=9.78, ssthresh=1.00, state=Congestion Avoidance
+[4.3610] Packet 56 SERVICED, delay=0.4769
+[4.3610] [TCP Tahoe], cwnd=9.88, ssthresh=1.00, state=Congestion Avoidance
+[4.5661] Packet 57 SERVICED, delay=0.6820
+[4.5661] [TCP Tahoe], cwnd=9.98, ssthresh=1.00, state=Congestion Avoidance
+[4.5868] Packet 58 SERVICED, delay=0.5941
+[4.5868] [TCP Tahoe], cwnd=10.08, ssthresh=1.00, state=Congestion Avoidance
+[4.8098] Packet 59 SERVICED, delay=0.8172
+[4.8098] [TCP Tahoe], cwnd=10.18, ssthresh=1.00, state=Congestion Avoidance
+[4.8873] Packet 60 SERVICED, delay=0.8947
+[4.8873] [TCP Tahoe], cwnd=10.28, ssthresh=1.00, state=Congestion Avoidance
+[5.1024] Packet 62 DROPPED (timeout)
+[5.1024] Packet 63 DROPPED (timeout)
+[5.1024] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=1
+[5.1024] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=5.0
+[5.1138] Packet 61 SERVICED, delay=1.0113
+[5.1138] [TCP Tahoe], cwnd=2.00, ssthresh=1.00, state=Congestion Avoidance
+[5.3109] Packet 64 SERVICED, delay=1.0405
+[5.3109] [TCP Tahoe], cwnd=2.50, ssthresh=1.00, state=Congestion Avoidance
+[5.3237] Packet 65 SERVICED, delay=0.9524
+[5.3237] [TCP Tahoe], cwnd=2.90, ssthresh=1.00, state=Congestion Avoidance
+[5.3627] Packet 66 SERVICED, delay=0.7731
+[5.3627] [TCP Tahoe], cwnd=3.24, ssthresh=1.00, state=Congestion Avoidance
+[5.4359] Packet 67 SERVICED, delay=0.8462
+[5.4359] [TCP Tahoe], cwnd=3.55, ssthresh=1.00, state=Congestion Avoidance
+[5.5573] Packet 68 SERVICED, delay=0.9676
+[5.5573] [TCP Tahoe], cwnd=3.83, ssthresh=1.00, state=Congestion Avoidance
+[5.8855] Packet 69 SERVICED, delay=1.0279
+[5.8855] [TCP Tahoe], cwnd=4.10, ssthresh=1.00, state=Congestion Avoidance
+[5.9213] Packet 70 SERVICED, delay=0.9985
+[5.9213] [TCP Tahoe], cwnd=4.34, ssthresh=1.00, state=Congestion Avoidance
+[5.9490] Packet 71 SERVICED, delay=0.3511
+[5.9490] [TCP Tahoe], cwnd=4.57, ssthresh=1.00, state=Congestion Avoidance
+[6.0490] Packet 72 SERVICED, delay=0.1457
+[6.0490] [TCP Tahoe], cwnd=4.79, ssthresh=1.00, state=Congestion Avoidance
+[6.1494] Packet 73 SERVICED, delay=0.2460
+[6.1494] [TCP Tahoe], cwnd=5.00, ssthresh=1.00, state=Congestion Avoidance
+[6.1589] Packet 74 SERVICED, delay=0.2044
+[6.1589] [TCP Tahoe], cwnd=5.20, ssthresh=1.00, state=Congestion Avoidance
+[6.3392] Packet 75 SERVICED, delay=0.3847
+[6.3392] [TCP Tahoe], cwnd=5.39, ssthresh=1.00, state=Congestion Avoidance
+[6.4524] Packet 76 SERVICED, delay=0.3960
+[6.4524] [TCP Tahoe], cwnd=5.58, ssthresh=1.00, state=Congestion Avoidance
+[6.4716] Packet 77 SERVICED, delay=0.2800
+[6.4716] [TCP Tahoe], cwnd=5.75, ssthresh=1.00, state=Congestion Avoidance
+[6.5890] Packet 78 SERVICED, delay=0.3974
+[6.5890] [TCP Tahoe], cwnd=5.93, ssthresh=1.00, state=Congestion Avoidance
+[6.6379] Packet 79 SERVICED, delay=0.4463
+[6.6379] [TCP Tahoe], cwnd=6.10, ssthresh=1.00, state=Congestion Avoidance
+[6.6527] Packet 80 SERVICED, delay=0.2771
+[6.6527] [TCP Tahoe], cwnd=6.26, ssthresh=1.00, state=Congestion Avoidance
+[6.8625] Packet 81 SERVICED, delay=0.2787
+[6.8625] [TCP Tahoe], cwnd=6.42, ssthresh=1.00, state=Congestion Avoidance
+[6.8924] Packet 82 SERVICED, delay=0.3085
+[6.8924] [TCP Tahoe], cwnd=6.58, ssthresh=1.00, state=Congestion Avoidance
+[7.0623] Packet 83 SERVICED, delay=0.4065
+[7.0623] [TCP Tahoe], cwnd=6.73, ssthresh=1.00, state=Congestion Avoidance
+[7.1433] Packet 84 SERVICED, delay=0.4875
+[7.1433] [TCP Tahoe], cwnd=6.88, ssthresh=1.00, state=Congestion Avoidance
+[7.2187] Packet 85 SERVICED, delay=0.5630
+[7.2187] [TCP Tahoe], cwnd=7.02, ssthresh=1.00, state=Congestion Avoidance
+[7.2464] Packet 86 SERVICED, delay=0.5907
+[7.2464] [TCP Tahoe], cwnd=7.17, ssthresh=1.00, state=Congestion Avoidance
+[7.3467] Packet 87 SERVICED, delay=0.3790
+[7.3467] [TCP Tahoe], cwnd=7.30, ssthresh=1.00, state=Congestion Avoidance
+[7.3881] Packet 88 SERVICED, delay=0.4204
+[7.3881] [TCP Tahoe], cwnd=7.44, ssthresh=1.00, state=Congestion Avoidance
+[7.6155] Packet 89 SERVICED, delay=0.5328
+[7.6155] [TCP Tahoe], cwnd=7.58, ssthresh=1.00, state=Congestion Avoidance
+[7.7669] Packet 90 SERVICED, delay=0.5388
+[7.7669] [TCP Tahoe], cwnd=7.71, ssthresh=1.00, state=Congestion Avoidance
+[7.8696] Packet 91 SERVICED, delay=0.6415
+[7.8696] [TCP Tahoe], cwnd=7.84, ssthresh=1.00, state=Congestion Avoidance
+[7.8784] Packet 92 SERVICED, delay=0.6503
+[7.8784] [TCP Tahoe], cwnd=7.97, ssthresh=1.00, state=Congestion Avoidance
+[7.9716] Packet 93 SERVICED, delay=0.5792
+[7.9716] [TCP Tahoe], cwnd=8.09, ssthresh=1.00, state=Congestion Avoidance
+[7.9726] Packet 94 SERVICED, delay=0.5802
+[7.9726] [TCP Tahoe], cwnd=8.21, ssthresh=1.00, state=Congestion Avoidance
+[7.9833] Packet 95 SERVICED, delay=0.5909
+[7.9833] [TCP Tahoe], cwnd=8.34, ssthresh=1.00, state=Congestion Avoidance
+[8.0087] Packet 96 SERVICED, delay=0.3297
+[8.0087] [TCP Tahoe], cwnd=8.46, ssthresh=1.00, state=Congestion Avoidance
+[8.0480] Packet 97 SERVICED, delay=0.2680
+[8.0480] [TCP Tahoe], cwnd=8.57, ssthresh=1.00, state=Congestion Avoidance
+[8.1529] Packet 98 SERVICED, delay=0.2814
+[8.1529] [TCP Tahoe], cwnd=8.69, ssthresh=1.00, state=Congestion Avoidance
+[8.2601] Packet 99 SERVICED, delay=0.2625
+[8.2601] [TCP Tahoe], cwnd=8.81, ssthresh=1.00, state=Congestion Avoidance
+[8.3441] Packet 100 SERVICED, delay=0.3465
+[8.3441] [TCP Tahoe], cwnd=8.92, ssthresh=1.00, state=Congestion Avoidance
+[8.3539] Packet 101 SERVICED, delay=0.3563
+[8.3539] [TCP Tahoe], cwnd=9.03, ssthresh=1.00, state=Congestion Avoidance
+[8.3998] Packet 102 SERVICED, delay=0.4021
+[8.3998] [TCP Tahoe], cwnd=9.14, ssthresh=1.00, state=Congestion Avoidance
+[8.4306] Packet 103 SERVICED, delay=0.4329
+[8.4306] [TCP Tahoe], cwnd=9.25, ssthresh=1.00, state=Congestion Avoidance
+[8.7918] Packet 104 SERVICED, delay=0.7755
+[8.7918] [TCP Tahoe], cwnd=9.36, ssthresh=1.00, state=Congestion Avoidance
+[9.0144] Packet 105 SERVICED, delay=0.9648
+[9.0144] [TCP Tahoe], cwnd=9.47, ssthresh=1.00, state=Congestion Avoidance
+[9.0843] Packet 106 SERVICED, delay=0.8626
+[9.0843] [TCP Tahoe], cwnd=9.57, ssthresh=1.00, state=Congestion Avoidance
+[9.1521] Packet 107 SERVICED, delay=0.8731
+[9.1521] [TCP Tahoe], cwnd=9.68, ssthresh=1.00, state=Congestion Avoidance
+[9.1851] Packet 108 SERVICED, delay=0.8061
+[9.1851] [TCP Tahoe], cwnd=9.78, ssthresh=1.00, state=Congestion Avoidance
+[9.1875] Packet 109 SERVICED, delay=0.8086
+[9.1875] [TCP Tahoe], cwnd=9.88, ssthresh=1.00, state=Congestion Avoidance
+[9.2912] Packet 110 SERVICED, delay=0.9123
+[9.2912] [TCP Tahoe], cwnd=9.98, ssthresh=1.00, state=Congestion Avoidance
+[9.5800] Packet 112 DROPPED (timeout)
+[9.5800] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=4.0
+[9.5990] Packet 111 SERVICED, delay=1.0190
+[9.5990] [TCP Tahoe], cwnd=2.00, ssthresh=4.00, state=Slow Start
+[9.9390] Packet 113 SERVICED, delay=1.1142
+[9.9390] [TCP Tahoe], cwnd=4.00, ssthresh=4.00, state=Congestion Avoidance
+[10.1014] Packet 115 DROPPED (timeout)
+[10.1014] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=2
+[10.1308] Packet 114 SERVICED, delay=1.0851
+[10.1308] [TCP Tahoe], cwnd=2.00, ssthresh=2.00, state=Congestion Avoidance
+[10.1934] Packet 117 DROPPED (timeout)
+[10.1934] Packet 118 DROPPED (timeout)
+[10.1934] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=1
+[10.1934] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=1
+[10.4059] Packet 116 SERVICED, delay=1.2125
+[10.4059] [TCP Tahoe], cwnd=2.00, ssthresh=1.00, state=Congestion Avoidance
+[10.4210] Packet 119 SERVICED, delay=0.8497
+[10.4210] [TCP Tahoe], cwnd=2.50, ssthresh=1.00, state=Congestion Avoidance
+[10.6655] Packet 120 SERVICED, delay=0.2465
+[10.6655] [TCP Tahoe], cwnd=2.90, ssthresh=1.00, state=Congestion Avoidance
+[10.7351] Packet 121 SERVICED, delay=0.2684
+[10.7351] [TCP Tahoe], cwnd=3.24, ssthresh=1.00, state=Congestion Avoidance
+[10.8940] Packet 122 SERVICED, delay=0.1699
+[10.8940] [TCP Tahoe], cwnd=3.55, ssthresh=1.00, state=Congestion Avoidance
+[10.9352] Packet 123 SERVICED, delay=0.0639
+[10.9352] [TCP Tahoe], cwnd=3.83, ssthresh=1.00, state=Congestion Avoidance
+[10.9823] Packet 124 SERVICED, delay=0.1110
+[10.9823] [TCP Tahoe], cwnd=4.10, ssthresh=1.00, state=Congestion Avoidance
+[10.9860] Packet 125 SERVICED, delay=0.0506
+[10.9860] [TCP Tahoe], cwnd=4.34, ssthresh=1.00, state=Congestion Avoidance
+[11.0486] Packet 126 SERVICED, delay=0.1132
+[11.0486] [TCP Tahoe], cwnd=4.57, ssthresh=1.00, state=Congestion Avoidance
+[11.0824] Packet 127 SERVICED, delay=0.0948
+[11.0824] [TCP Tahoe], cwnd=4.79, ssthresh=1.00, state=Congestion Avoidance
+[11.1717] Packet 128 SERVICED, delay=0.1842
+[11.1717] [TCP Tahoe], cwnd=5.00, ssthresh=1.00, state=Congestion Avoidance
+[11.1748] Packet 129 SERVICED, delay=0.1873
+[11.1748] [TCP Tahoe], cwnd=5.20, ssthresh=1.00, state=Congestion Avoidance
+[11.2195] Packet 130 SERVICED, delay=0.1141
+[11.2195] [TCP Tahoe], cwnd=5.39, ssthresh=1.00, state=Congestion Avoidance
+[11.2331] Packet 131 SERVICED, delay=0.1277
+[11.2331] [TCP Tahoe], cwnd=5.58, ssthresh=1.00, state=Congestion Avoidance
+[11.2769] Packet 132 SERVICED, delay=0.0243
+[11.2769] [TCP Tahoe], cwnd=5.75, ssthresh=1.00, state=Congestion Avoidance
+[11.3744] Packet 133 SERVICED, delay=0.1218
+[11.3744] [TCP Tahoe], cwnd=5.93, ssthresh=1.00, state=Congestion Avoidance
+[11.3834] Packet 134 SERVICED, delay=0.1308
+[11.3834] [TCP Tahoe], cwnd=6.10, ssthresh=1.00, state=Congestion Avoidance
+[11.3887] Packet 135 SERVICED, delay=0.1361
+[11.3887] [TCP Tahoe], cwnd=6.26, ssthresh=1.00, state=Congestion Avoidance
+[11.4644] Packet 136 SERVICED, delay=0.2119
+[11.4644] [TCP Tahoe], cwnd=6.42, ssthresh=1.00, state=Congestion Avoidance
+[11.5659] Packet 137 SERVICED, delay=0.2614
+[11.5659] [TCP Tahoe], cwnd=6.58, ssthresh=1.00, state=Congestion Avoidance
+[11.9383] Packet 138 SERVICED, delay=0.5475
+[11.9383] [TCP Tahoe], cwnd=6.73, ssthresh=1.00, state=Congestion Avoidance
+[12.0109] Packet 139 SERVICED, delay=0.6201
+[12.0109] [TCP Tahoe], cwnd=6.88, ssthresh=1.00, state=Congestion Avoidance
+[12.0499] Packet 140 SERVICED, delay=0.6591
+[12.0499] [TCP Tahoe], cwnd=7.02, ssthresh=1.00, state=Congestion Avoidance
+[12.2085] Packet 141 SERVICED, delay=0.8177
+[12.2085] [TCP Tahoe], cwnd=7.17, ssthresh=1.00, state=Congestion Avoidance
+[12.3892] Packet 142 SERVICED, delay=0.7125
+[12.3892] [TCP Tahoe], cwnd=7.30, ssthresh=1.00, state=Congestion Avoidance
+[12.5083] Packet 143 SERVICED, delay=0.8316
+[12.5083] [TCP Tahoe], cwnd=7.44, ssthresh=1.00, state=Congestion Avoidance
+[12.5411] Packet 144 SERVICED, delay=0.5775
+[12.5411] [TCP Tahoe], cwnd=7.58, ssthresh=1.00, state=Congestion Avoidance
+[12.6750] Packet 145 SERVICED, delay=0.5048
+[12.6750] [TCP Tahoe], cwnd=7.71, ssthresh=1.00, state=Congestion Avoidance
+[12.7559] Packet 146 SERVICED, delay=0.5857
+[12.7559] [TCP Tahoe], cwnd=7.84, ssthresh=1.00, state=Congestion Avoidance
+[12.8505] Packet 147 SERVICED, delay=0.6803
+[12.8505] [TCP Tahoe], cwnd=7.97, ssthresh=1.00, state=Congestion Avoidance
+[12.8945] Packet 148 SERVICED, delay=0.6690
+[12.8945] [TCP Tahoe], cwnd=8.09, ssthresh=1.00, state=Congestion Avoidance
+[13.0161] Packet 149 SERVICED, delay=0.5521
+[13.0161] [TCP Tahoe], cwnd=8.21, ssthresh=1.00, state=Congestion Avoidance
+[13.0837] Packet 150 SERVICED, delay=0.5700
+[13.0837] [TCP Tahoe], cwnd=8.34, ssthresh=1.00, state=Congestion Avoidance
+[13.1028] Packet 151 SERVICED, delay=0.5463
+[13.1028] [TCP Tahoe], cwnd=8.46, ssthresh=1.00, state=Congestion Avoidance
+[13.2036] Packet 152 SERVICED, delay=0.5115
+[13.2036] [TCP Tahoe], cwnd=8.57, ssthresh=1.00, state=Congestion Avoidance
+[13.2735] Packet 153 SERVICED, delay=0.4815
+[13.2735] [TCP Tahoe], cwnd=8.69, ssthresh=1.00, state=Congestion Avoidance
+[13.3810] Packet 154 SERVICED, delay=0.4596
+[13.3810] [TCP Tahoe], cwnd=8.81, ssthresh=1.00, state=Congestion Avoidance
+[13.3988] Packet 155 SERVICED, delay=0.4773
+[13.3988] [TCP Tahoe], cwnd=8.92, ssthresh=1.00, state=Congestion Avoidance
+[13.4061] Packet 156 SERVICED, delay=0.4847
+[13.4061] [TCP Tahoe], cwnd=9.03, ssthresh=1.00, state=Congestion Avoidance
+[13.6878] Packet 157 SERVICED, delay=0.6373
+[13.6878] [TCP Tahoe], cwnd=9.14, ssthresh=1.00, state=Congestion Avoidance
+[13.7370] Packet 158 SERVICED, delay=0.6293
+[13.7370] [TCP Tahoe], cwnd=9.25, ssthresh=1.00, state=Congestion Avoidance
+[13.8401] Packet 159 SERVICED, delay=0.7324
+[13.8401] [TCP Tahoe], cwnd=9.36, ssthresh=1.00, state=Congestion Avoidance
+[13.8888] Packet 160 SERVICED, delay=0.4985
+[13.8888] [TCP Tahoe], cwnd=9.47, ssthresh=1.00, state=Congestion Avoidance
+[14.2138] Packet 161 SERVICED, delay=0.8234
+[14.2138] [TCP Tahoe], cwnd=9.57, ssthresh=1.00, state=Congestion Avoidance
+[14.4049] Packet 163 DROPPED (timeout)
+[14.4049] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=4.0
+[14.4120] Packet 164 DROPPED (timeout)
+[14.4120] Packet 165 DROPPED (timeout)
+[14.4120] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=1
+[14.4120] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=1
+[14.4495] Packet 162 SERVICED, delay=1.0592
+[14.4495] [TCP Tahoe], cwnd=2.00, ssthresh=1.00, state=Congestion Avoidance
+[14.4826] Packet 166 SERVICED, delay=0.7254
+[14.4826] [TCP Tahoe], cwnd=2.50, ssthresh=1.00, state=Congestion Avoidance
+[14.4952] Packet 167 SERVICED, delay=0.7380
+[14.4952] [TCP Tahoe], cwnd=2.90, ssthresh=1.00, state=Congestion Avoidance
+[14.7051] Packet 168 SERVICED, delay=0.8023
+[14.7051] [TCP Tahoe], cwnd=3.24, ssthresh=1.00, state=Congestion Avoidance
+[14.8380] Packet 169 SERVICED, delay=0.9351
+[14.8380] [TCP Tahoe], cwnd=3.55, ssthresh=1.00, state=Congestion Avoidance
+[15.3037] Packet 170 SERVICED, delay=1.0551
+[15.3037] [TCP Tahoe], cwnd=3.83, ssthresh=1.00, state=Congestion Avoidance
+[15.3597] Packet 171 SERVICED, delay=0.6086
+[15.3597] [TCP Tahoe], cwnd=4.10, ssthresh=1.00, state=Congestion Avoidance
+[15.5002] Packet 172 SERVICED, delay=0.6565
+[15.5002] [TCP Tahoe], cwnd=4.34, ssthresh=1.00, state=Congestion Avoidance
+[15.5495] Packet 173 SERVICED, delay=0.2033
+[15.5495] [TCP Tahoe], cwnd=4.57, ssthresh=1.00, state=Congestion Avoidance
+[15.5590] Packet 174 SERVICED, delay=0.0550
+[15.5590] [TCP Tahoe], cwnd=4.79, ssthresh=1.00, state=Congestion Avoidance
+[15.5975] Packet 175 SERVICED, delay=0.0934
+[15.5975] [TCP Tahoe], cwnd=5.00, ssthresh=1.00, state=Congestion Avoidance
+[15.8972] Packet 176 SERVICED, delay=0.3931
+[15.8972] [TCP Tahoe], cwnd=5.20, ssthresh=1.00, state=Congestion Avoidance
+[15.9824] Packet 177 SERVICED, delay=0.2778
+[15.9824] [TCP Tahoe], cwnd=5.39, ssthresh=1.00, state=Congestion Avoidance
+[16.0823] Packet 178 SERVICED, delay=0.3777
+[16.0823] [TCP Tahoe], cwnd=5.58, ssthresh=1.00, state=Congestion Avoidance
+[16.1418] Packet 179 SERVICED, delay=0.4372
+[16.1418] [TCP Tahoe], cwnd=5.75, ssthresh=1.00, state=Congestion Avoidance
+[16.2986] Packet 180 SERVICED, delay=0.3768
+[16.2986] [TCP Tahoe], cwnd=5.93, ssthresh=1.00, state=Congestion Avoidance
+[16.4545] Packet 181 SERVICED, delay=0.5327
+[16.4545] [TCP Tahoe], cwnd=6.10, ssthresh=1.00, state=Congestion Avoidance
+[16.5128] Packet 182 SERVICED, delay=0.4820
+[16.5128] [TCP Tahoe], cwnd=6.26, ssthresh=1.00, state=Congestion Avoidance
+[16.5560] Packet 183 SERVICED, delay=0.3795
+[16.5560] [TCP Tahoe], cwnd=6.42, ssthresh=1.00, state=Congestion Avoidance
+[16.5685] Packet 184 SERVICED, delay=0.3919
+[16.5685] [TCP Tahoe], cwnd=6.58, ssthresh=1.00, state=Congestion Avoidance
+[16.5791] Packet 185 SERVICED, delay=0.2325
+[16.5791] [TCP Tahoe], cwnd=6.73, ssthresh=1.00, state=Congestion Avoidance
+[16.7016] Packet 186 SERVICED, delay=0.1487
+[16.7016] [TCP Tahoe], cwnd=6.88, ssthresh=1.00, state=Congestion Avoidance
+[16.7101] Packet 187 SERVICED, delay=0.1571
+[16.7101] [TCP Tahoe], cwnd=7.02, ssthresh=1.00, state=Congestion Avoidance
+[16.7190] Packet 188 SERVICED, delay=0.1660
+[16.7190] [TCP Tahoe], cwnd=7.17, ssthresh=1.00, state=Congestion Avoidance
+[16.8875] Packet 189 SERVICED, delay=0.0469
+[16.8875] [TCP Tahoe], cwnd=7.30, ssthresh=1.00, state=Congestion Avoidance
+[16.9339] Packet 190 SERVICED, delay=0.0932
+[16.9339] [TCP Tahoe], cwnd=7.44, ssthresh=1.00, state=Congestion Avoidance
+[17.1014] Packet 191 SERVICED, delay=0.2607
+[17.1014] [TCP Tahoe], cwnd=7.58, ssthresh=1.00, state=Congestion Avoidance
+[17.3956] Packet 192 SERVICED, delay=0.5550
+[17.3956] [TCP Tahoe], cwnd=7.71, ssthresh=1.00, state=Congestion Avoidance
+[17.8225] Packet 193 SERVICED, delay=0.9818
+[17.8225] [TCP Tahoe], cwnd=7.84, ssthresh=1.00, state=Congestion Avoidance
+[17.8407] Packet 195 DROPPED (timeout)
+[17.8407] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=3.0
+[17.9466] Packet 196 DROPPED (timeout)
+[17.9466] Packet 197 DROPPED (timeout)
+[17.9466] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=1
+[17.9466] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=1
+[17.9625] Packet 194 SERVICED, delay=1.1218
+[17.9625] [TCP Tahoe], cwnd=2.00, ssthresh=1.00, state=Congestion Avoidance
+[17.9743] Packet 198 SERVICED, delay=0.8698
+[17.9743] [TCP Tahoe], cwnd=2.50, ssthresh=1.00, state=Congestion Avoidance
+[18.3018] Packet 199 SERVICED, delay=0.8689
+[18.3018] [TCP Tahoe], cwnd=2.90, ssthresh=1.00, state=Congestion Avoidance
+[18.3062] Packet 200 SERVICED, delay=0.2129
+[18.3062] [TCP Tahoe], cwnd=3.24, ssthresh=1.00, state=Congestion Avoidance
+[18.6292] Packet 201 SERVICED, delay=0.0077
+[18.6292] [TCP Tahoe], cwnd=3.55, ssthresh=1.00, state=Congestion Avoidance
+[18.7099] Packet 202 SERVICED, delay=0.0884
+[18.7099] [TCP Tahoe], cwnd=3.83, ssthresh=1.00, state=Congestion Avoidance
+[19.0583] Packet 203 SERVICED, delay=0.4367
+[19.0583] [TCP Tahoe], cwnd=4.10, ssthresh=1.00, state=Congestion Avoidance
+[19.1575] Packet 204 SERVICED, delay=0.4866
+[19.1575] [TCP Tahoe], cwnd=4.34, ssthresh=1.00, state=Congestion Avoidance
+[19.2182] Packet 205 SERVICED, delay=0.4679
+[19.2182] [TCP Tahoe], cwnd=4.57, ssthresh=1.00, state=Congestion Avoidance
+[19.4752] Packet 206 SERVICED, delay=0.2210
+[19.4752] [TCP Tahoe], cwnd=4.79, ssthresh=1.00, state=Congestion Avoidance
+[19.5360] Packet 207 SERVICED, delay=0.2818
+[19.5360] [TCP Tahoe], cwnd=5.00, ssthresh=1.00, state=Congestion Avoidance
+[19.6328] Packet 208 SERVICED, delay=0.3786
+[19.6328] [TCP Tahoe], cwnd=5.20, ssthresh=1.00, state=Congestion Avoidance
+[19.6653] Packet 209 SERVICED, delay=0.4111
+[19.6653] [TCP Tahoe], cwnd=5.39, ssthresh=1.00, state=Congestion Avoidance
+[20.0937] Packet 210 SERVICED, delay=0.4468
+[20.0937] [TCP Tahoe], cwnd=5.58, ssthresh=1.00, state=Congestion Avoidance
+[20.2135] Packet 211 SERVICED, delay=0.5666
+[20.2135] [TCP Tahoe], cwnd=5.75, ssthresh=1.00, state=Congestion Avoidance
+[20.2903] Packet 212 SERVICED, delay=0.6434
+[20.2903] [TCP Tahoe], cwnd=5.93, ssthresh=1.00, state=Congestion Avoidance
+[20.3273] Packet 213 SERVICED, delay=0.6804
+[20.3273] [TCP Tahoe], cwnd=6.10, ssthresh=1.00, state=Congestion Avoidance
+[20.4428] Packet 214 SERVICED, delay=0.6838
+[20.4428] [TCP Tahoe], cwnd=6.26, ssthresh=1.00, state=Congestion Avoidance
+[20.5721] Packet 215 SERVICED, delay=0.3254
+[20.5721] [TCP Tahoe], cwnd=6.42, ssthresh=1.00, state=Congestion Avoidance
+[20.6672] Packet 216 SERVICED, delay=0.4205
+[20.6672] [TCP Tahoe], cwnd=6.58, ssthresh=1.00, state=Congestion Avoidance
+[20.8682] Packet 217 SERVICED, delay=0.4054
+[20.8682] [TCP Tahoe], cwnd=6.73, ssthresh=1.00, state=Congestion Avoidance
+[20.8728] Packet 218 SERVICED, delay=0.4101
+[20.8728] [TCP Tahoe], cwnd=6.88, ssthresh=1.00, state=Congestion Avoidance
+[20.8755] Packet 219 SERVICED, delay=0.4127
+[20.8755] [TCP Tahoe], cwnd=7.02, ssthresh=1.00, state=Congestion Avoidance
+[20.9227] Packet 220 SERVICED, delay=0.4600
+[20.9227] [TCP Tahoe], cwnd=7.17, ssthresh=1.00, state=Congestion Avoidance
+[21.3592] Packet 221 SERVICED, delay=0.7855
+[21.3592] [TCP Tahoe], cwnd=7.30, ssthresh=1.00, state=Congestion Avoidance
+[21.7095] Packet 222 SERVICED, delay=1.0329
+[21.7095] [TCP Tahoe], cwnd=7.44, ssthresh=1.00, state=Congestion Avoidance
+[21.7728] Packet 223 SERVICED, delay=0.8516
+[21.7728] [TCP Tahoe], cwnd=7.58, ssthresh=1.00, state=Congestion Avoidance
+[21.8264] Packet 224 SERVICED, delay=0.9052
+[21.8264] [TCP Tahoe], cwnd=7.71, ssthresh=1.00, state=Congestion Avoidance
+[21.8583] Packet 225 SERVICED, delay=0.9371
+[21.8583] [TCP Tahoe], cwnd=7.84, ssthresh=1.00, state=Congestion Avoidance
+[21.8641] Packet 226 SERVICED, delay=0.9429
+[21.8641] [TCP Tahoe], cwnd=7.97, ssthresh=1.00, state=Congestion Avoidance
+[22.0317] Packet 227 SERVICED, delay=0.9772
+[22.0317] [TCP Tahoe], cwnd=8.09, ssthresh=1.00, state=Congestion Avoidance
+[22.6012] Packet 228 SERVICED, delay=1.0019
+[22.6012] [TCP Tahoe], cwnd=8.21, ssthresh=1.00, state=Congestion Avoidance
+[22.8774] Packet 230 DROPPED (timeout)
+[22.8774] Packet 231 DROPPED (timeout)
+[22.8774] Packet 232 DROPPED (timeout)
+[22.8774] Packet 233 DROPPED (timeout)
+[22.8774] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=1
+[22.8774] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=1
+[22.8774] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=1
+[22.8774] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=4.0
+[22.8908] Packet 229 SERVICED, delay=1.1397
+[22.8908] [TCP Tahoe], cwnd=2.00, ssthresh=1.00, state=Congestion Avoidance
+[22.9352] Packet 234 SERVICED, delay=0.8399
+[22.9352] [TCP Tahoe], cwnd=2.50, ssthresh=1.00, state=Congestion Avoidance
+[22.9472] Packet 235 SERVICED, delay=0.8520
+[22.9472] [TCP Tahoe], cwnd=2.90, ssthresh=1.00, state=Congestion Avoidance
+[23.1565] Packet 236 SERVICED, delay=0.5546
+[23.1565] [TCP Tahoe], cwnd=3.24, ssthresh=1.00, state=Congestion Avoidance
+[23.2063] Packet 237 SERVICED, delay=0.2039
+[23.2063] [TCP Tahoe], cwnd=3.55, ssthresh=1.00, state=Congestion Avoidance
+[23.2491] Packet 238 SERVICED, delay=0.0521
+[23.2491] [TCP Tahoe], cwnd=3.83, ssthresh=1.00, state=Congestion Avoidance
+[23.3212] Packet 239 SERVICED, delay=0.1242
+[23.3212] [TCP Tahoe], cwnd=4.10, ssthresh=1.00, state=Congestion Avoidance
+[23.3718] Packet 240 SERVICED, delay=0.0727
+[23.3718] [TCP Tahoe], cwnd=4.34, ssthresh=1.00, state=Congestion Avoidance
+[23.4691] Packet 241 SERVICED, delay=0.1700
+[23.4691] [TCP Tahoe], cwnd=4.57, ssthresh=1.00, state=Congestion Avoidance
+[23.7677] Packet 242 SERVICED, delay=0.3364
+[23.7677] [TCP Tahoe], cwnd=4.79, ssthresh=1.00, state=Congestion Avoidance
+[23.7836] Packet 243 SERVICED, delay=0.3523
+[23.7836] [TCP Tahoe], cwnd=5.00, ssthresh=1.00, state=Congestion Avoidance
+[24.0448] Packet 244 SERVICED, delay=0.6134
+[24.0448] [TCP Tahoe], cwnd=5.20, ssthresh=1.00, state=Congestion Avoidance
+[24.0746] Packet 245 SERVICED, delay=0.5982
+[24.0746] [TCP Tahoe], cwnd=5.39, ssthresh=1.00, state=Congestion Avoidance
+[24.1425] Packet 246 SERVICED, delay=0.3641
+[24.1425] [TCP Tahoe], cwnd=5.58, ssthresh=1.00, state=Congestion Avoidance
+[24.2428] Packet 247 SERVICED, delay=0.4379
+[24.2428] [TCP Tahoe], cwnd=5.75, ssthresh=1.00, state=Congestion Avoidance
+[24.3071] Packet 248 SERVICED, delay=0.1780
+[24.3071] [TCP Tahoe], cwnd=5.93, ssthresh=1.00, state=Congestion Avoidance
+[24.4172] Packet 249 SERVICED, delay=0.2881
+[24.4172] [TCP Tahoe], cwnd=6.10, ssthresh=1.00, state=Congestion Avoidance
+[24.4361] Packet 250 SERVICED, delay=0.3070
+[24.4361] [TCP Tahoe], cwnd=6.26, ssthresh=1.00, state=Congestion Avoidance
+[24.4403] Packet 251 SERVICED, delay=0.2969
+[24.4403] [TCP Tahoe], cwnd=6.42, ssthresh=1.00, state=Congestion Avoidance
+[24.4634] Packet 252 SERVICED, delay=0.2170
+[24.4634] [TCP Tahoe], cwnd=6.58, ssthresh=1.00, state=Congestion Avoidance
+[24.5806] Packet 253 SERVICED, delay=0.2574
+[24.5806] [TCP Tahoe], cwnd=6.73, ssthresh=1.00, state=Congestion Avoidance
+[24.6795] Packet 254 SERVICED, delay=0.2465
+[24.6795] [TCP Tahoe], cwnd=6.88, ssthresh=1.00, state=Congestion Avoidance
+[24.6880] Packet 255 SERVICED, delay=0.2550
+[24.6880] [TCP Tahoe], cwnd=7.02, ssthresh=1.00, state=Congestion Avoidance
+[24.9417] Packet 256 SERVICED, delay=0.3708
+[24.9417] [TCP Tahoe], cwnd=7.17, ssthresh=1.00, state=Congestion Avoidance
+[24.9480] Packet 257 SERVICED, delay=0.3771
+[24.9480] [TCP Tahoe], cwnd=7.30, ssthresh=1.00, state=Congestion Avoidance
+[24.9804] Packet 258 SERVICED, delay=0.4095
+[24.9804] [TCP Tahoe], cwnd=7.44, ssthresh=1.00, state=Congestion Avoidance
+[25.1184] Packet 259 SERVICED, delay=0.4381
+[25.1184] [TCP Tahoe], cwnd=7.58, ssthresh=1.00, state=Congestion Avoidance
+[25.1388] Packet 260 SERVICED, delay=0.4585
+[25.1388] [TCP Tahoe], cwnd=7.71, ssthresh=1.00, state=Congestion Avoidance
+[25.1850] Packet 261 SERVICED, delay=0.4891
+[25.1850] [TCP Tahoe], cwnd=7.84, ssthresh=1.00, state=Congestion Avoidance
+[25.2513] Packet 262 SERVICED, delay=0.5553
+[25.2513] [TCP Tahoe], cwnd=7.97, ssthresh=1.00, state=Congestion Avoidance
+[25.3762] Packet 263 SERVICED, delay=0.4304
+[25.3762] [TCP Tahoe], cwnd=8.09, ssthresh=1.00, state=Congestion Avoidance
+[25.4479] Packet 264 SERVICED, delay=0.3517
+[25.4479] [TCP Tahoe], cwnd=8.21, ssthresh=1.00, state=Congestion Avoidance
+[25.5239] Packet 265 SERVICED, delay=0.4276
+[25.5239] [TCP Tahoe], cwnd=8.34, ssthresh=1.00, state=Congestion Avoidance
+[25.5999] Packet 266 SERVICED, delay=0.4566
+[25.5999] [TCP Tahoe], cwnd=8.46, ssthresh=1.00, state=Congestion Avoidance
+[25.6277] Packet 267 SERVICED, delay=0.4843
+[25.6277] [TCP Tahoe], cwnd=8.57, ssthresh=1.00, state=Congestion Avoidance
+[25.6297] Packet 268 SERVICED, delay=0.4339
+[25.6297] [TCP Tahoe], cwnd=8.69, ssthresh=1.00, state=Congestion Avoidance
+[25.6425] Packet 269 SERVICED, delay=0.3784
+[25.6425] [TCP Tahoe], cwnd=8.81, ssthresh=1.00, state=Congestion Avoidance
+[25.7325] Packet 270 SERVICED, delay=0.3210
+[25.7325] [TCP Tahoe], cwnd=8.92, ssthresh=1.00, state=Congestion Avoidance
+[25.8462] Packet 271 SERVICED, delay=0.4347
+[25.8462] [TCP Tahoe], cwnd=9.03, ssthresh=1.00, state=Congestion Avoidance
+[25.9152] Packet 272 SERVICED, delay=0.3999
+[25.9152] [TCP Tahoe], cwnd=9.14, ssthresh=1.00, state=Congestion Avoidance
+[26.0036] Packet 273 SERVICED, delay=0.4309
+[26.0036] [TCP Tahoe], cwnd=9.25, ssthresh=1.00, state=Congestion Avoidance
+[26.0601] Packet 274 SERVICED, delay=0.3962
+[26.0601] [TCP Tahoe], cwnd=9.36, ssthresh=1.00, state=Congestion Avoidance
+[26.0737] Packet 275 SERVICED, delay=0.4098
+[26.0737] [TCP Tahoe], cwnd=9.47, ssthresh=1.00, state=Congestion Avoidance
+[26.1071] Packet 276 SERVICED, delay=0.4432
+[26.1071] [TCP Tahoe], cwnd=9.57, ssthresh=1.00, state=Congestion Avoidance
+[26.1522] Packet 277 SERVICED, delay=0.4883
+[26.1522] [TCP Tahoe], cwnd=9.68, ssthresh=1.00, state=Congestion Avoidance
+[26.2368] Packet 278 SERVICED, delay=0.5037
+[26.2368] [TCP Tahoe], cwnd=9.78, ssthresh=1.00, state=Congestion Avoidance
+[26.3299] Packet 279 SERVICED, delay=0.2803
+[26.3299] [TCP Tahoe], cwnd=9.88, ssthresh=1.00, state=Congestion Avoidance
+[26.3570] Packet 280 SERVICED, delay=0.3074
+[26.3570] [TCP Tahoe], cwnd=9.98, ssthresh=1.00, state=Congestion Avoidance
+[26.3677] Packet 281 SERVICED, delay=0.3181
+[26.3677] [TCP Tahoe], cwnd=10.08, ssthresh=1.00, state=Congestion Avoidance
+[26.3843] Packet 282 SERVICED, delay=0.3347
+[26.3843] [TCP Tahoe], cwnd=10.18, ssthresh=1.00, state=Congestion Avoidance
+[26.4018] Packet 283 SERVICED, delay=0.3334
+[26.4018] [TCP Tahoe], cwnd=10.28, ssthresh=1.00, state=Congestion Avoidance
+[26.4354] Packet 284 SERVICED, delay=0.3532
+[26.4354] [TCP Tahoe], cwnd=10.38, ssthresh=1.00, state=Congestion Avoidance
+[26.4437] Packet 285 SERVICED, delay=0.1975
+[26.4437] [TCP Tahoe], cwnd=10.47, ssthresh=1.00, state=Congestion Avoidance
+[26.5181] Packet 286 SERVICED, delay=0.2718
+[26.5181] [TCP Tahoe], cwnd=10.57, ssthresh=1.00, state=Congestion Avoidance
+[26.5709] Packet 287 SERVICED, delay=0.3247
+[26.5709] [TCP Tahoe], cwnd=10.66, ssthresh=1.00, state=Congestion Avoidance
+[26.5828] Packet 288 SERVICED, delay=0.0673
+[26.5828] [TCP Tahoe], cwnd=10.76, ssthresh=1.00, state=Congestion Avoidance
+[26.6335] Packet 289 SERVICED, delay=0.1180
+[26.6335] [TCP Tahoe], cwnd=10.85, ssthresh=1.00, state=Congestion Avoidance
+[26.9824] Packet 290 SERVICED, delay=0.4669
+[26.9824] [TCP Tahoe], cwnd=10.94, ssthresh=1.00, state=Congestion Avoidance
+[27.1830] Packet 291 SERVICED, delay=0.6676
+[27.1830] [TCP Tahoe], cwnd=11.04, ssthresh=1.00, state=Congestion Avoidance
+[27.3529] Packet 292 SERVICED, delay=0.8374
+[27.3529] [TCP Tahoe], cwnd=11.13, ssthresh=1.00, state=Congestion Avoidance
+[27.3827] Packet 293 SERVICED, delay=0.8673
+[27.3827] [TCP Tahoe], cwnd=11.22, ssthresh=1.00, state=Congestion Avoidance
+[27.4015] Packet 294 SERVICED, delay=0.8860
+[27.4015] [TCP Tahoe], cwnd=11.30, ssthresh=1.00, state=Congestion Avoidance
+[27.4326] Packet 305 DROPPED (queue full)
+[27.4326] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=5.0
+[27.5119] Packet 295 SERVICED, delay=0.9965
+[27.5119] [TCP Tahoe], cwnd=2.00, ssthresh=5.00, state=Slow Start
+[27.5933] Packet 296 SERVICED, delay=0.9011
+[27.5933] [TCP Tahoe], cwnd=4.00, ssthresh=5.00, state=Slow Start
+[27.6781] Packet 297 SERVICED, delay=0.9859
+[27.6781] [TCP Tahoe], cwnd=8.00, ssthresh=5.00, state=Congestion Avoidance
+[27.6922] Packet 299 DROPPED (timeout)
+[27.6922] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=4
+[27.7109] Packet 298 SERVICED, delay=1.0187
+[27.7109] [TCP Tahoe], cwnd=2.00, ssthresh=4.00, state=Slow Start
+[27.7277] Packet 300 SERVICED, delay=0.7412
+[27.7277] [TCP Tahoe], cwnd=4.00, ssthresh=4.00, state=Congestion Avoidance
+[27.7666] Packet 301 SERVICED, delay=0.3340
+[27.7666] [TCP Tahoe], cwnd=4.25, ssthresh=4.00, state=Congestion Avoidance
+[27.9326] Packet 302 SERVICED, delay=0.5000
+[27.9326] [TCP Tahoe], cwnd=4.49, ssthresh=4.00, state=Congestion Avoidance
+[27.9620] Packet 303 SERVICED, delay=0.5294
+[27.9620] [TCP Tahoe], cwnd=4.71, ssthresh=4.00, state=Congestion Avoidance
+[28.0764] Packet 304 SERVICED, delay=0.6438
+[28.0764] [TCP Tahoe], cwnd=4.92, ssthresh=4.00, state=Congestion Avoidance
+[28.2540] Packet 306 SERVICED, delay=0.4777
+[28.2540] [TCP Tahoe], cwnd=5.12, ssthresh=4.00, state=Congestion Avoidance
+[28.2672] Packet 307 SERVICED, delay=0.2674
+[28.2672] [TCP Tahoe], cwnd=5.32, ssthresh=4.00, state=Congestion Avoidance
+[28.3985] Packet 308 SERVICED, delay=0.3987
+[28.3985] [TCP Tahoe], cwnd=5.51, ssthresh=4.00, state=Congestion Avoidance
+[28.4185] Packet 309 SERVICED, delay=0.2329
+[28.4185] [TCP Tahoe], cwnd=5.69, ssthresh=4.00, state=Congestion Avoidance
+[28.5039] Packet 310 SERVICED, delay=0.2237
+[28.5039] [TCP Tahoe], cwnd=5.86, ssthresh=4.00, state=Congestion Avoidance
+[28.6883] Packet 311 SERVICED, delay=0.4081
+[28.6883] [TCP Tahoe], cwnd=6.03, ssthresh=4.00, state=Congestion Avoidance
+[28.7034] Packet 312 SERVICED, delay=0.4232
+[28.7034] [TCP Tahoe], cwnd=6.20, ssthresh=4.00, state=Congestion Avoidance
+[28.7213] Packet 313 SERVICED, delay=0.3203
+[28.7213] [TCP Tahoe], cwnd=6.36, ssthresh=4.00, state=Congestion Avoidance
+[28.8307] Packet 314 SERVICED, delay=0.3054
+[28.8307] [TCP Tahoe], cwnd=6.52, ssthresh=4.00, state=Congestion Avoidance
+[28.9047] Packet 315 SERVICED, delay=0.3794
+[28.9047] [TCP Tahoe], cwnd=6.67, ssthresh=4.00, state=Congestion Avoidance
+[28.9546] Packet 316 SERVICED, delay=0.2598
+[28.9546] [TCP Tahoe], cwnd=6.82, ssthresh=4.00, state=Congestion Avoidance
+[29.1242] Packet 317 SERVICED, delay=0.4294
+[29.1242] [TCP Tahoe], cwnd=6.97, ssthresh=4.00, state=Congestion Avoidance
+[29.1715] Packet 318 SERVICED, delay=0.4382
+[29.1715] [TCP Tahoe], cwnd=7.11, ssthresh=4.00, state=Congestion Avoidance
+[29.2336] Packet 319 SERVICED, delay=0.5003
+[29.2336] [TCP Tahoe], cwnd=7.25, ssthresh=4.00, state=Congestion Avoidance
+[29.3035] Packet 320 SERVICED, delay=0.4545
+[29.3035] [TCP Tahoe], cwnd=7.39, ssthresh=4.00, state=Congestion Avoidance
+[29.3519] Packet 321 SERVICED, delay=0.3321
+[29.3519] [TCP Tahoe], cwnd=7.53, ssthresh=4.00, state=Congestion Avoidance
+[29.4303] Packet 322 SERVICED, delay=0.4105
+[29.4303] [TCP Tahoe], cwnd=7.66, ssthresh=4.00, state=Congestion Avoidance
+[29.5282] Packet 323 SERVICED, delay=0.3504
+[29.5282] [TCP Tahoe], cwnd=7.79, ssthresh=4.00, state=Congestion Avoidance
+[29.5406] Packet 324 SERVICED, delay=0.3628
+[29.5406] [TCP Tahoe], cwnd=7.92, ssthresh=4.00, state=Congestion Avoidance
+[29.8217] Packet 325 SERVICED, delay=0.6439
+[29.8217] [TCP Tahoe], cwnd=8.04, ssthresh=4.00, state=Congestion Avoidance
+[29.8625] Packet 326 SERVICED, delay=0.6188
+[29.8625] [TCP Tahoe], cwnd=8.17, ssthresh=4.00, state=Congestion Avoidance
+[29.9593] Packet 327 SERVICED, delay=0.6003
+[29.9593] [TCP Tahoe], cwnd=8.29, ssthresh=4.00, state=Congestion Avoidance
+[30.0355] Packet 328 SERVICED, delay=0.6765
+[30.0355] [TCP Tahoe], cwnd=8.41, ssthresh=4.00, state=Congestion Avoidance
+[30.1909] Packet 329 SERVICED, delay=0.6823
+[30.1909] [TCP Tahoe], cwnd=8.53, ssthresh=4.00, state=Congestion Avoidance
+[30.2195] Packet 330 SERVICED, delay=0.6750
+[30.2195] [TCP Tahoe], cwnd=8.65, ssthresh=4.00, state=Congestion Avoidance
+[30.3557] Packet 331 SERVICED, delay=0.8113
+[30.3557] [TCP Tahoe], cwnd=8.76, ssthresh=4.00, state=Congestion Avoidance
+[30.3976] Packet 332 SERVICED, delay=0.5592
+[30.3976] [TCP Tahoe], cwnd=8.88, ssthresh=4.00, state=Congestion Avoidance
+[30.5697] Packet 333 SERVICED, delay=0.7314
+[30.5697] [TCP Tahoe], cwnd=8.99, ssthresh=4.00, state=Congestion Avoidance
+[30.5834] Packet 334 SERVICED, delay=0.6123
+[30.5834] [TCP Tahoe], cwnd=9.10, ssthresh=4.00, state=Congestion Avoidance
+[30.6340] Packet 335 SERVICED, delay=0.6629
+[30.6340] [TCP Tahoe], cwnd=9.21, ssthresh=4.00, state=Congestion Avoidance
+[30.6503] Packet 336 SERVICED, delay=0.5728
+[30.6503] [TCP Tahoe], cwnd=9.32, ssthresh=4.00, state=Congestion Avoidance
+[30.7527] Packet 337 SERVICED, delay=0.4876
+[30.7527] [TCP Tahoe], cwnd=9.43, ssthresh=4.00, state=Congestion Avoidance
+[30.8711] Packet 338 SERVICED, delay=0.6060
+[30.8711] [TCP Tahoe], cwnd=9.53, ssthresh=4.00, state=Congestion Avoidance
+[30.8912] Packet 339 SERVICED, delay=0.5263
+[30.8912] [TCP Tahoe], cwnd=9.64, ssthresh=4.00, state=Congestion Avoidance
+[30.9787] Packet 340 SERVICED, delay=0.4545
+[30.9787] [TCP Tahoe], cwnd=9.74, ssthresh=4.00, state=Congestion Avoidance
+[31.2730] Packet 341 SERVICED, delay=0.6733
+[31.2730] [TCP Tahoe], cwnd=9.84, ssthresh=4.00, state=Congestion Avoidance
+[31.2897] Packet 342 SERVICED, delay=0.6899
+[31.2897] [TCP Tahoe], cwnd=9.95, ssthresh=4.00, state=Congestion Avoidance
+[31.3779] Packet 343 SERVICED, delay=0.7782
+[31.3779] [TCP Tahoe], cwnd=10.05, ssthresh=4.00, state=Congestion Avoidance
+[31.4724] Packet 344 SERVICED, delay=0.8257
+[31.4724] [TCP Tahoe], cwnd=10.15, ssthresh=4.00, state=Congestion Avoidance
+[31.7414] Packet 345 SERVICED, delay=0.9564
+[31.7414] [TCP Tahoe], cwnd=10.24, ssthresh=4.00, state=Congestion Avoidance
+[31.8247] Packet 346 SERVICED, delay=1.0396
+[31.8247] [TCP Tahoe], cwnd=10.34, ssthresh=4.00, state=Congestion Avoidance
+[31.9476] Packet 347 SERVICED, delay=0.9124
+[31.9476] [TCP Tahoe], cwnd=10.44, ssthresh=4.00, state=Congestion Avoidance
+[31.9641] Packet 348 SERVICED, delay=0.9290
+[31.9641] [TCP Tahoe], cwnd=10.53, ssthresh=4.00, state=Congestion Avoidance
+[32.0500] Packet 349 SERVICED, delay=1.0149
+[32.0500] [TCP Tahoe], cwnd=10.63, ssthresh=4.00, state=Congestion Avoidance
+[32.3098] Packet 350 SERVICED, delay=0.9052
+[32.3098] [TCP Tahoe], cwnd=10.72, ssthresh=4.00, state=Congestion Avoidance
+[32.3697] Packet 351 SERVICED, delay=0.9651
+[32.3697] [TCP Tahoe], cwnd=10.82, ssthresh=4.00, state=Congestion Avoidance
+[32.3817] Packet 352 SERVICED, delay=0.9771
+[32.3817] [TCP Tahoe], cwnd=10.91, ssthresh=4.00, state=Congestion Avoidance
+[32.5263] Packet 354 DROPPED (timeout)
+[32.5263] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=5.0
+[32.8006] Packet 353 SERVICED, delay=1.3960
+[32.8006] [TCP Tahoe], cwnd=2.00, ssthresh=5.00, state=Slow Start
+[32.8314] Packet 356 DROPPED (timeout)
+[32.8314] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=1
+[32.8738] Packet 355 SERVICED, delay=1.0424
+[32.8738] [TCP Tahoe], cwnd=2.00, ssthresh=1.00, state=Congestion Avoidance
+[32.8743] Packet 357 SERVICED, delay=0.8697
+[32.8743] [TCP Tahoe], cwnd=2.50, ssthresh=1.00, state=Congestion Avoidance
+[32.9148] Packet 358 SERVICED, delay=0.9103
+[32.9148] [TCP Tahoe], cwnd=2.90, ssthresh=1.00, state=Congestion Avoidance
+[33.1672] Packet 359 SERVICED, delay=1.0774
+[33.1672] [TCP Tahoe], cwnd=3.24, ssthresh=1.00, state=Congestion Avoidance
+[33.1824] Packet 360 SERVICED, delay=0.8495
+[33.1824] [TCP Tahoe], cwnd=3.55, ssthresh=1.00, state=Congestion Avoidance
+[33.2367] Packet 361 SERVICED, delay=0.8448
+[33.2367] [TCP Tahoe], cwnd=3.83, ssthresh=1.00, state=Congestion Avoidance
+[33.4830] Packet 362 SERVICED, delay=1.0912
+[33.4830] [TCP Tahoe], cwnd=4.10, ssthresh=1.00, state=Congestion Avoidance
+[33.5528] Packet 363 SERVICED, delay=0.2664
+[33.5528] [TCP Tahoe], cwnd=4.34, ssthresh=1.00, state=Congestion Avoidance
+[33.6433] Packet 364 SERVICED, delay=0.3569
+[33.6433] [TCP Tahoe], cwnd=4.57, ssthresh=1.00, state=Congestion Avoidance
+[33.6662] Packet 365 SERVICED, delay=0.1149
+[33.6662] [TCP Tahoe], cwnd=4.79, ssthresh=1.00, state=Congestion Avoidance
+[33.6874] Packet 366 SERVICED, delay=0.1360
+[33.6874] [TCP Tahoe], cwnd=5.00, ssthresh=1.00, state=Congestion Avoidance
+[33.7513] Packet 367 SERVICED, delay=0.1974
+[33.7513] [TCP Tahoe], cwnd=5.20, ssthresh=1.00, state=Congestion Avoidance
+[33.8116] Packet 368 SERVICED, delay=0.0982
+[33.8116] [TCP Tahoe], cwnd=5.39, ssthresh=1.00, state=Congestion Avoidance
+[33.8860] Packet 369 SERVICED, delay=0.1725
+[33.8860] [TCP Tahoe], cwnd=5.58, ssthresh=1.00, state=Congestion Avoidance
+[33.9441] Packet 370 SERVICED, delay=0.2307
+[33.9441] [TCP Tahoe], cwnd=5.75, ssthresh=1.00, state=Congestion Avoidance
+[33.9609] Packet 371 SERVICED, delay=0.1587
+[33.9609] [TCP Tahoe], cwnd=5.93, ssthresh=1.00, state=Congestion Avoidance
+[33.9810] Packet 372 SERVICED, delay=0.1788
+[33.9810] [TCP Tahoe], cwnd=6.10, ssthresh=1.00, state=Congestion Avoidance
+[34.2731] Packet 373 SERVICED, delay=0.3389
+[34.2731] [TCP Tahoe], cwnd=6.26, ssthresh=1.00, state=Congestion Avoidance
+[34.3198] Packet 374 SERVICED, delay=0.3857
+[34.3198] [TCP Tahoe], cwnd=6.42, ssthresh=1.00, state=Congestion Avoidance
+[34.4231] Packet 375 SERVICED, delay=0.4679
+[34.4231] [TCP Tahoe], cwnd=6.58, ssthresh=1.00, state=Congestion Avoidance
+[34.4257] Packet 376 SERVICED, delay=0.4355
+[34.4257] [TCP Tahoe], cwnd=6.73, ssthresh=1.00, state=Congestion Avoidance
+[34.4427] Packet 377 SERVICED, delay=0.4524
+[34.4427] [TCP Tahoe], cwnd=6.88, ssthresh=1.00, state=Congestion Avoidance
+[34.5685] Packet 378 SERVICED, delay=0.5783
+[34.5685] [TCP Tahoe], cwnd=7.02, ssthresh=1.00, state=Congestion Avoidance
+[34.5882] Packet 379 SERVICED, delay=0.3000
+[34.5882] [TCP Tahoe], cwnd=7.17, ssthresh=1.00, state=Congestion Avoidance
+[34.6154] Packet 380 SERVICED, delay=0.2566
+[34.6154] [TCP Tahoe], cwnd=7.30, ssthresh=1.00, state=Congestion Avoidance
+[34.8090] Packet 381 SERVICED, delay=0.3393
+[34.8090] [TCP Tahoe], cwnd=7.44, ssthresh=1.00, state=Congestion Avoidance
+[34.9863] Packet 382 SERVICED, delay=0.5166
+[34.9863] [TCP Tahoe], cwnd=7.58, ssthresh=1.00, state=Congestion Avoidance
+[35.0369] Packet 383 SERVICED, delay=0.5672
+[35.0369] [TCP Tahoe], cwnd=7.71, ssthresh=1.00, state=Congestion Avoidance
+[35.2636] Packet 384 SERVICED, delay=0.6819
+[35.2636] [TCP Tahoe], cwnd=7.84, ssthresh=1.00, state=Congestion Avoidance
+[35.2649] Packet 385 SERVICED, delay=0.6832
+[35.2649] [TCP Tahoe], cwnd=7.97, ssthresh=1.00, state=Congestion Avoidance
+[35.2676] Packet 386 SERVICED, delay=0.6644
+[35.2676] [TCP Tahoe], cwnd=8.09, ssthresh=1.00, state=Congestion Avoidance
+[35.3551] Packet 387 SERVICED, delay=0.7386
+[35.3551] [TCP Tahoe], cwnd=8.21, ssthresh=1.00, state=Congestion Avoidance
+[35.3969] Packet 388 SERVICED, delay=0.4817
+[35.3969] [TCP Tahoe], cwnd=8.34, ssthresh=1.00, state=Congestion Avoidance
+[35.4281] Packet 389 SERVICED, delay=0.4016
+[35.4281] [TCP Tahoe], cwnd=8.46, ssthresh=1.00, state=Congestion Avoidance
+[35.4808] Packet 390 SERVICED, delay=0.3890
+[35.4808] [TCP Tahoe], cwnd=8.57, ssthresh=1.00, state=Congestion Avoidance
+[35.6250] Packet 391 SERVICED, delay=0.2206
+[35.6250] [TCP Tahoe], cwnd=8.69, ssthresh=1.00, state=Congestion Avoidance
+[35.6401] Packet 392 SERVICED, delay=0.2357
+[35.6401] [TCP Tahoe], cwnd=8.81, ssthresh=1.00, state=Congestion Avoidance
+[35.8429] Packet 393 SERVICED, delay=0.4385
+[35.8429] [TCP Tahoe], cwnd=8.92, ssthresh=1.00, state=Congestion Avoidance
+[35.9098] Packet 394 SERVICED, delay=0.5053
+[35.9098] [TCP Tahoe], cwnd=9.03, ssthresh=1.00, state=Congestion Avoidance
+[36.1347] Packet 395 SERVICED, delay=0.7303
+[36.1347] [TCP Tahoe], cwnd=9.14, ssthresh=1.00, state=Congestion Avoidance
+[36.2956] Packet 396 SERVICED, delay=0.8912
+[36.2956] [TCP Tahoe], cwnd=9.25, ssthresh=1.00, state=Congestion Avoidance
+[36.2979] Packet 397 SERVICED, delay=0.8565
+[36.2979] [TCP Tahoe], cwnd=9.36, ssthresh=1.00, state=Congestion Avoidance
+[36.3982] Packet 398 SERVICED, delay=0.8840
+[36.3982] [TCP Tahoe], cwnd=9.47, ssthresh=1.00, state=Congestion Avoidance
+[36.6642] Packet 400 DROPPED (timeout)
+[36.6642] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=4.0
+[36.8143] Packet 399 SERVICED, delay=1.1501
+[36.8143] [TCP Tahoe], cwnd=2.00, ssthresh=4.00, state=Slow Start
+[36.8268] Packet 401 SERVICED, delay=0.9639
+[36.8268] [TCP Tahoe], cwnd=4.00, ssthresh=4.00, state=Congestion Avoidance
+[36.8589] Packet 402 SERVICED, delay=0.9386
+[36.8589] [TCP Tahoe], cwnd=4.25, ssthresh=4.00, state=Congestion Avoidance
+[36.9396] Packet 403 SERVICED, delay=1.0194
+[36.9396] [TCP Tahoe], cwnd=4.49, ssthresh=4.00, state=Congestion Avoidance
+[37.1467] Packet 404 SERVICED, delay=0.8587
+[37.1467] [TCP Tahoe], cwnd=4.71, ssthresh=4.00, state=Congestion Avoidance
+[37.2385] Packet 405 SERVICED, delay=0.8898
+[37.2385] [TCP Tahoe], cwnd=4.92, ssthresh=4.00, state=Congestion Avoidance
+[37.3478] Packet 406 SERVICED, delay=0.9992
+[37.3478] [TCP Tahoe], cwnd=5.12, ssthresh=4.00, state=Congestion Avoidance
+[37.4021] Packet 407 SERVICED, delay=0.8767
+[37.4021] [TCP Tahoe], cwnd=5.32, ssthresh=4.00, state=Congestion Avoidance
+[37.6783] Packet 408 SERVICED, delay=0.5166
+[37.6783] [TCP Tahoe], cwnd=5.51, ssthresh=4.00, state=Congestion Avoidance
+[37.7025] Packet 409 SERVICED, delay=0.4529
+[37.7025] [TCP Tahoe], cwnd=5.69, ssthresh=4.00, state=Congestion Avoidance
+[37.7933] Packet 410 SERVICED, delay=0.4118
+[37.7933] [TCP Tahoe], cwnd=5.86, ssthresh=4.00, state=Congestion Avoidance
+[37.8340] Packet 411 SERVICED, delay=0.4525
+[37.8340] [TCP Tahoe], cwnd=6.03, ssthresh=4.00, state=Congestion Avoidance
+[37.8453] Packet 412 SERVICED, delay=0.3656
+[37.8453] [TCP Tahoe], cwnd=6.20, ssthresh=4.00, state=Congestion Avoidance
+[37.9023] Packet 413 SERVICED, delay=0.2072
+[37.9023] [TCP Tahoe], cwnd=6.36, ssthresh=4.00, state=Congestion Avoidance
+[38.0733] Packet 414 SERVICED, delay=0.3593
+[38.0733] [TCP Tahoe], cwnd=6.52, ssthresh=4.00, state=Congestion Avoidance
+[38.1920] Packet 415 SERVICED, delay=0.3709
+[38.1920] [TCP Tahoe], cwnd=6.67, ssthresh=4.00, state=Congestion Avoidance
+[38.2812] Packet 416 SERVICED, delay=0.4389
+[38.2812] [TCP Tahoe], cwnd=6.82, ssthresh=4.00, state=Congestion Avoidance
+[38.3260] Packet 417 SERVICED, delay=0.4837
+[38.3260] [TCP Tahoe], cwnd=6.97, ssthresh=4.00, state=Congestion Avoidance
+[38.5752] Packet 418 SERVICED, delay=0.7266
+[38.5752] [TCP Tahoe], cwnd=7.11, ssthresh=4.00, state=Congestion Avoidance
+[38.6343] Packet 419 SERVICED, delay=0.5758
+[38.6343] [TCP Tahoe], cwnd=7.25, ssthresh=4.00, state=Congestion Avoidance
+[38.8406] Packet 420 SERVICED, delay=0.7164
+[38.8406] [TCP Tahoe], cwnd=7.39, ssthresh=4.00, state=Congestion Avoidance
+[39.0049] Packet 421 SERVICED, delay=0.7929
+[39.0049] [TCP Tahoe], cwnd=7.53, ssthresh=4.00, state=Congestion Avoidance
+[39.1228] Packet 422 SERVICED, delay=0.8390
+[39.1228] [TCP Tahoe], cwnd=7.66, ssthresh=4.00, state=Congestion Avoidance
+[39.1515] Packet 423 SERVICED, delay=0.7416
+[39.1515] [TCP Tahoe], cwnd=7.79, ssthresh=4.00, state=Congestion Avoidance
+[39.4398] Packet 424 SERVICED, delay=0.6755
+[39.4398] [TCP Tahoe], cwnd=7.92, ssthresh=4.00, state=Congestion Avoidance
+[39.4438] Packet 425 SERVICED, delay=0.6795
+[39.4438] [TCP Tahoe], cwnd=8.04, ssthresh=4.00, state=Congestion Avoidance
+[39.5661] Packet 426 SERVICED, delay=0.8018
+[39.5661] [TCP Tahoe], cwnd=8.17, ssthresh=4.00, state=Congestion Avoidance
+[39.5860] Packet 427 SERVICED, delay=0.6488
+[39.5860] [TCP Tahoe], cwnd=8.29, ssthresh=4.00, state=Congestion Avoidance
+[39.5895] Packet 428 SERVICED, delay=0.4315
+[39.5895] [TCP Tahoe], cwnd=8.41, ssthresh=4.00, state=Congestion Avoidance
+[39.7090] Packet 429 SERVICED, delay=0.5511
+[39.7090] [TCP Tahoe], cwnd=8.53, ssthresh=4.00, state=Congestion Avoidance
+[39.7443] Packet 430 SERVICED, delay=0.5864
+[39.7443] [TCP Tahoe], cwnd=8.65, ssthresh=4.00, state=Congestion Avoidance
+[40.0330] Packet 431 SERVICED, delay=0.4668
+[40.0330] [TCP Tahoe], cwnd=8.76, ssthresh=4.00, state=Congestion Avoidance
+[40.0973] Packet 432 SERVICED, delay=0.5311
+[40.0973] [TCP Tahoe], cwnd=8.88, ssthresh=4.00, state=Congestion Avoidance
+[40.2954] Packet 433 SERVICED, delay=0.7291
+[40.2954] [TCP Tahoe], cwnd=8.99, ssthresh=4.00, state=Congestion Avoidance
+[40.4815] Packet 434 SERVICED, delay=0.9153
+[40.4815] [TCP Tahoe], cwnd=9.10, ssthresh=4.00, state=Congestion Avoidance
+[40.5919] Packet 436 DROPPED (timeout)
+[40.5919] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=4.0
+[40.6581] Packet 435 SERVICED, delay=1.0662
+[40.6581] [TCP Tahoe], cwnd=2.00, ssthresh=4.00, state=Slow Start
+[40.6996] Packet 437 SERVICED, delay=0.9365
+[40.6996] [TCP Tahoe], cwnd=4.00, ssthresh=4.00, state=Congestion Avoidance
+[40.8287] Packet 438 SERVICED, delay=1.0655
+[40.8287] [TCP Tahoe], cwnd=4.25, ssthresh=4.00, state=Congestion Avoidance
+[41.0458] Packet 439 SERVICED, delay=1.0058
+[41.0458] [TCP Tahoe], cwnd=4.49, ssthresh=4.00, state=Congestion Avoidance
+[41.0723] Packet 440 SERVICED, delay=0.9685
+[41.0723] [TCP Tahoe], cwnd=4.71, ssthresh=4.00, state=Congestion Avoidance
+[41.1476] Packet 441 SERVICED, delay=0.7662
+[41.1476] [TCP Tahoe], cwnd=4.92, ssthresh=4.00, state=Congestion Avoidance
+[41.3079] Packet 442 SERVICED, delay=0.7400
+[41.3079] [TCP Tahoe], cwnd=5.12, ssthresh=4.00, state=Congestion Avoidance
+[41.9261] Packet 443 SERVICED, delay=1.3582
+[41.9261] [TCP Tahoe], cwnd=5.32, ssthresh=4.00, state=Congestion Avoidance
+[42.0724] Packet 444 SERVICED, delay=0.8208
+[42.0724] [TCP Tahoe], cwnd=5.51, ssthresh=4.00, state=Congestion Avoidance
+[42.1265] Packet 445 SERVICED, delay=0.8749
+[42.1265] [TCP Tahoe], cwnd=5.69, ssthresh=4.00, state=Congestion Avoidance
+[42.1537] Packet 446 SERVICED, delay=0.7766
+[42.1537] [TCP Tahoe], cwnd=5.86, ssthresh=4.00, state=Congestion Avoidance
+[42.1654] Packet 447 SERVICED, delay=0.7883
+[42.1654] [TCP Tahoe], cwnd=6.03, ssthresh=4.00, state=Congestion Avoidance
+[42.4649] Packet 448 SERVICED, delay=0.5356
+[42.4649] [TCP Tahoe], cwnd=6.20, ssthresh=4.00, state=Congestion Avoidance
+[42.6762] Packet 449 SERVICED, delay=0.6017
+[42.6762] [TCP Tahoe], cwnd=6.36, ssthresh=4.00, state=Congestion Avoidance
+[42.7392] Packet 450 SERVICED, delay=0.4717
+[42.7392] [TCP Tahoe], cwnd=6.52, ssthresh=4.00, state=Congestion Avoidance
+[42.8343] Packet 451 SERVICED, delay=0.5667
+[42.8343] [TCP Tahoe], cwnd=6.67, ssthresh=4.00, state=Congestion Avoidance
+[42.8525] Packet 452 SERVICED, delay=0.5850
+[42.8525] [TCP Tahoe], cwnd=6.82, ssthresh=4.00, state=Congestion Avoidance
+[43.3255] Packet 453 SERVICED, delay=1.0579
+[43.3255] [TCP Tahoe], cwnd=6.97, ssthresh=4.00, state=Congestion Avoidance
+[43.4304] Packet 454 SERVICED, delay=0.9546
+[43.4304] [TCP Tahoe], cwnd=7.11, ssthresh=4.00, state=Congestion Avoidance
+[43.4735] Packet 455 SERVICED, delay=0.7257
+[43.4735] [TCP Tahoe], cwnd=7.25, ssthresh=4.00, state=Congestion Avoidance
+[43.4794] Packet 456 SERVICED, delay=0.7317
+[43.4794] [TCP Tahoe], cwnd=7.39, ssthresh=4.00, state=Congestion Avoidance
+[43.6947] Packet 457 SERVICED, delay=0.7151
+[43.6947] [TCP Tahoe], cwnd=7.53, ssthresh=4.00, state=Congestion Avoidance
+[43.9574] Packet 458 SERVICED, delay=0.9779
+[43.9574] [TCP Tahoe], cwnd=7.66, ssthresh=4.00, state=Congestion Avoidance
+[43.9765] Packet 459 SERVICED, delay=0.6450
+[43.9765] [TCP Tahoe], cwnd=7.79, ssthresh=4.00, state=Congestion Avoidance
+[44.0956] Packet 460 SERVICED, delay=0.6358
+[44.0956] [TCP Tahoe], cwnd=7.92, ssthresh=4.00, state=Congestion Avoidance
+[44.1123] Packet 461 SERVICED, delay=0.6525
+[44.1123] [TCP Tahoe], cwnd=8.04, ssthresh=4.00, state=Congestion Avoidance
+[44.1377] Packet 462 SERVICED, delay=0.5651
+[44.1377] [TCP Tahoe], cwnd=8.17, ssthresh=4.00, state=Congestion Avoidance
+[44.1631] Packet 463 SERVICED, delay=0.5904
+[44.1631] [TCP Tahoe], cwnd=8.29, ssthresh=4.00, state=Congestion Avoidance
+[44.1727] Packet 464 SERVICED, delay=0.4309
+[44.1727] [TCP Tahoe], cwnd=8.41, ssthresh=4.00, state=Congestion Avoidance
+[44.4842] Packet 465 SERVICED, delay=0.4263
+[44.4842] [TCP Tahoe], cwnd=8.53, ssthresh=4.00, state=Congestion Avoidance
+[44.6824] Packet 466 SERVICED, delay=0.6245
+[44.6824] [TCP Tahoe], cwnd=8.65, ssthresh=4.00, state=Congestion Avoidance
+[44.7889] Packet 467 SERVICED, delay=0.6204
+[44.7889] [TCP Tahoe], cwnd=8.76, ssthresh=4.00, state=Congestion Avoidance
+[44.8689] Packet 468 SERVICED, delay=0.7005
+[44.8689] [TCP Tahoe], cwnd=8.88, ssthresh=4.00, state=Congestion Avoidance
+[44.8780] Packet 469 SERVICED, delay=0.7096
+[44.8780] [TCP Tahoe], cwnd=8.99, ssthresh=4.00, state=Congestion Avoidance
+[44.9305] Packet 470 SERVICED, delay=0.7621
+[44.9305] [TCP Tahoe], cwnd=9.10, ssthresh=4.00, state=Congestion Avoidance
+[44.9771] Packet 471 SERVICED, delay=0.8087
+[44.9771] [TCP Tahoe], cwnd=9.21, ssthresh=4.00, state=Congestion Avoidance
+[45.1057] Packet 472 SERVICED, delay=0.9172
+[45.1057] [TCP Tahoe], cwnd=9.32, ssthresh=4.00, state=Congestion Avoidance
+[45.1712] Packet 473 SERVICED, delay=0.6603
+[45.1712] [TCP Tahoe], cwnd=9.43, ssthresh=4.00, state=Congestion Avoidance
+[45.2139] Packet 474 SERVICED, delay=0.5271
+[45.2139] [TCP Tahoe], cwnd=9.53, ssthresh=4.00, state=Congestion Avoidance
+[45.2450] Packet 475 SERVICED, delay=0.4270
+[45.2450] [TCP Tahoe], cwnd=9.64, ssthresh=4.00, state=Congestion Avoidance
+[45.4046] Packet 476 SERVICED, delay=0.4461
+[45.4046] [TCP Tahoe], cwnd=9.74, ssthresh=4.00, state=Congestion Avoidance
+[45.5121] Packet 477 SERVICED, delay=0.5535
+[45.5121] [TCP Tahoe], cwnd=9.84, ssthresh=4.00, state=Congestion Avoidance
+[45.7022] Packet 478 SERVICED, delay=0.7436
+[45.7022] [TCP Tahoe], cwnd=9.95, ssthresh=4.00, state=Congestion Avoidance
+[45.9041] Packet 479 SERVICED, delay=0.9456
+[45.9041] [TCP Tahoe], cwnd=10.05, ssthresh=4.00, state=Congestion Avoidance
+[46.0855] Packet 480 SERVICED, delay=1.0449
+[46.0855] [TCP Tahoe], cwnd=10.15, ssthresh=4.00, state=Congestion Avoidance
+[46.1847] Packet 482 DROPPED (timeout)
+[46.1847] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=5.0
+[46.1995] Packet 481 SERVICED, delay=1.0791
+[46.1995] [TCP Tahoe], cwnd=2.00, ssthresh=5.00, state=Slow Start
+[46.3380] Packet 484 DROPPED (timeout)
+[46.3380] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=1
+[46.4050] Packet 483 SERVICED, delay=1.0670
+[46.4050] [TCP Tahoe], cwnd=2.00, ssthresh=1.00, state=Congestion Avoidance
+[46.4188] Packet 485 SERVICED, delay=0.9643
+[46.4188] [TCP Tahoe], cwnd=2.50, ssthresh=1.00, state=Congestion Avoidance
+[46.4363] Packet 486 SERVICED, delay=0.8639
+[46.4363] [TCP Tahoe], cwnd=2.90, ssthresh=1.00, state=Congestion Avoidance
+[46.5071] Packet 487 SERVICED, delay=0.7021
+[46.5071] [TCP Tahoe], cwnd=3.24, ssthresh=1.00, state=Congestion Avoidance
+[46.6070] Packet 488 SERVICED, delay=0.4502
+[46.6070] [TCP Tahoe], cwnd=3.55, ssthresh=1.00, state=Congestion Avoidance
+[46.6371] Packet 489 SERVICED, delay=0.4803
+[46.6371] [TCP Tahoe], cwnd=3.83, ssthresh=1.00, state=Congestion Avoidance
+[46.7376] Packet 490 SERVICED, delay=0.5808
+[46.7376] [TCP Tahoe], cwnd=4.10, ssthresh=1.00, state=Congestion Avoidance
+[46.7795] Packet 491 SERVICED, delay=0.0953
+[46.7795] [TCP Tahoe], cwnd=4.34, ssthresh=1.00, state=Congestion Avoidance
+[46.8796] Packet 492 SERVICED, delay=0.1954
+[46.8796] [TCP Tahoe], cwnd=4.57, ssthresh=1.00, state=Congestion Avoidance
+[46.8904] Packet 493 SERVICED, delay=0.0270
+[46.8904] [TCP Tahoe], cwnd=4.79, ssthresh=1.00, state=Congestion Avoidance
+[47.1672] Packet 494 SERVICED, delay=0.3038
+[47.1672] [TCP Tahoe], cwnd=5.00, ssthresh=1.00, state=Congestion Avoidance
+[47.2837] Packet 495 SERVICED, delay=0.4203
+[47.2837] [TCP Tahoe], cwnd=5.20, ssthresh=1.00, state=Congestion Avoidance
+[47.4068] Packet 496 SERVICED, delay=0.5149
+[47.4068] [TCP Tahoe], cwnd=5.39, ssthresh=1.00, state=Congestion Avoidance
+[47.4138] Packet 497 SERVICED, delay=0.5219
+[47.4138] [TCP Tahoe], cwnd=5.58, ssthresh=1.00, state=Congestion Avoidance
+[47.7768] Packet 498 SERVICED, delay=0.5938
+[47.7768] [TCP Tahoe], cwnd=5.75, ssthresh=1.00, state=Congestion Avoidance
+[47.9153] Packet 499 SERVICED, delay=0.5010
+[47.9153] [TCP Tahoe], cwnd=5.93, ssthresh=1.00, state=Congestion Avoidance

@@ -1,0 +1,1020 @@
+== Simulation Parameters ==
+  - Arrival Rate (λ): 5
+  - Service Rate (μ): 10
+  - Deadline Rate (θ): 1
+  - Queue Size: 5
+  - Total Packets: 500
+  - Congestion Control: <__main__.TCPCubic object at 0x10ffa1960>
+===========================
+
+== Simulation Results ==
+Simulation Time: 61.84 seconds
+Total Packets: 500
+Serviced: 473
+Dropped: 27
+Loss Rate: 5.40%
+Average Delay: 0.3084 seconds
+Throughput: 7.6487 packets/sec
+=========================
+
+== Simulation Log ==
+[0.0469] Packet 0 SERVICED, delay=0.0469
+[0.0469] [TCP CUBIC ACK], cwnd=1.00, W_max=1.00, K=1.26
+[0.7337] Packet 1 SERVICED, delay=0.1317
+[0.7337] [TCP CUBIC ACK], cwnd=1.00, W_max=1.00, K=1.26
+[0.8016] Packet 2 SERVICED, delay=0.0170
+[0.8016] [TCP CUBIC ACK], cwnd=1.00, W_max=1.00, K=1.26
+[0.8245] Packet 3 SERVICED, delay=0.0060
+[0.8245] [TCP CUBIC ACK], cwnd=1.00, W_max=1.00, K=1.26
+[1.3127] Packet 4 SERVICED, delay=0.0919
+[1.3127] [TCP CUBIC ACK], cwnd=1.00, W_max=1.00, K=1.26
+[1.4691] Packet 5 SERVICED, delay=0.0021
+[1.4691] [TCP CUBIC ACK], cwnd=1.00, W_max=1.00, K=1.26
+[2.3464] Packet 6 SERVICED, delay=0.1786
+[2.3464] [TCP CUBIC ACK], cwnd=1.51, W_max=1.00, K=1.26
+[2.4431] Packet 7 SERVICED, delay=0.0744
+[2.4431] [TCP CUBIC ACK], cwnd=1.66, W_max=1.00, K=1.26
+[2.5162] Packet 8 SERVICED, delay=0.0344
+[2.5162] [TCP CUBIC ACK], cwnd=1.79, W_max=1.00, K=1.26
+[2.6861] Packet 9 SERVICED, delay=0.0150
+[2.6861] [TCP CUBIC ACK], cwnd=2.16, W_max=1.00, K=1.26
+[2.7858] Packet 10 SERVICED, delay=0.0456
+[2.7858] [TCP CUBIC ACK], cwnd=2.42, W_max=1.00, K=1.26
+[2.8467] Packet 11 SERVICED, delay=0.1065
+[2.8467] [TCP CUBIC ACK], cwnd=2.60, W_max=1.00, K=1.26
+[3.0700] Packet 12 SERVICED, delay=0.0223
+[3.0700] [TCP CUBIC ACK], cwnd=3.37, W_max=1.00, K=1.26
+[3.1422] Packet 13 SERVICED, delay=0.0945
+[3.1422] [TCP CUBIC ACK], cwnd=3.67, W_max=1.00, K=1.26
+[3.2320] Packet 14 SERVICED, delay=0.0048
+[3.2320] [TCP CUBIC ACK], cwnd=4.07, W_max=1.00, K=1.26
+[3.3255] Packet 15 SERVICED, delay=0.0983
+[3.3255] [TCP CUBIC ACK], cwnd=4.53, W_max=1.00, K=1.26
+[3.3442] Packet 16 SERVICED, delay=0.1170
+[3.3442] [TCP CUBIC ACK], cwnd=4.62, W_max=1.00, K=1.26
+[3.6416] Packet 17 SERVICED, delay=0.4009
+[3.6416] [TCP CUBIC ACK], cwnd=6.40, W_max=1.00, K=1.26
+[3.8017] Packet 23 DROPPED (queue full)
+[3.8017] [TCP CUBIC LOSS], cwnd reduced to 5.12, W_max set to 6.40
+[3.9787] Packet 18 SERVICED, delay=0.7380
+[3.9787] [TCP CUBIC ACK], cwnd=2.36, W_max=6.40, K=2.34
+[4.0150] Packet 19 SERVICED, delay=0.4438
+[4.0150] [TCP CUBIC ACK], cwnd=2.56, W_max=6.40, K=2.34
+[4.0253] Packet 20 SERVICED, delay=0.4541
+[4.0253] [TCP CUBIC ACK], cwnd=2.61, W_max=6.40, K=2.34
+[4.0833] Packet 21 SERVICED, delay=0.2816
+[4.0833] [TCP CUBIC ACK], cwnd=2.92, W_max=6.40, K=2.34
+[4.0963] Packet 22 SERVICED, delay=0.2946
+[4.0963] [TCP CUBIC ACK], cwnd=2.98, W_max=6.40, K=2.34
+[4.3188] Packet 24 SERVICED, delay=0.0299
+[4.3188] [TCP CUBIC ACK], cwnd=3.98, W_max=6.40, K=2.34
+[4.4274] Packet 25 SERVICED, delay=0.1386
+[4.4274] [TCP CUBIC ACK], cwnd=4.39, W_max=6.40, K=2.34
+[4.5008] Packet 26 SERVICED, delay=0.1373
+[4.5008] [TCP CUBIC ACK], cwnd=4.64, W_max=6.40, K=2.34
+[4.5799] Packet 27 SERVICED, delay=0.2164
+[4.5799] [TCP CUBIC ACK], cwnd=4.88, W_max=6.40, K=2.34
+[5.2522] Packet 28 SERVICED, delay=0.1492
+[5.2522] [TCP CUBIC ACK], cwnd=6.12, W_max=6.40, K=2.34
+[5.5327] Packet 29 SERVICED, delay=0.4297
+[5.5327] [TCP CUBIC ACK], cwnd=6.31, W_max=6.40, K=2.34
+[5.6128] Packet 35 DROPPED (queue full)
+[5.6128] [TCP CUBIC LOSS], cwnd reduced to 5.05, W_max set to 6.31
+[5.7579] Packet 30 SERVICED, delay=0.6549
+[5.7579] [TCP CUBIC ACK], cwnd=2.15, W_max=6.31, K=2.33
+[5.8490] Packet 31 SERVICED, delay=0.7461
+[5.8490] [TCP CUBIC ACK], cwnd=2.65, W_max=6.31, K=2.33
+[5.8583] Packet 32 SERVICED, delay=0.2454
+[5.8583] [TCP CUBIC ACK], cwnd=2.70, W_max=6.31, K=2.33
+[5.8801] Packet 33 SERVICED, delay=0.2672
+[5.8801] [TCP CUBIC ACK], cwnd=2.81, W_max=6.31, K=2.33
+[5.8847] Packet 34 SERVICED, delay=0.2719
+[5.8847] [TCP CUBIC ACK], cwnd=2.83, W_max=6.31, K=2.33
+[6.1716] Packet 36 SERVICED, delay=0.0441
+[6.1716] [TCP CUBIC ACK], cwnd=4.10, W_max=6.31, K=2.33
+[6.2046] Packet 37 SERVICED, delay=0.0771
+[6.2046] [TCP CUBIC ACK], cwnd=4.22, W_max=6.31, K=2.33
+[6.2992] Packet 38 SERVICED, delay=0.0152
+[6.2992] [TCP CUBIC ACK], cwnd=4.54, W_max=6.31, K=2.33
+[6.4612] Packet 39 SERVICED, delay=0.1772
+[6.4612] [TCP CUBIC ACK], cwnd=5.02, W_max=6.31, K=2.33
+[6.4690] Packet 40 SERVICED, delay=0.1850
+[6.4690] [TCP CUBIC ACK], cwnd=5.04, W_max=6.31, K=2.33
+[6.9024] Packet 41 SERVICED, delay=0.6184
+[6.9024] [TCP CUBIC ACK], cwnd=5.86, W_max=6.31, K=2.33
+[6.9245] Packet 42 SERVICED, delay=0.3447
+[6.9245] [TCP CUBIC ACK], cwnd=5.89, W_max=6.31, K=2.33
+[6.9251] Packet 43 SERVICED, delay=0.3452
+[6.9251] [TCP CUBIC ACK], cwnd=5.89, W_max=6.31, K=2.33
+[7.0941] Packet 44 SERVICED, delay=0.5142
+[7.0941] [TCP CUBIC ACK], cwnd=6.07, W_max=6.31, K=2.33
+[7.1361] Packet 50 DROPPED (queue full)
+[7.1361] [TCP CUBIC LOSS], cwnd reduced to 4.86, W_max set to 6.07
+[7.2168] Packet 45 SERVICED, delay=0.6369
+[7.2168] [TCP CUBIC ACK], cwnd=1.71, W_max=6.07, K=2.30
+[7.2245] Packet 46 SERVICED, delay=0.0884
+[7.2245] [TCP CUBIC ACK], cwnd=1.75, W_max=6.07, K=2.30
+[7.2689] Packet 47 SERVICED, delay=0.1328
+[7.2689] [TCP CUBIC ACK], cwnd=2.01, W_max=6.07, K=2.30
+[7.2812] Packet 48 SERVICED, delay=0.1451
+[7.2812] [TCP CUBIC ACK], cwnd=2.08, W_max=6.07, K=2.30
+[7.4800] Packet 49 SERVICED, delay=0.3440
+[7.4800] [TCP CUBIC ACK], cwnd=3.08, W_max=6.07, K=2.30
+[7.5194] Packet 51 SERVICED, delay=0.2153
+[7.5194] [TCP CUBIC ACK], cwnd=3.26, W_max=6.07, K=2.30
+[7.6671] Packet 52 SERVICED, delay=0.1015
+[7.6671] [TCP CUBIC ACK], cwnd=3.86, W_max=6.07, K=2.30
+[7.8853] Packet 53 SERVICED, delay=0.3197
+[7.8853] [TCP CUBIC ACK], cwnd=4.58, W_max=6.07, K=2.30
+[7.9492] Packet 54 SERVICED, delay=0.3836
+[7.9492] [TCP CUBIC ACK], cwnd=4.76, W_max=6.07, K=2.30
+[8.0923] Packet 55 SERVICED, delay=0.2514
+[8.0923] [TCP CUBIC ACK], cwnd=5.10, W_max=6.07, K=2.30
+[8.2397] Packet 56 SERVICED, delay=0.2340
+[8.2397] [TCP CUBIC ACK], cwnd=5.39, W_max=6.07, K=2.30
+[8.3078] Packet 57 SERVICED, delay=0.3021
+[8.3078] [TCP CUBIC ACK], cwnd=5.50, W_max=6.07, K=2.30
+[8.3817] Packet 58 SERVICED, delay=0.3760
+[8.3817] [TCP CUBIC ACK], cwnd=5.60, W_max=6.07, K=2.30
+[8.3843] Packet 59 SERVICED, delay=0.2670
+[8.3843] [TCP CUBIC ACK], cwnd=5.61, W_max=6.07, K=2.30
+[8.3957] Packet 60 SERVICED, delay=0.2784
+[8.3957] [TCP CUBIC ACK], cwnd=5.62, W_max=6.07, K=2.30
+[8.4335] Packet 61 SERVICED, delay=0.1075
+[8.4335] [TCP CUBIC ACK], cwnd=5.67, W_max=6.07, K=2.30
+[8.5045] Packet 62 SERVICED, delay=0.1785
+[8.5045] [TCP CUBIC ACK], cwnd=5.75, W_max=6.07, K=2.30
+[8.8309] Packet 63 SERVICED, delay=0.0287
+[8.8309] [TCP CUBIC ACK], cwnd=5.98, W_max=6.07, K=2.30
+[8.8837] Packet 64 SERVICED, delay=0.0815
+[8.8837] [TCP CUBIC ACK], cwnd=6.00, W_max=6.07, K=2.30
+[9.0246] Packet 65 SERVICED, delay=0.2224
+[9.0246] [TCP CUBIC ACK], cwnd=6.04, W_max=6.07, K=2.30
+[9.0506] Packet 66 SERVICED, delay=0.2484
+[9.0506] [TCP CUBIC ACK], cwnd=6.05, W_max=6.07, K=2.30
+[9.0586] Packet 67 SERVICED, delay=0.2564
+[9.0586] [TCP CUBIC ACK], cwnd=6.05, W_max=6.07, K=2.30
+[9.0762] Packet 68 SERVICED, delay=0.2055
+[9.0762] [TCP CUBIC ACK], cwnd=6.05, W_max=6.07, K=2.30
+[9.4017] Packet 74 DROPPED (queue full)
+[9.4017] [TCP CUBIC LOSS], cwnd reduced to 4.84, W_max set to 6.05
+[9.5668] Packet 69 SERVICED, delay=0.1651
+[9.5668] [TCP CUBIC ACK], cwnd=2.18, W_max=6.05, K=2.30
+[9.6671] Packet 70 SERVICED, delay=0.2654
+[9.6671] [TCP CUBIC ACK], cwnd=2.70, W_max=6.05, K=2.30
+[9.8723] Packet 71 SERVICED, delay=0.4706
+[9.8723] [TCP CUBIC ACK], cwnd=3.62, W_max=6.05, K=2.30
+[10.0351] Packet 72 SERVICED, delay=0.6334
+[10.0351] [TCP CUBIC ACK], cwnd=4.21, W_max=6.05, K=2.30
+[10.0557] Packet 73 SERVICED, delay=0.6540
+[10.0557] [TCP CUBIC ACK], cwnd=4.28, W_max=6.05, K=2.30
+[10.2821] Packet 75 SERVICED, delay=0.3960
+[10.2821] [TCP CUBIC ACK], cwnd=4.92, W_max=6.05, K=2.30
+[10.3378] Packet 76 SERVICED, delay=0.3001
+[10.3378] [TCP CUBIC ACK], cwnd=5.05, W_max=6.05, K=2.30
+[10.5082] Packet 77 SERVICED, delay=0.4705
+[10.5082] [TCP CUBIC ACK], cwnd=5.38, W_max=6.05, K=2.30
+[10.5089] Packet 78 SERVICED, delay=0.0769
+[10.5089] [TCP CUBIC ACK], cwnd=5.38, W_max=6.05, K=2.30
+[10.5804] Packet 79 SERVICED, delay=0.1484
+[10.5804] [TCP CUBIC ACK], cwnd=5.49, W_max=6.05, K=2.30
+[10.6344] Packet 80 SERVICED, delay=0.2024
+[10.6344] [TCP CUBIC ACK], cwnd=5.57, W_max=6.05, K=2.30
+[10.6595] Packet 81 SERVICED, delay=0.2275
+[10.6595] [TCP CUBIC ACK], cwnd=5.60, W_max=6.05, K=2.30
+[10.9459] Packet 82 SERVICED, delay=0.4059
+[10.9459] [TCP CUBIC ACK], cwnd=5.88, W_max=6.05, K=2.30
+[10.9849] Packet 83 SERVICED, delay=0.4450
+[10.9849] [TCP CUBIC ACK], cwnd=5.91, W_max=6.05, K=2.30
+[11.1063] Packet 84 SERVICED, delay=0.4201
+[11.1063] [TCP CUBIC ACK], cwnd=5.97, W_max=6.05, K=2.30
+[11.1515] Packet 85 SERVICED, delay=0.4653
+[11.1515] [TCP CUBIC ACK], cwnd=5.99, W_max=6.05, K=2.30
+[11.5083] Packet 86 SERVICED, delay=0.8220
+[11.5083] [TCP CUBIC ACK], cwnd=6.05, W_max=6.05, K=2.30
+[11.5373] Packet 87 SERVICED, delay=0.1947
+[11.5373] [TCP CUBIC ACK], cwnd=6.05, W_max=6.05, K=2.30
+[11.5383] Packet 93 DROPPED (queue full)
+[11.5383] [TCP CUBIC LOSS], cwnd reduced to 4.84, W_max set to 6.05
+[11.6061] Packet 88 SERVICED, delay=0.2634
+[11.6061] [TCP CUBIC ACK], cwnd=1.63, W_max=6.05, K=2.30
+[11.6418] Packet 89 SERVICED, delay=0.2992
+[11.6418] [TCP CUBIC ACK], cwnd=1.84, W_max=6.05, K=2.30
+[11.6754] Packet 90 SERVICED, delay=0.3327
+[11.6754] [TCP CUBIC ACK], cwnd=2.03, W_max=6.05, K=2.30
+[11.7452] Packet 91 SERVICED, delay=0.2070
+[11.7452] [TCP CUBIC ACK], cwnd=2.40, W_max=6.05, K=2.30
+[11.7505] Packet 92 SERVICED, delay=0.2123
+[11.7505] [TCP CUBIC ACK], cwnd=2.43, W_max=6.05, K=2.30
+[12.0434] Packet 94 SERVICED, delay=0.0274
+[12.0434] [TCP CUBIC ACK], cwnd=3.75, W_max=6.05, K=2.30
+[12.0591] Packet 95 SERVICED, delay=0.0430
+[12.0591] [TCP CUBIC ACK], cwnd=3.81, W_max=6.05, K=2.30
+[12.5749] Packet 96 SERVICED, delay=0.4244
+[12.5749] [TCP CUBIC ACK], cwnd=5.25, W_max=6.05, K=2.30
+[12.6026] Packet 97 SERVICED, delay=0.4521
+[12.6026] [TCP CUBIC ACK], cwnd=5.30, W_max=6.05, K=2.30
+[12.7141] Packet 98 SERVICED, delay=0.5636
+[12.7141] [TCP CUBIC ACK], cwnd=5.49, W_max=6.05, K=2.30
+[12.7979] Packet 99 SERVICED, delay=0.0459
+[12.7979] [TCP CUBIC ACK], cwnd=5.61, W_max=6.05, K=2.30
+[12.8980] Packet 100 SERVICED, delay=0.1459
+[12.8980] [TCP CUBIC ACK], cwnd=5.72, W_max=6.05, K=2.30
+[12.9984] Packet 101 SERVICED, delay=0.2463
+[12.9984] [TCP CUBIC ACK], cwnd=5.82, W_max=6.05, K=2.30
+[13.0751] Packet 102 SERVICED, delay=0.3230
+[13.0751] [TCP CUBIC ACK], cwnd=5.88, W_max=6.05, K=2.30
+[13.0846] Packet 103 SERVICED, delay=0.3325
+[13.0846] [TCP CUBIC ACK], cwnd=5.88, W_max=6.05, K=2.30
+[13.1515] Packet 104 SERVICED, delay=0.0387
+[13.1515] [TCP CUBIC ACK], cwnd=5.92, W_max=6.05, K=2.30
+[13.1721] Packet 105 SERVICED, delay=0.0593
+[13.1721] [TCP CUBIC ACK], cwnd=5.93, W_max=6.05, K=2.30
+[13.1763] Packet 106 SERVICED, delay=0.0635
+[13.1763] [TCP CUBIC ACK], cwnd=5.94, W_max=6.05, K=2.30
+[13.2657] Packet 107 SERVICED, delay=0.1529
+[13.2657] [TCP CUBIC ACK], cwnd=5.98, W_max=6.05, K=2.30
+[13.3789] Packet 108 SERVICED, delay=0.2661
+[13.3789] [TCP CUBIC ACK], cwnd=6.01, W_max=6.05, K=2.30
+[13.4045] Packet 109 SERVICED, delay=0.1449
+[13.4045] [TCP CUBIC ACK], cwnd=6.02, W_max=6.05, K=2.30
+[13.4945] Packet 115 DROPPED (queue full)
+[13.4945] [TCP CUBIC LOSS], cwnd reduced to 4.81, W_max set to 6.02
+[13.5081] Packet 110 SERVICED, delay=0.2485
+[13.5081] [TCP CUBIC ACK], cwnd=1.29, W_max=6.02, K=2.29
+[13.5273] Packet 111 SERVICED, delay=0.2676
+[13.5273] [TCP CUBIC ACK], cwnd=1.41, W_max=6.02, K=2.29
+[13.5762] Packet 112 SERVICED, delay=0.0817
+[13.5762] [TCP CUBIC ACK], cwnd=1.70, W_max=6.02, K=2.29
+[13.8522] Packet 113 SERVICED, delay=0.3577
+[13.8522] [TCP CUBIC ACK], cwnd=3.12, W_max=6.02, K=2.29
+[13.8670] Packet 114 SERVICED, delay=0.3725
+[13.8670] [TCP CUBIC ACK], cwnd=3.19, W_max=6.02, K=2.29
+[14.2457] Packet 116 SERVICED, delay=0.2098
+[14.2457] [TCP CUBIC ACK], cwnd=4.56, W_max=6.02, K=2.29
+[14.2755] Packet 117 SERVICED, delay=0.2397
+[14.2755] [TCP CUBIC ACK], cwnd=4.64, W_max=6.02, K=2.29
+[14.3834] Packet 118 SERVICED, delay=0.3475
+[14.3834] [TCP CUBIC ACK], cwnd=4.91, W_max=6.02, K=2.29
+[14.4644] Packet 119 SERVICED, delay=0.0887
+[14.4644] [TCP CUBIC ACK], cwnd=5.09, W_max=6.02, K=2.29
+[14.5398] Packet 120 SERVICED, delay=0.1641
+[14.5398] [TCP CUBIC ACK], cwnd=5.24, W_max=6.02, K=2.29
+[14.5675] Packet 121 SERVICED, delay=0.1918
+[14.5675] [TCP CUBIC ACK], cwnd=5.29, W_max=6.02, K=2.29
+[14.7950] Packet 122 SERVICED, delay=0.3997
+[14.7950] [TCP CUBIC ACK], cwnd=5.63, W_max=6.02, K=2.29
+[14.9569] Packet 123 SERVICED, delay=0.1003
+[14.9569] [TCP CUBIC ACK], cwnd=5.79, W_max=6.02, K=2.29
+[14.9983] Packet 124 SERVICED, delay=0.1417
+[14.9983] [TCP CUBIC ACK], cwnd=5.82, W_max=6.02, K=2.29
+[15.0413] Packet 125 SERVICED, delay=0.1846
+[15.0413] [TCP CUBIC ACK], cwnd=5.85, W_max=6.02, K=2.29
+[15.1707] Packet 126 SERVICED, delay=0.3141
+[15.1707] [TCP CUBIC ACK], cwnd=5.93, W_max=6.02, K=2.29
+[15.3981] Packet 127 SERVICED, delay=0.5415
+[15.3981] [TCP CUBIC ACK], cwnd=6.00, W_max=6.02, K=2.29
+[15.5495] Packet 128 SERVICED, delay=0.2566
+[15.5495] [TCP CUBIC ACK], cwnd=6.01, W_max=6.02, K=2.29
+[15.6522] Packet 129 SERVICED, delay=0.3593
+[15.6522] [TCP CUBIC ACK], cwnd=6.02, W_max=6.02, K=2.29
+[15.6610] Packet 130 SERVICED, delay=0.3681
+[15.6610] [TCP CUBIC ACK], cwnd=6.02, W_max=6.02, K=2.29
+[15.6786] Packet 131 SERVICED, delay=0.3858
+[15.6786] [TCP CUBIC ACK], cwnd=6.02, W_max=6.02, K=2.29
+[15.7505] Packet 137 DROPPED (queue full)
+[15.7505] [TCP CUBIC LOSS], cwnd reduced to 4.81, W_max set to 6.02
+[15.8438] Packet 132 SERVICED, delay=0.0932
+[15.8438] [TCP CUBIC ACK], cwnd=1.77, W_max=6.02, K=2.29
+[15.8447] Packet 133 SERVICED, delay=0.0942
+[15.8447] [TCP CUBIC ACK], cwnd=1.77, W_max=6.02, K=2.29
+[15.8554] Packet 134 SERVICED, delay=0.1049
+[15.8554] [TCP CUBIC ACK], cwnd=1.83, W_max=6.02, K=2.29
+[15.9643] Packet 135 SERVICED, delay=0.2138
+[15.9643] [TCP CUBIC ACK], cwnd=2.43, W_max=6.02, K=2.29
+[15.9648] Packet 136 SERVICED, delay=0.2143
+[15.9648] [TCP CUBIC ACK], cwnd=2.43, W_max=6.02, K=2.29
+[16.2507] Packet 138 SERVICED, delay=0.1055
+[16.2507] [TCP CUBIC ACK], cwnd=3.72, W_max=6.02, K=2.29
+[16.2761] Packet 139 SERVICED, delay=0.1309
+[16.2761] [TCP CUBIC ACK], cwnd=3.81, W_max=6.02, K=2.29
+[16.4213] Packet 140 SERVICED, delay=0.0271
+[16.4213] [TCP CUBIC ACK], cwnd=4.31, W_max=6.02, K=2.29
+[16.4606] Packet 141 SERVICED, delay=0.0664
+[16.4606] [TCP CUBIC ACK], cwnd=4.44, W_max=6.02, K=2.29
+[16.5979] Packet 142 SERVICED, delay=0.2037
+[16.5979] [TCP CUBIC ACK], cwnd=4.81, W_max=6.02, K=2.29
+[16.7931] Packet 143 SERVICED, delay=0.1892
+[16.7931] [TCP CUBIC ACK], cwnd=5.24, W_max=6.02, K=2.29
+[16.9003] Packet 144 SERVICED, delay=0.2964
+[16.9003] [TCP CUBIC ACK], cwnd=5.42, W_max=6.02, K=2.29
+[16.9843] Packet 145 SERVICED, delay=0.3804
+[16.9843] [TCP CUBIC ACK], cwnd=5.54, W_max=6.02, K=2.29
+[16.9942] Packet 146 SERVICED, delay=0.3902
+[16.9942] [TCP CUBIC ACK], cwnd=5.56, W_max=6.02, K=2.29
+[17.3554] Packet 147 SERVICED, delay=0.5422
+[17.3554] [TCP CUBIC ACK], cwnd=5.89, W_max=6.02, K=2.29
+[17.4053] Packet 148 SERVICED, delay=0.5921
+[17.4053] [TCP CUBIC ACK], cwnd=5.91, W_max=6.02, K=2.29
+[17.5051] Packet 149 SERVICED, delay=0.2467
+[17.5051] [TCP CUBIC ACK], cwnd=5.96, W_max=6.02, K=2.29
+[17.6635] Packet 150 SERVICED, delay=0.4050
+[17.6635] [TCP CUBIC ACK], cwnd=6.00, W_max=6.02, K=2.29
+[17.7333] Packet 151 SERVICED, delay=0.4749
+[17.7333] [TCP CUBIC ACK], cwnd=6.01, W_max=6.02, K=2.29
+[17.8011] Packet 152 SERVICED, delay=0.3707
+[17.8011] [TCP CUBIC ACK], cwnd=6.01, W_max=6.02, K=2.29
+[17.8228] Packet 153 SERVICED, delay=0.3924
+[17.8228] [TCP CUBIC ACK], cwnd=6.01, W_max=6.02, K=2.29
+[17.8558] Packet 154 SERVICED, delay=0.1690
+[17.8558] [TCP CUBIC ACK], cwnd=6.02, W_max=6.02, K=2.29
+[17.8583] Packet 155 SERVICED, delay=0.1715
+[17.8583] [TCP CUBIC ACK], cwnd=6.02, W_max=6.02, K=2.29
+[17.8942] Packet 161 DROPPED (queue full)
+[17.8942] [TCP CUBIC LOSS], cwnd reduced to 4.81, W_max set to 6.02
+[17.9137] Packet 156 SERVICED, delay=0.0195
+[17.9137] [TCP CUBIC ACK], cwnd=1.32, W_max=6.02, K=2.29
+[18.1958] Packet 157 SERVICED, delay=0.3016
+[18.1958] [TCP CUBIC ACK], cwnd=2.86, W_max=6.02, K=2.29
+[18.5036] Packet 158 SERVICED, delay=0.6094
+[18.5036] [TCP CUBIC ACK], cwnd=4.11, W_max=6.02, K=2.29
+[18.7499] Packet 159 SERVICED, delay=0.8557
+[18.7499] [TCP CUBIC ACK], cwnd=4.83, W_max=6.02, K=2.29
+[18.7961] Packet 160 SERVICED, delay=0.9019
+[18.7961] [TCP CUBIC ACK], cwnd=4.94, W_max=6.02, K=2.29
+[19.1362] Packet 162 SERVICED, delay=0.6031
+[19.1362] [TCP CUBIC ACK], cwnd=5.55, W_max=6.02, K=2.29
+[19.4676] Packet 163 SERVICED, delay=0.9345
+[19.4676] [TCP CUBIC ACK], cwnd=5.87, W_max=6.02, K=2.29
+[19.5025] Packet 164 SERVICED, delay=0.5859
+[19.5025] [TCP CUBIC ACK], cwnd=5.89, W_max=6.02, K=2.29
+[19.5511] Packet 165 SERVICED, delay=0.6345
+[19.5511] [TCP CUBIC ACK], cwnd=5.91, W_max=6.02, K=2.29
+[19.5892] Packet 166 SERVICED, delay=0.2917
+[19.5892] [TCP CUBIC ACK], cwnd=5.93, W_max=6.02, K=2.29
+[19.6078] Packet 167 SERVICED, delay=0.3103
+[19.6078] [TCP CUBIC ACK], cwnd=5.94, W_max=6.02, K=2.29
+[20.1296] Packet 168 SERVICED, delay=0.1191
+[20.1296] [TCP CUBIC ACK], cwnd=6.02, W_max=6.02, K=2.29
+[20.1868] Packet 174 DROPPED (queue full)
+[20.1868] [TCP CUBIC LOSS], cwnd reduced to 4.81, W_max set to 6.02
+[20.2140] Packet 169 SERVICED, delay=0.2035
+[20.2140] [TCP CUBIC ACK], cwnd=1.37, W_max=6.02, K=2.29
+[20.2242] Packet 170 SERVICED, delay=0.2137
+[20.2242] [TCP CUBIC ACK], cwnd=1.44, W_max=6.02, K=2.29
+[20.3197] Packet 171 SERVICED, delay=0.3092
+[20.3197] [TCP CUBIC ACK], cwnd=1.99, W_max=6.02, K=2.29
+[20.7807] Packet 172 SERVICED, delay=0.7702
+[20.7807] [TCP CUBIC ACK], cwnd=4.06, W_max=6.02, K=2.29
+[20.9906] Packet 173 SERVICED, delay=0.8038
+[20.9906] [TCP CUBIC ACK], cwnd=4.70, W_max=6.02, K=2.29
+[21.1563] Packet 175 SERVICED, delay=0.3297
+[21.1563] [TCP CUBIC ACK], cwnd=5.09, W_max=6.02, K=2.29
+[21.3225] Packet 176 SERVICED, delay=0.4958
+[21.3225] [TCP CUBIC ACK], cwnd=5.40, W_max=6.02, K=2.29
+[21.5243] Packet 177 SERVICED, delay=0.6976
+[21.5243] [TCP CUBIC ACK], cwnd=5.67, W_max=6.02, K=2.29
+[21.5959] Packet 178 SERVICED, delay=0.2803
+[21.5959] [TCP CUBIC ACK], cwnd=5.74, W_max=6.02, K=2.29
+[21.6655] Packet 179 SERVICED, delay=0.3499
+[21.6655] [TCP CUBIC ACK], cwnd=5.80, W_max=6.02, K=2.29
+[21.8256] Packet 180 SERVICED, delay=0.5100
+[21.8256] [TCP CUBIC ACK], cwnd=5.90, W_max=6.02, K=2.29
+[21.9466] Packet 181 SERVICED, delay=0.4211
+[21.9466] [TCP CUBIC ACK], cwnd=5.96, W_max=6.02, K=2.29
+[22.1055] Packet 182 SERVICED, delay=0.5800
+[22.1055] [TCP CUBIC ACK], cwnd=5.99, W_max=6.02, K=2.29
+[22.1468] Packet 183 SERVICED, delay=0.1797
+[22.1468] [TCP CUBIC ACK], cwnd=6.00, W_max=6.02, K=2.29
+[22.1939] Packet 184 SERVICED, delay=0.2268
+[22.1939] [TCP CUBIC ACK], cwnd=6.01, W_max=6.02, K=2.29
+[22.2037] Packet 185 SERVICED, delay=0.2367
+[22.2037] [TCP CUBIC ACK], cwnd=6.01, W_max=6.02, K=2.29
+[22.2561] Packet 191 DROPPED (queue full)
+[22.2561] [TCP CUBIC LOSS], cwnd reduced to 4.81, W_max set to 6.01
+[22.2901] Packet 186 SERVICED, delay=0.3230
+[22.2901] [TCP CUBIC ACK], cwnd=1.41, W_max=6.01, K=2.29
+[22.3238] Packet 187 SERVICED, delay=0.0677
+[22.3238] [TCP CUBIC ACK], cwnd=1.62, W_max=6.01, K=2.29
+[22.4132] Packet 188 SERVICED, delay=0.1571
+[22.4132] [TCP CUBIC ACK], cwnd=2.12, W_max=6.01, K=2.29
+[22.4163] Packet 189 SERVICED, delay=0.1602
+[22.4163] [TCP CUBIC ACK], cwnd=2.14, W_max=6.01, K=2.29
+[22.4201] Packet 190 SERVICED, delay=0.1640
+[22.4201] [TCP CUBIC ACK], cwnd=2.16, W_max=6.01, K=2.29
+[22.6673] Packet 192 SERVICED, delay=0.1470
+[22.6673] [TCP CUBIC ACK], cwnd=3.35, W_max=6.01, K=2.29
+[22.6916] Packet 193 SERVICED, delay=0.1713
+[22.6916] [TCP CUBIC ACK], cwnd=3.45, W_max=6.01, K=2.29
+[22.7243] Packet 194 SERVICED, delay=0.0089
+[22.7243] [TCP CUBIC ACK], cwnd=3.59, W_max=6.01, K=2.29
+[22.7296] Packet 195 SERVICED, delay=0.0142
+[22.7296] [TCP CUBIC ACK], cwnd=3.61, W_max=6.01, K=2.29
+[22.8054] Packet 196 SERVICED, delay=0.0900
+[22.8054] [TCP CUBIC ACK], cwnd=3.90, W_max=6.01, K=2.29
+[22.9724] Packet 197 SERVICED, delay=0.1015
+[22.9724] [TCP CUBIC ACK], cwnd=4.45, W_max=6.01, K=2.29
+[23.1019] Packet 198 SERVICED, delay=0.2309
+[23.1019] [TCP CUBIC ACK], cwnd=4.80, W_max=6.01, K=2.29
+[23.4743] Packet 199 SERVICED, delay=0.6033
+[23.4743] [TCP CUBIC ACK], cwnd=5.51, W_max=6.01, K=2.29
+[23.5133] Packet 200 SERVICED, delay=0.4970
+[23.5133] [TCP CUBIC ACK], cwnd=5.57, W_max=6.01, K=2.29
+[23.6718] Packet 201 SERVICED, delay=0.6556
+[23.6718] [TCP CUBIC ACK], cwnd=5.74, W_max=6.01, K=2.29
+[23.6800] Packet 202 SERVICED, delay=0.4850
+[23.6800] [TCP CUBIC ACK], cwnd=5.75, W_max=6.01, K=2.29
+[24.0384] Packet 203 SERVICED, delay=0.1808
+[24.0384] [TCP CUBIC ACK], cwnd=5.95, W_max=6.01, K=2.29
+[24.1574] Packet 204 SERVICED, delay=0.2998
+[24.1574] [TCP CUBIC ACK], cwnd=5.98, W_max=6.01, K=2.29
+[24.2100] Packet 205 SERVICED, delay=0.3524
+[24.2100] [TCP CUBIC ACK], cwnd=5.99, W_max=6.01, K=2.29
+[24.2291] Packet 206 SERVICED, delay=0.3715
+[24.2291] [TCP CUBIC ACK], cwnd=5.99, W_max=6.01, K=2.29
+[24.2461] Packet 207 SERVICED, delay=0.3885
+[24.2461] [TCP CUBIC ACK], cwnd=6.00, W_max=6.01, K=2.29
+[24.3715] Packet 208 SERVICED, delay=0.2969
+[24.3715] [TCP CUBIC ACK], cwnd=6.01, W_max=6.01, K=2.29
+[24.4043] Packet 209 SERVICED, delay=0.1139
+[24.4043] [TCP CUBIC ACK], cwnd=6.01, W_max=6.01, K=2.29
+[24.4796] Packet 215 DROPPED (queue full)
+[24.4796] [TCP CUBIC LOSS], cwnd reduced to 4.80, W_max set to 6.01
+[24.7141] Packet 210 SERVICED, delay=0.4237
+[24.7141] [TCP CUBIC ACK], cwnd=2.53, W_max=6.01, K=2.29
+[24.8480] Packet 211 SERVICED, delay=0.5576
+[24.8480] [TCP CUBIC ACK], cwnd=3.17, W_max=6.01, K=2.29
+[24.9288] Packet 212 SERVICED, delay=0.6384
+[24.9288] [TCP CUBIC ACK], cwnd=3.51, W_max=6.01, K=2.29
+[24.9832] Packet 213 SERVICED, delay=0.5036
+[24.9832] [TCP CUBIC ACK], cwnd=3.72, W_max=6.01, K=2.29
+[25.0117] Packet 214 SERVICED, delay=0.5321
+[25.0117] [TCP CUBIC ACK], cwnd=3.83, W_max=6.01, K=2.29
+[25.3171] Packet 216 SERVICED, delay=0.1216
+[25.3171] [TCP CUBIC ACK], cwnd=4.78, W_max=6.01, K=2.29
+[25.3813] Packet 217 SERVICED, delay=0.1859
+[25.3813] [TCP CUBIC ACK], cwnd=4.94, W_max=6.01, K=2.29
+[25.3916] Packet 218 SERVICED, delay=0.1962
+[25.3916] [TCP CUBIC ACK], cwnd=4.96, W_max=6.01, K=2.29
+[25.4558] Packet 219 SERVICED, delay=0.1250
+[25.4558] [TCP CUBIC ACK], cwnd=5.10, W_max=6.01, K=2.29
+[25.4748] Packet 220 SERVICED, delay=0.1441
+[25.4748] [TCP CUBIC ACK], cwnd=5.14, W_max=6.01, K=2.29
+[25.5256] Packet 221 SERVICED, delay=0.0811
+[25.5256] [TCP CUBIC ACK], cwnd=5.24, W_max=6.01, K=2.29
+[25.6213] Packet 222 SERVICED, delay=0.1768
+[25.6213] [TCP CUBIC ACK], cwnd=5.40, W_max=6.01, K=2.29
+[25.6508] Packet 223 SERVICED, delay=0.0046
+[25.6508] [TCP CUBIC ACK], cwnd=5.45, W_max=6.01, K=2.29
+[25.6977] Packet 224 SERVICED, delay=0.0516
+[25.6977] [TCP CUBIC ACK], cwnd=5.51, W_max=6.01, K=2.29
+[25.7960] Packet 225 SERVICED, delay=0.1499
+[25.7960] [TCP CUBIC ACK], cwnd=5.64, W_max=6.01, K=2.29
+[25.8660] Packet 226 SERVICED, delay=0.2198
+[25.8660] [TCP CUBIC ACK], cwnd=5.71, W_max=6.01, K=2.29
+[26.0601] Packet 227 SERVICED, delay=0.4140
+[26.0601] [TCP CUBIC ACK], cwnd=5.86, W_max=6.01, K=2.29
+[26.0779] Packet 228 SERVICED, delay=0.2168
+[26.0779] [TCP CUBIC ACK], cwnd=5.87, W_max=6.01, K=2.29
+[26.0852] Packet 229 SERVICED, delay=0.2241
+[26.0852] [TCP CUBIC ACK], cwnd=5.88, W_max=6.01, K=2.29
+[26.1881] Packet 230 SERVICED, delay=0.3269
+[26.1881] [TCP CUBIC ACK], cwnd=5.93, W_max=6.01, K=2.29
+[26.2762] Packet 231 SERVICED, delay=0.4097
+[26.2762] [TCP CUBIC ACK], cwnd=5.96, W_max=6.01, K=2.29
+[26.5156] Packet 232 SERVICED, delay=0.0857
+[26.5156] [TCP CUBIC ACK], cwnd=6.00, W_max=6.01, K=2.29
+[26.5648] Packet 233 SERVICED, delay=0.1348
+[26.5648] [TCP CUBIC ACK], cwnd=6.00, W_max=6.01, K=2.29
+[26.6679] Packet 234 SERVICED, delay=0.2379
+[26.6679] [TCP CUBIC ACK], cwnd=6.01, W_max=6.01, K=2.29
+[26.7291] Packet 235 SERVICED, delay=0.2992
+[26.7291] [TCP CUBIC ACK], cwnd=6.01, W_max=6.01, K=2.29
+[26.8080] Packet 236 SERVICED, delay=0.3781
+[26.8080] [TCP CUBIC ACK], cwnd=6.01, W_max=6.01, K=2.29
+[26.9976] Packet 242 DROPPED (queue full)
+[26.9976] [TCP CUBIC LOSS], cwnd reduced to 4.80, W_max set to 6.01
+[27.0464] Packet 237 SERVICED, delay=0.0488
+[27.0464] [TCP CUBIC ACK], cwnd=1.50, W_max=6.01, K=2.29
+[27.3713] Packet 238 SERVICED, delay=0.3737
+[27.3713] [TCP CUBIC ACK], cwnd=3.19, W_max=6.01, K=2.29
+[27.6070] Packet 239 SERVICED, delay=0.6095
+[27.6070] [TCP CUBIC ACK], cwnd=4.11, W_max=6.01, K=2.29
+[27.6288] Packet 240 SERVICED, delay=0.6312
+[27.6288] [TCP CUBIC ACK], cwnd=4.18, W_max=6.01, K=2.29
+[27.6360] Packet 241 SERVICED, delay=0.6384
+[27.6360] [TCP CUBIC ACK], cwnd=4.20, W_max=6.01, K=2.29
+[27.7175] Packet 243 SERVICED, delay=0.0024
+[27.7175] [TCP CUBIC ACK], cwnd=4.46, W_max=6.01, K=2.29
+[27.8860] Packet 244 SERVICED, delay=0.1708
+[27.8860] [TCP CUBIC ACK], cwnd=4.90, W_max=6.01, K=2.29
+[27.9191] Packet 245 SERVICED, delay=0.2039
+[27.9191] [TCP CUBIC ACK], cwnd=4.98, W_max=6.01, K=2.29
+[27.9317] Packet 246 SERVICED, delay=0.2165
+[27.9317] [TCP CUBIC ACK], cwnd=5.01, W_max=6.01, K=2.29
+[28.0530] Packet 247 SERVICED, delay=0.0991
+[28.0530] [TCP CUBIC ACK], cwnd=5.25, W_max=6.01, K=2.29
+[28.2629] Packet 248 SERVICED, delay=0.3091
+[28.2629] [TCP CUBIC ACK], cwnd=5.58, W_max=6.01, K=2.29
+[28.3957] Packet 249 SERVICED, delay=0.4419
+[28.3957] [TCP CUBIC ACK], cwnd=5.72, W_max=6.01, K=2.29
+[28.5584] Packet 250 SERVICED, delay=0.6046
+[28.5584] [TCP CUBIC ACK], cwnd=5.85, W_max=6.01, K=2.29
+[28.5916] Packet 251 SERVICED, delay=0.6377
+[28.5916] [TCP CUBIC ACK], cwnd=5.87, W_max=6.01, K=2.29
+[28.7560] Packet 252 SERVICED, delay=0.4853
+[28.7560] [TCP CUBIC ACK], cwnd=5.95, W_max=6.01, K=2.29
+[29.2217] Packet 253 SERVICED, delay=0.9510
+[29.2217] [TCP CUBIC ACK], cwnd=6.01, W_max=6.01, K=2.29
+[29.3684] Packet 259 DROPPED (queue full)
+[29.3684] [TCP CUBIC LOSS], cwnd reduced to 4.80, W_max set to 6.01
+[29.3715] Packet 254 SERVICED, delay=0.9014
+[29.3715] [TCP CUBIC ACK], cwnd=1.22, W_max=6.01, K=2.29
+[29.5670] Packet 255 SERVICED, delay=0.4795
+[29.5670] [TCP CUBIC ACK], cwnd=2.35, W_max=6.01, K=2.29
+[29.6230] Packet 256 SERVICED, delay=0.5355
+[29.6230] [TCP CUBIC ACK], cwnd=2.63, W_max=6.01, K=2.29
+[29.7620] Packet 257 SERVICED, delay=0.6745
+[29.7620] [TCP CUBIC ACK], cwnd=3.28, W_max=6.01, K=2.29
+[29.7729] Packet 258 SERVICED, delay=0.4045
+[29.7729] [TCP CUBIC ACK], cwnd=3.32, W_max=6.01, K=2.29
+[29.8980] Packet 260 SERVICED, delay=0.0386
+[29.8980] [TCP CUBIC ACK], cwnd=3.82, W_max=6.01, K=2.29
+[30.1239] Packet 261 SERVICED, delay=0.2645
+[30.1239] [TCP CUBIC ACK], cwnd=4.56, W_max=6.01, K=2.29
+[30.1732] Packet 262 SERVICED, delay=0.3138
+[30.1732] [TCP CUBIC ACK], cwnd=4.69, W_max=6.01, K=2.29
+[30.3427] Packet 263 SERVICED, delay=0.0096
+[30.3427] [TCP CUBIC ACK], cwnd=5.09, W_max=6.01, K=2.29
+[30.3812] Packet 264 SERVICED, delay=0.0480
+[30.3812] [TCP CUBIC ACK], cwnd=5.17, W_max=6.01, K=2.29
+[30.6809] Packet 265 SERVICED, delay=0.3477
+[30.6809] [TCP CUBIC ACK], cwnd=5.63, W_max=6.01, K=2.29
+[30.9817] Packet 266 SERVICED, delay=0.6485
+[30.9817] [TCP CUBIC ACK], cwnd=5.88, W_max=6.01, K=2.29
+[31.0816] Packet 267 SERVICED, delay=0.5781
+[31.0816] [TCP CUBIC ACK], cwnd=5.93, W_max=6.01, K=2.29
+[31.1411] Packet 268 SERVICED, delay=0.6376
+[31.1411] [TCP CUBIC ACK], cwnd=5.95, W_max=6.01, K=2.29
+[31.1758] Packet 269 SERVICED, delay=0.6723
+[31.1758] [TCP CUBIC ACK], cwnd=5.96, W_max=6.01, K=2.29
+[31.3154] Packet 270 SERVICED, delay=0.5089
+[31.3154] [TCP CUBIC ACK], cwnd=5.99, W_max=6.01, K=2.29
+[31.4713] Packet 271 SERVICED, delay=0.3511
+[31.4713] [TCP CUBIC ACK], cwnd=6.00, W_max=6.01, K=2.29
+[31.4809] Packet 272 SERVICED, delay=0.3607
+[31.4809] [TCP CUBIC ACK], cwnd=6.00, W_max=6.01, K=2.29
+[31.4844] Packet 278 DROPPED (queue full)
+[31.4844] [TCP CUBIC LOSS], cwnd reduced to 4.80, W_max set to 6.00
+[31.4868] Packet 273 SERVICED, delay=0.2302
+[31.4868] [TCP CUBIC ACK], cwnd=1.22, W_max=6.00, K=2.29
+[31.5665] Packet 274 SERVICED, delay=0.3100
+[31.5665] [TCP CUBIC ACK], cwnd=1.70, W_max=6.00, K=2.29
+[31.7852] Packet 275 SERVICED, delay=0.4121
+[31.7852] [TCP CUBIC ACK], cwnd=2.86, W_max=6.00, K=2.29
+[31.8006] Packet 276 SERVICED, delay=0.3162
+[31.8006] [TCP CUBIC ACK], cwnd=2.93, W_max=6.00, K=2.29
+[31.9440] Packet 277 SERVICED, delay=0.4595
+[31.9440] [TCP CUBIC ACK], cwnd=3.55, W_max=6.00, K=2.29
+[32.2474] Packet 279 SERVICED, delay=0.1225
+[32.2474] [TCP CUBIC ACK], cwnd=4.58, W_max=6.00, K=2.29
+[32.2559] Packet 280 SERVICED, delay=0.1310
+[32.2559] [TCP CUBIC ACK], cwnd=4.60, W_max=6.00, K=2.29
+[32.2648] Packet 281 SERVICED, delay=0.1399
+[32.2648] [TCP CUBIC ACK], cwnd=4.63, W_max=6.00, K=2.29
+[33.0349] Packet 282 SERVICED, delay=0.0469
+[33.0349] [TCP CUBIC ACK], cwnd=5.84, W_max=6.00, K=2.29
+[33.0812] Packet 283 SERVICED, delay=0.0932
+[33.0812] [TCP CUBIC ACK], cwnd=5.87, W_max=6.00, K=2.29
+[33.2488] Packet 284 SERVICED, delay=0.2607
+[33.2488] [TCP CUBIC ACK], cwnd=5.95, W_max=6.00, K=2.29
+[33.5430] Packet 285 SERVICED, delay=0.5550
+[33.5430] [TCP CUBIC ACK], cwnd=6.00, W_max=6.00, K=2.29
+[33.9817] Packet 286 SERVICED, delay=0.1400
+[33.9817] [TCP CUBIC ACK], cwnd=6.01, W_max=6.00, K=2.29
+[34.0290] Packet 287 SERVICED, delay=0.1872
+[34.0290] [TCP CUBIC ACK], cwnd=6.01, W_max=6.00, K=2.29
+[34.0377] Packet 288 SERVICED, delay=0.1959
+[34.0377] [TCP CUBIC ACK], cwnd=6.01, W_max=6.00, K=2.29
+[34.1878] Packet 289 SERVICED, delay=0.3460
+[34.1878] [TCP CUBIC ACK], cwnd=6.03, W_max=6.00, K=2.29
+[34.2695] Packet 290 SERVICED, delay=0.4278
+[34.2695] [TCP CUBIC ACK], cwnd=6.05, W_max=6.00, K=2.29
+[34.4258] Packet 296 DROPPED (queue full)
+[34.4258] [TCP CUBIC LOSS], cwnd reduced to 4.84, W_max set to 6.05
+[34.4376] Packet 291 SERVICED, delay=0.0118
+[34.4376] [TCP CUBIC ACK], cwnd=1.28, W_max=6.05, K=2.30
+[34.5055] Packet 292 SERVICED, delay=0.0796
+[34.5055] [TCP CUBIC ACK], cwnd=1.70, W_max=6.05, K=2.30
+[34.5066] Packet 293 SERVICED, delay=0.0808
+[34.5066] [TCP CUBIC ACK], cwnd=1.70, W_max=6.05, K=2.30
+[34.5698] Packet 294 SERVICED, delay=0.1440
+[34.5698] [TCP CUBIC ACK], cwnd=2.07, W_max=6.05, K=2.30
+[34.5756] Packet 295 SERVICED, delay=0.1498
+[34.5756] [TCP CUBIC ACK], cwnd=2.10, W_max=6.05, K=2.30
+[34.7974] Packet 297 SERVICED, delay=0.1371
+[34.7974] [TCP CUBIC ACK], cwnd=3.20, W_max=6.05, K=2.30
+[34.8849] Packet 298 SERVICED, delay=0.2246
+[34.8849] [TCP CUBIC ACK], cwnd=3.57, W_max=6.05, K=2.30
+[35.3623] Packet 299 SERVICED, delay=0.0470
+[35.3623] [TCP CUBIC ACK], cwnd=5.05, W_max=6.05, K=2.30
+[35.3959] Packet 300 SERVICED, delay=0.0806
+[35.3959] [TCP CUBIC ACK], cwnd=5.12, W_max=6.05, K=2.30
+[35.5989] Packet 301 SERVICED, delay=0.2836
+[35.5989] [TCP CUBIC ACK], cwnd=5.49, W_max=6.05, K=2.30
+[35.9291] Packet 302 SERVICED, delay=0.5632
+[35.9291] [TCP CUBIC ACK], cwnd=5.85, W_max=6.05, K=2.30
+[35.9304] Packet 303 SERVICED, delay=0.5645
+[35.9304] [TCP CUBIC ACK], cwnd=5.85, W_max=6.05, K=2.30
+[36.2806] Packet 304 SERVICED, delay=0.9147
+[36.2806] [TCP CUBIC ACK], cwnd=6.02, W_max=6.05, K=2.30
+[36.3556] Packet 305 SERVICED, delay=0.5374
+[36.3556] [TCP CUBIC ACK], cwnd=6.03, W_max=6.05, K=2.30
+[36.4315] Packet 311 DROPPED (queue full)
+[36.4315] [TCP CUBIC LOSS], cwnd reduced to 4.83, W_max set to 6.03
+[36.8513] Packet 306 SERVICED, delay=1.0331
+[36.8513] [TCP CUBIC ACK], cwnd=3.40, W_max=6.03, K=2.29
+[36.9950] Packet 308 DROPPED (timeout)
+[36.9950] [TCP CUBIC LOSS], cwnd reduced to 2.72, W_max set to 3.40
+[37.1997] Packet 307 SERVICED, delay=1.2047
+[37.1997] [TCP CUBIC ACK], cwnd=1.47, W_max=3.40, K=1.89
+[37.2603] Packet 309 SERVICED, delay=0.8288
+[37.2603] [TCP CUBIC ACK], cwnd=1.67, W_max=3.40, K=1.89
+[37.3591] Packet 310 SERVICED, delay=0.9275
+[37.3591] [TCP CUBIC ACK], cwnd=1.97, W_max=3.40, K=1.89
+[37.7914] Packet 312 SERVICED, delay=0.2210
+[37.7914] [TCP CUBIC ACK], cwnd=2.87, W_max=3.40, K=1.89
+[37.9181] Packet 313 SERVICED, delay=0.0325
+[37.9181] [TCP CUBIC ACK], cwnd=3.03, W_max=3.40, K=1.89
+[37.9390] Packet 314 SERVICED, delay=0.0533
+[37.9390] [TCP CUBIC ACK], cwnd=3.06, W_max=3.40, K=1.89
+[38.0539] Packet 315 SERVICED, delay=0.0436
+[38.0539] [TCP CUBIC ACK], cwnd=3.17, W_max=3.40, K=1.89
+[38.1415] Packet 316 SERVICED, delay=0.1312
+[38.1415] [TCP CUBIC ACK], cwnd=3.23, W_max=3.40, K=1.89
+[38.1496] Packet 317 SERVICED, delay=0.1393
+[38.1496] [TCP CUBIC ACK], cwnd=3.24, W_max=3.40, K=1.89
+[39.1716] Packet 318 SERVICED, delay=0.4284
+[39.1716] [TCP CUBIC ACK], cwnd=3.41, W_max=3.40, K=1.89
+[39.2914] Packet 319 SERVICED, delay=0.5482
+[39.2914] [TCP CUBIC ACK], cwnd=3.43, W_max=3.40, K=1.89
+[39.3682] Packet 320 SERVICED, delay=0.6250
+[39.3682] [TCP CUBIC ACK], cwnd=3.44, W_max=3.40, K=1.89
+[39.4021] Packet 321 SERVICED, delay=0.0177
+[39.4021] [TCP CUBIC ACK], cwnd=3.45, W_max=3.40, K=1.89
+[39.6440] Packet 322 SERVICED, delay=0.2596
+[39.6440] [TCP CUBIC ACK], cwnd=3.57, W_max=3.40, K=1.89
+[39.8169] Packet 323 SERVICED, delay=0.4325
+[39.8169] [TCP CUBIC ACK], cwnd=3.72, W_max=3.40, K=1.89
+[40.1121] Packet 324 SERVICED, delay=0.1294
+[40.1121] [TCP CUBIC ACK], cwnd=4.13, W_max=3.40, K=1.89
+[40.2071] Packet 325 SERVICED, delay=0.2244
+[40.2071] [TCP CUBIC ACK], cwnd=4.32, W_max=3.40, K=1.89
+[40.2613] Packet 326 SERVICED, delay=0.2786
+[40.2613] [TCP CUBIC ACK], cwnd=4.43, W_max=3.40, K=1.89
+[40.7236] Packet 327 SERVICED, delay=0.2010
+[40.7236] [TCP CUBIC ACK], cwnd=5.87, W_max=3.40, K=1.89
+[40.7282] Packet 328 SERVICED, delay=0.2057
+[40.7282] [TCP CUBIC ACK], cwnd=5.89, W_max=3.40, K=1.89
+[40.7309] Packet 329 SERVICED, delay=0.2083
+[40.7309] [TCP CUBIC ACK], cwnd=5.90, W_max=3.40, K=1.89
+[40.7781] Packet 330 SERVICED, delay=0.2556
+[40.7781] [TCP CUBIC ACK], cwnd=6.09, W_max=3.40, K=1.89
+[40.8553] Packet 336 DROPPED (queue full)
+[40.8553] [TCP CUBIC LOSS], cwnd reduced to 4.88, W_max set to 6.09
+[41.2917] Packet 331 SERVICED, delay=0.4364
+[41.2917] [TCP CUBIC ACK], cwnd=3.50, W_max=6.09, K=2.30
+[41.3080] Packet 332 SERVICED, delay=0.4527
+[41.3080] [TCP CUBIC ACK], cwnd=3.57, W_max=6.09, K=2.30
+[41.3982] Packet 333 SERVICED, delay=0.5429
+[41.3982] [TCP CUBIC ACK], cwnd=3.92, W_max=6.09, K=2.30
+[41.4461] Packet 334 SERVICED, delay=0.5908
+[41.4461] [TCP CUBIC ACK], cwnd=4.09, W_max=6.09, K=2.30
+[41.7965] Packet 335 SERVICED, delay=0.9412
+[41.7965] [TCP CUBIC ACK], cwnd=5.09, W_max=6.09, K=2.30
+[41.8284] Packet 337 SERVICED, delay=0.3751
+[41.8284] [TCP CUBIC ACK], cwnd=5.16, W_max=6.09, K=2.30
+[41.8342] Packet 338 SERVICED, delay=0.3809
+[41.8342] [TCP CUBIC ACK], cwnd=5.17, W_max=6.09, K=2.30
+[42.0343] Packet 339 SERVICED, delay=0.5809
+[42.0343] [TCP CUBIC ACK], cwnd=5.53, W_max=6.09, K=2.30
+[43.9926] Packet 340 SERVICED, delay=0.5695
+[43.9926] [TCP CUBIC ACK], cwnd=6.33, W_max=6.09, K=2.30
+[44.0736] Packet 341 SERVICED, delay=0.6506
+[44.0736] [TCP CUBIC ACK], cwnd=6.40, W_max=6.09, K=2.30
+[44.2201] Packet 342 SERVICED, delay=0.7971
+[44.2201] [TCP CUBIC ACK], cwnd=6.58, W_max=6.09, K=2.30
+[44.2434] Packet 348 DROPPED (queue full)
+[44.2434] [TCP CUBIC LOSS], cwnd reduced to 5.26, W_max set to 6.58
+[44.4231] Packet 344 DROPPED (timeout)
+[44.4231] [TCP CUBIC LOSS], cwnd reduced to 4.21, W_max set to 5.26
+[44.5098] Packet 343 SERVICED, delay=1.0867
+[44.5098] [TCP CUBIC ACK], cwnd=1.53, W_max=5.26, K=2.19
+[44.6030] Packet 345 SERVICED, delay=0.3596
+[44.6030] [TCP CUBIC ACK], cwnd=2.01, W_max=5.26, K=2.19
+[44.6289] Packet 346 SERVICED, delay=0.3855
+[44.6289] [TCP CUBIC ACK], cwnd=2.13, W_max=5.26, K=2.19
+[44.7403] Packet 347 SERVICED, delay=0.4969
+[44.7403] [TCP CUBIC ACK], cwnd=2.63, W_max=5.26, K=2.19
+[44.8883] Packet 349 SERVICED, delay=0.1625
+[44.8883] [TCP CUBIC ACK], cwnd=3.20, W_max=5.26, K=2.19
+[45.0795] Packet 350 SERVICED, delay=0.2068
+[45.0795] [TCP CUBIC ACK], cwnd=3.81, W_max=5.26, K=2.19
+[45.1618] Packet 351 SERVICED, delay=0.1286
+[45.1618] [TCP CUBIC ACK], cwnd=4.03, W_max=5.26, K=2.19
+[45.3710] Packet 352 SERVICED, delay=0.3379
+[45.3710] [TCP CUBIC ACK], cwnd=4.49, W_max=5.26, K=2.19
+[45.3854] Packet 353 SERVICED, delay=0.2489
+[45.3854] [TCP CUBIC ACK], cwnd=4.52, W_max=5.26, K=2.19
+[45.5206] Packet 354 SERVICED, delay=0.0968
+[45.5206] [TCP CUBIC ACK], cwnd=4.74, W_max=5.26, K=2.19
+[45.6424] Packet 355 SERVICED, delay=0.2186
+[45.6424] [TCP CUBIC ACK], cwnd=4.89, W_max=5.26, K=2.19
+[45.6663] Packet 356 SERVICED, delay=0.2426
+[45.6663] [TCP CUBIC ACK], cwnd=4.92, W_max=5.26, K=2.19
+[45.6810] Packet 357 SERVICED, delay=0.2572
+[45.6810] [TCP CUBIC ACK], cwnd=4.94, W_max=5.26, K=2.19
+[45.7411] Packet 358 SERVICED, delay=0.0498
+[45.7411] [TCP CUBIC ACK], cwnd=4.99, W_max=5.26, K=2.19
+[45.7986] Packet 359 SERVICED, delay=0.1073
+[45.7986] [TCP CUBIC ACK], cwnd=5.04, W_max=5.26, K=2.19
+[46.0331] Packet 360 SERVICED, delay=0.3418
+[46.0331] [TCP CUBIC ACK], cwnd=5.18, W_max=5.26, K=2.19
+[46.0760] Packet 361 SERVICED, delay=0.3846
+[46.0760] [TCP CUBIC ACK], cwnd=5.20, W_max=5.26, K=2.19
+[46.2290] Packet 362 SERVICED, delay=0.3934
+[46.2290] [TCP CUBIC ACK], cwnd=5.24, W_max=5.26, K=2.19
+[46.2796] Packet 363 SERVICED, delay=0.4439
+[46.2796] [TCP CUBIC ACK], cwnd=5.25, W_max=5.26, K=2.19
+[46.3769] Packet 364 SERVICED, delay=0.5412
+[46.3769] [TCP CUBIC ACK], cwnd=5.26, W_max=5.26, K=2.19
+[46.6755] Packet 365 SERVICED, delay=0.4432
+[46.6755] [TCP CUBIC ACK], cwnd=5.26, W_max=5.26, K=2.19
+[46.6914] Packet 366 SERVICED, delay=0.4591
+[46.6914] [TCP CUBIC ACK], cwnd=5.26, W_max=5.26, K=2.19
+[46.9526] Packet 367 SERVICED, delay=0.7203
+[46.9526] [TCP CUBIC ACK], cwnd=5.28, W_max=5.26, K=2.19
+[46.9824] Packet 368 SERVICED, delay=0.6147
+[46.9824] [TCP CUBIC ACK], cwnd=5.28, W_max=5.26, K=2.19
+[47.3738] Packet 369 SERVICED, delay=0.8831
+[47.3738] [TCP CUBIC ACK], cwnd=5.44, W_max=5.26, K=2.19
+[47.4741] Packet 370 SERVICED, delay=0.7681
+[47.4741] [TCP CUBIC ACK], cwnd=5.51, W_max=5.26, K=2.19
+[47.5016] Packet 371 SERVICED, delay=0.7955
+[47.5016] [TCP CUBIC ACK], cwnd=5.54, W_max=5.26, K=2.19
+[47.5217] Packet 372 SERVICED, delay=0.4772
+[47.5217] [TCP CUBIC ACK], cwnd=5.56, W_max=5.26, K=2.19
+[47.5641] Packet 373 SERVICED, delay=0.5196
+[47.5641] [TCP CUBIC ACK], cwnd=5.60, W_max=5.26, K=2.19
+[47.6283] Packet 374 SERVICED, delay=0.1296
+[47.6283] [TCP CUBIC ACK], cwnd=5.68, W_max=5.26, K=2.19
+[47.7385] Packet 375 SERVICED, delay=0.2397
+[47.7385] [TCP CUBIC ACK], cwnd=5.83, W_max=5.26, K=2.19
+[47.7598] Packet 376 SERVICED, delay=0.2233
+[47.7598] [TCP CUBIC ACK], cwnd=5.86, W_max=5.26, K=2.19
+[47.7640] Packet 377 SERVICED, delay=0.2274
+[47.7640] [TCP CUBIC ACK], cwnd=5.87, W_max=5.26, K=2.19
+[47.7966] Packet 378 SERVICED, delay=0.2231
+[47.7966] [TCP CUBIC ACK], cwnd=5.92, W_max=5.26, K=2.19
+[47.8095] Packet 379 SERVICED, delay=0.1784
+[47.8095] [TCP CUBIC ACK], cwnd=5.94, W_max=5.26, K=2.19
+[47.8326] Packet 380 SERVICED, delay=0.0780
+[47.8326] [TCP CUBIC ACK], cwnd=5.98, W_max=5.26, K=2.19
+[47.9152] Packet 381 SERVICED, delay=0.0700
+[47.9152] [TCP CUBIC ACK], cwnd=6.14, W_max=5.26, K=2.19
+[48.0325] Packet 382 SERVICED, delay=0.1872
+[48.0325] [TCP CUBIC ACK], cwnd=6.40, W_max=5.26, K=2.19
+[48.0365] Packet 383 SERVICED, delay=0.1913
+[48.0365] [TCP CUBIC ACK], cwnd=6.41, W_max=5.26, K=2.19
+[48.1971] Packet 384 SERVICED, delay=0.3519
+[48.1971] [TCP CUBIC ACK], cwnd=6.85, W_max=5.26, K=2.19
+[48.2759] Packet 390 DROPPED (queue full)
+[48.2759] [TCP CUBIC LOSS], cwnd reduced to 5.48, W_max set to 6.85
+[48.2960] Packet 385 SERVICED, delay=0.4508
+[48.2960] [TCP CUBIC ACK], cwnd=1.51, W_max=6.85, K=2.39
+[48.5496] Packet 386 SERVICED, delay=0.2737
+[48.5496] [TCP CUBIC ACK], cwnd=3.04, W_max=6.85, K=2.39
+[48.5560] Packet 387 SERVICED, delay=0.2801
+[48.5560] [TCP CUBIC ACK], cwnd=3.08, W_max=6.85, K=2.39
+[48.5884] Packet 388 SERVICED, delay=0.3125
+[48.5884] [TCP CUBIC ACK], cwnd=3.25, W_max=6.85, K=2.39
+[48.7525] Packet 389 SERVICED, delay=0.4766
+[48.7525] [TCP CUBIC ACK], cwnd=4.03, W_max=6.85, K=2.39
+[48.8488] Packet 391 SERVICED, delay=0.2600
+[48.8488] [TCP CUBIC ACK], cwnd=4.44, W_max=6.85, K=2.39
+[48.8948] Packet 392 SERVICED, delay=0.3060
+[48.8948] [TCP CUBIC ACK], cwnd=4.62, W_max=6.85, K=2.39
+[48.9919] Packet 393 SERVICED, delay=0.0037
+[48.9919] [TCP CUBIC ACK], cwnd=4.96, W_max=6.85, K=2.39
+[49.0210] Packet 394 SERVICED, delay=0.0328
+[49.0210] [TCP CUBIC ACK], cwnd=5.06, W_max=6.85, K=2.39
+[49.1460] Packet 395 SERVICED, delay=0.1578
+[49.1460] [TCP CUBIC ACK], cwnd=5.44, W_max=6.85, K=2.39
+[49.3715] Packet 396 SERVICED, delay=0.3834
+[49.3715] [TCP CUBIC ACK], cwnd=5.97, W_max=6.85, K=2.39
+[49.4475] Packet 397 SERVICED, delay=0.3160
+[49.4475] [TCP CUBIC ACK], cwnd=6.12, W_max=6.85, K=2.39
+[49.4588] Packet 398 SERVICED, delay=0.3273
+[49.4588] [TCP CUBIC ACK], cwnd=6.14, W_max=6.85, K=2.39
+[49.5182] Packet 399 SERVICED, delay=0.3866
+[49.5182] [TCP CUBIC ACK], cwnd=6.24, W_max=6.85, K=2.39
+[49.5189] Packet 405 DROPPED (queue full)
+[49.5189] [TCP CUBIC LOSS], cwnd reduced to 4.99, W_max set to 6.24
+[49.5459] Packet 400 SERVICED, delay=0.2623
+[49.5459] [TCP CUBIC ACK], cwnd=1.42, W_max=6.24, K=2.32
+[49.5479] Packet 401 SERVICED, delay=0.1068
+[49.5479] [TCP CUBIC ACK], cwnd=1.43, W_max=6.24, K=2.32
+[49.5717] Packet 402 SERVICED, delay=0.0528
+[49.5717] [TCP CUBIC ACK], cwnd=1.58, W_max=6.24, K=2.32
+[49.6114] Packet 403 SERVICED, delay=0.0925
+[49.6114] [TCP CUBIC ACK], cwnd=1.82, W_max=6.24, K=2.32
+[49.6241] Packet 404 SERVICED, delay=0.1053
+[49.6241] [TCP CUBIC ACK], cwnd=1.90, W_max=6.24, K=2.32
+[49.8126] Packet 406 SERVICED, delay=0.1137
+[49.8126] [TCP CUBIC ACK], cwnd=2.91, W_max=6.24, K=2.32
+[50.0793] Packet 407 SERVICED, delay=0.0690
+[50.0793] [TCP CUBIC ACK], cwnd=4.06, W_max=6.24, K=2.32
+[50.0884] Packet 408 SERVICED, delay=0.0781
+[50.0884] [TCP CUBIC ACK], cwnd=4.10, W_max=6.24, K=2.32
+[50.2527] Packet 409 SERVICED, delay=0.0884
+[50.2527] [TCP CUBIC ACK], cwnd=4.64, W_max=6.24, K=2.32
+[50.3896] Packet 410 SERVICED, delay=0.2252
+[50.3896] [TCP CUBIC ACK], cwnd=5.02, W_max=6.24, K=2.32
+[50.4461] Packet 411 SERVICED, delay=0.2817
+[50.4461] [TCP CUBIC ACK], cwnd=5.16, W_max=6.24, K=2.32
+[50.4597] Packet 412 SERVICED, delay=0.2954
+[50.4597] [TCP CUBIC ACK], cwnd=5.19, W_max=6.24, K=2.32
+[50.5635] Packet 413 SERVICED, delay=0.2422
+[50.5635] [TCP CUBIC ACK], cwnd=5.41, W_max=6.24, K=2.32
+[50.6076] Packet 414 SERVICED, delay=0.1171
+[50.6076] [TCP CUBIC ACK], cwnd=5.49, W_max=6.24, K=2.32
+[51.0382] Packet 415 SERVICED, delay=0.5477
+[51.0382] [TCP CUBIC ACK], cwnd=6.03, W_max=6.24, K=2.32
+[51.1313] Packet 416 SERVICED, delay=0.6408
+[51.1313] [TCP CUBIC ACK], cwnd=6.10, W_max=6.24, K=2.32
+[51.1351] Packet 422 DROPPED (queue full)
+[51.1351] [TCP CUBIC LOSS], cwnd reduced to 4.88, W_max set to 6.10
+[51.1583] Packet 417 SERVICED, delay=0.6679
+[51.1583] [TCP CUBIC ACK], cwnd=1.37, W_max=6.10, K=2.30
+[51.1759] Packet 418 SERVICED, delay=0.5743
+[51.1759] [TCP CUBIC ACK], cwnd=1.47, W_max=6.10, K=2.30
+[51.2094] Packet 419 SERVICED, delay=0.5665
+[51.2094] [TCP CUBIC ACK], cwnd=1.68, W_max=6.10, K=2.30
+[51.2178] Packet 420 SERVICED, delay=0.0827
+[51.2178] [TCP CUBIC ACK], cwnd=1.73, W_max=6.10, K=2.30
+[51.2921] Packet 421 SERVICED, delay=0.1570
+[51.2921] [TCP CUBIC ACK], cwnd=2.15, W_max=6.10, K=2.30
+[51.9547] Packet 423 SERVICED, delay=0.0119
+[51.9547] [TCP CUBIC ACK], cwnd=4.79, W_max=6.10, K=2.30
+[52.0055] Packet 424 SERVICED, delay=0.0626
+[52.0055] [TCP CUBIC ACK], cwnd=4.92, W_max=6.10, K=2.30
+[52.8413] Packet 425 SERVICED, delay=0.2006
+[52.8413] [TCP CUBIC ACK], cwnd=6.01, W_max=6.10, K=2.30
+[52.8616] Packet 431 DROPPED (queue full)
+[52.8616] [TCP CUBIC LOSS], cwnd reduced to 4.81, W_max set to 6.01
+[53.0112] Packet 426 SERVICED, delay=0.3705
+[53.0112] [TCP CUBIC ACK], cwnd=2.08, W_max=6.01, K=2.29
+[53.0410] Packet 427 SERVICED, delay=0.4003
+[53.0410] [TCP CUBIC ACK], cwnd=2.25, W_max=6.01, K=2.29
+[53.0597] Packet 428 SERVICED, delay=0.4191
+[53.0597] [TCP CUBIC ACK], cwnd=2.35, W_max=6.01, K=2.29
+[53.3248] Packet 429 SERVICED, delay=0.4632
+[53.3248] [TCP CUBIC ACK], cwnd=3.57, W_max=6.01, K=2.29
+[53.4061] Packet 430 SERVICED, delay=0.5445
+[53.4061] [TCP CUBIC ACK], cwnd=3.88, W_max=6.01, K=2.29
+[53.4615] Packet 432 SERVICED, delay=0.1211
+[53.4615] [TCP CUBIC ACK], cwnd=4.08, W_max=6.01, K=2.29
+[53.5324] Packet 433 SERVICED, delay=0.1920
+[53.5324] [TCP CUBIC ACK], cwnd=4.31, W_max=6.01, K=2.29
+[53.6267] Packet 434 SERVICED, delay=0.2064
+[53.6267] [TCP CUBIC ACK], cwnd=4.59, W_max=6.01, K=2.29
+[53.7138] Packet 435 SERVICED, delay=0.2253
+[53.7138] [TCP CUBIC ACK], cwnd=4.82, W_max=6.01, K=2.29
+[53.7305] Packet 436 SERVICED, delay=0.2421
+[53.7305] [TCP CUBIC ACK], cwnd=4.86, W_max=6.01, K=2.29
+[53.8066] Packet 437 SERVICED, delay=0.1869
+[53.8066] [TCP CUBIC ACK], cwnd=5.04, W_max=6.01, K=2.29
+[53.8476] Packet 438 SERVICED, delay=0.2173
+[53.8476] [TCP CUBIC ACK], cwnd=5.12, W_max=6.01, K=2.29
+[54.6314] Packet 439 SERVICED, delay=0.0389
+[54.6314] [TCP CUBIC ACK], cwnd=5.96, W_max=6.01, K=2.29
+[54.7974] Packet 440 SERVICED, delay=0.2049
+[54.7974] [TCP CUBIC ACK], cwnd=5.99, W_max=6.01, K=2.29
+[54.8268] Packet 441 SERVICED, delay=0.2343
+[54.8268] [TCP CUBIC ACK], cwnd=6.00, W_max=6.01, K=2.29
+[54.9412] Packet 442 SERVICED, delay=0.3487
+[54.9412] [TCP CUBIC ACK], cwnd=6.01, W_max=6.01, K=2.29
+[55.0840] Packet 443 SERVICED, delay=0.4915
+[55.0840] [TCP CUBIC ACK], cwnd=6.01, W_max=6.01, K=2.29
+[55.1478] Packet 444 SERVICED, delay=0.3742
+[55.1478] [TCP CUBIC ACK], cwnd=6.01, W_max=6.01, K=2.29
+[55.1907] Packet 445 SERVICED, delay=0.3110
+[55.1907] [TCP CUBIC ACK], cwnd=6.01, W_max=6.01, K=2.29
+[55.2349] Packet 451 DROPPED (queue full)
+[55.2349] [TCP CUBIC LOSS], cwnd reduced to 4.81, W_max set to 6.01
+[55.4560] Packet 446 SERVICED, delay=0.5762
+[55.4560] [TCP CUBIC ACK], cwnd=2.47, W_max=6.01, K=2.29
+[55.7913] Packet 447 SERVICED, delay=0.5564
+[55.7913] [TCP CUBIC ACK], cwnd=3.92, W_max=6.01, K=2.29
+[55.8046] Packet 448 SERVICED, delay=0.5697
+[55.8046] [TCP CUBIC ACK], cwnd=3.97, W_max=6.01, K=2.29
+[55.9358] Packet 449 SERVICED, delay=0.7010
+[55.9358] [TCP CUBIC ACK], cwnd=4.40, W_max=6.01, K=2.29
+[56.2144] Packet 450 SERVICED, delay=0.9796
+[56.2144] [TCP CUBIC ACK], cwnd=5.11, W_max=6.01, K=2.29
+[56.2295] Packet 452 SERVICED, delay=0.1709
+[56.2295] [TCP CUBIC ACK], cwnd=5.14, W_max=6.01, K=2.29
+[56.3881] Packet 453 SERVICED, delay=0.3295
+[56.3881] [TCP CUBIC ACK], cwnd=5.42, W_max=6.01, K=2.29
+[56.4106] Packet 454 SERVICED, delay=0.3520
+[56.4106] [TCP CUBIC ACK], cwnd=5.46, W_max=6.01, K=2.29
+[56.5767] Packet 455 SERVICED, delay=0.1094
+[56.5767] [TCP CUBIC ACK], cwnd=5.67, W_max=6.01, K=2.29
+[56.6507] Packet 456 SERVICED, delay=0.1835
+[56.6507] [TCP CUBIC ACK], cwnd=5.74, W_max=6.01, K=2.29
+[56.6952] Packet 457 SERVICED, delay=0.2279
+[56.6952] [TCP CUBIC ACK], cwnd=5.78, W_max=6.01, K=2.29
+[56.9049] Packet 458 SERVICED, delay=0.4376
+[56.9049] [TCP CUBIC ACK], cwnd=5.92, W_max=6.01, K=2.29
+[56.9547] Packet 459 SERVICED, delay=0.4875
+[56.9547] [TCP CUBIC ACK], cwnd=5.94, W_max=6.01, K=2.29
+[57.0125] Packet 460 SERVICED, delay=0.2061
+[57.0125] [TCP CUBIC ACK], cwnd=5.96, W_max=6.01, K=2.29
+[57.0599] Packet 461 SERVICED, delay=0.2534
+[57.0599] [TCP CUBIC ACK], cwnd=5.97, W_max=6.01, K=2.29
+[57.1220] Packet 462 SERVICED, delay=0.3155
+[57.1220] [TCP CUBIC ACK], cwnd=5.99, W_max=6.01, K=2.29
+[57.2234] Packet 463 SERVICED, delay=0.0699
+[57.2234] [TCP CUBIC ACK], cwnd=6.00, W_max=6.01, K=2.29
+[57.2498] Packet 464 SERVICED, delay=0.0963
+[57.2498] [TCP CUBIC ACK], cwnd=6.00, W_max=6.01, K=2.29
+[57.4797] Packet 465 SERVICED, delay=0.3261
+[57.4797] [TCP CUBIC ACK], cwnd=6.01, W_max=6.01, K=2.29
+[57.5281] Packet 466 SERVICED, delay=0.3746
+[57.5281] [TCP CUBIC ACK], cwnd=6.01, W_max=6.01, K=2.29
+[57.6065] Packet 467 SERVICED, delay=0.4530
+[57.6065] [TCP CUBIC ACK], cwnd=6.01, W_max=6.01, K=2.29
+[57.6275] Packet 473 DROPPED (queue full)
+[57.6275] [TCP CUBIC LOSS], cwnd reduced to 4.81, W_max set to 6.01
+[57.7253] Packet 468 SERVICED, delay=0.0979
+[57.7253] [TCP CUBIC ACK], cwnd=1.79, W_max=6.01, K=2.29
+[57.7378] Packet 469 SERVICED, delay=0.1103
+[57.7378] [TCP CUBIC ACK], cwnd=1.86, W_max=6.01, K=2.29
+[58.0188] Packet 470 SERVICED, delay=0.3914
+[58.0188] [TCP CUBIC ACK], cwnd=3.27, W_max=6.01, K=2.29
+[58.1176] Packet 471 SERVICED, delay=0.4902
+[58.1176] [TCP CUBIC ACK], cwnd=3.68, W_max=6.01, K=2.29
+[58.1584] Packet 472 SERVICED, delay=0.5310
+[58.1584] [TCP CUBIC ACK], cwnd=3.83, W_max=6.01, K=2.29
+[58.2347] Packet 474 SERVICED, delay=0.0976
+[58.2347] [TCP CUBIC ACK], cwnd=4.10, W_max=6.01, K=2.29
+[58.4590] Packet 475 SERVICED, delay=0.3220
+[58.4590] [TCP CUBIC ACK], cwnd=4.77, W_max=6.01, K=2.29
+[58.4754] Packet 476 SERVICED, delay=0.0276
+[58.4754] [TCP CUBIC ACK], cwnd=4.81, W_max=6.01, K=2.29
+[58.5128] Packet 477 SERVICED, delay=0.0650
+[58.5128] [TCP CUBIC ACK], cwnd=4.90, W_max=6.01, K=2.29
+[58.5414] Packet 478 SERVICED, delay=0.0936
+[58.5414] [TCP CUBIC ACK], cwnd=4.97, W_max=6.01, K=2.29
+[58.7237] Packet 479 SERVICED, delay=0.0034
+[58.7237] [TCP CUBIC ACK], cwnd=5.33, W_max=6.01, K=2.29
+[58.8081] Packet 480 SERVICED, delay=0.0878
+[58.8081] [TCP CUBIC ACK], cwnd=5.46, W_max=6.01, K=2.29
+[58.9518] Packet 481 SERVICED, delay=0.2315
+[58.9518] [TCP CUBIC ACK], cwnd=5.65, W_max=6.01, K=2.29
+[59.1612] Packet 482 SERVICED, delay=0.4409
+[59.1612] [TCP CUBIC ACK], cwnd=5.84, W_max=6.01, K=2.29
+[59.3334] Packet 483 SERVICED, delay=0.5293
+[59.3334] [TCP CUBIC ACK], cwnd=5.93, W_max=6.01, K=2.29
+[59.3451] Packet 484 SERVICED, delay=0.5411
+[59.3451] [TCP CUBIC ACK], cwnd=5.94, W_max=6.01, K=2.29
+[59.3587] Packet 485 SERVICED, delay=0.1799
+[59.3587] [TCP CUBIC ACK], cwnd=5.94, W_max=6.01, K=2.29
+[59.4093] Packet 486 SERVICED, delay=0.2306
+[59.4093] [TCP CUBIC ACK], cwnd=5.96, W_max=6.01, K=2.29
+[59.5689] Packet 487 SERVICED, delay=0.3902
+[59.5689] [TCP CUBIC ACK], cwnd=6.00, W_max=6.01, K=2.29
+[59.6963] Packet 488 SERVICED, delay=0.1767
+[59.6963] [TCP CUBIC ACK], cwnd=6.01, W_max=6.01, K=2.29
+[59.7987] Packet 489 SERVICED, delay=0.2792
+[59.7987] [TCP CUBIC ACK], cwnd=6.01, W_max=6.01, K=2.29
+[59.9171] Packet 490 SERVICED, delay=0.3976
+[59.9171] [TCP CUBIC ACK], cwnd=6.01, W_max=6.01, K=2.29
+[59.9954] Packet 491 SERVICED, delay=0.4759
+[59.9954] [TCP CUBIC ACK], cwnd=6.01, W_max=6.01, K=2.29
+[60.0378] Packet 492 SERVICED, delay=0.4603
+[60.0378] [TCP CUBIC ACK], cwnd=6.01, W_max=6.01, K=2.29
+[60.0958] Packet 498 DROPPED (queue full)
+[60.0958] [TCP CUBIC LOSS], cwnd reduced to 4.81, W_max set to 6.01
+[60.1834] Packet 493 SERVICED, delay=0.0876
+[60.1834] [TCP CUBIC ACK], cwnd=1.73, W_max=6.01, K=2.29
+[60.2346] Packet 494 SERVICED, delay=0.1388
+[60.2346] [TCP CUBIC ACK], cwnd=2.02, W_max=6.01, K=2.29
+[60.2966] Packet 495 SERVICED, delay=0.2008
+[60.2966] [TCP CUBIC ACK], cwnd=2.36, W_max=6.01, K=2.29
+[60.5909] Packet 496 SERVICED, delay=0.4951
+[60.5909] [TCP CUBIC ACK], cwnd=3.70, W_max=6.01, K=2.29
+[60.6075] Packet 497 SERVICED, delay=0.5117
+[60.6075] [TCP CUBIC ACK], cwnd=3.76, W_max=6.01, K=2.29
+[61.1099] Packet 499 SERVICED, delay=0.2690
+[61.1099] [TCP CUBIC ACK], cwnd=5.18, W_max=6.01, K=2.29

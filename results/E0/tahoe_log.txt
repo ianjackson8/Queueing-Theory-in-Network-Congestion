@@ -1,0 +1,120 @@
+== Simulation Parameters ==
+  - Arrival Rate (λ): 15
+  - Service Rate (μ): 10
+  - Deadline Rate (θ): 1
+  - Queue Size: 5
+  - Total Packets: 50
+  - Congestion Control: <__main__.TCPTahoe object at 0x11c381570>
+===========================
+
+== Simulation Results ==
+Simulation Time: 7.00 seconds
+Total Packets: 50
+Serviced: 45
+Dropped: 5
+Loss Rate: 10.00%
+Average Delay: 0.2303 seconds
+Throughput: 6.4286 packets/sec
+=========================
+
+== Simulation Log ==
+[0.0469] Packet 0 SERVICED, delay=0.0469
+[0.0469] [TCP Tahoe], cwnd=2.00, ssthresh=10.00, state=Slow Start
+[0.8010] Packet 1 SERVICED, delay=0.3010
+[0.8010] [TCP Tahoe], cwnd=4.00, ssthresh=10.00, state=Slow Start
+[0.9327] Packet 2 SERVICED, delay=0.4327
+[0.9327] [TCP Tahoe], cwnd=8.00, ssthresh=10.00, state=Slow Start
+[1.0000] Packet 10 DROPPED (queue full)
+[1.0000] Packet 8 DROPPED (queue full)
+[1.0000] Packet 9 DROPPED (queue full)
+[1.0000] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=1
+[1.0000] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=1
+[1.0000] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=4
+[1.0913] Packet 3 SERVICED, delay=0.0913
+[1.0913] [TCP Tahoe], cwnd=2.00, ssthresh=1.00, state=Congestion Avoidance
+[1.1083] Packet 4 SERVICED, delay=0.1083
+[1.1083] [TCP Tahoe], cwnd=2.50, ssthresh=1.00, state=Congestion Avoidance
+[1.1252] Packet 5 SERVICED, delay=0.1252
+[1.1252] [TCP Tahoe], cwnd=2.90, ssthresh=1.00, state=Congestion Avoidance
+[1.1312] Packet 6 SERVICED, delay=0.1312
+[1.1312] [TCP Tahoe], cwnd=3.24, ssthresh=1.00, state=Congestion Avoidance
+[1.3323] Packet 7 SERVICED, delay=0.3323
+[1.3323] [TCP Tahoe], cwnd=3.55, ssthresh=1.00, state=Congestion Avoidance
+[1.8504] Packet 11 SERVICED, delay=0.3504
+[1.8504] [TCP Tahoe], cwnd=3.83, ssthresh=1.00, state=Congestion Avoidance
+[2.0290] Packet 12 SERVICED, delay=0.5290
+[2.0290] [TCP Tahoe], cwnd=4.10, ssthresh=1.00, state=Congestion Avoidance
+[2.0529] Packet 13 SERVICED, delay=0.5529
+[2.0529] [TCP Tahoe], cwnd=4.34, ssthresh=1.00, state=Congestion Avoidance
+[2.0729] Packet 14 SERVICED, delay=0.0729
+[2.0729] [TCP Tahoe], cwnd=4.57, ssthresh=1.00, state=Congestion Avoidance
+[2.5203] Packet 15 SERVICED, delay=0.0203
+[2.5203] [TCP Tahoe], cwnd=4.79, ssthresh=1.00, state=Congestion Avoidance
+[2.5565] Packet 16 SERVICED, delay=0.0565
+[2.5565] [TCP Tahoe], cwnd=5.00, ssthresh=1.00, state=Congestion Avoidance
+[2.6309] Packet 17 SERVICED, delay=0.1309
+[2.6309] [TCP Tahoe], cwnd=5.20, ssthresh=1.00, state=Congestion Avoidance
+[2.6875] Packet 18 SERVICED, delay=0.1875
+[2.6875] [TCP Tahoe], cwnd=5.39, ssthresh=1.00, state=Congestion Avoidance
+[3.0344] Packet 19 SERVICED, delay=0.0344
+[3.0344] [TCP Tahoe], cwnd=5.58, ssthresh=1.00, state=Congestion Avoidance
+[3.1291] Packet 20 SERVICED, delay=0.1291
+[3.1291] [TCP Tahoe], cwnd=5.75, ssthresh=1.00, state=Congestion Avoidance
+[3.1441] Packet 21 SERVICED, delay=0.1441
+[3.1441] [TCP Tahoe], cwnd=5.93, ssthresh=1.00, state=Congestion Avoidance
+[3.1786] Packet 22 SERVICED, delay=0.1786
+[3.1786] [TCP Tahoe], cwnd=6.10, ssthresh=1.00, state=Congestion Avoidance
+[3.2243] Packet 23 SERVICED, delay=0.2243
+[3.2243] [TCP Tahoe], cwnd=6.26, ssthresh=1.00, state=Congestion Avoidance
+[3.5000] Packet 29 DROPPED (queue full)
+[3.5000] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=3.0
+[3.5609] Packet 24 SERVICED, delay=0.0609
+[3.5609] [TCP Tahoe], cwnd=2.00, ssthresh=3.00, state=Slow Start
+[3.7147] Packet 25 SERVICED, delay=0.2147
+[3.7147] [TCP Tahoe], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[3.7370] Packet 26 SERVICED, delay=0.2370
+[3.7370] [TCP Tahoe], cwnd=4.25, ssthresh=3.00, state=Congestion Avoidance
+[3.8092] Packet 27 SERVICED, delay=0.3092
+[3.8092] [TCP Tahoe], cwnd=4.49, ssthresh=3.00, state=Congestion Avoidance
+[3.8989] Packet 28 SERVICED, delay=0.3989
+[3.8989] [TCP Tahoe], cwnd=4.71, ssthresh=3.00, state=Congestion Avoidance
+[4.0935] Packet 30 SERVICED, delay=0.0935
+[4.0935] [TCP Tahoe], cwnd=4.92, ssthresh=3.00, state=Congestion Avoidance
+[4.1122] Packet 31 SERVICED, delay=0.1122
+[4.1122] [TCP Tahoe], cwnd=5.12, ssthresh=3.00, state=Congestion Avoidance
+[4.1190] Packet 32 SERVICED, delay=0.1190
+[4.1190] [TCP Tahoe], cwnd=5.32, ssthresh=3.00, state=Congestion Avoidance
+[4.4163] Packet 33 SERVICED, delay=0.4163
+[4.4163] [TCP Tahoe], cwnd=5.51, ssthresh=3.00, state=Congestion Avoidance
+[4.8371] Packet 34 SERVICED, delay=0.3371
+[4.8371] [TCP Tahoe], cwnd=5.69, ssthresh=3.00, state=Congestion Avoidance
+[5.0023] Packet 35 SERVICED, delay=0.5023
+[5.0023] [TCP Tahoe], cwnd=5.86, ssthresh=3.00, state=Congestion Avoidance
+[5.0386] Packet 36 SERVICED, delay=0.5386
+[5.0386] [TCP Tahoe], cwnd=6.03, ssthresh=3.00, state=Congestion Avoidance
+[5.0489] Packet 37 SERVICED, delay=0.5489
+[5.0489] [TCP Tahoe], cwnd=6.20, ssthresh=3.00, state=Congestion Avoidance
+[5.1642] Packet 38 SERVICED, delay=0.6642
+[5.1642] [TCP Tahoe], cwnd=6.36, ssthresh=3.00, state=Congestion Avoidance
+[5.2222] Packet 39 SERVICED, delay=0.2222
+[5.2222] [TCP Tahoe], cwnd=6.52, ssthresh=3.00, state=Congestion Avoidance
+[5.5000] Packet 45 DROPPED (queue full)
+[5.5000] [TCP Tahoe LOSS], cwnd reset to 1, ssthresh=3.0
+[5.5130] Packet 40 SERVICED, delay=0.0130
+[5.5130] [TCP Tahoe], cwnd=2.00, ssthresh=3.00, state=Slow Start
+[5.5814] Packet 41 SERVICED, delay=0.0814
+[5.5814] [TCP Tahoe], cwnd=4.00, ssthresh=3.00, state=Congestion Avoidance
+[5.5849] Packet 42 SERVICED, delay=0.0849
+[5.5849] [TCP Tahoe], cwnd=4.25, ssthresh=3.00, state=Congestion Avoidance
+[5.8249] Packet 43 SERVICED, delay=0.3249
+[5.8249] [TCP Tahoe], cwnd=4.49, ssthresh=3.00, state=Congestion Avoidance
+[5.8549] Packet 44 SERVICED, delay=0.3549
+[5.8549] [TCP Tahoe], cwnd=4.71, ssthresh=3.00, state=Congestion Avoidance
+[6.0374] Packet 46 SERVICED, delay=0.0374
+[6.0374] [TCP Tahoe], cwnd=4.92, ssthresh=3.00, state=Congestion Avoidance
+[6.1108] Packet 47 SERVICED, delay=0.1108
+[6.1108] [TCP Tahoe], cwnd=5.12, ssthresh=3.00, state=Congestion Avoidance
+[6.1899] Packet 48 SERVICED, delay=0.1899
+[6.1899] [TCP Tahoe], cwnd=5.32, ssthresh=3.00, state=Congestion Avoidance
+[6.2103] Packet 49 SERVICED, delay=0.2103
+[6.2103] [TCP Tahoe], cwnd=5.51, ssthresh=3.00, state=Congestion Avoidance
